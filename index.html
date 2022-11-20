@@ -7,124 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random MEME Project</title>
-    <style>
-body {
-  background-color: #1D2326;
-  color: #BFA38A;
-  font-family: monospace;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-}
-
-img {
-  border: 1px solid white;
-  border-radius: 5px;
-  max-width: 350px;
-  width: 100%;
-}
-
-p {
-  color: #8097A6;
-}
-
-.attribution {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 0.8rem;
-  background-color: #8097A6;
-  padding: 10px;
-  border-radius: 5px;
-  color: #1D2326;
-  box-shadow: 1px 2px 5px 1px rgba(255,255,255, 0.2);
-}
-
-a {
-  color: white;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-.content {
-  width: 65%;
-  padding-left: 30px;
-  padding-right: 20px;
-}
-
-.content p {
-  max-width: 80%;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-left: 1px dotted #BFA38A;
-  height: 85vh;
-}
-
-button {
-  width: 200px;
-  max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 35px;
-  border: 1px solid #BFA38A;
-  background: transparent;
-  color: #BFA38A;
-  border-radius: 5px;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgba(255,255,255,0.1)
-}
-
-.reveal-btn {
-  border: none;
-  text-decoration: underline;
-  margin: 0;
-}
-
-.reveal-btn:hover {
-  color: white;
-  background-color: transparent;
-}
-    </style>
+    <link href="styles/style.css" rel="stylesheet"> <!-- Removed styles and moved to styles/style.css -->
 </head>
 
 <body>
+    <script src="script/main.js"></script> <!--  Removed script and added to scripts/main.js with link -->
     <main>
         <section class="content">
           <h2>Output</h2>
-          
+
           <div>
             <h3>Programmer Memes</h3>
-            <div class='memes'></d>  
+            <div class='memes'></d>
           </div>
           <div>
             <h3>Tell me something funnny!</h3>
-            <div class='jokes'></d>  
+            <div class='jokes'></d>
           </div>
           <div>
             <h3>Give me some wisdom</h3>
-            <div class='quotes'></d>  
-          </div>      
+            <div class='quotes'></d>
+          </div>
           <div>
             <h3>I want a riddle!</h3>
-            <div class='riddles'></d>  
-          <div>    
-          
+            <div class='riddles'></d>
+          <div>
+
         </section>
-        
-        
+
+
         <section class="sidebar">
           <h2>Actions</h2>
           <button onclick="showMeme()">Show a Meme</button>
@@ -132,138 +43,9 @@ button:hover {
           <button onclick="showQuote()">Random Quote</button>
           <button onclick="showRiddle()">Riddle me</button>
           <button class="reveal-btn" onclick="revealAnswers()">Reveal Riddle Answer</button>
-          <p class="attribution">Code challenge by <a href="https://www.twitter.com/zg_dev" target="_top">@zg_dev</a></p> 
+          <p class="attribution">Code challenge by <a href="https://www.twitter.com/zg_dev" target="_top">@zg_dev</a></p>
+
         </section>
-    </main>  
-
-<script>
-        function clearAll() {
-            document.querySelector('.jokes').textContent = '';
-            document.querySelector('.memes').textContent = '';
-            document.querySelector('.quotes').textContent = '';
-            document.querySelector('.riddles').textContent = '';
-        }
-        function showMeme() {
-            clearAll();
-            const string = getRandomData('memes');
-            const container = document.querySelector('.memes');
-            const imageNode = document.createElement('img');
-            imageNode.src = string;
-
-            container.appendChild(imageNode);
-        }
-        function showJoke() {
-            clearAll();
-            const string = getRandomData('jokes');
-            const container = document.querySelector('.jokes');
-            const jokeNode = document.createElement('p');
-            jokeNode.textContent = string;
-            
-            container.appendChild(jokeNode);   
-        }
-        function showQuote() {
-            clearAll();
-            const string = getRandomData('quotes');
-  
-            const container = document.querySelector('.quotes');  
-            const quote = document.createElement('p');
-            const author = document.createElement('p');
-  
-            quote.textContent = string.quote;
-            author.textContent = '     - ' + string.author;
-  
-            container.appendChild(quote); 
-            container.appendChild(author);
-   
-        }
-        function showRiddle() {
-            clearAll();
-
-            const string = getRandomData('riddles');
-  
-            const container = document.querySelector('.riddles');
-  
-            const riddle = document.createElement('p');
-            riddle.textContent = string.question;
-            riddle.setAttribute('class', 'rid');
-            container.appendChild(riddle);
-  
-  
-            const answer = document.createElement('p');
-            answer.textContent = '  - ' + string.answer;
-            answer.setAttribute('class', 'answer');
-            answer.hidden = true;
-            container.appendChild(answer);
-
-    }
-        function revealAnswers() {
-            const answer = document.querySelector('.answer');
-            const riddle = document.querySelector('.rid');
-            const container = document.querySelectorAll('.riddles');
-
-            if (riddle && answer.hidden) {
-                answer.hidden = false;
-            }
-            else if (riddle && answer){
-                window.alert('Oops you already have the answer!')
-            }
-            else {
-                window.alert('Please select riddle  -  FIRST!')
-            }
-        } 
-
-
-function getRandomData(type) {
-  return data[type][randomNumber(data[type].length)];
-}
-
-
-// Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
-const memes = ['https://i.redd.it/a0v87gwzoge61.jpg', 'https://i.redd.it/q29egav34ee61.jpg', 'https://i.redd.it/iij16swxjie61.jpg', 'https://i.redd.it/vek7dm2hrge61.jpg', 'https://www.testbytes.net/wp-content/uploads/2019/06/Untitled-8.png', 'https://miro.medium.com/max/1000/0*Ua695vjzFHV6VNOX.png', 'https://pbs.twimg.com/media/EKkPagPXkAA__Qo.jpg', 'https://code-love.com/wp-content/uploads/2019/03/download.jpeg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Programmer-while-sleeping.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Evolution-of-Memory-Storage-1024x996.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Error-in-Code-896x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Coding-Meme-Code-Comments-be-Like-925x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Internet-Explorer-Joke-915x1024.jpg'];
-// Sourced from: http://www.devtopics.com/best-programming-jokes/
-const jokes = ['This statement', 'Eight bytes walk into a bar.  The bartender asks, “Can I get you anything?” “Yeah,” reply the bytes.  “Make us a double.”', 'There are only 10 kinds of people in this world: those who know binary and those who don’t.', 'All programmers are playwrights, and all computers are lousy actors.', 'Have you heard about the new Cray super computer?  It’s so fast, it executes an infinite loop in 6 seconds.', 'The generation of random numbers is too important to be left to chance.', 'Debugging: Removing the needles from the haystack.', '“Debugging” is like being the detective in a crime drama where you are also the murderer.', 'There are two ways to write error-free programs; only the third one works.', 'The best thing about a Boolean is even if you are wrong, you are only off by a bit.'];
-// source: https://www.goodreads.com/quotes/tag/programming
-const quotes = [
-  { quote: 'Programs must be written for people to read, and only incidentally for machines to execute.', author: 'Harold Abelson'},
-  { quote: 'Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.', author: 'Rick Cook' },
-  { quote: 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live', author: 'John Woods' },
-  { quote: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.', author: 'Martin Fowler' },
-  { quote: 'Truth can only be found in one place: the code.', author: 'Robert C. Martin' },
-  { quote: 'That\'s the thing about people who think they hate computers. What they really hate is lousy programmers.', author: 'Larry Niven' },
-  { quote: 'You\'ve baked a really lovely cake, but then you\'ve used dog shit for frosting.', author: 'Steve Jobs' },
-  { quote: 'A language that doesn\'t affect the way you think about programming is not worth knowing.', author: 'Alan J. Perlis' },
-  { quote: 'The most disastrous thing that you can ever learn is your first programming language.', author: 'Alan Kay' },
-  { quote: 'The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or field of battle and to command such unswervingly dutiful actors or troops.', author: 'Joseph Weizenbaum' },
-  { quote: 'Everyone knows that debugging is twice as hard as writing a program in the first place. So if you\'re as clever as you can be when you write it, how will you ever debug it?', author: 'Brian Kernighan' },
-  { quote: 'No matter which field of work you want to go in, it is of great importance to learn at least one programming language.', author: 'Ram Ray' },
-];
-// Source: https://www.rd.com/list/challenging-riddles/
-const riddles = [
-  { question: 'I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?', answer: 'An echo' },
-  { question: 'You measure my life in hours and I serve you by expiring. I’m quick when I’m thin and slow when I’m fat. The wind is my enemy. ', answer: 'A Candle' },
-  { question: 'I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I? ', answer: 'A Map' },
-  { question: 'What is seen in the middle of March and April that can’t be seen at the beginning or end of either month?', answer: 'The letter "R"' },
-  { question: 'You see a boat filled with people. It has not sunk, but when you look again you don’t see a single person on the boat. Why?', answer: 'All the people were married' },
-  { question: 'What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great, while the entire world signifies a great woman. What is the word?', answer: 'Heroine' }
-];
-
-
-function randomNumber(length) {
-  return Math.floor(Math.random() * length);
-}
-
-const data = {
-  memes,
-  jokes,
-  quotes,
-  riddles
-};
-
-
-</script>
+    </main>
 </body>
 </html>
-
-
-
-
