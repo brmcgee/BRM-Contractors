@@ -73,7 +73,7 @@ body {
     --banner-height: 250px;
     --nav-height: 80px;
     --wrapper-height: auto;
-    --footer-height: 50px;
+    --footer-bar-height: 50px;
 }
 
 /* ===========  GLOBAL ====================  */
@@ -86,6 +86,7 @@ body {
     color: var(--text-black);
     -webkit-tap-highlight-color: transparent;
 }
+
 /* mobile blue hightlight on touch remove  */
 select,
 button,
@@ -93,13 +94,10 @@ textarea,
 input {
     -webkit-tap-highlight-color: transparent;
 }
-
-
 .container-fluid {
     margin:0px;
     padding:0px;
 } /* bootstrap reset */
-
 .divider {
     width: 90%;
     height: 2px;
@@ -177,6 +175,8 @@ input {
 /* == 3 CONTAINERS .BANNER .NAV-BAR .WRAPPER == */
 .banner {
     max-height: var(--banner-height);
+    /* for adjustable banner height below  */
+    /* height: var(--banner-height); */
     width: 100%;
     margin: 0px;
     margin-bottom: 6px;
@@ -186,7 +186,7 @@ input {
 .nav-bar {
     width: 100%;
     background-color: var(--bg-primary);
-    margin: 0px auto 0 auto;
+    margin: 0px auto 0px auto;
     padding: 0px;
 } 
 @media (max-width:500px) {
