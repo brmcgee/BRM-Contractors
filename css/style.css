@@ -106,6 +106,9 @@ input {
     background-color: var(--bg-primary-dark);
     margin: auto auto 10px auto;
 }
+.color-primary {
+    background-color: var(--bg-primary);
+}
 
 /* ==========  FONTS ========== */
 .text-roboto {
