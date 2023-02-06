@@ -1210,6 +1210,31 @@ input {
 }
 /* ==== CONTACT END/========  */
 
+/* ========= MAINTENANCE =============== */
+.maintenance {
+    background-color: #fafafa;
+    padding: 10px 15px 10px 15px;
+    margin: 15px auto 15px auto;
+    font-family: var(--font-secondary);
+    border: 3px solid rgb(202, 43, 43);
+    box-shadow: 12px 12px 36px 4px rgb(122, 122, 122);
+}
+.maintenance h1 {
+    margin-bottom: 15px;
+    padding: 25px 2px 25px 2px;
+    border-bottom: 2px solid var(--bg-primary) ;
+}
+.maintenance p {
+    padding-left: 15px;
+}
+.maintenance ul li {
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+
+
+/* ====== MAINTENANCE END/ ============= */
 
 
 /* =========== MODAL ============= */
