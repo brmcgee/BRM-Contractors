@@ -66,14 +66,14 @@
 }
 @media (min-width: 1040px) {
     .wrapper {
-        width: 85vw;
+        width: 89vw;
         margin: auto;
         grid-template-columns:  2fr 5fr;
         gap: 25px;
         grid-template-areas: 
             "-masthead   -masthead"
-            "-sidebar       -main"
-            "-ad            -services"
+            "-ad       -main"
+            "-sidebar            -services"
             "-footer    -footer";
     }
         /* body {
@@ -83,7 +83,7 @@
 
 @media (min-width: 1280px) {
     .wrapper {
-        width: 75vw;
+        width: 80vw;
         margin: auto;
         grid-template-columns:  2fr 6fr;
         gap: 25px;
