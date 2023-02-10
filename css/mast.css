@@ -1,0 +1,57 @@
+
+
+/* =========== SIDEBAR ============ */
+.mast {
+    color: #fff;
+    height: auto;  /* payment background  */
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
+    background-size: cover;
+    font-size: 14px;
+    padding: 20px 0 40px 0;
+    position: relative;
+    border: none;
+}
+/* dimmer  */
+.mast:before {
+    content: "";
+    background: rgba(133, 130, 130, 0.85);
+    position: absolute;
+    inset: 0;
+}
+.mast  {
+    /* height: 90px;  */
+}
+.mast .mast-card .mast-content {
+    position: relative;
+    top: -15px;
+    bottom: 0;
+    right: 0;
+    left: 18px;
+    z-index: 18;
+
+}
+
+.mast .mast-card .mast-content .card {
+   background-color: transparent;
+   border: none;
+
+}
+.mast-content .card .mast-info h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.03px;
+    font-weight: bold;
+    color: rgb(163,30,30);
+}
+.mast .mast-card .mast-info p {
+
+}
+.mast .mast-card .mast-info .mast-img {
+    margin-top: 2px;
+
+
+}
+.mast .mast-card  .mast-img img {
+    
+}
+ /* ======== SIDEBAR END/ ========= */
