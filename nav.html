@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Nav Header</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grids.css">
+<!-- <link rel="stylesheet" href="main.css"> -->
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+<style>
+   
+   /* 3 containers  */
+
+  .logo {
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+  } 
+  .nav-bar {
+    height: 45px;
+    background-color: rgb(163, 30, 30);
+    margin: 0px;
+    padding: 10px;
+  } 
+  .wrapper {
+    background-color: rgb(155, 153, 150);
+    margin: 0px;
+    padding: 0px;
+
+  }   
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+  } 
+
+  .divider-red {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(163, 30, 30);
+    margin: 10px;
+  }
+ 
+
+
+</style>
+
+
+<style>
+    
+html, body {
+    /* prevent mobile scroll x  */
+    overflow-x: hidden;
+}
+
+body {
+    /* prevent mobile scroll x  */
+    position: relative;
+    background-color: rgb(235, 233, 233);
+
+}
+
+
+/* Logo navbar  */
+  .block {
+    width: 100%;
+    height: 37px;
+    background-color: #333;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 3px 3px 0px rgb(194, 192, 192);
+  }
+  .logo .block div a {
+    padding: 1px;
+    margin: 0px;
+  }
+
+  .logo .block div img {
+    height: 28px; 
+    margin-top: 3px;
+  }
+  
+
+  /* brm logo styling   */
+  .brm-cont-logo:hover {
+    -webkit-filter: opacity(54%) saturate(68%);
+    filter: opacity(50%) saturate(66%); 
+  }
+
+  .brm-logo {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        background-image: url("data:image/jpeg;base64,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");
+    }
+    
+
+/* responsive navbar  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding: 3rem 5rem;
+}
+.nav-bar {
+    z-index: 999999;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: #000000;
+  font-weight: 700;
+}
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
+}
+nav ul a:hover {
+  color: #9a9a9a;
+}
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-size: 4rem;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #ffffff;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: white;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    max-width: 30vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 1s;
+    gap: 0;
+  }
+  .nav-container {
+    background-color: #333;
+    /* border: 1px solid #333; */
+    border-radius: 12px;
+    /* padding: 9px; */
+    max-height: 192px;
+    margin-left: 5px;
+    display: flex;
+    align-self: center;
+    box-shadow: 8px 9px 28px 1px #333;
+    z-index: 999999;
+  }
+  .nav-mobile {
+    background-color: #333;
+    padding: 12px 18px 12px 18px;
+    width: 100px;
+    /* margin-top: 5px; */
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .nav-mobile:hover{
+    background-color: rgb(128, 24, 24);
+  }
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}
+
+  </style>
+
+  
+</head>
+<body>
+
+
+<div class="logo">
+ <div class="brm-logo"></div>
+</div>
+
+
+<div id="navBar" class="nav-bar">
+
+  <nav>
+    <a href="#home" id="logo">BRM</a>
+    <i class="fas fa-bars" id="ham-menu"></i>
+    <ul class="nav-container" id="nav-bar">
+      <li class="nav-mobile">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-mobile">
+        <a href="about.html">About</a>
+      </li>
+      <li class="nav-mobile">
+        <a href="services.html">Services</a>
+      </li>
+      <li class="nav-mobile">
+        <a href="#team">Team</a>
+      </li>
+      <li class="nav-mobile">
+        <a href="contact-btm.html">Contact</a>
+      </li class="nav-mobile">
+    </ul>
+  </nav>
+
+
+  
+
+
+  
+  
+</div>
+  
+
+
+<!-- ========= MASTHEAD ================ -->
+<div class="masthead">
+    <div class="masthead-container">
+      <h3>Quality craftsmanship</h3>
+      <h1>Excellent Service</h1>
+      <h2>Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
+      <a href="contact-brm.html" class="btn btn-outline">FREE ESTIMATE</a>
+      <div class="block-text">
+        <p>Total home repair</p>
+      </div>
+    </div>
+  </div>
+  <!-- ======= MASTHEAD END/ ============= -->
+  
+  
+  
+  <!-- ============ WRAPPER ============= -->
+  <div class="wrapper row">
+  
+    <!-- ============ MAIN ================= -->
+    <div class="main">
+      <div class="overflow-hidden" style="max-height: 61vh;">
+        <div class="container">
+          <img src="assets/gallery/siding-corner.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 mx-auto d-block" alt="BRM - Home" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+      <div class="main-content px-4 pt-0 my-0 text-center">
+        <h1 class="mt-3">The incredible handyman</h1>
+        <div class="main-content-info col-md-8 mx-auto">
+          <p class="">Chances are if it's broke - we can fix it. Give us a call today and one of our technicians will arrive and diagnose the problem. Provide insight and offer a solution. We are a home remodel company with decades of experience providing solutions to our clients. Home in need of some repairs, BRM has you covered. We are a family owned and operated company serving the Western PA area. Licensed and fully insured.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+            <a href="services.html" class="btn-solid">Services</a>
+            <a href="contact-brm.html" class="btn-solid">Connect</a>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- ========== MAIN END/=============== -->
+  
+    <!-- ============ SIDEBAR ============== -->
+    <div class="sidebar">
+      <div class="sidebar-card ">
+        <div class="sidebar-img text-center py-3">
+          <img src="assets/logo/brm-handyman-yellow.png" class="" alt="Total Service by BRM" style="max-width:300px;height: 180px;">
+        </div>
+        <div class="sidebar-info">
+          <p>Call us today for all your home repair needs. Whether it be a honey do list to a complete remodel and rebuild, BRM can help! We offer drywall and painting, wood repair, roofing and siding repair and all sorts of remodeling. 
+          </p>
+        </div>
+        <div class="sidebar-title">
+          <h2 class="">Call today  
+            <br><span>(724) 787-3758</span> 
+            <br>FREE Estimate</h2>
+        </div>
+      </div>
+    </div>
+    <!-- ========= SIDEBAR END/============= -->
+  
+    <!-- ============ AD =================== -->
+    <div class="ad">
+      <div class="ad-card">
+        <div class="text-center">
+          <img class="d-block mx-auto py-5" style="max-width:275px;" src="assets/logo/home-maintenenace.png" class="" alt="Total Service by BRM" style="width:100px;">
+        </div>
+        <div class="divider"></div>
+        <div class="ad-info p-3 py-5">
+          <p>Inspecting your home and completing monthly home improvement projects will keep your maintenance schedule on track and easier to manage and reduce need for extensive repairs. BRM offers maintenance and repair options best suited to your needs. Often the service life can be extended by regular maintenance. The most important home maintenance tasks to keep your home safe and running smoothly are cleaning out gutters each spring and fall, cleaning and inspecting the HVAC twice a year and changing filters monthly, cleaning out clogs in plumbing, and checking for leaks and damaged pipes. We can assist in all your home maintenance needs.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="ad-img img-box py-5">
+          <img class="" style="width:248px;" src="assets/logo/free-estimate.png" alt="Total Service by BRM">
+        </div>
+        <div class="ad-title">
+          <h2><span>License<br>PA-112369</span><br>Fully Insured</h2>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <!-- ========= AD END/ ================= -->
+  
+    <!-- ========= SERVICES ================ -->
+    <section class="services" id="services">
+     <div class="container">
+  
+      <div class="section-header">
+        <h2 class="display-6">Services</h2>
+        <p>BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.</p>
+      </div>
+      <!-- CARD ROWS  -->
+      <div class="row gy-4">
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Custom decks</h5>
+                <img style="height:250px;" src="assets/gallery/custom-deck.jpg" class="card-img-top" alt="Wood repairs of all sorts">
+                <div class="card-body">
+                <p class="card-text">BRM builds and repairs all sorts of deck, handrail, posts and fences and more. Full service deck builds and fence installs. We repair and install anything wood.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="bathroom">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Bathrooms</h5>
+                <img style="height:250px;"  src="assets/gallery/bathroom1.jpg" class="card-img-top" alt="Bathroom remodeling">
+                <div class="card-body">
+                <p class="card-text">We repair all things bathroom! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full bathroom remodel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="window">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Windows and doors</h5>
+                <img style="height:250px;"  src="assets/gallery/windows.png" class="card-img-top" alt="Windows and doors by BRM">
+                <div class="card-body">
+                <p class="card-text">Leaking or drafty windows or doors, We repair and install all sorts of exterior items including windows, doors, mailboxes, wood trim and complete resealing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="roofing">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Roofing and Siding</h5>
+                <img style="height:250px;"  src="assets/gallery/roof.png" class="card-img-top" alt="Installation services by BRM">
+                <div class="card-body">
+                <p class="card-text">BRM offers repairs and maintenance for most common roof and siding projects. We can extened the life with maintenance or simply install new.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="kitchen">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Kitchens</h5>
+                <img style="height:250px;"  src="assets/gallery/kitchen.png" class="card-img-top" alt="Kitchen remodeling">
+                <div class="card-body">
+                <p class="card-text">We repair all things kitchen! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full kitchen remodel and appliance installation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="handyman">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Handyman</h5>
+                <img style="height:250px;"  src="assets/gallery/siding-lift.png" class="card-img-top" alt="Handyman services">
+                <div class="card-body">
+                <p class="card-text">Need something fixed or repaired, maybe even hung on a wall? We can help - we install your products! We also access steep and tall and repair those common home problems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Custom Decks</h5>
+                <img style="height:250px;"  src="assets/gallery/custom-deck2.jpg" class="card-img-top" alt="Deck builds by BRM">
+                <div class="card-body">
+                <p class="card-text">Enjoy your new outdoor space with a new deck by BRM. We offer full service deck builds, fence installation, posts, handrails and more. We repair and install anything wood.</p>
+              </div>
+            </div>
+          </div>
+        </div>    
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="painting">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Painting</h5>
+                <img style="height:250px;"  src="assets/gallery/drywall1.jpg" class="card-img-top" alt="Painting and Sealing">
+                <div class="card-body">
+                <p class="card-text">We offer full service drywall patching and painting. Interior or exterior paint, stain, caulk or sealing available. Drywall and painting to complete install.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="installation">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Installations</h5>
+                <img style="height:250px;"  src="assets/gallery/carport.png" class="card-img-top" alt="Installation services by BRM">
+                <div class="card-body">
+                <p class="card-text">Have a product and just need it installed or assemblied, maybe even hung on a wall? We can help. BRM installs shelves, desks, applicances, tvs and more. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <!-- card  -->
+          <div class="col-lg-6 col-md-6" id="drywall">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drywall</h5>
+                <img style="height:250px;"  src="assets/gallery/drywall-finish.jpg" class="card-img-top" alt="Drywall repairs">
+                <div class="card-body">
+                <p class="card-text">BRM offers complete drywall services. Drywall installation and finishing options available. We repair those pesky stains and offer painting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+    </div>
+    </section>
+    <!-- ======= SERVICES END/ ============= -->
+  </div>
+  <!-- ========== WRAPPER END/=========== -->
+  
+  
+  <!-- ============ FOOTER ============== -->
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>BRM Contractors Inc</h3>
+              <p>PO Box 66<br>Hannastown, PA 15635<br><br>
+                <span><i class="fa-solid fa-phone"></i></i></span> <strong>Phone:</strong> 724-787-3758<br>
+                <span><i class="fa-light fa-at"></i></span><strong>Email:</strong> brianrmcgee@gmail.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="https://www.facebook.com/profile.php?id=100054525456256#" class="d-flex align-items-center justify-content-center"><img src="assets/logo/facebook.jfif" alt="BRM"></img></a>
+                <a href="http://www.brmcontractors.net" class="d-flex align-items-center justify-content-center"><img src="assets/logo/brm-ico.png" alt="BRM"></img></a>
+                <a href="mailto:brianrmcgee@gmail.com" class="d-flex align-items-center justify-content-center"><img src="assets/logo/email.png" alt="BRM"></img></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Sitemap</h4>
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact-brm.html">Connect with BRM</a></li>
+              <li><a href="maintenance.html">Maintenance</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+  <!-- =========== FOOTER END/=========== -->
+
+<script>
+
+let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});
+
+
+
+
+
+
+
+  // DOMContentLoaded START
+  document.addEventListener("DOMContentLoaded", function(){
+      
+      window.addEventListener('scroll', function() {
+        let logo_height = document.querySelector('.logo').offsetHeight;
+        console.log(logo_height);
+
+        if (window.scrollY > logo_height) {
+          document.getElementById('navBar').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.nav-bar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navBar').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        } 
+      });
+    }); 
+    // DOMContentLoaded  END
+</script>
+
+
+
+
+</body>
+</html>
