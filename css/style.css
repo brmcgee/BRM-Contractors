@@ -105,7 +105,7 @@ body {
 }
 .block {
     height: 50px;
-    background-color: var(--bg-primary-dark);
+    background-color: var(--bg-primary);
     width: 100%;
 }
 .bg-red {
@@ -113,6 +113,9 @@ body {
 }
 .bg-black {
     background-color: #333;
+}
+.bg-icon {
+    background-color:var(--bg-icon);
 }
 /* ===========  GLOBAL ====================  */
 * {
@@ -1020,7 +1023,7 @@ input {
     color: #000000;
     text-indent: .5cm;
 }
-.main img {
+.main .main-img {
     border-radius: 5px;
     border: 1px solid #afafaf;
     box-shadow: 4px 4px 42px rgb(155, 155, 155);
