@@ -18,9 +18,8 @@ body {
 .services {
     background-color: #fdfdfd;
     /* border: .05px solid rgb(156, 156, 156); */
-    box-shadow: 8px 8px 30px  rgb(175, 175, 175);
-    margin-left: 5px;
-    margin-right: 5px;
+    /* box-shadow: 8px 8px 30px  rgb(175, 175, 175); */
+    margin: auto;
 
 }
 .ad {
@@ -52,7 +51,7 @@ body {
     --bg-primary-link: rgb(15, 15, 15);
     --text-white: rgb(240, 240, 240);
     --text-black: rgb(0, 0, 0);
-    --bg-icon: rgb(194, 194, 194);
+    --bg-icon: rgb(175, 175, 175);
     --bg-icon-hover: rgb(221, 180, 44);
     --font-primary: ''Montserrat', sans-serif';
     --font-secondary: "Roboto", Sans-serif;
@@ -95,6 +94,11 @@ body {
 }
 .text-elite {
     font-family: 'Special Elite', cursive;
+}
+.block {
+    height: 100px;
+    background-color: var(--bg-primary);
+    width: 100%;
 }
 /* ===========  GLOBAL ====================  */
 * {
@@ -821,7 +825,7 @@ input {
     color: var(--bg-primary);
     font-weight: bold;
     font-family: var(--font-primary);
-    margin: 0 0 4px 5px;
+    margin: 20px 0 14px 5px;
     padding-bottom: 0px;
     font-size: 28px;
     display: inline-block;
@@ -992,27 +996,19 @@ input {
  
 
 /* =========== MAIN ============ */
-.main .main-content h1 {
-    font-family: "Roboto", Sans-serif;
-    background-color: var(--bg-primary-dark);
-    border-radius: 5px;
-    color: var(--bg-primary-contrast);
-    padding: 10px;
-    margin: 20px auto 20px auto;
-    text-transform: uppercase;
+.main .main-content h3 {
+    margin: 2px auto 9px auto;
     font-weight: 500;
-    box-shadow: 4px 4px 28px 2px rgb(184, 184, 184);
-    width: 100%;
-
 }
-.main .main-content .main-content-info p {
+.main .main-content p {
     font-family: "Roboto", Sans-serif;
     font-size: 18px;
     line-height: 38px;
     font-weight: 500;
-    padding: 10px;
     color: #000000;
+    text-indent: .5cm;
 }
+
  /* ======== MAIN END/ ========= */
   
 
@@ -1404,7 +1400,7 @@ h2#header_14.form-header {
         flex-direction: row;
         justify-content: center;
         margin: 0 auto 0 auto;
-        /* width: 50vw; */
+        width: 50vw;
     }
     .jotform-form {
         display: flex;
