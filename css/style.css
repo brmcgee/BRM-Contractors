@@ -25,7 +25,7 @@ body {
 }
 .ad {
     background-color: rgb(230, 230, 230);
-    border: 5px dashed #333;
+    border: 5px solid #333;
     margin: 5px auto 5px auto;
     width: 80%;
 }
@@ -38,6 +38,7 @@ body {
     border-top: 80px solid #333;
     margin: 5px auto 5px auto;
 }
+
 .banner{
     background-color: #ffffff;
 }
@@ -1031,7 +1032,33 @@ input {
 
  /* ======== MAIN END/ ========= */
   
+/* ======== MAIN-CONTENT =========== */ 
+.content-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.content-bar .left .sidebar {
+    width: 95%;
+}
+.content-bar .right .ad {
+    width: 95%;
+}
+@media (max-width: 975px)  {
+    .content-bar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .content-bar .left .sidebar {
+        width: 80vw;
+    }
+    .content-bar .right .ad {
+        width: 80vw;
+    }
+}
 
+/* ====== MAIN-CONTENT END/ ======== */ 
 
 /* =========== SIDEBAR ============ */
 
@@ -1108,7 +1135,9 @@ input {
     line-height: 32px;
     font-size: 18px;
     padding: 32px 9px 40px 9px;
-    text-align: center;
+    text-align: justify;
+    text-indent: .5cm;
+    padding: 6px 18px 6px 18px;
 }
 .ad .ad-card .ad-title h2 span {
     font-size: 44px;
