@@ -20,12 +20,14 @@ body {
     /* border: .05px solid rgb(156, 156, 156); */
     /* box-shadow: 8px 8px 30px  rgb(175, 175, 175); */
     margin: auto;
+    padding: 0px 0px 0px 2px;
 
 }
 .ad {
     background-color: rgb(230, 230, 230);
     border: 5px dashed #333;
     margin: 5px auto 5px auto;
+    width: 80%;
 }
 .sidebar {
     background-color: var(--bg-icon-hover);
@@ -96,9 +98,12 @@ body {
     font-family: 'Special Elite', cursive;
 }
 .block {
-    height: 100px;
-    background-color: var(--bg-primary);
+    height: 50px;
+    background-color: #333;
     width: 100%;
+}
+.bg-red {
+    background-color: var(--bg-primary);
 }
 /* ===========  GLOBAL ====================  */
 * {
@@ -1002,9 +1007,8 @@ input {
 }
 .main .main-content p {
     font-family: "Roboto", Sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 38px;
-    font-weight: 500;
     color: #000000;
     text-indent: .5cm;
 }
