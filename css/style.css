@@ -289,14 +289,16 @@ input {
 .nav-bar .active {
     box-sizing: border-box;
     background-color: var(--bg-primary-dark);
-    box-shadow: 2px 3px 3px  var(--bg-primary-dark);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding-left: 0px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-top: 9px;
+    margin-right: 8px;
+    margin-left: 9px;
     color: var(--bg-primary-link);
+}
+.nav-bar .active:hover{
+    background-color: var(--bg-primary-off);
 }
 /* text  */
 .navbar-nav .nav-item .nav-link {
@@ -316,7 +318,7 @@ input {
 }
 .nav-bar .navbar-collapse ul .active > .nav-link {
     color: var(--bg-primary-contrast);
-    box-shadow: 1px 0px 0px 0px var(--bg-primary-dark);
+    /* box-shadow: 1px 0px 0px 0px var(--bg-primary-dark); */
     border: 1px solid var(--bg-primary);
 } 
 .navbar-nav .nav-item .nav-link:not(:last-child){
@@ -342,8 +344,8 @@ input {
     background-color: var(--bg-primary-contrast);
     margin: 0px;
     margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 2px 0px 0px  var(--bg-primary-dark);
+    margin-right: 11px;
+    /* box-shadow: 2px 0px 0px  var(--bg-primary-dark); */
 }
 .navbar-nav .nav-item .dropdown-item {
     padding: 8px 6px;
@@ -352,7 +354,7 @@ input {
 }
 .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
     color: var(--bg-primary-link);
-    box-shadow: 2px 0px 0px var(--bg-primary-dark);
+    /* box-shadow: 2px 0px 0px var(--bg-primary-dark); */
     background-color: var(--bg-primary-contrast);
     margin-left: 10px;
     margin-right: 10px;
