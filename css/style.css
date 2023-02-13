@@ -1171,15 +1171,6 @@ input {
 
 
 
-/* =========== ABOUT ============= */ 
-.about {
-    background-color: #9d950b;
-}
-.about-card {
-    background-color: #c5c5c5;
-    width: 60vw;
-}
-/* ========= ABOUT END/ ========== */
 
 
 
@@ -1308,9 +1299,6 @@ input {
     margin-left: 25px;
     padding-left: 5px;
 }
-
-
-
 /* ====== MAINTENANCE END/ ============= */
 
 
@@ -1468,83 +1456,91 @@ h2#header_14.form-header {
 
 /* ===== CONNECT FORM END/ ========*/
 
-/* ========= LOGO STYLING ========== */
-.logo-brm {
-    font-size: 28px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    letter-spacing: .1mm;
-    margin: 0;
-    padding: 0;
-    line-height: .92;
-    font-family: 'Russo One', sans-serif;
-    filter:drop-shadow(1px 1px 1px rgb(30, 70, 163));
-     -moz-animation-duration: 3s;
-     -webkit-animation-duration: 3s;
-     -moz-animation-name: slidein;
-     -webkit-animation-name: slidein;
-  }
-  .logo-phone {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 26px;
-    font-style: italic;
-    letter-spacing: 1.9px;
-    background-color: rgb(163, 30, 30);
-    border-radius: 2px;
-    border: 1px solid #761414;
-    color: white;
-    width: 300px;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 1.3px;
-    color: rgb(228, 228, 228);
-    text-shadow: 2px 2px 3px black;
+/* ======= SLIDESHOW ============= */
+
+.ss-container {
+    color: #fff;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bathroom1.jpg") center;
+    background-size: cover;
+    font-size: 14px;
+    padding: 20px 0 40px 0;
+    position: relative;
+    height: 490px;
+}
+.ss-container:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    inset: 0;
+}
+.slideshow-container {
+    position: relative;
+    background-color: transparent;
+}
+.slideshow-slides {
+    display: none;
+    padding: 80px;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-  }
-  @-moz-keyframes slidein {
-     from {
-        margin-left:100%;
-        width:300%;
-        color: rgb(187, 187, 187);
-        filter:drop-shadow(3px 3px 1px rgb(239, 239, 239));
-     }
-     35% {
-
-     }
-     to {
-        margin-left:0%;
-        width:100%;
-     }
-  }
-  @-webkit-keyframes slidein {
-     from {
-        margin-left:100%;
-        width:300%;
-        color: rgb(217, 217, 217);
-        filter:drop-shadow(1px 1px 1px rgb(239, 239, 239));
-     }
-     35% {
-
-     }
-     to {
-        margin-left:0%;
-        width:100%;
-     }
-  }
-.logo-image {
-    margin-left: 8px;
+    height: 200px;
 }
-.logo-image2 {
-    margin-left: 120px;
-    margin-top: 10px;
+.prev,
+.next { 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 15px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px 3px 3px 0px;
+    user-select: none;
 }
-.mast-info {
-  margin: 0px;
-  padding: 0px;
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+.prev:hover,
+.next:hover {
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+    width:50px;
+    height:50px;
+    color: whitesmoke;
 
-/* ========= LOGO STYLING ========== */
+}
+.dot-container {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;       
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, 
+.active:hover {
+    background-color: #717171;
+    font-weight: 800;
+}
+.author {
+    color: var(--bg-primary-dark);
+}
+.slideshow-slides h4 {
+    color: #3148a5;
+}
+.slideshow-slides p {
+    color: white;
+}
 
 
