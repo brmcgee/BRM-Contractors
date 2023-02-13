@@ -25,7 +25,7 @@ body {
 }
 .ad {
     background-color: rgb(230, 230, 230);
-    border: 5px solid #333;
+    border: 2px solid #828282;
     margin: 5px auto 5px auto;
     width: 80%;
 }
@@ -1032,14 +1032,14 @@ input {
 
  /* ======== MAIN END/ ========= */
   
-/* ======== MAIN-CONTENT =========== */ 
+/* ======== CONTENT-BAR =========== */ 
 .content-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 .content-bar .left .sidebar {
-    width: 95%;
+    width: 100%;
 }
 .content-bar .right .ad {
     width: 95%;
@@ -1054,11 +1054,18 @@ input {
         width: 80vw;
     }
     .content-bar .right .ad {
-        width: 80vw;
+        width: 90vw;
+    }
+}
+@media (min-width: 1200px)  {
+    .content-bar {
+        width: 80%;
+        margin: auto;
     }
 }
 
-/* ====== MAIN-CONTENT END/ ======== */ 
+
+/* ====== CONTENT-BAR END/ ======== */ 
 
 /* =========== SIDEBAR ============ */
 
