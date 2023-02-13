@@ -1,3 +1,4 @@
+
 <!-- site under construction brian mcgee @ BRM.dev 2023  -->
 
 <!DOCTYPE html>
@@ -173,52 +174,77 @@
     </div>
 
     <div class="block"></div>
+    
 </div>
   <!-- ========== MAIN END/=============== -->
 
-  <!-- ========== CONTENT-BAR =============== -->
-  <div class="content-bar">
-    <div class="left">
-      <!-- ============ SIDEBAR ============== -->
-      <div class="sidebar">
-        <div class="sidebar-card">
-          <div class="sidebar-img text-center py-3">
-            <img src="assets/logo/brm-handyman-yellow.png" class="img-fluid" alt="Total Service by BRM" style="width:300px;height: 180px;">
-          </div>
-          <div class="sidebar-info py-1">
-            <p>Call us today for all your home repair needs. Whether it be a honey do list to a complete remodel and rebuild, BRM can help! We offer drywall and painting, wood repair, roofing and siding repair and all sorts of remodeling. 
-            </p>
-          </div>
-          <div class="sidebar-title">
-            <h2 class="">Call today  
-              <br><span>(724) 787-3758</span> 
-              <br>FREE Estimate</h2>
-          </div>
-        </div>
+   <!-- ======= SLIDESHOW =============  -->
+   <div class="ss-container">
+    <div class="slideshow-container col-sm-12 col-md-10 col-lg-8 mx-auto d-block" style="height: 400px;">
+      <div class="slideshow-slides">
+          <h4>Facebook Review</h4>
+          <p>Such amazing work!! Brian worked so hard on our bathroom this week and it really shows!! Absolutely beautiful. I can't even believe it's the same bathroom. Any other work on our home will be done with this company. You won't find a better price or a nicer guy!!</p>
+          <p class="author"> - Jessica LaMotte</p>
       </div>
-      <!-- ========= SIDEBAR END/============= -->
-    </div>
-    <div class="right">
-    <!-- ============ AD =================== -->
-    <div class="ad">
-      <div class="ad-card col-md-10 col-lg-12 mx-auto d-block">
-        <div class="text-center">
-          <img class="d-block mx-auto py-5 px-1 img-fluid" style="width:475px;" src="assets/logo/home-maintenenace.png" class="" alt="Total Service by BRM" style="width:100px;">
-        </div>
-        <div class="ad-info  py-3">
-          <p class="">Inspecting your home and completing monthly home improvement projects will  keep your maintenance schedule on track and easier to manage and reduce need for extensive repairs. BRM offers maintenance and repair options best suited to your needs. Often the service life can be extended by regular maintenance. The most important home maintenance tasks to keep your home safe and running smoothly are cleaning out gutters each spring and fall, cleaning and inspecting the HVAC twice a year and changing filters monthly, cleaning out clogs in plumbing, and checking for leaks and damaged pipes. We can assist in all your home maintenance needs.</p>
-        </div>
-        <div class="block bg-black"></div>
-        <div class="ad-title row">
-          <h2><span>License<br>PA-112369</span><br>Fully Insured</h2>
-        </div>
-        <div class="block bg-black"></div>
+
+      <div class="slideshow-slides">
+        <h4>Facebook Review</h4>
+        <p>Wonderful job BRM Contractors, can’t wait for you to start on our next project.</p>
+        <p class="author"> - Darlene Kelly</p>
       </div>
-    </div>
-    <!-- ========= AD END/ ================= -->
-    </div>
+
+      <div class="slideshow-slides">
+          <h4>Facebook Review</h4>
+          <p>Need a reliable, honest and trustworthy contractor well BRM Contractors is the way to go.</p>
+          <p class="author"> - Heather McGee</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&larr;</a>
+      <a class="next" onclick="plusSlides(1)">&rarr;</a>
+      
   </div>
-<!-- ========== CONTENT-BAR END/ =============== -->
+
+  <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+   </div>
+
+    <script>
+  
+      let slideIndex = 1;
+      showSlides(slideIndex);
+     
+      function plusSlides(n) {
+          showSlides(slideIndex += n);
+      }
+     
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+     
+      function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slideshow-slides");
+          let dots = document.getElementsByClassName("dot");
+     
+          if (n > slides.length) {slideIndex = 1};    
+          if (n < 1) {slideIndex = slides.length};
+     
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+     
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+      }
+     
+    </script>
+    <!-- ======= SLIDESHOW =============  -->
 
   <!-- ========= SERVICES ================ -->
   <section class="services" id="services">
@@ -430,6 +456,7 @@
 
 <!-- local java script  -->
 <script src="js/main.js"></script>
+
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
