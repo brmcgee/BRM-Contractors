@@ -157,7 +157,7 @@
                     <h3 class="mb-0">Kitchen Renovations</h3>
                     <div class="mb-1 text-muted">Feb 12, 2023</div>
                     <p class="card-text mb-auto">Beautiful ongoing kitchen renovation job with recently installed cabinets.</p>
-                    <a href="#" class="stretched-link">Continue reading</a>
+                    <a class="stretched-link" onclick="populate(0)">Continue reading</a>
                   </div>
                   <div class="col-auto d-none d-lg-block">
                     <img class="bd-placeholder-img" width="200" height="250" src="../assets/gallery/kitchen-cabinet1.jpg" role="img">
@@ -171,7 +171,7 @@
                     <h3 class="mb-0">Flooring Installation</h3>
                     <div class="mb-1 text-muted">Dec 12, 2022</div>
                     <p class="mb-auto">Awesome low maintenance vinyl flooring installation in both bathrooms</p>
-                    <a href="#" class="stretched-link">Continue reading</a>
+                    <a class="stretched-link" onclick="populate(2)">Continue reading</a>
                   </div>
                   <div class="col-auto d-none d-lg-block">
                     <img class="bd-placeholder-img" width="200" height="250" src="../assets/gallery/flooring1.jpg" role="img">                  </div>
@@ -186,12 +186,13 @@
                 </h3>
           
                 <article class="blog-post">
-                  <h2 class="blog-post-title mb-1">Bathroom Remodel</h2>
-                  <p class="blog-post-meta">Dec 14, 2022 by <a href="#">Brian McGee</a></p>
-                  <p>This project was great! We completed it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.</p>
+                  <h2 id="bTitle" class="blog-post-title mb-1" >Bathroom Remodel</h2>
+                  <p id="bDate" class="blog-post-meta" >Dec 14, 2022</p>
+                  <p> by <a href="#"><span  id="bAuthor"> Brian McGee</span></a></p>
+                  <p id="bBody">This project was great! We completed it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.</p>
                   <div class="col-sm-12 d-block d-lg-block">
-                    <img class="bd-placeholder-img p-1" width="200" height="250" src="../assets/gallery/bathroom1.jpg" role="img">  
-                    <img class="bd-placeholder-img p-1" width="200" height="250" src="../assets/gallery/bathroom2.jpg" role="img">
+                    <img id="bImg1" class="bd-placeholder-img p-1"  width="200" height="250" src="../assets/gallery/bathroom1.jpg" role="img">  
+                    <img id="bImg2" class="bd-placeholder-img p-1"  width="200" height="250" src="../assets/gallery/bathroom2.jpg" role="img">
                   </div>
                 </article>
           
@@ -208,8 +209,8 @@
                 </article> -->
           
                 <nav class="blog-pagination" aria-label="Pagination">
-                  <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                  <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+                  <a class="btn btn-outline-primary rounded-pill" onclick="populate(0)">Older</a>
+                  <a class="btn btn-outline-primary rounded-pill" onclick="populate(1)">Newer</a>
                 </nav>
           
               </div>
@@ -324,7 +325,7 @@
 
 
 <!-- local java script  -->
-<script src="js/main.js"></script>
+<script src="js/app.js"></script>
 
 
 <!-- Latest compiled and minified JS -->
