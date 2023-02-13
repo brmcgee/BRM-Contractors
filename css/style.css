@@ -1542,5 +1542,34 @@ h2#header_14.form-header {
 .slideshow-slides p {
     color: white;
 }
+/* ======= SLIDESHOW END/============= */
 
+/* ======== SERVICE CARD ============ */
+.service-card {
+    margin: 30px auto 30px auto;   
+}
+.service-card .card {
+    background-color: rgb(209, 211, 211);
+    box-shadow: 4px 4px 22px rgb(191, 191, 191);
+    border-radius: 0;
+}
+.service-card .card p {
+    text-indent: .3cm;
+    margin-top: 5px;
 
+}
+.service-card .card h2 {
+
+}
+.service-card .card h2 i {
+    font-size: 28px;
+    margin-right: 5px;
+    padding: 10px;
+    line-height: 2px;
+    border-radius: 3px;
+    transition: ease .5s;
+}
+.service-card .card h2 i:hover {
+    color: var(--bg-primary);
+}
+/* ======== SERVICE CARD ============ */
