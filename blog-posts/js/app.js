@@ -16,14 +16,24 @@ let blogData = [
         img2: "../assets/gallery/custom-deck3.jpg"
     },
     {
-        title: "Bathroom Floor Installation",
+        title: "Floor Installation",
         date: "Oct 26, 2022",
         author: "Brian McGee",
         body: "Simply LVT flooring install here. We installaed a shower set and subfloor a couple months back. Now we return and finished the floors. Homeowner will be installing the trim.",
         img1: "../assets/gallery/flooring1.jpg",
         img2: "../assets/gallery/flooring2.jpg"
+    },
+    {
+        title: "Bathroom Remodel",
+        date: "Dec 14, 2022",
+        author: "Brian McGee",
+        body: "This project was great! We completed it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.",
+        img1: "../assets/gallery/bathroom1.jpg",
+        img2: "../assets/gallery/bathroom2.jpg"
     }
+
 ];
+
 
 
 const title = document.getElementById("bTitle");
@@ -41,5 +51,32 @@ function populate(i) {
     author.innerHTML = blogData[i].author;
     console.log(blogData[i].img1)
     img1.src = blogData[i].img1;
-    img2.src = blogData[i].img2;
+    img2.src = blogData[i].img2;   
 }
+let current = 2;
+function next(index){
+    console.log(blogData.length);
+    if (index === 0) {
+        if (current === 0) {
+            current = blogData.length;
+        }
+        current -= 1;
+    } 
+    if (index === 1) {
+        if (current === blogData.length - 1) {
+            current = 0;
+        }
+        current += 1;
+    }
+
+    content.innerHTML = blogData[current].body;
+    title.innerHTML = blogData[current].title;
+    date.innerHTML = blogData[current].date;  
+    author.innerHTML = blogData[current].author;
+
+    img1.src = blogData[current].img1;
+    img2.src = blogData[current].img2;   
+}
+
+
+document.addEventListener("DOMContentLoaded",populate(current));
