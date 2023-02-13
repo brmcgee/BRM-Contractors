@@ -1487,6 +1487,7 @@ h2#header_14.form-header {
 .slideshow-container {
     position: relative;
     background-color: transparent;
+    user-select: none;
 }
 .slideshow-slides {
     display: none;
@@ -1512,6 +1513,7 @@ h2#header_14.form-header {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
+
 }
 .prev:hover,
 .next:hover {
@@ -1563,7 +1565,15 @@ h2#header_14.form-header {
     border: 1px solid #333;
     border-radius: 5px;
     box-shadow: 6px 1px 32px 2px rgb(137, 135, 135);
+    transition: ease .6s;
 }
+.service-card .card:hover {
+    background-color: rgb(252, 177, 177);
+    border: 1px solid var(--bg-primary);
+    cursor: pointer;
+    user-select: none;
+}
+
 .service-card .card p {
     text-indent: .3cm;
     margin: 10px auto 20px auto;
