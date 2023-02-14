@@ -24,7 +24,7 @@ let blogData = [
         img2: "../assets/gallery/flooring2.jpg"
     },
     {
-        title: "Drywall board install and some extra framing",
+        title: "Drywall Install",
         date: "July 23, 2022",
         author: "Brian McGee",
         body: "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games.",
@@ -59,25 +59,23 @@ let blogData = [
 ];
 
 
-
+// blog post populater 
 const title = document.getElementById("bTitle");
 const date = document.getElementById("bDate");
 const author = document.getElementById("bAuthor");
 const content = document.getElementById("bBody");
 const img1 = document.getElementById("bImg1");
 const img2 = document.getElementById("bImg2");
-
-
+// populate DOM
 function populate(i) {
     content.innerHTML = blogData[i].body;
     title.innerHTML = blogData[i].title;
     date.innerHTML = blogData[i].date;  
     author.innerHTML = blogData[i].author;
-    console.log(blogData[i].img1)
     img1.src = blogData[i].img1;
     img2.src = blogData[i].img2;   
 }
-
+// next or prev movement
 let current = 0;
 function next(index){
     console.log(blogData.length);
@@ -102,6 +100,48 @@ function next(index){
     img1.src = blogData[current].img1;
     img2.src = blogData[current].img2;   
 }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+// content loading
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
+let randomLoader = getRandomInt(blogData.length - 1);
+document.addEventListener("DOMContentLoaded",populate(randomLoader));
 
-document.addEventListener("DOMContentLoaded",populate(current));
+// box 1 
+const groupOne = document.getElementById('group1');
+const titleOne = document.getElementById('title1');
+const dateOne = document.getElementById('date1');
+const contentOne = document.getElementById('content1');
+const imageOne = document.getElementById('image1');
+
+let randomOne = getRandomInt(blogData.length - 1);
+
+titleOne.innerHTML = blogData[randomOne].title;
+dateOne.innerHTML = blogData[randomOne].date;
+contentOne.innerHTML = blogData[randomOne].body;
+imageOne.src = blogData[randomOne].img1;
+
+// box 2 
+const groupTwo = document.getElementById('group2');
+const titleTwo = document.getElementById('title2');
+const dateTwo = document.getElementById('date2');
+const contentTwo = document.getElementById('content2');
+const imageTwo = document.getElementById('image2');
+
+let randomTwo = getRandomInt(blogData.length - 1);
+if (randomTwo === randomOne) {
+    randomTwo = getRandomInt(blogData.length - 1);
+}
+if (randomTwo === randomOne) {
+    randomTwo = getRandomInt(blogData.length - 1);
+}
+
+titleTwo.innerHTML = blogData[randomTwo].title;
+dateTwo.innerHTML = blogData[randomTwo].date;
+contentTwo.innerHTML = blogData[randomTwo].body;
+imageTwo.src = blogData[randomTwo].img2;
+
