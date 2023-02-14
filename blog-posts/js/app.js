@@ -1,7 +1,7 @@
 let blogData = [
     {
         title: "Kitchen Remodel",
-        date: "Dec 14, 2022",
+        date: "Feb 08, 2023",
         author: "Brian McGee",
         body: "We have been working this on over a couple trips. First we refinished all the walls and rework the electrical for updated appliances and added some lights. We just recently went back, the homeowner had the walls painted and cabinets assemblied. We installed all the cabinets on the walls and trimmed out. We will be back after the counters to finish the plumbing.",
         img1: "../assets/gallery/kitchen-cabinet1.jpg",
@@ -53,7 +53,7 @@ function populate(i) {
     img1.src = blogData[i].img1;
     img2.src = blogData[i].img2;   
 }
-let current = 2;
+let current = 3;
 function next(index){
     console.log(blogData.length);
     if (index === 0) {
