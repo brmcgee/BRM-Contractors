@@ -7,9 +7,18 @@ let blogData = [
         body: "We have been working this on over a couple trips. First we refinished all the walls and rework the electrical for updated appliances and added some lights. We just recently went back, the homeowner had the walls painted and cabinets assemblied. We installed all the cabinets on the walls and trimmed out. We will be back after the counters to finish the plumbing.",
         img1: "../assets/gallery/kitchen-cabinet1.jpg",
         img2: "../assets/gallery/kitchen-cabinet2.jpg"
-    },
+    },    
     {
         id: '1',
+        title: "Plumbing Repair",
+        date: "Jan 29, 2023",
+        author: "Brian McGee",
+        body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
+        img1: "../assets/gallery/plumbing-repair1.jpg",
+        img2: "../assets/gallery/plumbing-repair2.jpg"
+    },
+    {
+        id: '2',
         title: "Custom Deck Build",
         date: "Nov 11, 2022",
         author: "Brian McGee, owner",
@@ -18,7 +27,7 @@ let blogData = [
         img2: "../assets/gallery/custom-deck3.jpg"
     },
     {
-        id: '2',
+        id: '3',
         title: "Floor Installation",
         date: "Oct 26, 2022",
         author: "Brian McGee",
@@ -27,7 +36,7 @@ let blogData = [
         img2: "../assets/gallery/flooring2.jpg"
     },
     {
-        id: '3',
+        id: '4',
         title: "Drywall Install",
         date: "July 23, 2022",
         author: "Brian McGee",
@@ -36,7 +45,7 @@ let blogData = [
         img2: "../assets/gallery/drywall-hang2.jpg"
     },
     {
-        id: '4',
+        id: '5',
         title: "Drywall Finsihing",
         date: "Aug 20, 2022",
         author: "Brian McGee",
@@ -45,7 +54,7 @@ let blogData = [
         img2: "../assets/gallery/drywall-finish2.jpg"
     },
     {
-        id: '5',
+        id: '6',
         title: "Bathroom Remodel",
         date: "Dec 14, 2022",
         author: "Brian McGee",
@@ -54,7 +63,7 @@ let blogData = [
         img2: "../assets/gallery/bathroom2.jpg"
     },
     {
-        id: '6',
+        id: '7',
         title: "OMG - 4 flights of Stairs Painting",
         date: "July 11, 2022",
         author: "Brian McGee",
