@@ -77,6 +77,7 @@ function populate(i) {
     img1.src = blogData[i].img1;
     img2.src = blogData[i].img2;   
 }
+
 let current = 0;
 function next(index){
     console.log(blogData.length);
