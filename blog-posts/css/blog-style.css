@@ -1,0 +1,13 @@
+
+
+@media (max-width: 500px) {
+
+    .img-1,
+    .img-2 {
+        width: 125px;
+        height: 175px;
+    }
+    .img-container {
+        margin: auto;
+    }
+}
