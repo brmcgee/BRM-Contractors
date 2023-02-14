@@ -141,11 +141,11 @@
 
 <!-- ============ WRAPPER ============= -->
 <div class="wrapper row">
-    <div class="main">
+    <div class="main" id="top">
         <main class="container">
             <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
               <div class="col-md-6 px-0">
-                <h1 class="display-4 fst-italic">BRM Blog Posts</h1>
+                <h1 class="display-4 fst-italic" >BRM Blog Posts</h1>
                 <p class="lead my-3">Welcome to BRM Contractors blog post of recently completed projects. Follow along as we make repairs and document the process. Who knows, you might need the same work completed.</p>
                 <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
               </div>
@@ -156,13 +156,13 @@
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                   <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-primary" id="group1">Renovations</strong>
-                    <h3 class="mb-0" id="title1">Kitchen Renovations</h3>
-                    <div class="mb-1 text-muted" id="date1">Feb 12, 2023</div>
-                    <p class="card-text mb-auto content-1" id="content1">Beautiful ongoing kitchen renovation job with recently installed cabinets.</p>
+                    <h3 class="mb-0" id="title1"></h3>
+                    <div class="mb-1 text-muted" id="date1"></div>
+                    <p class="card-text mb-auto content-1" id="content1"></p>
                     <button  id="btn1" class="btn-solid bg-light p-0"><a href="#blogTop" class="stretched-link">Continue reading</a></button>
                   </div>
                   <div class="col-auto d-none d-lg-block">
-                    <img class="bd-placeholder-img" id="image1" width="200" height="250" src="../assets/gallery/kitchen-cabinet1.jpg" role="img">
+                    <img class="bd-placeholder-img" id="image1" width="200" height="250" src="" role="img">
                   </div>
                 </div>
               </div>
@@ -170,9 +170,9 @@
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                   <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-success">Progress</strong>
-                    <h3 class="mb-0" id="title2" >Flooring Installation</h3>
-                    <div class="mb-1 text-muted" id="date2">Dec 12, 2022</div>
-                    <p class="mb-auto content-2" id="content2">Awesome low maintenance vinyl flooring installation in both bathrooms</p>
+                    <h3 class="mb-0" id="title2"></h3>
+                    <div class="mb-1 text-muted" id="date2"></div>
+                    <p class="mb-auto content-2" id="content2"></p>
                     <button id="btn2" class="btn-solid p-0 bg-light"><a href="#blogTop" class="stretched-link">Continue reading</a></button>
                   </div>
                   <div class="col-auto d-none d-lg-block">
@@ -202,7 +202,10 @@
                     <img id="bImg2" class="img-2 bd-placeholder-img "  width="200" height="250" src="" role="img">
                   </div>
                 </article>
-        
+                <nav class="blog-pagination" aria-label="Pagination">
+                  <a href="#top" class="btn btn-secondary p-1 mt-1">Top</a>
+
+                </nav>
               
               </div>
           
@@ -216,18 +219,18 @@
                   <div class="p-4">
                     <h4 class="fst-italic">Archives</h4>
                     <ol class="list-unstyled mb-0">
-                      <li><a href="#">March 2022</a></li>
-                      <li><a href="#">February 2022</a></li>
-                      <li><a href="#">January 2022</a></li>
-                      <li><a href="#">December 2022</a></li>
-                      <li><a href="#">November 2022</a></li>
-                      <li><a href="#">October 2022</a></li>
-                      <li><a href="#">September 2022</a></li>
-                      <li><a href="#">August 2022</a></li>
-                      <li><a href="#">July 2022</a></li>
-                      <li><a href="#">June 2022</a></li>
-                      <li><a href="#">May 2022</a></li>
-                      <li><a href="#">April 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(1)">March 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(2)">February 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(3)">January 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(4)">December 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(5)">November 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(5)">October 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(3)">September 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(2)">August 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(1)">July 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(2)">June 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(1)">May 2022</a></li>
+                      <li><a href="#blogTop" onclick="populate(5)">April 2022</a></li>
                     </ol>
                   </div>
           
