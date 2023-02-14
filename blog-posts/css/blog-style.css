@@ -14,9 +14,17 @@
     .blog-post {
         padding: 1px;
     }
+
 }
 
 .blog-post .indent {
     text-indent: .3cm;
     text-align: justify;
 }
+.content-1,
+.content-2 {
+    height: 10ch;
+    width: 90%;
+    overflow: hidden;
+}
+
