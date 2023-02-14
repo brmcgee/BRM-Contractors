@@ -1,5 +1,6 @@
 let blogData = [
     {
+        id: '0',
         title: "Kitchen Remodel",
         date: "Feb 08, 2023",
         author: "Brian McGee",
@@ -8,6 +9,7 @@ let blogData = [
         img2: "../assets/gallery/kitchen-cabinet2.jpg"
     },
     {
+        id: '1',
         title: "Custom Deck Build",
         date: "Nov 11, 2022",
         author: "Brian McGee, owner",
@@ -16,6 +18,7 @@ let blogData = [
         img2: "../assets/gallery/custom-deck3.jpg"
     },
     {
+        id: '2',
         title: "Floor Installation",
         date: "Oct 26, 2022",
         author: "Brian McGee",
@@ -24,6 +27,7 @@ let blogData = [
         img2: "../assets/gallery/flooring2.jpg"
     },
     {
+        id: '3',
         title: "Drywall Install",
         date: "July 23, 2022",
         author: "Brian McGee",
@@ -32,6 +36,7 @@ let blogData = [
         img2: "../assets/gallery/drywall-hang2.jpg"
     },
     {
+        id: '4',
         title: "Drywall Finsihing",
         date: "Aug 20, 2022",
         author: "Brian McGee",
@@ -40,6 +45,7 @@ let blogData = [
         img2: "../assets/gallery/drywall-finish2.jpg"
     },
     {
+        id: '5',
         title: "Bathroom Remodel",
         date: "Dec 14, 2022",
         author: "Brian McGee",
@@ -48,6 +54,7 @@ let blogData = [
         img2: "../assets/gallery/bathroom2.jpg"
     },
     {
+        id: '6',
         title: "OMG - 4 flights of Stairs Painting",
         date: "July 11, 2022",
         author: "Brian McGee",
@@ -117,13 +124,25 @@ const titleOne = document.getElementById('title1');
 const dateOne = document.getElementById('date1');
 const contentOne = document.getElementById('content1');
 const imageOne = document.getElementById('image1');
+const buttonOne = document.getElementById('btn1')
+
+
 
 let randomOne = getRandomInt(blogData.length - 1);
-
 titleOne.innerHTML = blogData[randomOne].title;
 dateOne.innerHTML = blogData[randomOne].date;
 contentOne.innerHTML = blogData[randomOne].body;
 imageOne.src = blogData[randomOne].img1;
+
+
+buttonOne.addEventListener("click", function () {
+   populate(randomOne);
+});
+
+
+
+
+
 
 // box 2 
 const groupTwo = document.getElementById('group2');
@@ -131,6 +150,9 @@ const titleTwo = document.getElementById('title2');
 const dateTwo = document.getElementById('date2');
 const contentTwo = document.getElementById('content2');
 const imageTwo = document.getElementById('image2');
+const buttonTwo = document.getElementById('btn2')
+
+
 
 let randomTwo = getRandomInt(blogData.length - 1);
 if (randomTwo === randomOne) {
@@ -145,3 +167,6 @@ dateTwo.innerHTML = blogData[randomTwo].date;
 contentTwo.innerHTML = blogData[randomTwo].body;
 imageTwo.src = blogData[randomTwo].img2;
 
+buttonTwo.addEventListener("click", function () {
+    populate(randomTwo);
+ });
