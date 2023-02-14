@@ -4,10 +4,19 @@
 
     .img-1,
     .img-2 {
-        width: 125px;
-        height: 175px;
+        width: 140px;
+        height: 190px;
+        border-radius: 2px;
     }
     .img-container {
-        margin: auto;
+        margin: 4px auto 240px 1px;
     }
+    .blog-post {
+        padding: 1px;
+    }
+}
+
+.blog-post .indent {
+    text-indent: .3cm;
+    text-align: justify;
 }
