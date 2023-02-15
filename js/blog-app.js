@@ -1,13 +1,4 @@
-let blogData = [
-    {
-        category: 'Kitchen Remodel',
-        title: "Kitchen Remodel",
-        date: "Feb 08, 2023",
-        author: "Brian McGee",
-        body: "We have been working this on over a couple trips. First we refinished all the walls and rework the electrical for updated appliances and added some lights. We just recently went back, the homeowner had the walls painted and cabinets assemblied. We installed all the cabinets on the walls and trimmed out. We will be back after the counters to finish the plumbing.",
-        img1: "assets/gallery/kitchen-cabinet1.jpg",
-        img2: "assets/gallery/kitchen-cabinet2.jpg"
-    },    
+let blogData = [ 
     {
         category: 'Plumbing Repair',
         title: "Water damage and plumbing repair",
@@ -27,7 +18,7 @@ let blogData = [
         img2: "assets/gallery/custom-deck3.jpg"
     },
     {
-        category: 'Deck Build',
+        category: 'Siding',
         title: "Home renovation project exterior siding, soffit and fascia",
         date: "June 11, 2021",
         author: "Brian McGee, owner",
@@ -89,6 +80,15 @@ let blogData = [
         img1: "assets/gallery/paint1.jpg",
         img2: "assets/gallery/paint2.jpg"
     },
+    {
+        category: 'Kitchen Remodel',
+        title: "Kitchen Remodel",
+        date: "Feb 08, 2023",
+        author: "Brian McGee",
+        body: "We have been working this on over a couple trips. First we refinished all the walls and rework the electrical for updated appliances and added some lights. We just recently went back, the homeowner had the walls painted and cabinets assemblied. We installed all the cabinets on the walls and trimmed out. We will be back after the counters to finish the plumbing.",
+        img1: "assets/gallery/kitchen-cabinet1.jpg",
+        img2: "assets/gallery/kitchen-cabinet2.jpg"
+    },  
     {
         category: 'Bathroom Remodel',
         title: "Demo day - Start of bathroom remodel",
@@ -207,3 +207,17 @@ imageTwo.src = blogData[randomTwo].img2;
 buttonTwo.addEventListener("click", function () {
     populate(randomTwo);
  });
+
+
+
+function setCardTwo(i) {
+    titleTwo.innerHTML = blogData[i].title;
+    dateTwo.innerHTML = blogData[i].date;
+    contentTwo.innerHTML = blogData[i].body;
+    imageTwo.src = blogData[i].img2;
+    randomTwo = i;
+}
+
+refreshTwo.addEventListener("click", function () {
+    setCardTwo(getRandomInt(blogData.length - 1)); 
+});

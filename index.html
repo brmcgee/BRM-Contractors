@@ -277,7 +277,6 @@
             <div class="col-md-6 px-0">
               <h1 class="display-4 fst-italic" >BRM Blog Posts</h1>
               <p class="lead my-3">Welcome to BRM Contractors blog post of recently completed projects. Follow along as we make repairs and document the process. Who knows, you might need the same work completed.</p>
-              <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
             </div>
           </div>
         
@@ -313,13 +312,15 @@
         
           <div class="row g-5">
             <div class="col-md-8">
-              <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">
-                From the Box
-              </h3>
+              <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">From the Box</h3>
+  
 
               <nav class="blog-pagination" aria-label="Pagination">
-                <a href="#blogPost" class="btn btn-solid p-1" onclick="next(0)">Previous</a>
-                <a href="#blogPost" class="btn btn-solid p-1" onclick="next(1)">Next</a>
+                <button class="btn btn-success text-roboto p-1" id="refreshTwo">Refresh Vault Content</button>
+
+                <a href="#blogPost" class="btn btn-dark bg-red text-roboto p-1" onclick="next(0)">Previous</a>
+                <a href="#blogPost" class="btn btn-dark bg-red text-roboto p-1" onclick="next(1)">Next</a>
+                
               </nav>
 
               <article class="blog-post">
