@@ -35,4 +35,21 @@
 .blog-card {
 
 }
+.blog-card-3 h3 {
+    font-weight: 400;
+    font-size: 19px;
+}
+.blog-card-3 p {
+    font-weight: 600;
+    color: #333;
+}
+.blog-card-3:hover {
+    background-color: rgba(209, 166, 24, .1);
+}
+.btn3 a {
+    font-style: italic;
+}
+.btn3 a:hover {
+    color: rgba(163, 30, 30, 0.8);
+}
 
