@@ -153,28 +153,28 @@
           </div>
         
           <div class="row mb-2">
-            <div class="col-md-6 blog-card">
+            <div class="col-md-6 blog-card" id="blogCardOne">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
                   <strong class="d-inline-block mb-1 text-primary" id="group1">Current Project</strong>
                   <h3 class="mb-0 title-1" id="title1"></h3>
                   <div class="mb-1 text-muted" id="date1"></div>
                   <p class="mb-auto content-1" id="content1"></p>
-                  <button  id="btn1" class="btn-solid bg-light p-0"><a href="#blogPost" class="stretched-link">Continue reading</a></button>
+                  <button  id="btn1" class="btn-solid bg-light p-0 border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                   <img class="bd-placeholder-img" id="image1" width="200" height="280" src="" role="img">
                 </div>
               </div>
             </div>
-            <div class="col-md-6 blog-card">
+            <div class="col-md-6 blog-card" id="blogCardTwo">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
                   <strong class="d-inline-block mb-1 text-success">From the vault</strong>
                   <h3 class="mb-0 title-2" id="title2"></h3>
                   <div class="mb-1 text-muted" id="date2"></div>
                   <p class="mb-auto content-2" id="content2"></p>
-                  <button id="btn2" class="btn-solid p-0 bg-light"><a href="#blogPost" class="stretched-link">Continue reading</a></button>
+                  <button id="btn2" class="btn-solid p-0 bg-light border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
                 </div>
                 <div class="col-auto d-none d-lg-block">
                   <img class="bd-placeholder-img" id="image2" width="200" height="280" src="" role="img">                  </div>
@@ -185,14 +185,11 @@
           <div class="row g-5">
             <div class="col-md-8">
               <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">From the Box</h3>
-  
 
               <nav class="blog-pagination" aria-label="Pagination">
-                <button class="btn btn-success text-roboto p-1" id="refreshTwo">Refresh Vault Content</button>
-
-                <a href="#blogPost" class="btn btn-dark bg-red text-roboto p-1" onclick="next(0)">Previous</a>
-                <a href="#blogPost" class="btn btn-dark bg-red text-roboto p-1" onclick="next(1)">Next</a>
-                
+                <a href="#blogCardOne"  class="btn btn-dark bg-dark text-roboto p-1" id="refreshTwo">Refresh - Vault</a>
+                <a href="#blogPost" class="btn btn-danger  text-roboto p-1" onclick="next(0)">Previous</a>
+                <a href="#blogPost" class="btn btn-success  text-roboto p-1" onclick="next(1)">Next</a>
               </nav>
 
               <article class="blog-post">
