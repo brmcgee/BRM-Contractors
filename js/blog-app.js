@@ -11,11 +11,20 @@ let blogData = [
     {
         category: 'Drywall Repair',
         title: "Kitchen wall repairs with new drywall finish",
-        date: "Dec 29, 2023",
+        date: "Dec 29, 2022",
         author: "Brian McGee",
         body: "Today we are refinishing our clients kitchen walls. Installating some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
         img1: "assets/gallery/kitchen-drywall2.jpg",
         img2: "assets/gallery/kitchen-drywall1.jpg"
+    },
+    {
+        category: 'Drywall Repair',
+        title: "Bedroom blues... drywall repair and paint",
+        date: "Oct 29, 2022",
+        author: "Brian McGee",
+        body: "Well for such a happy blue bedroom the wall had water damge at the window sill area. We removed the drywall and install new with extra caution at the carpet flooring. After a return trip sanded and repainted the complete room. Another happy client!",
+        img1: "assets/gallery/drywall-repair1.jpg",
+        img2: "assets/gallery/drywall-repair2.jpg"
     },
     {
         category: 'Deck Build',
@@ -208,7 +217,6 @@ const imageTwo = document.getElementById('image2');
 const buttonTwo = document.getElementById('btn2')
 
 
-
 let randomTwo = getRandomInt(blogData.length - 1);
 if (randomTwo === randomOne) {
     randomTwo = getRandomInt(blogData.length - 1);
@@ -226,8 +234,6 @@ buttonTwo.addEventListener("click", function () {
     populate(randomTwo);
  });
 
-
-
 function setCardTwo(i) {
     titleTwo.innerHTML = blogData[i].title;
     dateTwo.innerHTML = blogData[i].date;
@@ -238,4 +244,37 @@ function setCardTwo(i) {
 
 refreshTwo.addEventListener("click", function () {
     setCardTwo(getRandomInt(blogData.length - 1)); 
+});
+
+// box 3 
+const groupThree= document.getElementById('group3');
+const titleThree = document.getElementById('title3');
+const dateThree = document.getElementById('date3');
+const contentThree = document.getElementById('content3');
+const imageThree = document.getElementById('image3');
+const buttonThree = document.getElementById('btn3')
+
+
+let randomThree = getRandomInt(blogData.length - 1);
+
+
+titleThree.innerHTML = blogData[randomThree].title;
+dateThree.innerHTML = blogData[randomThree].date;
+contentThree.innerHTML = blogData[randomThree].body;
+imageThree.src = blogData[randomThree].img2;
+
+buttonThree.addEventListener("click", function () {
+    populate(randomThree);
+ });
+
+function setCardThree(i) {
+    titleThree.innerHTML = blogData[i].title;
+    dateThree.innerHTML = blogData[i].date;
+    contentThree.innerHTML = blogData[i].body;
+    imageThree.src = blogData[i].img1;
+    randomThree = i;
+}
+
+refreshThree.addEventListener("click", function () {
+    setCardThree(getRandomInt(blogData.length - 1)); 
 });
