@@ -4,8 +4,13 @@
 
     .img-1,
     .img-2 {
-        width: 140px;
-        height: 190px;
+        width: 150px;
+        height: 200px;
+        border-radius: 2px;
+    }
+    .img-3 {
+        width: 160px;
+        height: 250px;
         border-radius: 2px;
     }
     .img-container {
