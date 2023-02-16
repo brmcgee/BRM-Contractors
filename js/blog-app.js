@@ -107,26 +107,7 @@ let blogData = [
         img1: "assets/gallery/kitchen-drywall2.jpg",
         img2: "assets/gallery/kitchen-drywall1.jpg"
     },
-    {
-        category: 'Drywall Repair',
-        title: "Kitchen wall repairs with new drywall finish",
-        date: "Dec 29, 2022",
-        author: "Brian McGee",
-        body: "Today we are refinishing our clients kitchen walls. Installating some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
-        img1: "assets/gallery/kitchen-drywall2.jpg",
-        img2: "assets/gallery/kitchen-drywall1.jpg"
-    },
-    {
-        
-        category: 'Plumbing Repair',
-        title: "Water damage and plumbing repair",
-        date: "Jan 29, 2023",
-        author: "Brian McGee",
-        body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
-        img1: "assets/gallery/plumbing-repair1.jpg",
-        img2: "assets/gallery/plumbing-repair2.jpg"
-    },
-    {
+    {     
         category: 'Plumbing Repair',
         title: "Water damage and plumbing repair",
         date: "Jan 29, 2023",
