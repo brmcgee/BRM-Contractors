@@ -273,12 +273,6 @@ function setCardThree(i) {
     randomThree = i;
 }
 
-// refreshThree.addEventListener("click", function () {
-//     setCardThree(getRandomInt(blogData.length - 1)); 
-// });
-
-
-
 // archives
 const aBtns = document.querySelectorAll("#aBtn");
 let archRandom = getRandomInt(aBtns.length);
@@ -291,7 +285,6 @@ function populateArch (num) {
         }
         blog = blogData[num];
         select.push(num);
-        console.log(select);
         aBtns[i].innerHTML = blog.title + '<br> ' + blog.date;
         num ++;
    }
@@ -301,7 +294,6 @@ populateArch(archRandom);
 
 // populate post for active selection 
 aBtns.forEach((e, i) => {
-    console.log(e.innerHTML, i)
     e.addEventListener("click", function () {
         console.log('clicked' + i)
         populate(select[i]);
