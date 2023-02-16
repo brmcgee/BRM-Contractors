@@ -1579,6 +1579,8 @@ h2#header_14.form-header {
 .service-card .card p {
     text-indent: .3cm;
     margin: 10px auto 20px auto;
+    line-height: 28px;
+    font-size: 17px;
 
 }
 .service-card .card h2 {
