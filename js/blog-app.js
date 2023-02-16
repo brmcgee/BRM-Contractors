@@ -1,21 +1,30 @@
 let blogData = [ 
     {
-        category: 'Plumbing Repair',
-        title: "Water damage and plumbing repair",
-        date: "Jan 29, 2023",
+        category: 'Wood Repair',
+        title: "Painted wood siding repair - Moisture damage",
+        date: "June 03, 2022",
         author: "Brian McGee",
-        body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
-        img1: "assets/gallery/plumbing-repair1.jpg",
-        img2: "assets/gallery/plumbing-repair2.jpg"
+        body: "We brought out the walkboard on this one to make it easy. Just a little moisture damaged siding. This elevation is westward facing so it sees alot rougher weather. Finished and painted - Client happy!",
+        img1: "assets/gallery/siding1.jpg",
+        img2: "assets/gallery/siding2.jpg"
     },
     {
-        category: 'Drywall Repair',
-        title: "Kitchen wall repairs with new drywall finish",
-        date: "Dec 29, 2022",
+        category: 'Siding',
+        title: "Home renovation project exterior siding, soffit and fascia",
+        date: "June 11, 2021",
+        author: "Brian McGee, owner",
+        body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+        img1: "assets/gallery/house-before.jpg",
+        img2: "assets/gallery/house-after.jpg"
+    },
+    {
+        category: 'Painting',
+        title: "OMG - 4 flights of Stairs Painting",
+        date: "July 11, 2022",
         author: "Brian McGee",
-        body: "Today we are refinishing our clients kitchen walls. Installating some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
-        img1: "assets/gallery/kitchen-drywall2.jpg",
-        img2: "assets/gallery/kitchen-drywall1.jpg"
+        body: "Wow when I got wind of this one. 4-flights of stairs to be painted here. Had to be careful not to get trapped on the top floor with wet paint... Well anyways it turned out awesome and paint lines were crisp. Another job DONE right!",
+        img1: "assets/gallery/paint1.jpg",
+        img2: "assets/gallery/paint2.jpg"
     },
     {
         category: 'Drywall Repair',
@@ -36,13 +45,31 @@ let blogData = [
         img2: "assets/gallery/custom-deck3.jpg"
     },
     {
-        category: 'Siding',
-        title: "Home renovation project exterior siding, soffit and fascia",
-        date: "June 11, 2021",
-        author: "Brian McGee, owner",
-        body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-        img1: "assets/gallery/house-before.jpg",
-        img2: "assets/gallery/house-after.jpg"
+        category: 'Drywall Framing',
+        title: "Hanging drywall board ",
+        date: "July 23, 2022",
+        author: "Brian McGee",
+        body: "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games.",
+        img1: "assets/gallery/drywall-hang1.jpg",
+        img2: "assets/gallery/drywall-hang2.jpg"
+    },
+    {
+        category: 'Drywall finish',
+        title: "Smooth finish drywall work today",
+        date: "Aug 20, 2022",
+        author: "Brian McGee",
+        body: "He have returned from installing the original 30 sheets and are finishing this board on with a smooth finish. We have taken extra caution in protecting the floors. We are all sanded down and ready to for clean up here. This is beautiful but we wont be painting it. The homeowner will finish the rest.",
+        img1: "assets/gallery/drywall-finish.jpg",
+        img2: "assets/gallery/drywall-finish2.jpg"
+    },
+    {
+        category: 'Deck build Patio cover Metal roof',
+        title: "Custom covered wood deck for the RV at Champions",
+        date: "Oct 6, 2022",
+        author: "Brian McGee",
+        body: "What an awesome job here building this custom wood deck with metal roof cover. Our clients got a new fifth wheel which is so cool inside. They needed a new covered deck to enjoy the fun weekends at the campground. BRM was able to deliever. We removed the old covered deck and assisted with the new RV hookup. Next we were able to deliver an awesome outdoor space just in time for Halloween. I hear they have an awesome trick or treat at the campground.",
+        img1: "assets/gallery/deck-rv-2.jpg",
+        img2: "assets/gallery/deck-rv-1.jpg"
     },
     {
         category: 'Flooring',
@@ -54,22 +81,13 @@ let blogData = [
         img2: "assets/gallery/flooring2.jpg"
     },
     {
-        category: 'Drywall',
-        title: "Drywall installation",
-        date: "July 23, 2022",
+        category: 'Roofing Siding',
+        title: "Total transformation! BRM delivers new exteriors on this one.",
+        date: "Nov 12, 2022",
         author: "Brian McGee",
-        body: "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games.",
-        img1: "assets/gallery/drywall-hang1.jpg",
-        img2: "assets/gallery/drywall-hang2.jpg"
-    },
-    {
-        category: 'Drywall',
-        title: "Drywall finishing - smooth finish",
-        date: "Aug 20, 2022",
-        author: "Brian McGee",
-        body: "He have returned from installting the original 30 sheets and are finishing this board on with a smooth finish. We have taken extra caution in protecting the floors. We are all sanded down and ready to for clean up here. This is beautiful but we wont be painting it. The homeowner will finish the rest.",
-        img1: "assets/gallery/drywall-finish.jpg",
-        img2: "assets/gallery/drywall-finish2.jpg"
+        body: "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful.",
+        img1: "assets/gallery/siding-roof-before.jpg",
+        img2: "assets/gallery/siding-roof-after.jpg"
     },
     {
         category: 'Bathroom Remodel',
@@ -81,22 +99,32 @@ let blogData = [
         img2: "assets/gallery/bathroom2.jpg"
     },
     {
-        category: 'Wood Repair',
-        title: "Painted wood siding repair - Moisture damage",
-        date: "June 03, 2022",
+        category: 'Drywall Repair',
+        title: "Kitchen wall repairs with new drywall finish",
+        date: "Dec 09, 2022",
         author: "Brian McGee",
-        body: "We brought out the walkboard on this one to make it easy. Just a little moisture damaged siding. This elevation is westward facing so it sees alot rougher weather. Finished and painted - Client happy!",
-        img1: "assets/gallery/siding1.jpg",
-        img2: "assets/gallery/siding2.jpg"
+        body: "Today we are refinishing our clients kitchen walls. Installating some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
+        img1: "assets/gallery/kitchen-drywall2.jpg",
+        img2: "assets/gallery/kitchen-drywall1.jpg"
     },
     {
-        category: 'Painting',
-        title: "OMG - 4 flights of Stairs Painting",
-        date: "July 11, 2022",
+        category: 'Drywall Repair',
+        title: "Kitchen wall repairs with new drywall finish",
+        date: "Dec 29, 2022",
         author: "Brian McGee",
-        body: "Wow when I got wind of this one. 4-flights of stairs to be painted here. Had to be careful not to get trapped on the top floor with wet paint... Well anyways it turned out awesome and paint lines were crisp. Another job DONE right!",
-        img1: "assets/gallery/paint1.jpg",
-        img2: "assets/gallery/paint2.jpg"
+        body: "Today we are refinishing our clients kitchen walls. Installating some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
+        img1: "assets/gallery/kitchen-drywall2.jpg",
+        img2: "assets/gallery/kitchen-drywall1.jpg"
+    },
+    {
+        
+        category: 'Plumbing Repair',
+        title: "Water damage and plumbing repair",
+        date: "Jan 29, 2023",
+        author: "Brian McGee",
+        body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
+        img1: "assets/gallery/plumbing-repair1.jpg",
+        img2: "assets/gallery/plumbing-repair2.jpg"
     },
     {
         category: 'Plumbing Repair',
@@ -145,6 +173,7 @@ const author = document.getElementById("bAuthor");
 const content = document.getElementById("bBody");
 const img1 = document.getElementById("bImg1");
 const img2 = document.getElementById("bImg2");
+
 // populate DOM
 function populate(i) {
     content.innerHTML = blogData[i].body;
