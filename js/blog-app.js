@@ -124,12 +124,21 @@ let blogData = [
         body: "Great start day on this bathroom project here in Greensburg, the weather is awesome. Demo day - We are taking everything out down to the wood studs. This bathroom will be getting a complete update with all new fixtures, paint and flooring. Make sure to stop back to check the progress!",
         img1: "assets/gallery/bathroom-demo1.jpg",
         img2: "assets/gallery/bathroom-demo2.jpg"
+    },
+    {
+        category: 'Bathroom Remodel',
+        title: "Bathroom all cleaned and gutted ready for install",
+        date: "Feb 15, 2023",
+        author: "Brian McGee",
+        body: "Well today was great we got this bathroom all clean out. Vaccumed all the rocks and coal dust out and picked up all the material for the installation. We are all set and ready for a fresh start in the morning.",
+        img1: "assets/gallery/bathroom-demo4.jpg",
+        img2: "assets/gallery/bathroom-demo3.jpg"
     }
 
 ];
 
 
-// blog post populater 
+// blog post container - random content initializer 
 const title = document.getElementById("bTitle");
 const date = document.getElementById("bDate");
 const author = document.getElementById("bAuthor");
@@ -145,10 +154,10 @@ function populate(i) {
     img1.src = blogData[i].img1;
     img2.src = blogData[i].img2;   
 }
+
 // next or prev movement
 let current = 0;
 function next(index){
-    console.log(blogData.length);
     if (index === 0) {
         if (current === 0) {
             current = blogData.length;
@@ -161,27 +170,22 @@ function next(index){
         }
         current += 1;
     }
-
     content.innerHTML = blogData[current].body;
     title.innerHTML = blogData[current].title;
     date.innerHTML = blogData[current].date;  
     author.innerHTML = blogData[current].author;
-
     img1.src = blogData[current].img1;
     img2.src = blogData[current].img2;   
 }
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-// content loading
+// random number generator 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
 let randomLoader = getRandomInt(blogData.length - 1);
-document.addEventListener("DOMContentLoaded",populate(randomLoader));
+document.addEventListener("DOMContentLoaded", populate(randomLoader));
 
-// box 1 
+// box 1 - current project
 const groupOne = document.getElementById('group1');
 const titleOne = document.getElementById('title1');
 const dateOne = document.getElementById('date1');
@@ -189,26 +193,19 @@ const contentOne = document.getElementById('content1');
 const imageOne = document.getElementById('image1');
 const buttonOne = document.getElementById('btn1')
 
+let randomOne = blogData.length - 1; // last post entry
 
-
-// let randomOne = getRandomInt(blogData.length - 1);
-let randomOne = blogData.length - 1;
 titleOne.innerHTML = blogData[randomOne].title;
 dateOne.innerHTML = blogData[randomOne].date;
 contentOne.innerHTML = blogData[randomOne].body;
 imageOne.src = blogData[randomOne].img1;
-
 
 buttonOne.addEventListener("click", function () {
    populate(randomOne);
 });
 
 
-
-
-
-
-// box 2 
+// box 2 - from the vault
 const groupTwo = document.getElementById('group2');
 const titleTwo = document.getElementById('title2');
 const dateTwo = document.getElementById('date2');
@@ -216,14 +213,7 @@ const contentTwo = document.getElementById('content2');
 const imageTwo = document.getElementById('image2');
 const buttonTwo = document.getElementById('btn2')
 
-
 let randomTwo = getRandomInt(blogData.length - 1);
-if (randomTwo === randomOne) {
-    randomTwo = getRandomInt(blogData.length - 1);
-}
-if (randomTwo === randomOne) {
-    randomTwo = getRandomInt(blogData.length - 1);
-}
 
 titleTwo.innerHTML = blogData[randomTwo].title;
 dateTwo.innerHTML = blogData[randomTwo].date;
@@ -246,7 +236,7 @@ refreshTwo.addEventListener("click", function () {
     setCardTwo(getRandomInt(blogData.length - 1)); 
 });
 
-// box 3 
+// box 3 - in page post
 const groupThree= document.getElementById('group3');
 const titleThree = document.getElementById('title3');
 const dateThree = document.getElementById('date3');
@@ -254,9 +244,7 @@ const contentThree = document.getElementById('content3');
 const imageThree = document.getElementById('image3');
 const buttonThree = document.getElementById('btn3')
 
-
 let randomThree = getRandomInt(blogData.length - 1);
-
 
 titleThree.innerHTML = blogData[randomThree].title;
 dateThree.innerHTML = blogData[randomThree].date;
@@ -275,6 +263,37 @@ function setCardThree(i) {
     randomThree = i;
 }
 
-refreshThree.addEventListener("click", function () {
-    setCardThree(getRandomInt(blogData.length - 1)); 
+// refreshThree.addEventListener("click", function () {
+//     setCardThree(getRandomInt(blogData.length - 1)); 
+// });
+
+
+
+// archives
+const aBtns = document.querySelectorAll("#aBtn");
+let archRandom = getRandomInt(aBtns.length);
+let select = []; // array of current list
+
+function populateArch (num) {
+    for (let i = 0; i < aBtns.length; i++) {
+        if (num === blogData.length) {
+           num = 1;
+        }
+        blog = blogData[num];
+        select.push(num);
+        console.log(select);
+        aBtns[i].innerHTML = blog.title + '<br> ' + blog.date;
+        num ++;
+   }
+};
+
+populateArch(archRandom);
+
+// populate post for active selection 
+aBtns.forEach((e, i) => {
+    console.log(e.innerHTML, i)
+    e.addEventListener("click", function () {
+        console.log('clicked' + i)
+        populate(select[i]);
+    });
 });

@@ -57,4 +57,17 @@
 .btn3 a:hover {
     color: rgba(163, 30, 30, 0.8);
 }
+.arch-button {
+    font-size: 13px;
+    line-height: 4px;
+    font-weight: 700;
+    color: rgb(1, 45, 158);
+    /* text-decoration: none; */
+    overflow: hidden;
+    transition: font-size .2s;
+}
+.arch-button:hover {
+    color: rgba(163, 30, 30, 1);
+    background-color: rgba(209, 166, 24, .2);
+}
 
