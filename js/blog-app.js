@@ -1,4 +1,4 @@
-let blogData = [ 
+const blogData = [ 
     {
         category: 'Wood Repair',
         title: "Painted wood siding repair - Moisture damage",
