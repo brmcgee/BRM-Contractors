@@ -334,6 +334,7 @@ const search = document.getElementById('searchBar');
 const list = document.getElementById('blogLists');
 let input, blogPost;
 let count = 0;
+let links;
 
 function createLink (blog) {
     // blogTarget.id = count;
@@ -341,6 +342,7 @@ function createLink (blog) {
     let link = document.createElement('a')
     link.innerHTML = blog;
     link.id = count;
+    link.className = "blog-lists";
     link.style.display = 'block';
     link.href = '#blogPost';
     list.appendChild(link);
@@ -357,13 +359,18 @@ function searchBlogs() {
            createLink(blogPost);
         }
     }
-    console.log(input);
     if (input === "") {
         blogTarget.innerHTML = ' ';
     }
+    links = document.querySelectorAll(".blog-lists");
 };
+
+
 search.addEventListener("keydown", function () {
-    blogTarget.innerHTML = ' ';
+    // blogTarget.innerHTML = ' ';
+    for (let i = 0; i < links.length; i++) {
+        list.removeChild(links[i]);
+    }
 });
 
 
