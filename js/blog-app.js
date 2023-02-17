@@ -1,4 +1,13 @@
 const blogData = [ 
+        {
+        category: 'Standing Seam metal roof',
+        title: "New galvalume standing seam metal roof.",
+        date: "June 03, 2020",
+        author: "Brian McGee",
+        body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
+        img1: "assets/gallery/sseam1.jpg",
+        img2: "assets/gallery/sseam2.jpg"
+    },
     {
         category: 'Wood Repair',
         title: "Painted wood siding repair - Moisture damage",
@@ -9,9 +18,18 @@ const blogData = [
         img2: "assets/gallery/siding2.jpg"
     },
     {
+        category: 'Shingle repair',
+        title: "Roof edge leak solved by BRM",
+        date: "June 08, 2020",
+        author: "Brian McGee",
+        body: 'There was issues on the edge of the roof. The shingles were still in servicable condition so we were able to handle this with a simply maintenance repair and extend the life of this roof verses replacement. Our client was happy and able to set up a budget plan for roof replacment. Problem solved!',
+        img1: "assets/gallery/shingle-repair1.jpg",
+        img2: "assets/gallery/shingle-repair2.jpg"
+    },
+    {
         category: 'Siding',
         title: "Home renovation project exterior siding, soffit and fascia",
-        date: "June 11, 2021",
+        date: "June 18, 2021",
         author: "Brian McGee, owner",
         body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
         img1: "assets/gallery/house-before.jpg",
@@ -104,8 +122,8 @@ const blogData = [
         date: "Dec 14, 2022",
         author: "Brian McGee",
         body: "This project was great! We're completing it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.",
-        img1: "assets/gallery/bathroom1.jpg",
-        img2: "assets/gallery/bathroom2.jpg"
+        img1: "assets/gallery/bathroom2.jpg",
+        img2: "assets/gallery/bathroom1.jpg"
     },
     {
         category: 'Drywall Repair',
