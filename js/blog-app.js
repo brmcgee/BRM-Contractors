@@ -169,18 +169,26 @@ const blogData = [
         body: "Well today was great we got this bathroom all clean out. Vaccumed all the rocks and coal dust out and picked up all the material for the installation. We are all set and ready for a fresh start in the morning.",
         img1: "assets/gallery/bathroom-demo4.jpg",
         img2: "assets/gallery/bathroom-demo3.jpg"
+    },
+    {
+        category: 'Bathroom Remodel',
+        title: "Acrylic tub/shower combo installed with fresh plumbing.",
+        date: "Feb 17, 2023",
+        author: "Brian McGee",
+        body: "Cold weather was back on us today with a little bit of snow. We finished installing the tub and shower acrylic combo and have the accesories installed all in oil-rubbed bronze finish. We've made the shower back available for use over the weekend. This shower looks awesome, even has a recessed niche for accent tile and all of the soaps - plus its low maintenance and super easy to clean.",
+        img1: "assets/gallery/plumbing-tub.jpg",
+        img2: "assets/gallery/bathroom3-gb.jpg"
     }
-
 ];
 
 
 // blog post container - random content initializer 
-const title = document.getElementById("bTitle");
-const date = document.getElementById("bDate");
-const author = document.getElementById("bAuthor");
-const content = document.getElementById("bBody");
-const img1 = document.getElementById("bImg1");
-const img2 = document.getElementById("bImg2");
+let title = document.getElementById("bTitle");
+let date = document.getElementById("bDate");
+let author = document.getElementById("bAuthor");
+let content = document.getElementById("bBody");
+let img1 = document.getElementById("bImg1");
+let img2 = document.getElementById("bImg2");
 
 // populate DOM
 function populate(i) {
@@ -340,18 +348,29 @@ function createLink (blog) {
     // blogTarget.id = count;
     // blogTarget.innerHTML += blogPost + '<br>'
     let link = document.createElement('a')
+    link.href = '#blogPost';
     link.innerHTML = blog;
-    link.id = count;
+    link.id = "post" + count;
     link.className = "blog-lists";
     link.style.display = 'block';
-    link.href = '#blogPost';
     list.appendChild(link);
     count++;
+}
 
+let myTitle;
+
+
+function getIndex (phrase) {
+    for (let i = 0; i < blogData.length; i++){
+        let title = blogData[i].title.toLowerCase();
+        if (title === phrase) {
+            return i;
+        }
+    }
 }
 
 function searchBlogs() {
-
+    count = 0;
     input = document.getElementById("searchBar").value.toLowerCase();
     for (let i = 0; i < blogData.length; i++) {
         blogPost = blogData[i].title;
@@ -368,17 +387,29 @@ function searchBlogs() {
         for (let i = 0; i < links.length; i++) {
             list.removeChild(links[i]);
         }
+    }  
+
+    let posts = document.querySelectorAll('.blog-lists');
+    for (let y = 0; y < posts.length; y ++){
+        posts[y].addEventListener("click", () => {    
+            let value =  posts[y].innerHTML.toLowerCase();
+            console.log(value);
+            let index = getIndex(value);
+            populate(index);
+        })
     }
 };
 
 
-
 search.addEventListener("keydown", function () {
     // blogTarget.innerHTML = ' ';
-    for (let i = 0; i < links.length; i++) {
+    for (let i = 0; i < links.length - 1; i++) {
         list.removeChild(links[i]);
     }
 });
+
+
+
 
 
 
