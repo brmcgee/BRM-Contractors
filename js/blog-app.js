@@ -363,7 +363,14 @@ function searchBlogs() {
         blogTarget.innerHTML = ' ';
     }
     links = document.querySelectorAll(".blog-lists");
+
+    if (input === '') {
+        for (let i = 0; i < links.length; i++) {
+            list.removeChild(links[i]);
+        }
+    }
 };
+
 
 
 search.addEventListener("keydown", function () {
