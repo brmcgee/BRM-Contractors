@@ -322,7 +322,56 @@ populateArch(archRandom);
 // populate post for active selection 
 aBtns.forEach((e, i) => {
     e.addEventListener("click", function () {
-        console.log('clicked' + i)
         populate(select[i]);
     });
 });
+
+
+// search bar 
+
+const blogTarget = document.getElementById('blogTarget');
+const search = document.getElementById('searchBar');
+const list = document.getElementById('blogLists');
+let input, blogPost;
+let count = 0;
+
+function createLink (blog) {
+    // blogTarget.id = count;
+    // blogTarget.innerHTML += blogPost + '<br>'
+    let link = document.createElement('a')
+    link.innerHTML = blog;
+    link.id = count;
+    link.style.display = 'block';
+    link.href = '#blogPost';
+    list.appendChild(link);
+    count++;
+
+}
+
+function searchBlogs() {
+
+    input = document.getElementById("searchBar").value.toLowerCase();
+    for (let i = 0; i < blogData.length; i++) {
+        blogPost = blogData[i].title;
+        if (blogPost.toLowerCase().indexOf(input) > -1) {
+           createLink(blogPost);
+        }
+    }
+    console.log(input);
+    if (input === "") {
+        blogTarget.innerHTML = ' ';
+    }
+};
+search.addEventListener("keydown", function () {
+    blogTarget.innerHTML = ' ';
+});
+
+
+
+
+
+
+
+
+
+
