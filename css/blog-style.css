@@ -139,3 +139,22 @@ ul.gallery {
     /**TIP: Easy escape for touch screens,
     give gallery's parent container a cursor: pointer.**/
 .img-banner {cursor: pointer}}
+
+
+/* search blog  */
+
+.search-blog h5 {
+   color: var(--bg-primary);
+   border-bottom: 5px solid var(--bg-icon-accent);
+}
+.search-blog input {
+    width: 100%;
+    padding: 2px;
+}
+.search-blog label {
+    font-weight: 600;
+}
+.search-blog .lists p{
+    padding-left: 5px;
+    font-style: italic;
+}
