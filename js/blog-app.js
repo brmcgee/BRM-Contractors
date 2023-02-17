@@ -54,6 +54,15 @@ const blogData = [
         img2: "assets/gallery/drywall-hang2.jpg"
     },
     {
+        category: 'Door Replacement',
+        title: "Exterior door replacement ",
+        date: "July 28, 2022",
+        author: "Brian McGee",
+        body: "Our clients door was rusting and not shutting correctly. We simply replaced an exterior door for one of our clients. Another happy client. ",
+        img1: "assets/gallery/door2.jpg",
+        img2: "assets/gallery/door1.jpg"
+    },
+    {
         category: 'Drywall finish',
         title: "Smooth finish drywall work today",
         date: "Aug 20, 2022",
