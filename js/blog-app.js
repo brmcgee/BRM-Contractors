@@ -2,16 +2,34 @@ const blogData = [
         {
         category: 'Standing Seam metal roof',
         title: "New galvalume standing seam metal roof.",
-        date: "June 03, 2020",
+        date: "May 03, 2020",
         author: "Brian McGee",
         body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
         img1: "assets/gallery/sseam1.jpg",
         img2: "assets/gallery/sseam2.jpg"
     },
     {
+        category: 'Kitchen backsplash',
+        title: "Beautiful kitchen backsplash tile install",
+        date: "May 28, 2022",
+        author: "Brian McGee",
+        body: "A simply elegant tile install for these homeowners in their already beautiful kitchen. We were able to add the speacial touch that they always wanted. Another satisfied homeowner!",
+        img1: "assets/gallery/backsplash1.jpg",
+        img2: "assets/gallery/backsplash2.jpg"
+    },    
+    {
+        category: 'Deck Repair',
+        title: "Maintenance deck repair boards and posts",
+        date: "June 03, 2022",
+        author: "Brian McGee",
+        body: "We were able to make some maintenance repairs on this 10 year old deck. We saved the old composite deck boards and replaced the beams and posts in the troubled area. Back to enjoying the pool - Another satisfied homeowner!",
+        img1: "assets/gallery/deck-repair1.jpg",
+        img2: "assets/gallery/deck-repair2.jpg"
+    },
+    {
         category: 'Wood Repair',
         title: "Painted wood siding repair - Moisture damage",
-        date: "June 03, 2022",
+        date: "June 13, 2022",
         author: "Brian McGee",
         body: "We brought out the walkboard on this one to make it easy. Just a little moisture damaged siding. This elevation is westward facing so it sees alot rougher weather. Finished and painted - Client happy!",
         img1: "assets/gallery/siding1.jpg",
@@ -20,7 +38,7 @@ const blogData = [
     {
         category: 'Shingle repair',
         title: "Roof edge leak solved by BRM",
-        date: "June 08, 2020",
+        date: "June 18, 2020",
         author: "Brian McGee",
         body: 'There was issues on the edge of the roof. The shingles were still in servicable condition so we were able to handle this with a simply maintenance repair and extend the life of this roof verses replacement. Our client was happy and able to set up a budget plan for roof replacment. Problem solved!',
         img1: "assets/gallery/shingle-repair1.jpg",
@@ -29,7 +47,7 @@ const blogData = [
     {
         category: 'Siding',
         title: "Home renovation project exterior siding, soffit and fascia",
-        date: "June 18, 2021",
+        date: "June 23, 2021",
         author: "Brian McGee, owner",
         body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
         img1: "assets/gallery/house-before.jpg",
@@ -79,6 +97,15 @@ const blogData = [
         body: "Our clients door was rusting and not shutting correctly. We simply replaced an exterior door for one of our clients. Another happy client. ",
         img1: "assets/gallery/door2.jpg",
         img2: "assets/gallery/door1.jpg"
+    },
+    {
+        category: 'Flooring',
+        title: "Sub-floor replacement and flooring installation",
+        date: "Aug 03, 2022",
+        author: "Brian McGee",
+        body: "This bathroom had a leaky toilet which rotted the subfloor and toilet flange. We removed all the old subfloor minus the tub area  and flange then installed new. Next we followed with a low maintenance LVT vinyl floor, new toilet vanity and mirror. Mini makeover for this bathroom here! Job well done!",
+        img1: "assets/gallery/flooring1a.jpg",
+        img2: "assets/gallery/flooring1b.jpg"
     },
     {
         category: 'Drywall finish',
@@ -357,7 +384,7 @@ function createLink (blog) {
     count++;
 }
 
-let myTitle;
+// let myTitle;
 
 
 function getIndex (phrase) {
@@ -378,9 +405,10 @@ function searchBlogs() {
            createLink(blogPost);
         }
     }
-    if (input === "") {
-        blogTarget.innerHTML = ' ';
-    }
+    // if (input === "") {
+    //     blogTarget.innerHTML = ' ';
+    // }
+
     links = document.querySelectorAll(".blog-lists");
 
     if (input === '') {
@@ -393,7 +421,6 @@ function searchBlogs() {
     for (let y = 0; y < posts.length; y ++){
         posts[y].addEventListener("click", () => {    
             let value =  posts[y].innerHTML.toLowerCase();
-            console.log(value);
             let index = getIndex(value);
             populate(index);
         })
@@ -402,8 +429,7 @@ function searchBlogs() {
 
 
 search.addEventListener("keydown", function () {
-    // blogTarget.innerHTML = ' ';
-    for (let i = 0; i < links.length - 1; i++) {
+    for (let i = 0; i < links.length; i++) {
         list.removeChild(links[i]);
     }
 });
