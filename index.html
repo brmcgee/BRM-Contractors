@@ -149,7 +149,6 @@
     <div class="container col-xxl-8 px-1 py-3 bg-light main">
       <div class="row flex-lg-row align-items-center g-2">
 
-
         <div class="col-lg-6 main-content">
           <h3 class="g-3 mt-5 text-russo">Reliable and Gauranteed Service - <br> The Incredible Handyman.</h3>
           <p class="lead mt-3">BRM Contractors is a family owned and operated business serving the Western PA area with decades of home repair expertise ready to serve your home repair needs. BRM provides outstanding customer service and quality home repair. From maintenance and repair to complete remodel and rebuild BRM has you covered. We provide residential and commercial repair, building and maintenance - no job is too big or too small.</p>
@@ -160,7 +159,6 @@
           </div>
         </div>
         
-
         <div class="col-6 col-sm-8 col-md-6 col-lg-4 mx-auto d-block">
           <img src="assets/gallery/bathroom1.jpg" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Siding Install" width="700" height="500" loading="lazy">
         </div>
@@ -196,36 +194,162 @@
 
 
     </div>
+    </div>
+    <div class="block"></div>
   </div>
-  <div class="block"></div>
   <!-- ========== MAIN END/=============== -->
-  <!-- ======= SERVICE-CARD =============  -->
 
-  <!-- block area  -->
-  <div class="service-card container col-xl-10">
-    <h3 class="mb-3 text-center text-russo">Full service home repair contractor, BRM is at your service!</h3>
-    <div class="row">
-      <div class="card col-md-4">
-        <h2><span><i class="fa-solid fa-hammer"></i></span> Building</h2>
-        <p class="p-1">BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
-      </div>
-      <div class="card col-md-4">
-        <h2><span><i class="fa-solid fa-toolbox"></i></span> Repairs</h2>
-        <p class="p-1">Whether you have a small project like patching a hole in your drywall, or a long maintenance list of repairs needed we are here to get the job done right. We offer a variety of repair services to fit your needs.</p>
-      </div>
-      <div class="card col-md-4">
-        <h2><span><i class="fa-sharp fa-solid fa-screwdriver-wrench"></i></span> Maintenance</h2>
-        <p class="p-1">Changing seasons bringing on a whole new list of maintenance items, BRM can help. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
+  <!-- ======= SERVICE-CARD =============  -->
+  <div class="dark-container">
+    <div class="service-card container col-xl-10">
+      <h3 class="mb-3 text-center text-russo">Full service home repair contractor, BRM is at your service!</h3>
+      <div class="row">
+        <div class="card col-md-4">
+          <h2><span><i class="fa-solid fa-hammer"></i></span> Building</h2>
+          <p class="p-1">BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
+        </div>
+        <div class="card col-md-4">
+          <h2><span><i class="fa-solid fa-toolbox"></i></span> Repairs</h2>
+          <p class="p-1">Whether you have a small project like patching a hole in your drywall, or a long maintenance list of repairs needed we are here to get the job done right. We offer a variety of repair services to fit your needs.</p>
+        </div>
+        <div class="card col-md-4">
+          <h2><span><i class="fa-sharp fa-solid fa-screwdriver-wrench"></i></span> Maintenance</h2>
+          <p class="p-1">Changing seasons bringing on a whole new list of maintenance items, BRM can help. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="block"></div>
-
-
   <!-- ===== SERVICE-CARD END/ ===========  -->
+   
 
-   <!-- ======= SLIDESHOW =============  -->
-   <div class="ss-container">
+  <!-- ========== BLOG POSTS ==========  -->
+  <div class="main" id="blogTop">
+      <main class="container">
+          <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic text-russo" >BRM Blog Posts</h1>
+              <p class="lead my-3 text-roboto">Welcome to BRM Contractors blog post of recently completed projects. Follow along as we make repairs and document the process. Who knows, you might need the same work completed.</p>
+            </div>
+          </div>
+
+          <!-- CURRENT PROJECT js injection  -->
+          <div class="row mb-2">
+            <div class="col-md-6 blog-card" id="blogCardOne">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-1 text-danger" id="group1">Current Project</strong>
+                  <h3 class="mb-0 title-1" id="title1"></h3>
+                  <div class="mb-1 text-muted" id="date1"></div>
+                  <p class="mb-auto content-1" id="content1"></p>
+                  <button  id="btn1" class="btn-solid bg-light p-0 border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" id="image1" width="200" height="280" src="" role="img">
+                </div>
+              </div>
+            </div>
+
+            <!-- FROM THE VAULT - js injection  -->
+            <div class="col-md-6 blog-card" id="blogCardTwo">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-1 text-success">From the vault</strong>
+                  <h3 class="mb-0 title-2" id="title2"></h3>
+                  <div class="mb-1 text-muted" id="date2"></div>
+                  <p class="mb-auto content-2" id="content2"></p>
+                  <button id="btn2" class="btn-solid p-0 bg-light border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" id="image2" width="200" height="280" src="" role="img">                  </div>
+                </div>
+            </div>
+          </div>
+        
+          <div class="row g-5">
+            <div class="col-md-8">
+              <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">From the Box</h3>
+
+              <nav class="blog-pagination" aria-label="Pagination">
+                <a href="#blogCardOne"  class="btn btn-dark bg-dark text-roboto p-1" id="refreshTwo">Refresh - Vault</a>
+                <a href="#blogPost" class="btn btn-danger  text-roboto p-1" onclick="next(0)">Previous</a>
+                <a href="#blogPost" class="btn btn-success  text-roboto p-1" onclick="next(1)">Next</a>
+              </nav>
+
+              <!-- MAIN/TARGET BLOG POST AREA - js injection -->
+              <article class="blog-post"> 
+                <h2 id="bTitle" class="blog-post-title mb-1"></h2>
+                <p id="bDate" class="blog-post-meta"></p>
+                <p> by <a href="#"><span  id="bAuthor"></span></a></p>
+                <p class="indent" id="bBody"></p>
+                <div class="img-container col-sm-12 d-block d-lg-block">
+                  <img id="bImg1" class="img-1 bd-placeholder-img"  width="230" height="300" src="" role="img">  
+                  <img id="bImg2" class="img-2 bd-placeholder-img "  width="230" height="300" src="" role="img">
+                </div>
+              </article>
+              <nav class="blog-pagination" aria-label="Pagination">
+                <a href="#top" class="btn btn-outline-dark p-1 mt-1 mb-5">Top of Page</a>
+                <a href="#blogTop" class="btn btn-outline-dark p-1 mt-1 mb-5">Blog Top</a>
+                
+                <!-- SEARCH BLOG -->
+                <div class="search-blog">
+                  <h5>Have a particular service in mind to have completed?</h5>
+                  <label for="searchBar"><span><i class="fa-solid fa-magnifying-glass fs-4 pb-3 color-red"></i></span> Search BRM Blogs of jobs completed.</label>
+                  <input type="text" id="searchBar" onkeyup="searchBlogs()" placeholder="Search BRM blogs">
+                  <div id="blogLists" class="lists">  
+                      <!-- js injection  -->
+                    <a href="#searchBlog" id="blogTarget" class="blog-list"></a> 
+                  </div>
+                </div>
+
+              </nav>
+            
+            </div>
+        
+            <div class="col-md-4">
+              <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                  <h4 class="fst-italic">About</h4>
+                  <p class="mb-0">Here at BRM we really enjoy our work. We will be documenting and sharing the process with you. Who knows you may have a similar project and might find some insights.</p>
+                </div>
+
+                
+                <div class="p-1">
+                  <h4 class="fst-italic">Archives</h4>
+                  <ul class=" mb-0">  
+                    <!-- js injection  -->
+                    <li><a href="#blogPost" id="aBtn" class="arch-button"></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                  </ul>
+                </div>
+        
+                <div class="p-4">
+                  <h4 class="fst-italic">Elsewhere</h4>
+                  <ol class="list-unstyled">
+                    <li><a href="https://www.facebook.com/profile.php?id=100054525456256">Facebook</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </main>
+  </div>
+  <!-- ======= BLOG POSTS END/ ========  -->
+  
+
+
+  <!-- ======= SLIDESHOW =============  -->
+    <div class="block"></div>
+  <div class="ss-container">
     <div class="slideshow-container col-sm-12 col-md-10 col-lg-8 mx-auto d-block" style="height: 400px;">
       <div class="slideshow-slides">
           <h4>Facebook Review</h4>
@@ -255,9 +379,9 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-   </div>
-   <div class="block"></div>
-   <script>
+  </div>
+  <div class="block"></div>
+  <script>
   
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -289,269 +413,11 @@
           dots[slideIndex-1].className += " active";
       }
      
-   </script>
-    <!-- ======= SLIDESHOW =============  -->
-   
-
-    <!-- ========== BLOG POSTS ==========  -->
-    <div class="main" id="blogTop">
-      <main class="container">
-          <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
-            <div class="col-md-6 px-0">
-              <h1 class="display-4 fst-italic text-russo" >BRM Blog Posts</h1>
-              <p class="lead my-3 text-roboto">Welcome to BRM Contractors blog post of recently completed projects. Follow along as we make repairs and document the process. Who knows, you might need the same work completed.</p>
-            </div>
-          </div>
-        
-          <div class="row mb-2">
-            <div class="col-md-6 blog-card" id="blogCardOne">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-1 text-danger" id="group1">Current Project</strong>
-                  <h3 class="mb-0 title-1" id="title1"></h3>
-                  <div class="mb-1 text-muted" id="date1"></div>
-                  <p class="mb-auto content-1" id="content1"></p>
-                  <button  id="btn1" class="btn-solid bg-light p-0 border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <img class="bd-placeholder-img" id="image1" width="200" height="280" src="" role="img">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 blog-card" id="blogCardTwo">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-1 text-success">From the vault</strong>
-                  <h3 class="mb-0 title-2" id="title2"></h3>
-                  <div class="mb-1 text-muted" id="date2"></div>
-                  <p class="mb-auto content-2" id="content2"></p>
-                  <button id="btn2" class="btn-solid p-0 bg-light border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <img class="bd-placeholder-img" id="image2" width="200" height="280" src="" role="img">                  </div>
-                </div>
-            </div>
-          </div>
-        
-          <div class="row g-5">
-            <div class="col-md-8">
-              <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">From the Box</h3>
-
-              <nav class="blog-pagination" aria-label="Pagination">
-                <a href="#blogCardOne"  class="btn btn-dark bg-dark text-roboto p-1" id="refreshTwo">Refresh - Vault</a>
-                <a href="#blogPost" class="btn btn-danger  text-roboto p-1" onclick="next(0)">Previous</a>
-                <a href="#blogPost" class="btn btn-success  text-roboto p-1" onclick="next(1)">Next</a>
-              </nav>
-
-              <article class="blog-post">
-                <h2 id="bTitle" class="blog-post-title mb-1"></h2>
-                <p id="bDate" class="blog-post-meta"></p>
-                <p> by <a href="#"><span  id="bAuthor"></span></a></p>
-                <p class="indent" id="bBody"></p>
-                <div class="img-container col-sm-12 d-block d-lg-block">
-                  <img id="bImg1" class="img-1 bd-placeholder-img"  width="230" height="300" src="" role="img">  
-                  <img id="bImg2" class="img-2 bd-placeholder-img "  width="230" height="300" src="" role="img">
-                </div>
-              </article>
-              <nav class="blog-pagination" aria-label="Pagination">
-                <a href="#top" class="btn btn-outline-dark p-1 mt-1 mb-5">Top of Page</a>
-                <a href="#blogTop" class="btn btn-outline-dark p-1 mt-1 mb-5">Blog Top</a>
-                
-
-                <!-- search-blog -->
-                <div class="search-blog">
-                  <h5>Have a particular service in mind to have completed?</h5>
-                  <label for="searchBar">Search BRM Blogs of jobs completed.</label>
-                  <input type="text" id="searchBar" onkeyup="searchBlogs()" placeholder="Search BRM blogs">
-                  <div id="blogLists" class="lists"> 
-                    <a href="#searchBlog" id="blogTarget" class="blog-list"></a> 
-                  </div>
-                </div>
-
-              </nav>
-            
-            </div>
-        
-            <div class="col-md-4">
-              <div class="position-sticky" style="top: 2rem;">
-                <div class="p-4 mb-3 bg-light rounded">
-                  <h4 class="fst-italic">About</h4>
-                  <p class="mb-0">Here at BRM we really enjoy our work. We will be documenting and sharing the process with you. Who knows you may have a similar project and might find some insights.</p>
-                </div>
-        
-                <div class="p-1">
-                  <h4 class="fst-italic">Archives</h4>
-                  <ul class=" mb-0">
-                    <li><a href="#blogPost" id="aBtn" class="text-roboto arch-button"></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
-                  </ul>
-                </div>
-        
-                <div class="p-4">
-                  <h4 class="fst-italic">Elsewhere</h4>
-                  <ol class="list-unstyled">
-                    <li><a href="https://www.facebook.com/profile.php?id=100054525456256">Facebook</a></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        </main>
-    </div>
-    <!-- ======= BLOG POSTS END/ ========  -->
-<div>
+  </script>
+  <!-- ======= SLIDESHOW =============  -->
   
-
-
+  <!-- ====== WRAPPER END/============= -->
 </div>
-  <!-- ========= SERVICES ================ -->
-  <section class="services" id="services">
-    <div class="block"></div>
-   <div class="container">
-
-    <div class="section-header">
-      <h2 class="display-6">Services</h2>
-      <p>BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.</p>
-    </div>
-    <!-- CARD ROWS  -->
-    <div class="row gy-4">
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom decks</h5>
-              <img style="height:250px;" src="assets/gallery/custom-deck.jpg" class="card-img-top" alt="Wood repairs of all sorts">
-              <div class="card-body">
-              <p class="card-text">BRM builds and repairs all sorts of deck, handrail, posts and fences and more. Full service deck builds and fence installs. We repair and install anything wood.</p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="bathroom">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Bathrooms</h5>
-              <img style="height:250px;"  src="assets/gallery/bathroom1.jpg" class="card-img-top" alt="Bathroom remodeling">
-              <div class="card-body">
-              <p class="card-text">We repair all things bathroom! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full bathroom remodel</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="window">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Windows and doors</h5>
-              <img style="height:250px;"  src="assets/gallery/windows.png" class="card-img-top" alt="Windows and doors by BRM">
-              <div class="card-body">
-              <p class="card-text">Leaking or drafty windows or doors, We repair and install all sorts of exterior items including windows, doors, mailboxes, wood trim and complete resealing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="roofing">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Roofing and Siding</h5>
-              <img style="height:250px;"  src="assets/gallery/roof.png" class="card-img-top" alt="Installation services by BRM">
-              <div class="card-body">
-              <p class="card-text">BRM offers repairs and maintenance for most common roof and siding projects. We can extened the life with maintenance or simply install new.</p>
-            </div>
-          </div>
-        </div>
-      </div> 
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="kitchen">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Kitchens</h5>
-              <img style="height:250px;"  src="assets/gallery/kitchen-cabinet1.jpg" class="card-img-top" alt="Kitchen remodeling">
-              <div class="card-body">
-              <p class="card-text">We repair all things kitchen! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full kitchen remodel and appliance installation.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-        
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="handyman">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Handyman</h5>
-              <img style="height:250px;"  src="assets/gallery/siding-lift.png" class="card-img-top" alt="Handyman services">
-              <div class="card-body">
-              <p class="card-text">Need something fixed or repaired, maybe even hung on a wall? We can help - we install your products! We also access steep and tall and repair those common home problems.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Custom Decks</h5>
-              <img style="height:250px;"  src="assets/gallery/custom-deck2.jpg" class="card-img-top" alt="Deck builds by BRM">
-              <div class="card-body">
-              <p class="card-text">Enjoy your new outdoor space with a new deck by BRM. We offer full service deck builds, fence installation, posts, handrails and more. We repair and install anything wood.</p>
-            </div>
-          </div>
-        </div>
-      </div>    
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="installation">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Installations</h5>
-              <img style="height:250px;"  src="assets/gallery/carport.png" class="card-img-top" alt="Installation services by BRM">
-              <div class="card-body">
-              <p class="card-text">Have a product and just need it installed or assemblied, maybe even hung on a wall? We can help. BRM installs shelves, desks, applicances, tvs and more. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- card  -->
-        <div class="col-lg-4 col-md-6" id="drywall">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Drywall</h5>
-              <img style="height:250px;"  src="assets/gallery/drywall-finish.jpg" class="card-img-top" alt="Drywall repairs">
-              <div class="card-body">
-              <p class="card-text">BRM offers complete drywall services. Drywall installation and finishing options available. We repair those pesky stains and offer painting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-              
-    </div>
-  </div>
-  </section>
-  <div class="block"></div>
-  <!-- ======= SERVICES END/ ============= -->
-
-
-</div>
-<!-- ========== WRAPPER END/=========== -->
-
 
 <!-- ============ FOOTER ============== -->
 <footer id="footer" class="footer">
@@ -561,10 +427,10 @@
   
         <div class="col-lg-4 col-md-6">
           <div class="footer-info">
-            <h3>BRM Contractors Inc</h3>
-            <p>PO Box 66<br>Hannastown, PA 15635<br><br>
-              <span><i class="fa-solid fa-phone"></i></i></span> <strong>Phone:</strong> 724-787-3758<br>
-              <span><i class="fa-light fa-at"></i></span><strong>Email:</strong> brianrmcgee@gmail.com<br>
+            <h3>BRM Contractors</h3>
+            <p>Brian McGee, Owner<br>PO Box 66<br>Hannastown, PA 15635<br><br>
+              <span><i class="fa-solid fa-phone fs-5 me-1"></i></span><strong>Phone:</strong> 724-787-3758<br>
+              <span><i class="fa-light fa-at fs-4"></i></span><strong>Email:</strong> brianrmcgee@gmail.com<br>
             </p>
             <div class="social-links d-flex mt-3">
               <a href="https://www.facebook.com/profile.php?id=100054525456256#" class="d-flex align-items-center justify-content-center"><img src="assets/logo/facebook.jfif" alt="BRM"></img></a>
@@ -579,10 +445,14 @@
           <ul>
             <li><a href="#top">Home</a></li>
             <li><a href="about.html">About us</a></li>
+            <li><a href="#blogTop">#BRM Blog</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact-brm.html">Connect with BRM</a></li>
             <li><a href="maintenance.html">Maintenance</a></li>
           </ul>
+        </div>
+        <div class="webdesign">
+          <a href="http://www.brmdev.com">webdesign by brian @brm-dev</a>
         </div>
 
       </div>
@@ -592,8 +462,8 @@
 </footer>
 <!-- =========== FOOTER END/=========== -->
 
+
 <!-- =======---==== MODAL ==============  -->
-        <!-- temp - alert for scheduling portal to call office  -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
