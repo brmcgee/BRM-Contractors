@@ -115,6 +115,9 @@ body {
 .bg-red {
     background-color: var(--bg-primary);
 }
+.color-red {
+    color: var(--bg-primary);
+}
 .bg-black {
     background-color: #333;
 }
@@ -842,6 +845,7 @@ input {
 
 /* ======== SERVICES ======== */ 
 
+
 .services {
     font-family: var(--font-primary);
 }
@@ -918,7 +922,7 @@ input {
 .footer {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center;
+    /* background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center; */
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 40px 0;
@@ -1485,7 +1489,7 @@ h2#header_14.form-header {
 .ss-container {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/deck-rv-2.jpg") center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-thumbs.png") center;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 40px 0;
@@ -1494,7 +1498,7 @@ h2#header_14.form-header {
 }
 .ss-container:before {
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.82);
     position: absolute;
     inset: 0;
 }
@@ -1571,6 +1575,9 @@ h2#header_14.form-header {
 /* ======= SLIDESHOW END/============= */
 
 /* ======== SERVICE CARD ============ */
+.dark-container {
+    background-color: var(--bg-icon);
+}
 .service-card {
     margin: 30px auto 30px auto; 
 }
@@ -1582,7 +1589,7 @@ h2#header_14.form-header {
     transition: ease .6s;
 }
 .service-card .card:hover {
-    background-color: var(--bg-accent-hover);
+    background-color: rgb(232, 196, 196);
     box-shadow: 7px 2px 44px 3px var(--bg-accent-hover);
     border: 1px solid var(--bg-primary);
     cursor: pointer;
@@ -1617,3 +1624,31 @@ h2#header_14.form-header {
 
 }
 /* ======== SERVICE CARD ============ */
+
+.webdesign {
+    font-family: 'Special Elite', arial;
+}
+.webdesign a {
+    color: rgb(27, 139, 30);
+    text-decoration: none;
+    float: right;
+    font-size: 11px;
+    transition: .2s;
+    padding: 3px;
+}
+.webdesign a:hover {
+    color: rgb(181, 15, 199);
+    text-decoration: none;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    rotate: -2deg;
+}
+.webdesign a:active {
+    rotate: 3deg;
+    zoom: 1.1;
+    color: rgb(15, 36, 199);
+    background-color: rgb(147, 219, 39);
+    border: 2px solid #333;
+}

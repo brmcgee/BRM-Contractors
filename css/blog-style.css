@@ -145,11 +145,18 @@ ul.gallery {
 
 .search-blog h5 {
    color: var(--bg-primary);
+   font-size: 22px;
    border-bottom: 5px solid var(--bg-icon-accent);
+   
 }
 .search-blog input {
     width: 100%;
-    padding: 2px;
+    border: 2px solid #515151;
+    padding: 6px;
+    border-radius: 5px;
+}
+input[type=text] {
+
 }
 .search-blog label {
     font-weight: 600;

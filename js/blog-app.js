@@ -254,6 +254,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+// content loaded populate with blog
 let randomLoader = getRandomInt(blogData.length - 1);
 document.addEventListener("DOMContentLoaded", populate(randomLoader));
 
@@ -263,14 +264,16 @@ const titleOne = document.getElementById('title1');
 const dateOne = document.getElementById('date1');
 const contentOne = document.getElementById('content1');
 const imageOne = document.getElementById('image1');
-const buttonOne = document.getElementById('btn1')
+const buttonOne = document.getElementById('btn1');
 
-let randomOne = blogData.length - 1; // last post entry
-
+// last post entry
+let randomOne = blogData.length - 1; 
+// assigning values
 titleOne.innerHTML = blogData[randomOne].title;
 dateOne.innerHTML = blogData[randomOne].date;
 contentOne.innerHTML = blogData[randomOne].body;
 imageOne.src = blogData[randomOne].img1;
+
 
 buttonOne.addEventListener("click", function () {
    populate(randomOne);
@@ -347,7 +350,7 @@ function populateArch (num) {
         }
         blog = blogData[num];
         select.push(num);
-        aBtns[i].innerHTML = blog.title + '<br> ' + blog.date;
+        aBtns[i].innerHTML = blog.title + '<br> ' + "- " + blog.date;
         num ++;
    }
 };
@@ -363,7 +366,6 @@ aBtns.forEach((e, i) => {
 
 
 // search bar 
-
 const blogTarget = document.getElementById('blogTarget');
 const search = document.getElementById('searchBar');
 const list = document.getElementById('blogLists');
@@ -372,8 +374,6 @@ let count = 0;
 let links;
 
 function createLink (blog) {
-    // blogTarget.id = count;
-    // blogTarget.innerHTML += blogPost + '<br>'
     let link = document.createElement('a')
     link.href = '#blogPost';
     link.innerHTML = blog;
@@ -384,9 +384,7 @@ function createLink (blog) {
     count++;
 }
 
-// let myTitle;
-
-
+// determines index of the title selected
 function getIndex (phrase) {
     for (let i = 0; i < blogData.length; i++){
         let title = blogData[i].title.toLowerCase();
@@ -394,7 +392,7 @@ function getIndex (phrase) {
             return i;
         }
     }
-}
+};
 
 function searchBlogs() {
     count = 0;
@@ -405,9 +403,7 @@ function searchBlogs() {
            createLink(blogPost);
         }
     }
-    // if (input === "") {
-    //     blogTarget.innerHTML = ' ';
-    // }
+
 
     links = document.querySelectorAll(".blog-lists");
 
