@@ -843,78 +843,74 @@ input {
 
 
 
-/* ======== SERVICES ======== */ 
+/* ======== PRODUCT ======== */ 
 
 
-.services {
-    font-family: var(--font-primary);
+@media (min-width: 990px) {
+    .product-container {
+        width: 70vw;
+        margin: auto;
+    }
 }
-.services .row .card .card-body {
-    padding: 2px 0 1px 0;; 
-}
-.services .section-header h2 {
+
+
+
+.product-header h2 {
     color: var(--bg-primary);
     font-weight: bold;
-    font-family: var(--font-primary);
-    margin: 20px 0 14px 5px;
-    padding-bottom: 0px;
     font-size: 28px;
+    font-family: 'Russo One', sans-serif;
+    margin: 20px 0 20px 0;
     display: inline-block;
     text-transform: uppercase;
     border-bottom: 3px solid var(--bg-primary);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    transition: 0.3s;
+    padding: 5px;
 }
-.services .section-header p {
+.product-header p {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
     padding-left: 5px;
     font-family: var(--font-primary);
+    text-indent: .4cm;
 }
-.services .row div .card {
-    border: none;
+
+.products .card {
+    border: 2px solid var(--bg-primary);
+    margin: 2px auto 30px auto;
+    height: 500px;
+
 }
-.services .row div .card .card-body h5  {
-    display: inline-block;
-    font-weight: bold;
-    font-family: var(--font-primary);
+.products .card .card-title h4  {
+    font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
     margin: 0 0 3px 0;
-    font-size: 20px;
     color: #fff;
     border: 3px solid var(--bg-primary);
     background-color: var(--bg-primary);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.3s;
+    padding: 8px;
 }
-.services .row div .card .card-body h5:hover  {
-    color: rgba(245, 245, 245, 0.9);
-    display: inline-block;
-    transition: 0.3s;
-  }
-.services .row div .card .card-body h5:active  {
-    box-shadow: 1px 1px gray;
+.products .card .card-body {
+    height: 175px;
 }
-.services .row div .card .card-body p  {
+.products .card .card-body p  {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom:.5px;
-    padding-top: 5px;
-    font-size: 16px;
+    padding: 5px 1px 5px 1px;
+    font-size: 17px;
     display: inline-block;
-    transition: 0.3s;
+    text-indent: .3cm;
 }
-.services .row div .card .card-body img {
-    border-radius: 5px;
-    border: 1px solid rgb(161, 161, 161);
-    box-shadow: 2px 3px 6px 2px rgb(197, 197, 197);
+.products .card .card-img img {
+    width: 100%;
+    height: 260px;
+    margin: auto;
+    border-top: 2px solid var(--bg-icon-accent);
 }
 /* ===== SERVICES END/ ===== */
+
 
 
   

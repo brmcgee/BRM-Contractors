@@ -1,3 +1,4 @@
+
 // ======= FIXED NAV-BAR AT BANNER HEIGHT ========= 
 document.addEventListener("DOMContentLoaded", function(){
       
