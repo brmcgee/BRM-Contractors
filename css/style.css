@@ -845,15 +845,12 @@ input {
 
 /* ======== PRODUCT ======== */ 
 
-
 @media (min-width: 990px) {
     .product-container {
         width: 70vw;
         margin: auto;
     }
 }
-
-
 
 .product-header h2 {
     color: var(--bg-primary);
@@ -909,7 +906,7 @@ input {
     margin: auto;
     border-top: 2px solid var(--bg-icon-accent);
 }
-/* ===== SERVICES END/ ===== */
+/* ======== PRODUCT END/ ======== */ 
 
 
 
