@@ -58,6 +58,9 @@
 .btn3 a:hover {
     color: var(--bg-primary);
 }
+
+
+/* ========== ARCHIVES =========== */
 .arch-button {
     font-size: 13px;
     line-height: 4px;
@@ -71,14 +74,11 @@
     color: var(--bg-primary);
     background-color: var(--bg-accent-hover);;
 }
+/* ======== ARCHIVES END/ ======== */
 
 
 
 
-
-.img-banner h3 {
-    font-family: 'Russo One', sans-serif;
-}
 ul.gallery li img {
     width: 240px;
     height: 310px;
@@ -107,7 +107,9 @@ ul.gallery {
 ul.gallery{        
     margin-right:3vw;  
 }    
-    
+
+
+
 .zoom {      
     -webkit-transition: all 0.35s ease-in-out;    
     -moz-transition: all 0.35s ease-in-out;    
@@ -120,25 +122,38 @@ ul.gallery{
 .zoom:hover,  
 .zoom:active,   
 .zoom:focus {
-    -ms-transform: scale(1.3);    
-    -moz-transform: scale(1.3);  
-    -webkit-transform: scale(1.3);  
-    -o-transform: scale(1.3);  
-    transform: scale(1.3);    
+    -ms-transform: scale(1.2);    
+    -moz-transform: scale(1.2);  
+    -webkit-transform: scale(1.2);  
+    -o-transform: scale(1.2);  
+    transform: scale(1.2);    
     position:relative;      
     z-index:100;  
 }
     
-@media only screen and (max-width: 768px) {   
-ul.gallery {      
-    margin-left: 2vw;       
+@media only screen and (max-width: 768px) {  
+    ul {
+        margin-left: 0;
+        width: 90%;
+        margin: auto;
+    } 
+    ul.gallery {      
+    margin-left: 5vw;       
     margin-right: 2vw;
     flex-wrap: wrap;
-}
+    }
     
-    /**TIP: Easy escape for touch screens,
-    give gallery's parent container a cursor: pointer.**/
-.img-banner {cursor: pointer}}
+    .img-banner {
+    cursor: pointer;
+    width: 80%;
+    margin: auto;
+    background-color: var(--bg-icon);
+    }
+}
+
+.img-banner h3 {
+    font-family: 'Russo One', sans-serif;
+}
 
 
 /* search blog  */

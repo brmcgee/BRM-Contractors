@@ -31,7 +31,7 @@ body {
     width: 80%;
 }
 .sidebar {
-    background-color: var(--bg-icon-hover);
+    background-color: white;
     border: 1px solid rgb(110, 110, 110);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -1033,7 +1033,7 @@ input {
 }
 .main .main-content h3 {
     margin: 2px auto 9px auto;
-    font-weight: 500;
+    font-size: 22px;
 }
 .main .main-content p {
     font-family: "Roboto", Sans-serif;
@@ -1042,12 +1042,6 @@ input {
     color: #000000;
     text-indent: .5cm;
 }
-.main .main-img {
-    border-radius: 5px;
-    border: 1px solid #afafaf;
-    box-shadow: 4px 4px 42px rgb(155, 155, 155);
-}
-
  /* ======== MAIN END/ ========= */
   
 /* ======== CONTENT-BAR =========== */ 
@@ -1081,8 +1075,6 @@ input {
         margin: auto;
     }
 }
-
-
 /* ====== CONTENT-BAR END/ ======== */ 
 
 /* =========== SIDEBAR ============ */
@@ -1189,9 +1181,6 @@ input {
 
 
 
-
-
-
 /* ====== CONTACT ========  */
 /* repsonsive  */
 .content-about {
@@ -1226,8 +1215,8 @@ input {
     border: 0px solid pink;
 }
 .contact-container {
-    width: 95%;
-    margin-top: 5px;
+    width: 70%;
+    /* margin-top: 5px; */
 }
 @media (max-width: 877px) {
     .contact-container {
@@ -1333,13 +1322,12 @@ input {
 .modal-content .modal-header .modal-title {
     font-weight: 400;
     font-family: "Roboto", Sans-serif;
-    margin: 0 0 1px 5px;
+    margin: 0 0 0 5px;
     padding-bottom: 0px;
     font-size: 20px;
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
-    border-bottom: 3px solid var(--bg-primary-contrast);
     transition: 0.3s;
  }
  .modal-content .modal-header button {
@@ -1484,8 +1472,8 @@ h2#header_14.form-header {
 
 /* ===== CONNECT FORM END/ ========*/
 
-/* ======= SLIDESHOW ============= */
 
+/* ======= SLIDESHOW ============= */
 .ss-container {
     color: #fff;
     height: auto;
@@ -1574,7 +1562,8 @@ h2#header_14.form-header {
 }
 /* ======= SLIDESHOW END/============= */
 
-/* ======== SERVICE CARD ============ */
+
+/* ======== SERVICES CARD ============ */
 .dark-container {
     background-color: var(--bg-icon);
 }
@@ -1623,8 +1612,14 @@ h2#header_14.form-header {
     color: black;
 
 }
-/* ======== SERVICE CARD ============ */
+/* ======= SERVICES CARD END/ ======== */
 
+
+
+
+
+
+/* ====== BRM DEV ICON =========== */
 .webdesign {
     font-family: 'Special Elite', arial;
 }
