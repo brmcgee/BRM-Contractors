@@ -17,7 +17,7 @@
 <title>BRM Contractors Inc - Home</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
-<link rel="icon" href="assets/logo/brm-ico.png" sizes="32x32" />
+<link rel="icon" href="assets/logo/brm.ico" sizes="32x32" />
 
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -145,8 +145,8 @@
   <!-- ============ MAIN ================= -->
   <div class="main">
 
-    <!-- block area  -->
-    <div class="container col-xxl-8 px-1 py-3 bg-light main">
+    <!-- block area  1/top -->
+    <div class="container col-xxl-8 px-1 py-3 main">
       <div class="row flex-lg-row align-items-center g-2">
 
         <div class="col-lg-6 main-content">
@@ -159,15 +159,15 @@
           </div>
         </div>
         
-        <div class="col-6 col-sm-8 col-md-6 col-lg-4 mx-auto d-block">
-          <img src="assets/gallery/bathroom1.jpg" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Siding Install" width="700" height="500" loading="lazy">
+        <div class="col-8 col-sm-8 col-md-8 col-lg-4 mx-auto d-block">
+          <img src="assets/gallery/deck-no-bg.png" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Siding Install" width="700" height="500" loading="lazy">
         </div>
 
       </div>
     </div>
     <div class="block"></div>
 
-    <!-- block area  -->
+    <!-- block area - 2/bottom  -->
     <div class="container col-xxl-10 px-1 py-3 main bg-light">
       <div class="row flex-lg-row-reverse align-items-center g-2">
 
@@ -369,6 +369,12 @@
           <p class="author"> - Heather McGee</p>
       </div>
 
+      <div class="slideshow-slides">
+        <h4>Facebook Review</h4>
+        <p>A real honest an reliable man</p>
+        <p class="author"> - Jamie Vassiliou</p>
+    </div>
+
       <a class="prev" onclick="plusSlides(-1)">&larr;</a>
       <a class="next" onclick="plusSlides(1)">&rarr;</a>
       
@@ -378,42 +384,10 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
   </div>
   <div class="block"></div>
-  <script>
-  
-      let slideIndex = 1;
-      showSlides(slideIndex);
-     
-      function plusSlides(n) {
-          showSlides(slideIndex += n);
-      }
-     
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
-     
-      function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("slideshow-slides");
-          let dots = document.getElementsByClassName("dot");
-     
-          if (n > slides.length) {slideIndex = 1};    
-          if (n < 1) {slideIndex = slides.length};
-     
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-     
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-      }
-     
-  </script>
   <!-- ======= SLIDESHOW =============  -->
   
   <!-- ====== WRAPPER END/============= -->
@@ -493,6 +467,7 @@
 <!-- local java script  -->
 <script src="js/main.js"></script>
 <script src="js/blog-app.js"></script>
+<script src="js/slideshow-app.js"></script>
 
 
 <!-- Latest compiled and minified JS -->

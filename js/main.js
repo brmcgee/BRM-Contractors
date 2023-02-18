@@ -1,5 +1,4 @@
 // ======= FIXED NAV-BAR AT BANNER HEIGHT ========= 
-
 document.addEventListener("DOMContentLoaded", function(){
       
     window.addEventListener('scroll', function() {
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
       });
     }); 
-    
 // ======= FIXED NAV-BAR  END// =============== 
 
 
@@ -32,25 +30,25 @@ function iconSwap(x) {
 
 // ============= MENU ICON END// ============== 
 
+
 /* ======= CONNECT WIDGET ========  */
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.addEventListener("click", function () {
   modal.style.display = "block";
-}
+});
 
-span.onclick = function() {
+span.addEventListener("click", function () {
   modal.style.display = "none";
-}
+});
 
-window.onclick = function(event) {
-  if (event.target == modal) {
+window.addEventListener("click", function (e) {
+  if (e.target == modal) {
     modal.style.display = "none";
   }
-}
-
+});
 /* ===== CONNECT WIDGET END/ =====  */
 
 
