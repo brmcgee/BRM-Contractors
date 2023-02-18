@@ -145,12 +145,30 @@ const blogData = [
     },
     {
         category: 'Bathroom Remodel',
-        title: "Bathroom Remodel",
+        title: "Bathroom with fresh electrical switches and lights",
+        date: "Dec 14, 2022",
+        author: "Brian McGee",
+        body: "This project was great! We're completing it winter time. We are closing up this wall area after getting the electrical leads and boxes ran. We installed new exhaust vent, recessed lighting and a vanity light.",
+        img1: "assets/gallery/bathroom3.jpg",
+        img2: "assets/gallery/bathroom4.jpg"
+    },
+    {
+        category: 'Bathroom Remodel',
+        title: "Bathroom Renovation fresh update",
         date: "Dec 14, 2022",
         author: "Brian McGee",
         body: "This project was great! We're completing it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.",
         img1: "assets/gallery/bathroom2.jpg",
         img2: "assets/gallery/bathroom1.jpg"
+    },
+    {
+        category: 'Bathroom Remodel',
+        title: "Fresh bath tub install with new plumbing",
+        date: "Dec 14, 2022",
+        author: "Brian McGee",
+        body: "This project was great! We're completing it winter time. We are installing new plumbing fixtures, valves and framing on this bathtub.",
+        img1: "assets/gallery/bathroom5.jpg",
+        img2: "assets/gallery/bathroom6.jpg"
     },
     {
         category: 'Drywall Repair',
