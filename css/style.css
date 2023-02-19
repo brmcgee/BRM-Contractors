@@ -1591,7 +1591,7 @@ h2#header_14.form-header {
 
 /* ======== SERVICES CARD ======== */ 
 .dark-container {
-    width: 100%;
+    width: 900%;
     margin: auto;
 }
 
@@ -1618,14 +1618,14 @@ h2#header_14.form-header {
 }
 
 .service .card {
-    height: 440px;
-    margin: 6px;
+    height: 490px;
+    margin: 7px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 2px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border: 1px solid #333;
-    max-width: 300px;
+    max-width: 350px;
 }
 .service .card:hover {
     box-shadow: 7px 2px 44px 3px var(--bg-accent-hover);
@@ -1644,16 +1644,20 @@ h2#header_14.form-header {
     padding: 8px;
 }
 .service .card .card-body {
-    height: 190px;
+    height: 220px;
     padding: 3px 4px 3px 4px;
 }
 .service .card .card-body p  {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 0px;
-    font-size: 16px;
+    text-align: center;
+    padding: 7px;
+    font-size: 19px;
+    line-height: 26px;
     display: inline-block;
     text-indent: .3cm;
+    font-family: 'Special Elite', cursive;
+    font-weight: 600;
 }
 .service .card .card-img img {
     width: 100%;
