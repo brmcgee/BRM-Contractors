@@ -111,7 +111,7 @@ function createHeading() {
     heading.appendChild(hTitle);
 
     let hContent = document.createElement('p');
-    hContent.className = "col-md-10"
+    hContent.className = "col-md-"
     hContent.innerHTML = "BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.";
     heading.appendChild(hContent);
 
