@@ -853,7 +853,9 @@ input {
 .product-container {
     width: 97%;
     margin: auto;
+    
 }
+
 @media (min-width: 990px) {
     .product-container {
         width: 70vw;
@@ -882,7 +884,7 @@ input {
 }
 
 .products .card {
-    border: 2px solid var(--bg-primary);
+    border: 1px solid #333;
     margin: 2px auto 30px auto;
     height: 500px;
 

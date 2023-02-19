@@ -129,15 +129,7 @@
   <div class="block bg-light"></div>
 
   <div class="product-container">
-  
-    <div class="product-header">
-      <h2>Services</h2>
-      <p>BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.</p>
-    </div>
-
-    <!-- js content injection  -->  
-    <main class="row" id="wrapper"></main>
- 
+    <main class="row" id="products"><!-- js content injection  --></main>
   </div>
  
 </div>
@@ -217,7 +209,11 @@
 <!-- local java script  -->
 <script src="js/main.js"></script>
 <script src="js/services.js"></script>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    createHeading();
+});
+</script>
 
 
 <!-- Latest compiled and minified JS -->

@@ -62,7 +62,7 @@
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
+      <i class="fa-solid fa-home h2 pt-2 ps-2"></i>
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -95,15 +95,15 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="services.html">Drywall and Painting</a>
-            <a class="dropdown-item" href="services.html">Bathroom Remodel</a>
-            <a class="dropdown-item" href="services.html">Kitchen Remodel</a>
-            <a class="dropdown-item" href="services.html">Custom Decks</a>
-            <a class="dropdown-item" href="services.html">Windows and Doors</a>
-            <a class="dropdown-item" href="services.html">Roofing and Siding</a>
-            <a class="dropdown-item" href="services.html">Handyman Services</a>
-            <a class="dropdown-item" href="services.html">Clean Up and Hauling</a>
-            <a class="dropdown-item" href="services.html">Inspections</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Drywall and Painting</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Bathroom Remodel</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Kitchen Remodel</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Custom Decks</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Windows and Doors</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Roofing and Siding</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Handyman Services</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Clean Up and Hauling</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Inspections</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
@@ -150,7 +150,7 @@
           <p class="lead mt-3">BRM Contractors is a family owned and operated business serving the Western PA area with decades of home repair expertise ready to serve your home repair needs. BRM provides outstanding customer service and quality home repair. From maintenance and repair to complete remodel and rebuild BRM has you covered. We provide residential and commercial repair, building and maintenance - no job is too big or too small.</p>
           <!-- <div class="divider bg-black"></div> -->
           <div class="d-grid gap-2 d-md-flex  py-3 bg-accent-hover rounded px-5 shadow">
-            <a href="services.html" class="btn-solid text-center">Services</a>
+            <a href="#products" class="btn-solid text-center" onclick="createHeading()">Services</a>
             <a href="contact-brm.html" class="btn-solid text-center">Connect</a>
           </div>
         </div>
@@ -341,7 +341,11 @@
   </div>
   <!-- ======= BLOG POSTS END/ ========  -->
   
-
+  <!-- ========= PRODUCTS  ==========  -->
+  <div class="product-container">
+    <main class="row" id="products"><!-- js content injection  --></main>
+  </div>
+  <!-- ========= PRODUCTS END/ ==========  -->      
 
   <!-- ======= SLIDESHOW =============  -->
     <div class="block"></div>
@@ -386,6 +390,12 @@
   <div class="block"></div>
   <!-- ======= SLIDESHOW =============  -->
   
+
+  <!-- ======= SERVICES =============  -->
+
+  <!-- ====== SERVICES END/ ==========  -->
+
+
   <!-- ====== WRAPPER END/============= -->
 </div>
 
@@ -416,7 +426,7 @@
             <li><a href="#top">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="#blogTop">#BRM Blog</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="#products" onclick="createHeading()">Services</a></li>
             <li><a href="contact-brm.html">Connect with BRM</a></li>
             <li><a href="maintenance.html">Maintenance</a></li>
           </ul>
@@ -464,6 +474,7 @@
 <script src="js/main.js"></script>
 <script src="js/blog-app.js"></script>
 <script src="js/slideshow-app.js"></script>
+<script src="js/services.js"></script>
 
 
 <!-- Latest compiled and minified JS -->

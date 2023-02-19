@@ -63,7 +63,7 @@ const services = [
 }
 ];
 
-let wrapper = document.getElementById("wrapper");
+let wrapper = document.getElementById("products");
 function createCard (i) {
 
     let sCard = document.createElement('div');
@@ -100,9 +100,24 @@ function createCard (i) {
     cImg.appendChild(image);
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+function createHeading() {
+
+    let heading = document.createElement('div');
+    heading.className = "product-header";
+    wrapper.appendChild(heading);
+    
+    let hTitle = document.createElement('h2');
+    hTitle.innerHTML = "Services";
+    heading.appendChild(hTitle);
+
+    let hContent = document.createElement('p');
+    hContent.innerHTML = "BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.";
+    heading.appendChild(hContent);
+
     for (let i = 0; i < services.length; i++) {
         createCard(i);
     }
-});
+}
+
+
 
