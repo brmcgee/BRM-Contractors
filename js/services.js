@@ -22,9 +22,9 @@ const services = [
     img1: "assets/gallery/siding-corner.jpg",
 },
 {
-    title: "Kitchens",
-    content: 'We repair all things kitchen! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full kitchen remodel and appliance installation.',
-    img1: "assets/gallery/kitchen.png",
+    title: "Doors",
+    content: 'We repair and install interior and exterior doors to your likings. Repairs, reasealing, adjustments and door knob and handle set repalcement also available.',
+    img1: "assets/gallery/door2.jpg",
 },
 {
     title: "Handyman",
@@ -43,7 +43,7 @@ const services = [
 },
 {
     title: "Windows",
-    content: 'Leaking or drafty windows or doors, We repair and install all sorts of exterior items including windows, doors, mailboxes, wood trim and complete resealing.',
+    content: 'Leaking or drafty windows, We repair and install all sorts of exterior items including windows, doors, mailboxes, wood trim and complete resealing.',
     img1: "assets/gallery/windows.png",
 },
 {

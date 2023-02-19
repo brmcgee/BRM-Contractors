@@ -844,7 +844,16 @@ input {
 
 
 /* ======== PRODUCT ======== */ 
-
+@media (max-width: 550px) {
+    .products .card {
+        width: 90vw;
+        margin: auto;
+    }
+}
+.product-container {
+    width: 97%;
+    margin: auto;
+}
 @media (min-width: 990px) {
     .product-container {
         width: 70vw;
