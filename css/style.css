@@ -1586,57 +1586,87 @@ h2#header_14.form-header {
 /* ======= SLIDESHOW END/============= */
 
 
-/* ======== SERVICES CARD ============ */
+
+
+
+/* ======== SERVICES CARD ======== */ 
 .dark-container {
-    background-color: var(--bg-icon);
+    width: 90%;
+    margin: auto;
 }
-.service-card {
-    margin: 30px auto 30px auto; 
+
+@media (max-width: 550px) {
+    .service .card {
+        width: 80vw;
+        margin: auto;
+    }
+
 }
-.service-card .card {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 6px 1px 32px 1px var(--bg-accent-hover);
-    transition: ease .6s;
+.service-container {
+    width: 97%;
+    margin: auto;
+    
 }
-.service-card .card:hover {
-    background-color: rgb(232, 196, 196);
+@media (min-width: 1100px) {
+    .service-container {
+        width: 80vw;
+        margin: auto;
+    }
+    .dark-container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+.service .card {
+    height: 470px;
+    margin: 6px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.service .card:hover {
     box-shadow: 7px 2px 44px 3px var(--bg-accent-hover);
-    border: 1px solid var(--bg-primary);
     cursor: pointer;
     user-select: none;
 }
-
-.service-card .card p {
-    text-indent: .3cm;
-    margin: 10px auto 20px auto;
-    line-height: 28px;
-    font-size: 16px;
-    color: #000000;
-    transition: ease 100ms;
-}
-.service-card .card h2 {
-    padding-top: 20px;
-    text-align: center;
-    color: var(--bg-primary);
-}
-.service-card .card h2 i {
+.service .card .card-title h4  {
+    font-family: 'Russo One', sans-serif;
     font-size: 28px;
-    margin-right: 2px;
-    padding: 5px;
-    line-height: 2px;
-    border-radius: 3px;
-    transition: ease .2s;
-    color: var(--bg-primary);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 3px 0;
+    color: var(--text-black);
+    background-color: var(--bg-mack);
+    border-bottom: 2px solid var(--bg-icon-hover);
+    padding: 8px;
 }
-.service-card .card h2:hover,
-.service-card .card h2:hover {
-    color: black;
-
+.service .card .card-body {
+    height: 175px;
 }
-/* ======= SERVICES CARD END/ ======== */
+.service .card .card-body p  {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 1px 1px 4px;
+    font-size: 17px;
+    display: inline-block;
+    text-indent: .3cm;
+}
+.service .card .card-img img {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+}
+.service .card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
+/* ======== SERVICES CARD END/ ======== */ 
 
 
 
