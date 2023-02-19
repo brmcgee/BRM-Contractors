@@ -1,6 +1,6 @@
 
 
-let wrapper = document.getElementById("products");
+let wrapper = document.getElementById("serviceCard");
 function createCard (services) {
 
     let sCard = document.createElement('div');
@@ -8,7 +8,7 @@ function createCard (services) {
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
-    card.className = "card";
+    card.className = "card mx-auto d-block";
     sCard.appendChild(card);
 
     let cTitle = document.createElement('div')
@@ -17,6 +17,7 @@ function createCard (services) {
 
     let title = document.createElement("h4");
     title.innerHTML = services.title;
+    title.className = "bg-dark  border-0"
     cTitle.appendChild(title);
 
     let cBody = document.createElement("div");
@@ -67,7 +68,33 @@ function create () {
 }
 
 
+const products = [ 
+    {
+    title: "Building",
+    content: 'BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. ',
+    img1: "/assets/logo/building.jpg"
+},
+{
+    title: "Repairs",
+    content: 'Whether you have a small project like patching a hole in your drywall, or a long maintenance list of repairs needed we are here to get the job done right. We offer a variety of repair services to fit your needs.',
+    img1: "/assets/logo/repairs.jfif",
+},
+{
+    title: "Maintenance",
+    content: 'Changing seasons bringing on a whole new list of maintenance items, BRM can help. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.',
+    img1: "/assets/logo/maintenance.png",
+}
+];
 
+
+
+function createAll() {
+    for (let i = 0; i < products.length; i++) {
+        createCard(products[i]);
+    } 
+}
+
+document.addEventListener("DOMContentLoaded", createAll)
 
 
 
