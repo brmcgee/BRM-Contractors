@@ -4,7 +4,7 @@ let wrapper = document.getElementById("serviceCard");
 function createCard (services) {
 
     let sCard = document.createElement('div');
-    sCard.className = "products col-lg-4 col-md-6 col-sm-6";
+    sCard.className = "service col-lg-4 col-md-6 col-sm-6";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
@@ -17,7 +17,7 @@ function createCard (services) {
 
     let title = document.createElement("h4");
     title.innerHTML = services.title;
-    title.className = "bg-dark  border-0"
+    title.className = ""
     cTitle.appendChild(title);
 
     let cBody = document.createElement("div");
