@@ -37,15 +37,15 @@ body {
 :root{
     /* primary color and shades  */
     /* set for styles below - changes global  */
-    --bg-primary: rgb(28, 75, 163);
+    --bg-primary: rgb(46, 46, 45);
     --bg-accent-hover: rgba(163, 30, 30, 0.2);
-    --bg-primary-off: rgba(155, 25, 25, 1);
+    --bg-primary-off: rgb(183, 146, 28);
     --bg-primary-dark: rgb(134, 24, 24);
     --bg-primary-contrast: rgb(255, 255, 255); 
     --bg-primary-link: rgb(15, 15, 15);
     --text-white: rgb(240, 240, 240);
     --text-black: rgb(0, 0, 0);
-    --bg-icon: rgb(175, 175, 175);
+    --bg-icon: rgb(163, 30, 30);
     --bg-icon-hover: rgb(183, 146, 28);
     --bg-icon-accent: rgba(221, 180, 44, .2);
     --font-primary: ''Montserrat', sans-serif';

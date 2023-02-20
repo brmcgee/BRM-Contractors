@@ -69,7 +69,7 @@ function createHeading() {
 
 
 
-function createAll() {
+function create() {
     let service = {
         title: document.getElementById("fTitle").value,
         content: document.getElementById("fBody").value,
@@ -81,7 +81,7 @@ function createAll() {
 
 
 function createAll100() {
-  create();
+  createAll();
 }
 
 // document.addEventListener("DOMContentLoaded", createAll100)
@@ -593,7 +593,7 @@ let myData =
 ;
 
 
-  function create () {
+  function createAll () {
     // let service = {
     //     title: document.getElementById("fTitle").value,
     //     content: document.getElementById("fBody").value,
