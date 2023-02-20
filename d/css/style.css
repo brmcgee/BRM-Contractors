@@ -24,6 +24,10 @@ body {
     .product  {
         width: 100%;
     }
+    .product-container {
+        margin: 18px;
+        padding: 0;
+    }
 }
 .banner{
     background-color: #ffffff;
