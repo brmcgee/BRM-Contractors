@@ -46,12 +46,12 @@
 <!-- ============ BANNER ============= -->
 <div class="banner" id="top">
   <!-- <div class="banner-bar"></div> -->
-  <div class="container-fluid row">
+  <div class="container-fluid row bg-dark">
     <div class="col-sm" id="bannerImg1">
-      <img class="rounded mx-auto d-block" src="../assets/logo/brm.ico" style="width:290px;height:130px;" alt="BRM Contractors Inc">
+      <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="BRM Contractors Inc">
     </div>
     <div class="col-sm" id="bannerImg2">
-      <img class="rounded mx-auto d-block mt-2" src="../assets/logo/brm.ico" style="width:290px;height:130px;" alt="Free Estimate by BRM">
+      <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="Free Estimate by BRM">
     </div>
   </div>
 </div>
@@ -130,29 +130,40 @@
   <div class="container-fluid row g-3 p-3">
 
     <div class="col-md-6">
-      <label class="form-label" for="title">Title</label>
-      <input class="form-control" type="text" name="title" id="fTitle">
+      <label class="form-label" for="title">Name</label>
+      <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
     </div>
   
-    <div class="col-md-6">
-      <label class="form-label" for="image">Image</label>
+    <div class="col-6">
+      <label class="form-label" for="price">Price</label>
+      <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
+    </div>
+
+    <div class="col-md-12">
+      <label class="form-label" for="image">Image URL</label>
       <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
     </div>
 
-    <div class="col-12">
-      <label class="form-label" for="price">Price</label>
-      <input class="form-control" type="text" name="price" id="fPrice">
-  </div>
-    
+    <!-- <div class="form-row align-items-center">
+      <div class="col-auto my-1">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+        <select class="custom-select mr-sm-2" id="myUrl">
+          <option selected>Choose...</option>
+          <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
+          <option value="2">https://brmlery/bg-masthead.jpg</option>
+          <option value="3">Three</option>
+        </select>
+      </div> -->
+  
     <div class="col-12">
         <label class="form-label" for="body">Description</label>
-        <input class="form-control" type="text" name="body" id="fBody">
+        <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
     </div>
 
 
     <div class="col-12"></div>
-      <button type="button" onclick="create()">100</button>
-      <button type="button" onclick="createAll()">Custom</button>
+      <button type="button" class="btn btn-solid" onclick="create()">Make Custom Card</button>
+      <button type="button" class="btn btn-solid" onclick="createAll()">Make 100</button>
     </div>
 
   </div>
