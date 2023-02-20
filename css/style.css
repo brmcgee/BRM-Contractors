@@ -855,8 +855,11 @@ input {
 
 /* ======== PRODUCT ======== */ 
 @media (max-width: 550px) {
+    .products {
+        padding-left: 5px;
+    }
     .products .card {
-        width: 80vw;
+        
         margin: auto;
     }
 }
@@ -878,7 +881,7 @@ input {
     font-weight: bold;
     font-size: 34px;
     font-family: 'Russo One', sans-serif;
-    margin: 20px 0 20px 0;
+    margin: 5px 0 5px 0;
     display: inline-block;
     text-transform: uppercase;
     border-bottom: 3px solid var(--bg-primary);
@@ -894,13 +897,14 @@ input {
 }
 
 .products .card {
-    height: 500px;
+    height: 460px;
+    max-width: 390px;
     margin: 8px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-
+    border: 1px solid #898989;
 }
 .products .card .card-title h4  {
     font-family: 'Russo One', sans-serif;
@@ -914,27 +918,26 @@ input {
     padding: 8px;
 }
 .products .card .card-body {
-    height: 175px;
+    height: 155px;
 }
 .products .card .card-body p  {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    padding: 5px 1px 5px 1px;
-    font-size: 17px;
+    font-size: 16px;
     display: inline-block;
     text-indent: .3cm;
 }
 .products .card .card-img img {
     width: 100%;
-    height: 280px;
-    margin: auto;
-    border-top: 2px solid var(--bg-icon-accent);
+    height: 240px;
+    margin: 5px auto auto auto;
+    padding: 2px;
+    object-fit: contain;
+    background-color: var(--bg-icon);
+    border: 2px solid var(--bg-icon);
+       
 }
-.card-img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+
 
 /* ======== PRODUCT END/ ======== */ 
 
