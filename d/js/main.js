@@ -53,6 +53,21 @@ window.addEventListener("click", function (e) {
 /* ===== CONNECT WIDGET END/ =====  */
 
 
+// ============== SIDENAV ============== 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "400px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+// =========== SIDENAV END/ =============== 
+
+
 
 
 

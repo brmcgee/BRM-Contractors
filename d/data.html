@@ -38,22 +38,29 @@
 <!-- local style sheet by brm  -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
 
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- ============ BANNER ============= -->
 <div class="banner" id="top">
-  <!-- <div class="banner-bar"></div> -->
-  <div class="container-fluid row bg-dark">
+  <!-- <div class="banner-bar bg-warning"></div> -->
+  <!-- <div class="container-fluid row bg-dark">
     <div class="col-sm" id="bannerImg1">
       <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="BRM Contractors Inc">
     </div>
     <div class="col-sm" id="bannerImg2">
       <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="Free Estimate by BRM">
     </div>
-  </div>
+  </div> -->
+  <!-- ========== #MAIN ============== -->
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 md-light">menu_open</span></span>
+</div>
+<!-- ========== #MAIN END============== -->
+
+
 </div>
 <!-- =========== BANNER END/ ========== -->
 
@@ -85,9 +92,8 @@
             About Us
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="about.html">Info - About</a>
-            <a class="dropdown-item" href="contact-brm.html">Contact BRM</a>
-            <a class="dropdown-item" href="maintenance.html">Maintenance Guide</a>
+            <a class="dropdown-item" href="../about.html">Info - About</a>
+            <a class="dropdown-item" href="mailto:brianrmcgee@gmail.com">Contact BRM</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -95,15 +101,7 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="services.html">Drywall and Painting</a>
-            <a class="dropdown-item" href="services.html">Bathroom Remodel</a>
-            <a class="dropdown-item" href="services.html">Kitchen Remodel</a>
-            <a class="dropdown-item" href="services.html">Custom Decks</a>
-            <a class="dropdown-item" href="services.html">Windows and Doors</a>
-            <a class="dropdown-item" href="services.html">Roofing and Siding</a>
-            <a class="dropdown-item" href="services.html">Handyman Services</a>
-            <a class="dropdown-item" href="services.html">Clean Up and Hauling</a>
-            <a class="dropdown-item" href="services.html">Inspections</a>
+            <a class="dropdown-item" href="#">Admin</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
@@ -111,7 +109,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="#blogTop">BRM - Blog Posts</a>
+          <a class="nav-link" id="lastNav" href="../index.html#blog">BRM - Blog Posts</a>
         </li>
     </div>
   </nav>
@@ -120,54 +118,75 @@
 <!-- =========== NAV-BAR END/========== -->
 
 
+<!-- ============ SIDENAV ============= -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+
+<form>
+  <div class="form-group">
+    <div class="container-fluid row g-3 p-3">
+      <div class="col-md-6">
+        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Name</label>
+        <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
+      </div>
+    
+      <div class="col-6">
+        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Price</label>
+        <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
+      </div>
+  
+      <div class="col-md-12">
+        <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
+        <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
+      </div>
+  
+      <!-- <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="myUrl">
+            <option selected>Choose...</option>
+            <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
+            <option value="2">https://brmlery/bg-masthead.jpg</option>
+            <option value="3">Three</option>
+          </select>
+        </div> -->
+    
+      <div class="col-12">
+          <label class="form-label" for="body"><span><i class="fa-solid fa-pen-to-square"></i></span> Description</label>
+          <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
+      </div>
+
+  </div>
+</form>
+
+<a href="../index.html"><span><i class="fa-solid fa-ghost"></i></span> Home </a>
+<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Custom Card </a>
+<a href="#" onclick="createAll()"><span><i class="fa-solid fa-circle-user"></i></span> Make 100 Card </a>
+<a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
+<a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
+<input class="form-control mx-auto d-block" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+
+
+ 
+
+
+
+  </div>
+</div>
+<!-- ============ SIDENAV END/ ========== -->
+
+
+
+
 
 
 
 <!-- ============ WRAPPER ============= -->
-<div class="wrapper mx-auto d-block">
+<div class="wrapper mx-auto d-block" style="padding-bottom: 2000px;">
 
 
-  <div class="container-fluid row g-3 p-3">
-
-    <div class="col-md-6">
-      <label class="form-label" for="title">Name</label>
-      <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
-    </div>
   
-    <div class="col-6">
-      <label class="form-label" for="price">Price</label>
-      <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
-    </div>
-
-    <div class="col-md-12">
-      <label class="form-label" for="image">Image URL</label>
-      <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
-    </div>
-
-    <!-- <div class="form-row align-items-center">
-      <div class="col-auto my-1">
-        <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-        <select class="custom-select mr-sm-2" id="myUrl">
-          <option selected>Choose...</option>
-          <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
-          <option value="2">https://brmlery/bg-masthead.jpg</option>
-          <option value="3">Three</option>
-        </select>
-      </div> -->
-  
-    <div class="col-12">
-        <label class="form-label" for="body">Description</label>
-        <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
-    </div>
-
-
-    <div class="col-12"></div>
-      <button type="button" class="btn btn-solid" onclick="create()">Make Custom Card</button>
-      <button type="button" class="btn btn-solid" onclick="createAll()">Make 100</button>
-    </div>
-
-  </div>
-
 
   <div class="product-container">
     <main class="row product container-lg " id="serviceCard"><!-- js content injection  --></main>

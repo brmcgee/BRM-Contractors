@@ -66,10 +66,7 @@ function createHeading() {
     }
 }
 
-
-
-
-function create() {
+function createSingle() {
     let service = {
         title: document.getElementById("fTitle").value,
         content: document.getElementById("fBody").value,
@@ -77,14 +74,24 @@ function create() {
         price: document.getElementById("fPrice").value
     }; 
     createCard(service);
+    closeNav();
 };
 
 
-function createAll100() {
-  createAll();
-}
-
+// function createAll100() {
+//   createAll();
+// }
 // document.addEventListener("DOMContentLoaded", createAll100)
+
+function clearScreen() {
+ let serviceContainer = document.getElementById("serviceCard");
+ let services = document.querySelectorAll('.service');
+
+ for (let i = 0; i < services.length; i++) {
+  serviceContainer.removeChild(services[i]);
+ }
+ closeNav();
+}
 
 
 
@@ -604,4 +611,5 @@ let myData =
     for (let i = 0; i < myData.length; i++) {
         createCard(myData[i]);
     }
+    closeNav();
 }
