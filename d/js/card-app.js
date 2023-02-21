@@ -526,7 +526,7 @@ let myData =
   }, {
     "title": "S10",
     "img1": "https://robohash.org/sitnostrumsed.png?size=50x50&set=set1",
-    "price": "-42",
+    "price": "42",
     "content": "Vision-oriented responsive archive"
   }, {
     "title": "Mentor",
