@@ -1071,6 +1071,14 @@ input {
     color: #000000;
     text-indent: .5cm;
 }
+.main .img-container {
+    opacity: 100%;
+    transition: .5s opacity;
+    position: relative;
+}
+.main .img-container:hover {
+    opacity: 85%;
+}
  /* ======== MAIN END/ ========= */
   
 /* ======== CONTENT-BAR =========== */ 
