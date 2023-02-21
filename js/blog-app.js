@@ -223,6 +223,15 @@ const blogData = [
     body: "Cold weather was back on us today with a little bit of snow. We finished installing the tub and shower acrylic combo and have the accesories installed all in oil-rubbed bronze finish. We've made the shower back available for use over the weekend. This shower looks awesome, even has a recessed niche for accent tile and all of the soaps - plus its low maintenance and super easy to clean.",
     img1: "assets/gallery/plumbing-tub.jpg",
     img2: "assets/gallery/bathroom3-gb.jpg"
+},
+{
+    category: 'Bathroom Remodel',
+    title: "Drywall finishing smooth - bathroom remodel.",
+    date: "Feb 21, 2023",
+    author: "Brian McGee",
+    body: "Rainy day today! We are currently in-progress on the bathroom remodel. All the drywall boards are installed and we are in progress of finishing the boards in a smooth finish. This bathroom is coming together quite nice! I just love the oil-rubbed bronze finish and subway tile look!",
+    img1: "assets/gallery/bathroom5-gb.jpg",
+    img2: "assets/gallery/bathroom4-gb.jpg"
 }
 ];
 
