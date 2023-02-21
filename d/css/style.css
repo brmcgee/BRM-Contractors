@@ -16,7 +16,7 @@ body {
 
 .wrapper,
 .product-container {
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 @media (max-width: 500px) {
@@ -100,7 +100,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .text-elite {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
 }
 .divider {
     width: 100%;
@@ -976,7 +976,7 @@ input {
 
 /* ======== SERVICES CARD ======== */ 
 .dark-container {
-    width: 900%;
+    width: 100%;
     margin: auto;
 }
 
@@ -993,23 +993,24 @@ input {
 }
 @media (min-width: 1100px) {
     .service-container {
-        width: 80vw;
+        width: 90vw;
         margin: auto;
     }
     .dark-container {
-        width: 80%;
+        width: 88%;
         margin: auto;
     }
 }
 
 .service .card {
-    height: 300px;
+    height: 180px;
+    width: 180px;
     margin: 7px;
     background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    border: 1px solid #333;
+    border: 3px solid #333;
     max-width: 350px;
     font-family: "Roboto", Sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -1019,6 +1020,15 @@ input {
     cursor: pointer;
     user-select: none;
 }
+.service .card .card-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 7ch;
+    background-color: #fbe688;
+}
 .service .card .card-title h4  {
     height: 40px;
     font-size: 18px;
@@ -1026,40 +1036,43 @@ input {
     width: 100%;
     margin: 0 0 3px 0;
     color: var(--text-black);
-    background-color: #aaaaaa;
-    padding: 8px;
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 .service .card .card-body {
-    height: 80px;
+    height: 60px;
     padding: 3px 4px 3px 4px;
+    
 }
 .service .card .card-body p  {
     color: #000000; 
-    padding: 7px;
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 22px;
     display: inline-block;
 }
 .service .card .card-price {
-    height: 50px;
-    padding: 3px 4px 3px 4px;
+    font-size: 17px;
+
 }
 .service .card .card-price p  {
     color: #000000; 
     padding: 7px;
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 22px;
     display: inline-block;
+    color: #8F0303;
+    font-weight: 600;
 }
 .service .card .card-img img {
     width: 100%;
     margin: auto;
 }
-.service .card-img img {
-    width: 100px;
-    height: 100px;
+.service .card-title img {
+    width: 60px;
+    height: 60px;
     object-fit: contain;
-    padding: 2px;
+    padding: 0px;
 }
 
 /* ======== SERVICES CARD END/ ======== */ 
