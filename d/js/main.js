@@ -67,7 +67,34 @@ function closeNav() {
 }
 // =========== SIDENAV END/ =============== 
 
+// ============== MIDDLENAV ============== 
+function openMiddle() {
+  document.getElementById("middleNav").style.width = "400px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+}
 
+function closeMiddle() {
+  document.getElementById("middleNav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+// =========== RIGHTNAV END/ =============== 
+
+
+// ============== RIGHTNAV ============== 
+function openRight() {
+  document.getElementById("rightSidenav").style.width = "400px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+}
+
+function closeRight() {
+  document.getElementById("rightSidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+// =========== RIGHTNAV END/ =============== 
 
 
 
