@@ -995,18 +995,21 @@ input {
     font-size: 18px;
     display: inline-block;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background-color: var(--bg-icon-accent);
+    color: var(--text-white);
     line-height: 1;
     margin-right: 8px;
     border-radius: 4px;
     width: 36px;
     height: 36px;
     transition: 0.3s;
+    text-decoration: none;
 }
   
 .footer .footer-content .social-links a:hover {
     background: var(--bg-primary);
     text-decoration: none;
+    color: var(--bg-icon-hover);
 }
 .footer .footer-content .social-links img {
     width: 32px;
