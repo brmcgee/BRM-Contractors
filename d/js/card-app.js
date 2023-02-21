@@ -4,7 +4,7 @@ let wrapper = document.getElementById("serviceCard");
 function createCard (services) {
 
     let sCard = document.createElement('div');
-    sCard.className = "service col-lg-4 col-md-6 col-sm-6";
+    sCard.className = "service col-lg-3 col-md-4 col-sm-6";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
@@ -14,6 +14,10 @@ function createCard (services) {
     let cTitle = document.createElement('div')
     cTitle.className = "card-title";
     card.appendChild(cTitle);
+
+    let image = document.createElement('img');
+    (services.img1 === '') ? image.src = "assets/gallery/placeholder.jpg": image.src = services.img1;
+    cTitle.appendChild(image);
 
     let title = document.createElement("h4");
     (services.title === '') ? title.innerHTML = "...": title.innerHTML = services.title;
@@ -37,12 +41,10 @@ function createCard (services) {
     cPrice.appendChild(price);
 
     let cImg = document.createElement("div");
-    cImg.className = "card-img";
+    cImg.className = "card-img ing-fluid";
     card.appendChild(cImg);
     
-    let image = document.createElement('img');
-    (services.img1 === '') ? image.src = "assets/gallery/placeholder.jpg": image.src = services.img1;
-    cImg.appendChild(image);
+
 
 };
 
