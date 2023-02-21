@@ -76,7 +76,7 @@ function createSingle() {
         price: document.getElementById("fPrice").value
     }; 
     createCard(service);
-    closeNav();
+    closeNav() || closeRight();
 };
 
 

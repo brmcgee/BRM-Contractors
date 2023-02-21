@@ -14,7 +14,7 @@
 <title>BM Card Practice</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
-<link rel="icon" href="assets/logo/brm.ico" sizes="32x32" />
+<link rel="icon" href="assets/smile.ico" sizes="32x32" />
 
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -57,6 +57,11 @@
   <!-- ========== #MAIN ============== -->
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 md-light">menu_open</span></span>
+  <span class="ms-5 ps-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><i class="fa fa-desktop" aria-hidden="true"></i></i></span>
+  <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+</div>
+<div id="main">
+  
 </div>
 <!-- ========== #MAIN END============== -->
 
@@ -120,7 +125,7 @@
 
 <!-- ============ SIDENAV ============= -->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
 <form>
   <div class="form-group">
@@ -176,8 +181,74 @@
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
+<!-- ============ MIDDLENAV ============= -->
+<div id="middleNav" class="sidenav bg-danger">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+
+<iframe src="http://www.brmdev.com" frameborder="0" style="width:100%;height:100%;"></iframe>
+
+  </div>
+</div>
+<!-- ============ MIDDLENAV END/ ========== -->
+
+<!-- ============ RIGHTNAV ============= -->
+<div id="rightSidenav" class="sidenav bg-info">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRight()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
 
+
+
+<form>
+  <div class="form-group">
+    <div class="container-fluid row g-3 p-3">
+      <div class="col-md-6">
+        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Name</label>
+        <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
+      </div>
+    
+      <div class="col-6">
+        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Price</label>
+        <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
+      </div>
+  
+      <div class="col-md-12">
+        <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
+        <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
+      </div>
+  
+      <!-- <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="myUrl">
+            <option selected>Choose...</option>
+            <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
+            <option value="2">https://brmlery/bg-masthead.jpg</option>
+            <option value="3">Three</option>
+          </select>
+        </div> -->
+    
+      <div class="col-12">
+          <label class="form-label" for="body"><span><i class="fa-solid fa-pen-to-square"></i></span> Description</label>
+          <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
+      </div>
+
+  </div>
+</form>
+
+<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Card </a>
+<a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
+<a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
+<input class="form-control mx-auto d-block" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+
+
+ 
+
+
+
+  </div>
+</div>
+<!-- ============ SIDENAV END/ ========== -->
 
 
 
