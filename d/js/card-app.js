@@ -19,13 +19,14 @@ function createCard (services) {
     (services.img1 === '') ? image.src = "assets/gallery/placeholder.jpg": image.src = services.img1;
     cImg.appendChild(image);
 
+
+
     let cPrice = document.createElement("div");
     cPrice.className = "card-price";
     card.appendChild(cPrice);
 
     let price = document.createElement('p');
     (services.category === '' || services.category === null) ? price.innerHTML = "n/a" : price.innerHTML =  services.category ;
-
     cPrice.appendChild(price);
 
     let cBody = document.createElement("div");
@@ -46,7 +47,8 @@ function createCard (services) {
     card.appendChild(cUser);
 
     let userImage = document.createElement('img');
-    userImage.src = services.img2;
+    (services.authorImage === "" || services.authorImage === null || services.authorImage === undefined) ? userImage.src = "assets/brm-red.ico" : userImage.src = services.authorImage;
+    services.authorImage = "assets/brm-red.ico";
     cUser.appendChild(userImage);
 
     let  cUserInfo = document.createElement('div');
@@ -62,6 +64,10 @@ function createCard (services) {
     (services.date === '') ? date.innerHTML = "-" : date.innerHTML = services.date;
     title.className = ""
     cUserInfo.appendChild(date);
+
+    let image2 = document.createElement('img');
+    (services.img2 === '') ? image2.src = "assets/gallery/placeholder.jpg": image2.src = services.img2;
+    cImg.appendChild(image2);
 
 };
 
@@ -91,7 +97,8 @@ function createSingle() {
         category: document.getElementById("fCategory").value,
         body: document.getElementById("fBody").value,
         img1: document.getElementById("fImage").value,
-        img2: "https://brmdev.com/assets/gallery/bg-masthead.jpg",
+        img2: document.getElementById("fImage2").value,
+        authorImage: document.getElementById("fAuthorImage").value,
         date: document.getElementById("fPrice").value,
         author: document.getElementById("fUser").value,
     }; 
@@ -186,8 +193,8 @@ const myData = [
   date: "Oct 29, 2022",
   author: "Brian McGee",
   body: "Well for such a happy blue bedroom the wall had water damge at the window sill area. We removed the drywall and install new with extra caution at the carpet flooring. After a return trip sanded and repainted the complete room. Another happy client!",
-  img1: "../assets/gallery/drywall-repair1.jpg",
-  img2: "../assets/gallery/drywall-repair2.jpg"
+  img2: "../assets/gallery/drywall-repair1.jpg",
+  img1: "../assets/gallery/drywall-repair2.jpg"
 },
 {
   category: 'Deck Build',
@@ -258,8 +265,8 @@ const myData = [
   date: "Nov 12, 2022",
   author: "Brian McGee",
   body: "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful.",
-  img1: "../assets/gallery/siding-roof-before.jpg",
-  img2: "../assets/gallery/siding-roof-after.jpg"
+  img2: "../assets/gallery/siding-roof-before.jpg",
+  img1: "../assets/gallery/siding-roof-after.jpg"
 },
 {
   category: 'Bathroom Remodel',
@@ -267,8 +274,8 @@ const myData = [
   date: "Dec 14, 2022",
   author: "Brian McGee",
   body: "This project was great! We're completing it winter time. We are closing up this wall area after getting the electrical leads and boxes ran. We installed new exhaust vent, recessed lighting and a vanity light.",
-  img1: "../assets/gallery/bathroom3.jpg",
-  img2: "../assets/gallery/bathroom4.jpg"
+  img2: "../assets/gallery/bathroom3.jpg",
+  img1: "../assets/gallery/bathroom4.jpg"
 },
 {
   category: 'Bathroom Remodel',
@@ -276,8 +283,8 @@ const myData = [
   date: "Dec 14, 2022",
   author: "Brian McGee",
   body: "This project was great! We're completing it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.",
-  img1: "../assets/gallery/bathroom2.jpg",
-  img2: "../assets/gallery/bathroom1.jpg"
+  img2: "../assets/gallery/bathroom2.jpg",
+  img1: "../assets/gallery/bathroom1.jpg"
 },
 {
   category: 'Bathroom Remodel',
@@ -303,8 +310,8 @@ const myData = [
   date: "Jan 29, 2023",
   author: "Brian McGee",
   body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
-  img1: "../assets/gallery/plumbing-repair1.jpg",
-  img2: "../assets/gallery/plumbing-repair2.jpg"
+  img2: "../assets/gallery/plumbing-repair1.jpg",
+  img1: "../assets/gallery/plumbing-repair2.jpg"
 },
 {
   category: 'Kitchen Remodel',
