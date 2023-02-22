@@ -1109,7 +1109,7 @@ input {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 300px;
-    height: 600px;
+    /* height: 600px; */
   }
   .service .card-img img {
     width: 100%;
@@ -1122,42 +1122,44 @@ input {
     justify-content: center;
     align-items: flex-start;
     padding: 10px;
-    min-height: 250px;
+    min-height: 230px;
   }
   .service .card .card-body h4 {
     margin: 0 0 2px;
+    padding: 0;
   }
   .service .card .card-body p {
     font-size: 13px;
     margin: 0 0 40px;
   }
   
+  /* category  */
   .service .card-price {
-    background: #cccccc;
+    background: #c51717;
     border-radius: 50px;
     font-size: 12px;
     margin: 5px 0 0 5px;
     color: #fff;
-    padding: 0 0 0 12px;
+    padding: 0 12px 0 12px;
 
-    width: 100px;
+    width:fit-content;
     text-transform: uppercase;
     cursor: pointer;
   }
-  .tag-teal {
-    background-color: #47bcd4;
+  .tag-red {
+    background-color: rgb(163,30,30);
   }
-  .tag-purple {
-    background-color: #5e76bf;
+  .tag-black {
+    background-color: #333;
   }
-  .tag-pink {
-    background-color: #cd5b9f;
+  .tag-blue {
+    background-color: #2e64c0;
   }
   
-
   .service .card-user {
     display: flex;
     margin-top: auto;
+    padding-left: 4px;
   }
   
   .service .card-user img {
@@ -1166,10 +1168,10 @@ input {
     height: 40px;
     margin-right: 10px;
   }
-  .card-user p {
+  .service .card-user .user-info h5 {
     margin: 0;
   }
-  .user small {
+  .service .card-user .user-info small {
     color: #545d7a;
   }
 

@@ -130,9 +130,15 @@
 <form>
   <div class="form-group">
     <div class="container-fluid row g-3 p-3">
+
       <div class="col-md-6">
         <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Title</label>
         <input class="form-control" type="text" name="title" id="fTitle" placeholder="title">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="category"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Category</label>
+        <input class="form-control" type="text" name="category" id="fCategory" placeholder="category">
       </div>
     
       <div class="col-6">
@@ -147,7 +153,7 @@
   
       <div class="col-md-12">
         <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
-        <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
+        <input class="form-control" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
       </div>
   
       <!-- <div class="form-row align-items-center">
@@ -169,8 +175,8 @@
   </div>
 </form>
 
-<a href="../index.html"><span><i class="fa-solid fa-ghost"></i></span> Home </a>
-<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Custom Card </a>
+
+<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> New Post </a>
 <a href="#" onclick="createAll()"><span><i class="fa-solid fa-circle-user"></i></span> Show all BlogPosts</a>
 <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
 <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
