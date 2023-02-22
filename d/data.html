@@ -57,7 +57,7 @@
   <!-- ========== #MAIN ============== -->
 <div id="main">
   <h1 class="text-russo m-0 p-0 display-2">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
-    <span>Blog Beta <img class="" src="../assets/logo/brm.ico" style="width: 100px;" alt="BRM"></span>  
+    <span>Blog Beta <img class="float-end" src="../assets/logo/brm.ico" style="width: 100px;" alt="BRM"></span>  
     <p class="text-elite fs-4">Site under construction...brian</p>
   </h1>
   <!-- <span class="ms-5 ps-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><i class="fa fa-desktop" aria-hidden="true"></i></i></span>
@@ -128,45 +128,45 @@
 
 <!-- ============ SIDENAV ============= -->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+  <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
 <form>
   <div class="form-group">
-    <div class="container-fluid row g-3 p-3">
+    <div class="container-fluid row g-1 p-1">
 
       <div class="col-md-6">
-        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Title</label>
-        <input class="form-control" type="text" name="title" id="fTitle" placeholder="title">
+        <label class="form-label" for="title"> Title</label>
+        <input class="form-control form-control-sm" type="text" name="title" id="fTitle" placeholder="title">
       </div>
 
       <div class="col-6">
-        <label class="form-label" for="category"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Category</label>
-        <input class="form-control" type="text" name="category" id="fCategory" placeholder="category">
+        <label class="form-label" for="category"> Category</label>
+        <input class="form-control form-control-sm" type="text" name="category" id="fCategory" placeholder="category">
       </div>
     
       <div class="col-6">
-        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Date</label>
-        <input class="form-control" type="text" name="price" id="fPrice" placeholder="date">
+        <label class="form-label" for="price"> Date</label>
+        <input class="form-control form-control-sm" type="text" name="price" id="fPrice" placeholder="date">
       </div>
 
       <div class="col-6">
-        <label class="form-label" for="user"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Author</label>
-        <input class="form-control" type="text" name="user" id="fUser" placeholder="author">
+        <label class="form-label" for="user"> Author</label>
+        <input class="form-control form-control-sm" type="text" name="user" id="fUser" placeholder="author">
       </div>
 
       <div class="col-md-12">
-        <label class="form-label" for="authorImage"><span><i class="fa-solid fa-image"></i></span> Author Image URL</label>
-        <input class="form-control" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
+        <label class="form-label" for="authorImage"> Author Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
       </div>
   
       <div class="col-md-12">
-        <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
-        <input class="form-control" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
+        <label class="form-label" for="image"> Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
       </div>
 
       <div class="col-md-12">
-        <label class="form-label" for="image2"><span><i class="fa-solid fa-image"></i></span> Image 2 URL</label>
-        <input class="form-control" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
+        <label class="form-label" for="image2"> Image 2 URL</label>
+        <input class="form-control form-control-sm" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
       </div>
   
       <!-- <div class="form-row align-items-center">
@@ -181,19 +181,33 @@
         </div> -->
     
       <div class="col-12">
-          <label class="form-label" for="body"><span><i class="fa-solid fa-pen-to-square"></i></span> Description</label>
+          <label class="form-label" for="body"><span> Description</label>
           <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
       </div>
 
   </div>
 </form>
 
+<div class="row mt-2 bg-light">
+  <div class="col">
+    <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Create New </a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="createAll()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Show All</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+</div>
 
-<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> New Post </a>
-<a href="#" onclick="createAll()"><span><i class="fa-solid fa-circle-user"></i></span> Show all BlogPosts</a>
-<a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
-<a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
-<input class="form-control mx-auto d-block" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+
+<input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
 
 
 
