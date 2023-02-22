@@ -131,13 +131,18 @@
   <div class="form-group">
     <div class="container-fluid row g-3 p-3">
       <div class="col-md-6">
-        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Name</label>
-        <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
+        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Title</label>
+        <input class="form-control" type="text" name="title" id="fTitle" placeholder="title">
       </div>
     
       <div class="col-6">
-        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Price</label>
-        <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
+        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Date</label>
+        <input class="form-control" type="text" name="price" id="fPrice" placeholder="date">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="user"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Author</label>
+        <input class="form-control" type="text" name="user" id="fUser" placeholder="author">
       </div>
   
       <div class="col-md-12">
@@ -166,7 +171,7 @@
 
 <a href="../index.html"><span><i class="fa-solid fa-ghost"></i></span> Home </a>
 <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Custom Card </a>
-<a href="#" onclick="createAll()"><span><i class="fa-solid fa-circle-user"></i></span> Make 100 Card </a>
+<a href="#" onclick="createAll()"><span><i class="fa-solid fa-circle-user"></i></span> Show all BlogPosts</a>
 <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
 <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
 <input class="form-control mx-auto d-block" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
@@ -185,8 +190,6 @@
 <div id="middleNav" class="sidenav bg-danger">
   <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
-<iframe src="http://www.brmdev.com" frameborder="0" style="width:100%;height:100%;"></iframe>
-
   </div>
 </div>
 <!-- ============ MIDDLENAV END/ ========== -->
@@ -197,48 +200,9 @@
 
 
 
-
-<form>
-  <div class="form-group">
-    <div class="container-fluid row g-3 p-3">
-      <div class="col-md-6">
-        <label class="form-label" for="title"><span><i class="fa-solid fa-user"></i></i></i></span> Name</label>
-        <input class="form-control" type="text" name="title" id="fTitle" placeholder="name">
-      </div>
-    
-      <div class="col-6">
-        <label class="form-label" for="price"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Price</label>
-        <input class="form-control" type="text" name="price" id="fPrice" placeholder="price">
-      </div>
-  
-      <div class="col-md-12">
-        <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
-        <input class="form-control" type="text" name="image" id="fImage"  value="https://brmdev.com/assets/gallery/bg-masthead.jpg">
-      </div>
-  
-      <!-- <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-          <select class="custom-select mr-sm-2" id="myUrl">
-            <option selected>Choose...</option>
-            <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
-            <option value="2">https://brmlery/bg-masthead.jpg</option>
-            <option value="3">Three</option>
-          </select>
-        </div> -->
-    
-      <div class="col-12">
-          <label class="form-label" for="body"><span><i class="fa-solid fa-pen-to-square"></i></span> Description</label>
-          <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
-      </div>
-
-  </div>
-</form>
-
 <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Card </a>
 <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
 <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
-<input class="form-control mx-auto d-block" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
 
 
 
@@ -248,7 +212,7 @@
 
   </div>
 </div>
-<!-- ============ SIDENAV END/ ========== -->
+<!-- ============ RIGHTNAV END/ ========== -->
 
 
 
