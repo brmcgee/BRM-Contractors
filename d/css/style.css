@@ -1011,12 +1011,13 @@ input {
 
  .service .card {
     font-family: "Roboto", Sans-serif;
-    margin: 9px;
+    margin: 10px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 300px;
+    box-sizing: border-box;
     /* height: 600px; */
   }
   .service .card-img img {
@@ -1027,7 +1028,7 @@ input {
   }
   .service .card-img img {
     width: 50%;
-    height: 150px;
+    height: 170px;
     object-fit: cover;
     padding: 0;
     margin: 0;
