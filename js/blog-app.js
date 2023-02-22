@@ -232,7 +232,16 @@ const blogData = [
     body: "Rainy day today! We are currently in-progress on the bathroom remodel. All the drywall boards are installed and we are in progress of finishing the boards in a smooth finish. This bathroom is coming together quite nice! I just love the oil-rubbed bronze finish and subway tile look!",
     img1: "assets/gallery/bathroom5-gb.jpg",
     img2: "assets/gallery/bathroom4-gb.jpg"
-}
+},
+{
+    category: 'Bathroom Remodel',
+    title: "Drywall finishing smooth - bathroom remodel.",
+    date: "Feb 22, 2023",
+    author: "Brian McGee",
+    body: "Well another wet day but we made it back on site and finished the mud work on the walls. It's still drying so we will have to wait to sand and paint. Thought a before and in-progress pic drop was necessary. Check back for completion of this awesome bathroom project!",
+    img1: "../assets/gallery/bathroom-in-prog-gb.jpg",
+    img2: "../assets/gallery/bathroom-before-gb.jpg"
+  }
 ];
 
 
