@@ -14,7 +14,7 @@
 <title>BM Card Practice</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
-<link rel="icon" href="assets/smile.ico" sizes="32x32" />
+<link rel="icon" href="assets/brm-red.ico" sizes="32x32" />
 
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -44,7 +44,7 @@
 <body>
 
 <!-- ============ BANNER ============= -->
-<div class="banner" id="top">
+<div class="banner p-0 m-0" id="top">
   <!-- <div class="banner-bar bg-warning"></div> -->
   <!-- <div class="container-fluid row bg-dark">
     <div class="col-sm" id="bannerImg1">
@@ -56,9 +56,11 @@
   </div> -->
   <!-- ========== #MAIN ============== -->
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 md-light">menu_open</span></span>
-  <span class="ms-5 ps-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><i class="fa fa-desktop" aria-hidden="true"></i></i></span>
-  <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+  <h1 class="text-russo m-0 p-0 display-2">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
+    <span>Blog Beta <img class="" src="../assets/logo/brm.ico" style="width: 100px;" alt="BRM"></span>  
+  </h1>
+  <!-- <span class="ms-5 ps-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><i class="fa fa-desktop" aria-hidden="true"></i></i></span>
+  <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span> -->
 </div>
 <div id="main">
   
@@ -150,10 +152,20 @@
         <label class="form-label" for="user"><span><i class="fa-solid fa-money-bill-1-wave"></i></span> Author</label>
         <input class="form-control" type="text" name="user" id="fUser" placeholder="author">
       </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="authorImage"><span><i class="fa-solid fa-image"></i></span> Author Image URL</label>
+        <input class="form-control" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
+      </div>
   
       <div class="col-md-12">
         <label class="form-label" for="image"><span><i class="fa-solid fa-image"></i></span> Image URL</label>
         <input class="form-control" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="image2"><span><i class="fa-solid fa-image"></i></span> Image 2 URL</label>
+        <input class="form-control" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
       </div>
   
       <!-- <div class="form-row align-items-center">
