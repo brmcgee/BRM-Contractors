@@ -1,6 +1,6 @@
-
-
+let blogs = [];
 let wrapper = document.getElementById("serviceCard");
+
 function createCard (services) {
 
     let sCard = document.createElement('div');
@@ -18,8 +18,6 @@ function createCard (services) {
     let image = document.createElement('img');
     (services.img1 === '') ? image.src = "assets/gallery/placeholder.jpg": image.src = services.img1;
     cImg.appendChild(image);
-
-
 
     let cPrice = document.createElement("div");
     cPrice.className = "card-price";
@@ -71,20 +69,35 @@ function createCard (services) {
 
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  createHeading();
+});
+
 function createHeading() {
 
     let heading = document.createElement('div');
-    heading.className = "product-header mx-auto d-block";
+    heading.className = "product-header mx-auto d-block bg-accent-hover mt-1";
     wrapper.appendChild(heading);
     
+    let image = document.createElement('img');
+    image.src = "assets/brm-red.ico";
+    image.style.height = "100px";
+    image.style.width = "100px";
+    image.classList = "p-1 mt-3 ms-1 float-end"
+    heading.appendChild(image);
+
+    
     let hTitle = document.createElement('h2');
-    hTitle.innerHTML = "Services";
+    hTitle.innerHTML = "Blogs by BRM";
+    hTitle.classList = "text-russo";
     heading.appendChild(hTitle);
 
     let hContent = document.createElement('p');
     hContent.className = "col-md-10"
-    hContent.innerHTML = "BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.";
+    hContent.innerHTML = "Check out our blogs of recently completed work. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting.  Call or connect with us today for a FREE estimate.";
     heading.appendChild(hContent);
+
+
 
     for (let i = 0; i < services.length; i++) {
         createCard(i);
@@ -114,10 +127,11 @@ function createSingle() {
 
 function clearScreen() {
  let serviceContainer = document.getElementById("serviceCard");
- let services = document.querySelectorAll('.service');
+ let cards = document.querySelectorAll('.service');
 
- for (let i = 0; i < services.length; i++) {
-  serviceContainer.removeChild(services[i]);
+ for (let i = 0; i < cards.length; i++) {
+  serviceContainer.removeChild(cards[i]);
+  blogs.shift();
  }
  closeNav();
 }
@@ -363,7 +377,8 @@ const myData = [
 
   function createAll () {
     for (let i = 0; i < myData.length; i++) {
-        createCard(myData[i]);
+      blogs.push(myData[i]);
+        createCard(blogs[i]);
     }
     closeNav();
 }
