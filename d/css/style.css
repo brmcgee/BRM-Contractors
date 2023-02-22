@@ -16,7 +16,7 @@ body {
 
 .wrapper,
 .product-container {
-    width: 90%;
+    width: 98%;
     margin: auto;
 }
 @media (max-width: 500px) {
@@ -975,7 +975,7 @@ input {
 
 
 /* ======== SERVICES CARD ======== */ 
-.dark-container {
+/* .dark-container {
     width: 100%;
     margin: auto;
 }
@@ -1000,8 +1000,8 @@ input {
         width: 88%;
         margin: auto;
     }
-}
-
+} */
+/* 
 .service .card {
     height: 180px;
     width: 180px;
@@ -1014,13 +1014,13 @@ input {
     max-width: 350px;
     font-family: "Roboto", Sans-serif;
     font-family: 'Montserrat', sans-serif;
-}
+} */
 .service .card:hover {
     box-shadow: 7px 2px 44px 3px var(--bg-accent-hover);
     cursor: pointer;
     user-select: none;
 }
-.service .card .card-title {
+/* .service .card .card-title {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1028,8 +1028,8 @@ input {
     justify-content: center;
     height: 7ch;
     background-color: #fbe688;
-}
-.service .card .card-title h4  {
+} */
+/* .service .card .card-title h4  {
     height: 40px;
     font-size: 18px;
     text-transform: uppercase;
@@ -1039,8 +1039,8 @@ input {
     font-family: 'Special Elite', Arial, Helvetica, sans-serif;
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
-}
-.service .card .card-body {
+} */
+/* .service .card .card-body {
     height: 60px;
     padding: 3px 4px 3px 4px;
     
@@ -1054,8 +1054,8 @@ input {
 .service .card .card-price {
     font-size: 17px;
 
-}
-.service .card .card-price p  {
+} */
+/* .service .card .card-price p  {
     color: #000000; 
     padding: 7px;
     font-size: 17px;
@@ -1063,8 +1063,8 @@ input {
     display: inline-block;
     color: #8F0303;
     font-weight: 600;
-}
-.service .card .card-img img {
+} */
+/* .service .card .card-img img {
     width: 100%;
     margin: auto;
 }
@@ -1073,12 +1073,103 @@ input {
     height: 60px;
     object-fit: contain;
     padding: 0px;
-}
+} */
 
 /* ======== SERVICES CARD END/ ======== */ 
 
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: "Roboto", sans-serif;
+    color: #10182f;
+  } */
+  /* .container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  } */
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: "Roboto", sans-serif;
+    color: #10182f;
+  }
 
+ .service .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    height: 600px;
+  }
+  .service .card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .service .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    min-height: 250px;
+  }
+  .service .card .card-body h4 {
+    margin: 0 0 2px;
+  }
+  .service .card .card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+  
+  .service .card-price {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tag-teal {
+    background-color: #47bcd4;
+  }
+  .tag-purple {
+    background-color: #5e76bf;
+  }
+  .tag-pink {
+    background-color: #cd5b9f;
+  }
+  
 
+  .service .card-user {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .service .card-user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .card-user p {
+    margin: 0;
+  }
+  .user small {
+    color: #545d7a;
+  }
 
 
 /* ====== BRM DEV ICON =========== */
