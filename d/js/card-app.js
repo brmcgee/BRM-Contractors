@@ -265,7 +265,7 @@ const myData = [
 },
 {
   category: 'Deck Build',
-  title: "Custom Deck Build",
+  title: "Wrapping up a wood deck with railing",
   date: "Nov 11, 2022",
   author: "Brian McGe",
   body: "What an awesome deck we built here! We completed it winter time just before the snow. I know these clients will be enjoying this come spring. We installed this pressure treated deck over posts and beams, it is over 350 sqft - huge. It is a beatiful oasis and awesome addition to the new pool. ",
@@ -275,7 +275,7 @@ const myData = [
 },
 {
   category: 'Deck Build',
-  title: "Custom Deck Build",
+  title: "Pressure treated wood deck final touches",
   date: "Nov 12, 2022",
   author: "Brian McGee",
   body: "Well we are finishing up the final touches here on this deck. Final trim pieces and lattice install and routing  the edges.  We wont be staining this deck, it will dry and the homeowners will stain. This deck is sweet and is going to be a blast come spring time.",
@@ -455,7 +455,7 @@ const myData = [
 },
 {
   category: 'Bathroom Remodel',
-  title: "Drywall finishing smooth - bathroom remodel.",
+  title: "Finishing the smooth finish drywall",
   date: "Feb 22, 2023",
   author: "Brian McGee",
   body: "Well another wet day but we made it back on site and finished the mud work on the walls. It's still drying so we will have to wait to sand and paint. Thought a before and in-progress pic drop was necessary. Check back for completion of this awesome bathroom project!",

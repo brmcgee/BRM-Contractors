@@ -7,7 +7,7 @@ const blogData = [
     body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
     img1: "../assets/gallery/sseam1.jpg",
     img2: "../assets/gallery/sseam2.jpg",
-    project: "siding-roofing"
+    project: ""
   },
   {
     category: 'Kitchen backsplash',
@@ -40,7 +40,7 @@ const blogData = [
     project: ""
   },
   {
-    category: 'Siding',
+    category: 'Siding and Roofing',
     title: "Home renovation project exterior siding, soffit and fascia",
     date: "June 23, 2021",
     author: "Brian McGee, owner",
@@ -91,7 +91,7 @@ const blogData = [
   },
   {
     category: 'Deck Build',
-    title: "Custom Deck Build",
+    title: "Wrapping up a wood deck with railing",
     date: "Nov 11, 2022",
     author: "Brian McGe",
     body: "What an awesome deck we built here! We completed it winter time just before the snow. I know these clients will be enjoying this come spring. We installed this pressure treated deck over posts and beams, it is over 350 sqft - huge. It is a beatiful oasis and awesome addition to the new pool. ",
@@ -101,7 +101,7 @@ const blogData = [
   },
   {
     category: 'Deck Build',
-    title: "Custom Deck Build",
+    title: "Pressure treated wood deck final touches",
     date: "Nov 12, 2022",
     author: "Brian McGee",
     body: "Well we are finishing up the final touches here on this deck. Final trim pieces and lattice install and routing  the edges.  We wont be staining this deck, it will dry and the homeowners will stain. This deck is sweet and is going to be a blast come spring time.",
@@ -170,7 +170,7 @@ const blogData = [
     project: ""
   },
   {
-    category: 'Roofing Siding',
+    category: 'Siding and Roofing',
     title: "Total transformation! BRM delivers new exteriors on this one.",
     date: "Nov 12, 2022",
     author: "Brian McGee",
@@ -281,7 +281,7 @@ const blogData = [
   },
   {
     category: 'Bathroom Remodel',
-    title: "Drywall finishing smooth - bathroom remodel.",
+    title: "Finishing the smooth finish drywall",
     date: "Feb 22, 2023",
     author: "Brian McGee",
     body: "Well another wet day but we made it back on site and finished the mud work on the walls. It's still drying so we will have to wait to sand and paint. Thought a before and in-progress pic drop was necessary. Check back for completion of this awesome bathroom project!",
