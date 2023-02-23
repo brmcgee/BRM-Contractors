@@ -39,14 +39,14 @@ body {
     /* set for styles below - changes global  */
     --bg-primary: rgb(46, 46, 45);
     --bg-accent-hover: rgba(163, 30, 30, 0.2);
-    --bg-primary-off: rgb(183, 146, 28);
+    --bg-primary-off: rgb(163, 30, 30);
     --bg-primary-dark: rgb(134, 24, 24);
     --bg-primary-contrast: rgb(255, 255, 255); 
     --bg-primary-link: rgb(15, 15, 15);
     --text-white: rgb(240, 240, 240);
     --text-black: rgb(0, 0, 0);
     --bg-icon: rgb(163, 30, 30);
-    --bg-icon-hover: rgb(183, 146, 28);
+    --bg-icon-hover: rgb(162, 161, 158);
     --bg-icon-accent: rgba(221, 180, 44, .2);
     --font-primary: ''Montserrat', sans-serif';
     --font-secondary: "Roboto", Sans-serif;
@@ -455,7 +455,7 @@ input {
         border: none;
     } 
     .navbar-nav .nav-item .nav-link {
-        color:rgb(15, 15, 15);
+        color:rgb(221, 218, 218);
         font-weight: bold;
         padding: 1px 16px;
         padding-left: 25px;
@@ -475,6 +475,7 @@ input {
     .navbar-nav .nav-item .active {
         color: white;
     } 
+    
     .navbar-nav .nav-item a {
         padding: 8px 16px;
         padding-left: 25px;
@@ -507,6 +508,7 @@ input {
         background-color: var(--bg-primary-contrast);
         margin: 0px;
     }
+
     .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
         color: var(--bg-primary-contrast);   
     }
@@ -524,11 +526,14 @@ input {
     .dropdown {
         box-shadow: none;
     }
+
  
 }
 /* === NAVBAR STYLE END/ ======  */
 
 /* ======= SIDENAV ============ */
+
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -556,7 +561,7 @@ input {
   }
   
   .sidenav a:hover {
-    color: rgb(219, 0, 0);
+    color: rgb(191, 34, 34);
   }
   
   .sidenav .closebtn {
@@ -588,7 +593,7 @@ input {
     border-radius: 50%;
 }
 .material-icons.md-36:hover {
-    color: rgb(163, 30, 30);
+    color: rgb(188, 188, 188);
 }
 
 /* ======== SIDENAV END/ ==============  */
@@ -1085,16 +1090,16 @@ input {
   
   .service .card-user img {
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
   }
   .service .card-user .user-info h5 {
     margin: 0;
-    font-size: 17px;
+    font-size: 15px;
   }
   .service .card-user .user-info small {
-    color: #545d7a;
+    color: #3e55a6;
   }
 
 /* ======== SERVICES CARD END/ ======== */ 
