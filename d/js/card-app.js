@@ -72,12 +72,13 @@ function createCard (services) {
 // document.addEventListener("DOMContentLoaded", () => {
 //   createHeading();
 // });
+let banner = document.getElementById("top");
 
 function createHeading() {
 
     let heading = document.createElement('div');
     heading.className = "product-header mx-auto d-block bg-accent-hover mt-1";
-    wrapper.appendChild(heading);
+    banner.appendChild(heading);
     
     let image = document.createElement('img');
     image.src = "assets/brm-red.ico";
@@ -85,7 +86,6 @@ function createHeading() {
     image.style.width = "100px";
     image.classList = "p-1 mt-3 ms-1 float-end"
     heading.appendChild(image);
-
     
     let hTitle = document.createElement('h2');
     hTitle.innerHTML = "Blogs by BRM";
@@ -98,6 +98,7 @@ function createHeading() {
     heading.appendChild(hContent);
 }
 
+// create title heading per 1 card category
 function createTitle(p) {
 
   let title = document.createElement('div');
@@ -113,7 +114,6 @@ function createTitle(p) {
   image.id = "tImg";
   title.appendChild(image);
 
-  
   let hTitle = document.createElement('h2');
   hTitle.innerHTML = p.category;
   hTitle.classList = "text-russo";
@@ -127,20 +127,17 @@ function createTitle(p) {
   title.appendChild(hContent);
 }
 
-
-
 function clearTitle() {
- 
   let titleDiv = document.getElementById("tDiv");
   let img = document.getElementById("tImg");
   let title = document.getElementById("tTitle");
   let content = document.getElementById("tContent");
-
-  console.log(titleDiv)
+  
   titleDiv.removeChild(img);
   titleDiv.removeChild(title);
   titleDiv.removeChild(content);
-  clearScreen();
+  wrapper.removeChild(titleDiv);
+
 }
 
 
@@ -450,17 +447,18 @@ const myData = [
 }
 ];
 
-
-function createAll () {
-  for (let i = 0; i < myData.length; i++) {
-      blogs.push(myData[i]);
-      createCard(blogs[i]);
+// all cards title card
+let myAllCard = [
+  {
+    category: 'All blog posts @ BRM',
   }
-    closeNav();
-}
+]
 
 
-//create and display post per .project
+
+
+
+//create and display post per .project selector
 function selectProject (p) {
   clearScreen();
 
@@ -471,7 +469,6 @@ function selectProject (p) {
   for (let j = 0; j < myData.length; j++) {
     allProjects.push(myData[j]);
   }
-
   // creates project array that includes project string 
   for (let i = 0; i < allProjects.length ; i++) {
     let current = allProjects[i];
@@ -479,13 +476,41 @@ function selectProject (p) {
       activeProjects.push(current);
     }
   }
-  let title = document.createElement('div');
-
+  // clears title if present 
+  let title = document.getElementById("tTitle");
+  if (title === null) {
+    console.log('ok')
+  } else {
+    clearTitle();
+  }
 
   createTitle(activeProjects[0] || "Error")
+
   // prints activeprojects to screen
   for (let x = 0; x < activeProjects.length; x++) {
     createCard(activeProjects[x]);
   }
   return activeProjects;
+}
+
+// create all blog cards 
+function createAll () {
+  clearScreen();
+  let allBlogs = [];
+
+  for (let i = 0; i < myData.length; i++) {
+      allBlogs.push(myData[i]);
+  }
+
+  let title = document.getElementById("tTitle");
+  if (title === null) {
+    console.log('ok')
+  } else {
+    clearTitle();
+  }
+
+  createTitle(myAllCard[0])
+  for (let j = 0; j < allBlogs.length; j++) {
+    createCard(allBlogs[j]);
+  }
 }
