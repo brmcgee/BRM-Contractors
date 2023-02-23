@@ -98,9 +98,8 @@ function createHeading() {
     heading.appendChild(hContent);
 }
 
-// create title heading per 1 card category
+// create title heading per 1st cards category
 function createTitle(p) {
-
   let title = document.createElement('div');
   title.className = "mx-auto d-block bg-accent-hover mt-1";
   title.id = "tDiv";
@@ -126,7 +125,7 @@ function createTitle(p) {
   hContent.innerHTML = "Check out our blogs of recently completed work. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. Call or connect with us today for a FREE estimate.";
   title.appendChild(hContent);
 }
-
+//clears title card
 function clearTitle() {
   let titleDiv = document.getElementById("tDiv");
   let img = document.getElementById("tImg");
@@ -137,7 +136,6 @@ function clearTitle() {
   titleDiv.removeChild(title);
   titleDiv.removeChild(content);
   wrapper.removeChild(titleDiv);
-
 }
 
 
@@ -183,7 +181,7 @@ const myData = [
   body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
   img1: "../assets/gallery/sseam1.jpg",
   img2: "../assets/gallery/sseam2.jpg",
-  project: ""
+  project: "siding-roofing"
 },
 {
   category: 'Kitchen backsplash',
@@ -206,16 +204,6 @@ const myData = [
   project: ""
 },
 {
-  category: 'Wood Repair',
-  title: "Painted wood siding repair - Moisture damage",
-  date: "June 13, 2022",
-  author: "Brian McGee",
-  body: "We brought out the walkboard on this one to make it easy. Just a little moisture damaged siding. This elevation is westward facing so it sees alot rougher weather. Finished and painted - Client happy!",
-  img1: "../assets/gallery/siding1.jpg",
-  img2: "../assets/gallery/siding2.jpg",
-  project: ""
-},
-{
   category: 'Shingle repair',
   title: "Roof edge leak solved by BRM",
   date: "June 18, 2020",
@@ -233,7 +221,17 @@ const myData = [
   body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
   img1: "../assets/gallery/house-before.jpg",
   img2: "../assets/gallery/house-after.jpg",
-  project: ""
+  project: "siding-roofing"
+},
+{
+  category: 'Wood Repair',
+  title: "Painted wood siding repair - Moisture damage",
+  date: "June 13, 2022",
+  author: "Brian McGee",
+  body: "We brought out the walkboard on this one to make it easy. Just a little moisture damaged siding. This elevation is westward facing so it sees alot rougher weather. Finished and painted - Client happy!",
+  img1: "../assets/gallery/siding1.jpg",
+  img2: "../assets/gallery/siding2.jpg",
+  project: "siding-roofing"
 },
 {
   category: 'Painting',
@@ -258,11 +256,31 @@ const myData = [
 {
   category: 'Deck Build',
   title: "Custom Deck Build",
+  date: "Nov 08, 2022",
+  author: "Brian McGee",
+  body: "The weather is awesome and this deck is going to be beautiful! We are all framed in here and are going to be installing the deck boards next. This deck is over 350sqft and is being built with pressure treated lumber. Check back soon!",
+  img1: "../assets/gallery/custom-deck4.jpg",
+  img2: "../assets/gallery/custom-deck5.jpg",
+  project: "custom-deck"
+},
+{
+  category: 'Deck Build',
+  title: "Custom Deck Build",
   date: "Nov 11, 2022",
-  author: "Brian McGee, owner",
+  author: "Brian McGe",
   body: "What an awesome deck we built here! We completed it winter time just before the snow. I know these clients will be enjoying this come spring. We installed this pressure treated deck over posts and beams, it is over 350 sqft - huge. It is a beatiful oasis and awesome addition to the new pool. ",
   img1: "../assets/gallery/custom-deck2.jpg",
   img2: "../assets/gallery/custom-deck3.jpg",
+  project: "custom-deck"
+},
+{
+  category: 'Deck Build',
+  title: "Custom Deck Build",
+  date: "Nov 12, 2022",
+  author: "Brian McGee",
+  body: "Well we are finishing up the final touches here on this deck. Final trim pieces and lattice install and routing  the edges.  We wont be staining this deck, it will dry and the homeowners will stain. This deck is sweet and is going to be a blast come spring time.",
+  img1: "../assets/gallery/custom-deck6.jpg",
+  img2: "../assets/gallery/custom-deck7.jpg",
   project: "custom-deck"
 },
 {
@@ -452,8 +470,24 @@ let myAllCard = [
   {
     category: 'All blog posts @ BRM',
   }
+];
+
+let welcome = [
+  {
+    category: 'BRM Blog Posts',
+    title: "New and exciting project blog posts at BRM!",
+    date: "Current",
+    author: "Office @ BRM",
+    body: "Go ahead and select from the menu for posts of different projects we are working on. Check out our blogs of recently completed work. ",
+    img1: "../assets/logo/brm-ico-black.png",
+    img2: "../assets/logo/building.jpg",
+    project: "welcome"
+  }
 ]
 
+document.addEventListener("DOMContentLoaded", () => {
+  createCard(welcome[0]);
+})
 
 
 
