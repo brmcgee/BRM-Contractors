@@ -6,12 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="BRM provides residential and commercial repair, building and maintenance. We offer drywall and painting, wood repair, roofing and siding repair and all sorts of remodeling.">
-<meta name="title" content="Bathroom Remodel @ BRM Contractors Inc">
+<meta name="title" content="Bathroom Remodel @ BRM - Contractors">
 <meta name="url" content="https://brm.contractors.net/" />
 <meta name="site_name" content="BRM Contractors Inc" />
 <meta name="type" content="website" />
 
-<title>Bathroom remodel @ BRM Contractors Inc</title>
+<title>BRM Active Project @ BRM Contractors</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
 <link rel="icon" href="assets/brm-red.ico" sizes="32x32" />
@@ -43,23 +43,22 @@
 </head>
 <body>
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        selectProject('bathroom-remodel-rm');
+    });
+  </script>
+
+
 <!-- ============ BANNER ============= -->
-<div class="banner p-0 m-0" id="top">
-    <!-- <div class="banner-bar bg-warning"></div> -->
-    <!-- <div class="container-fluid row bg-dark">
-      <div class="col-sm" id="bannerImg1">
-        <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="BRM Contractors Inc">
-      </div>
-      <div class="col-sm" id="bannerImg2">
-        <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="Free Estimate by BRM">
-      </div>
-    </div> -->
+<div class="banner bg-accent-hover p-0 m-0" id="top">
   <!-- ========== #MAIN ============== -->
   <div id="main">
-    <h1 class="text-russo m-0 p-0 display-2">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
-      <span>Blog Beta</span>  
-      <p class="text-elite fs-4">Site under construction...brian  <span class="" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><i class="fa-solid fa-dragon"></i></i></span>
-      </p>
+    <h1 class="text-russo m-0 p-0 fs-4">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
+      <span class="display-5">Blog Posts @BRM</span>  
+      <span class="" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><i class="fa-solid fa-dragon"></i></i></span>
+      
     </h1>
     <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span> -->
   </div>
@@ -67,10 +66,9 @@
     
   </div>
   <!-- ========== #MAIN END============== -->
-  
-  
-  </div>
-  <!-- =========== BANNER END/ ========== -->
+
+</div>
+<!-- =========== BANNER END/ ========== -->
 
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
@@ -106,13 +104,13 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
+            Blog Posts
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="bathroom.html">Bathroom Remodel</a>
-            <a class="dropdown-item" href="kitchen.html">Kitchen Remodel</a>
-            <a class="dropdown-item" href="deck.html">Deck Build</a>
-            <a class="dropdown-item" href="siding.html">Roofing and Siding</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('bathroom-remodel-rm')">Bathroom Remodel</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('kitchen-remodel-ah')">Kitchen Remodel</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('custom-deck')">Deck Build</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('siding-roofing')">Roofing and Siding</a>
             <a class="dropdown-item" href="data.html">Admin</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
@@ -121,7 +119,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="../index.html#blog">BRM - Blog Posts</a>
+          <a class="nav-link" id="lastNav" href="#" onclick="createAll()">BRM - All Blog Posts</a>
         </li>
     </div>
   </nav>
@@ -135,58 +133,161 @@
   <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
 
-    <div class="col">
-      <a href="bathroom.html" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
-    </div>
-    <div class="col">
-        <a href="kitchen.html" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
-    </div>
-    <div class="col">
-        <a href="deck.html" onclick="selectProject('deck-build')"> Deck Build </a>
-    </div>
-    <div class="col">
-        <a href="siding.html" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
-    </div>
-    <div class="col">
-      <a href="#" onclick="createAll()"> Show All</a>
-    </div>
-    <div class="col">
-        <a href="../index.html"> BRM Contractors - HOME</a>
-    </div>
+  <div class="col">
+    <a href="../index.html"> BRM Contractors - HOME</a>
+  </div>
+  <div class="col pt-3">
+    <a href="#" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
+  </div>
+  <div class="col">
+      <a href="#" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
+  </div>
+  <div class="col">
+      <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
+  </div>
+  <div class="col">
+      <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="createAll()" class="pt-3"> Show All</a>
+  </div>
 
 
-<div class="row  mt-3">
+<div class="row mt-2">
+  <div class="col">
+    <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="clearTitle(), clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+</div>
+
+
+
+  <input class="form-control mx-auto d-block mt-1 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+  </div>
+</div>
+<!-- ============ SIDENAV END/ ========== -->
+
+<!-- ============ MIDDLENAV ============= -->
+<div id="middleNav" class="sidenav bg-light">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+<form>
+  <div class="form-group">
+    <div class="container-fluid row g-1 p-1">
+
+      <div class="col-md-6">
+        <label class="form-label" for="title"> Title</label>
+        <input class="form-control form-control-sm" type="text" name="title" id="fTitle" placeholder="title">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="category"> Category</label>
+        <input class="form-control form-control-sm" type="text" name="category" id="fCategory" placeholder="category">
+      </div>
+    
+      <div class="col-6">
+        <label class="form-label" for="price"> Date</label>
+        <input class="form-control form-control-sm" type="text" name="price" id="fPrice" placeholder="date">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="user"> Author</label>
+        <input class="form-control form-control-sm" type="text" name="user" id="fUser" placeholder="author">
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="authorImage"> Author Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
+      </div>
+  
+      <div class="col-md-12">
+        <label class="form-label" for="image"> Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="image2"> Image 2 URL</label>
+        <input class="form-control form-control-sm" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
+      </div>
+  
+      <!-- <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="myUrl">
+            <option selected>Choose...</option>
+            <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
+            <option value="2">https://brmlery/bg-masthead.jpg</option>
+            <option value="3">Three</option>
+          </select>
+        </div> -->
+    
+      <div class="col-12">
+          <label class="form-label" for="body"><span> Description</label>
+          <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
+      </div>
+
+  </div>
+</form>
+
+<div class="row mt-2 bg-light">
+  <div class="col">
+    <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Create New </a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="createAll()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Show All</a>
+  </div>
+</div>
+<div class="row">
   <div class="col">
     <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
   </div>
   <div class="col">
-    <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+    <a href="#" onclick="clearTitle(), clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
   </div>
 </div>
-<input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+<div class="col">
+  <a href="#" onclick="selectProject('bathroom-remodel-rm'), closeNav()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Bathroom Remodel</a>
 </div>
-<!-- ============ SIDENAV END/ ========== -->
+
+
+  <input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+
+  </div>
+  </div>
+</div>
+<!-- ============ MIDDLENAV END/ ========== -->
+
+<!-- ============ RIGHTNAV ============= -->
+<div id="rightSidenav" class="sidenav bg-info">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeRight()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+
+<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Card </a>
+<a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
+<a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
+
+  </div>
+</div>
+<!-- ============ RIGHTNAV END/ ========== -->
+
 
 
 
 <!-- ============ WRAPPER ============= -->
-<div class="wrapper mx-auto d-block" style="padding-bottom: 500px;">
+<div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
 
-<!-- content load -  show(start, end) of myData-->
+  <!-- PROJECT BUTTONS  -->
+  <!-- <button class="btn-solid mt-1" onclick="createAll()">All Posts</button>
+  <button class="btn-solid mt-1" onclick="selectProject('bathroom-remodel-rm')">Bathroom Remodel</button>
+  <button class="btn-solid mt-1" onclick="selectProject('kitchen-remodel-ah')">Kitchen Remodel</button> -->
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        selectProject('bathroom-remodel-rm');
-    });
-  </script>
-
-<!-- content container display target -->
+  <!-- PROJECT JS INJECTION  -->
   <div class="product-container">
-    <main class="row product container-lg " id="serviceCard">
-        <!-- js  -->
-    </main>
+    <main class="row product container-lg " id="serviceCard"><!-- js content injection  --></main>
   </div>
-
+ 
 </div>
 <!-- ============ WRAPPER ============= -->
 <div class="block"></div>
