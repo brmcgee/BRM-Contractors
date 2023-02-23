@@ -131,7 +131,10 @@ body {
 .bg-accent-hover {
     background-color: var(--bg-accent-hover);
 }
-.bg-acc
+.bg-icon-accent {
+    background-color: var(--bg-icon-accent);
+}
+.bg-gray{background-color: #6f6f6f;}
 /* ===========  GLOBAL ====================  */
 * {
     margin: 0px;

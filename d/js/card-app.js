@@ -181,7 +181,7 @@ const myData = [
   body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
   img1: "../assets/gallery/sseam1.jpg",
   img2: "../assets/gallery/sseam2.jpg",
-  project: "siding-roofing"
+  project: ""
 },
 {
   category: 'Kitchen backsplash',
@@ -214,7 +214,7 @@ const myData = [
   project: ""
 },
 {
-  category: 'Siding',
+  category: 'Siding and Roofing',
   title: "Home renovation project exterior siding, soffit and fascia",
   date: "June 23, 2021",
   author: "Brian McGee, owner",
@@ -344,7 +344,7 @@ const myData = [
   project: ""
 },
 {
-  category: 'Roofing Siding',
+  category: 'Siding and Roofing',
   title: "Total transformation! BRM delivers new exteriors on this one.",
   date: "Nov 12, 2022",
   author: "Brian McGee",
