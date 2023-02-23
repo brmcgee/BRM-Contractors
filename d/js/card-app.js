@@ -493,6 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //create and display post per .project selector
+// accecpts string representing .project 
 function selectProject (p) {
   clearScreen();
 
@@ -538,7 +539,7 @@ function createAll () {
 
   let title = document.getElementById("tTitle");
   if (title === null) {
-    console.log('ok')
+    
   } else {
     clearTitle();
   }
@@ -547,4 +548,44 @@ function createAll () {
   for (let j = 0; j < allBlogs.length; j++) {
     createCard(allBlogs[j]);
   }
+}
+
+// create cards - accepts array of blogs 
+function createFromArray (array) {
+  createCard(array);
+}
+
+
+
+
+function searchBlog () {
+  clearScreen();
+  let title = document.getElementById("tTitle");
+  if (title === null) {
+    console.log('err')
+  } else {
+    clearTitle();
+  }
+
+  let copys = [];
+  let blogs = [];
+  let searchPhrase = document.getElementById("fSearch").value;
+  // create copy of myData 
+  for (let x = 0; x < myData.length; x++){
+    copys.push(myData[x]);
+  }
+
+  for (let i = 0; i < copys.length; i++) {
+    let copy = copys[i];
+    if (copy.title.toLowerCase().indexOf(searchPhrase.toLowerCase()) > -1) {
+      blogs.push(copy);
+    }
+  }
+  for (let j = 0; j < blogs.length; j++) {
+    let blog = blogs[j];
+    createFromArray(blog)
+  }
+  // blogs.forEach((e) => {
+  //   createCard(e);
+  // })
 }
