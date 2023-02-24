@@ -10,9 +10,39 @@ const blogData = [
     project: ""
   },
   {
+    category: 'Drywall Repair',
+    title: "Large drywall textured finish in basement",
+    date: "March 02, 2022",
+    author: "Brian McGee",
+    body: "Well cold temperatures and frozen pipes in the basement ceiling caused 12 sheets of drywall damaged in a finished carpeted basement room. Here we have prepped the area with dropcloths and plastic. All boards are installed and ready for the mud work..stay tuned!",
+    img2: "../assets/gallery/drywall-repair3.jpg",
+    img1: "../assets/gallery/drywall-repair3a.jpg",
+    project: "drywall"
+  },
+  {
+    category: 'Drywall Repair',
+    title: "Drywall textured finish and painted by the handyman",
+    date: "March 04, 2022",
+    author: "Brian McGee",
+    body: "Well we have been working away on this. We are finishing in a textured finish on the ceiling and smooth on the walls. We have installed a primer and casecoat to match the surrounding...You cant even tell we were here! Another happy client. ",
+    img2: "../assets/gallery/drywall-repair5.jpg",
+    img1: "../assets/gallery/drywall-repair4.jpg",
+    project: "drywall"
+  },
+  {
+    category: 'Handyman',
+    title: "Bathroom sink faucet install by the handyman",
+    date: "March 06, 2022",
+    author: "Brian McGee",
+    body: "Well simply call for a bathroom faucet install for a client. We removed the old faucet and installed a new Delta Foundations in chrome finish. Clean up and on to the next. Another happy client!",
+    img2: "../assets/gallery/handy-sink1a.jpg",
+    img1: "../assets/gallery/handy-sink1b.jpg",
+    project: "drywall"
+  },
+  {
     category: 'Kitchen backsplash',
     title: "Beautiful kitchen backsplash tile install",
-    date: "May 28, 2022",
+    date: "May 02, 2022",
     author: "Brian McGee",
     body: "A simply elegant tile install for these homeowners in their already beautiful kitchen. We were able to add the speacial touch that they always wanted. Another satisfied homeowner!",
     img1: "../assets/gallery/backsplash1.jpg",
@@ -22,7 +52,7 @@ const blogData = [
   {
     category: 'Deck Repair',
     title: "Maintenance deck repair boards and posts",
-    date: "June 03, 2022",
+    date: "June 02, 2022",
     author: "Brian McGee",
     body: "We were able to make some maintenance repairs on this 10 year old deck. We saved the old composite deck boards and replaced the beams and posts in the troubled area. Back to enjoying the pool - Another satisfied homeowner!",
     img1: "../assets/gallery/deck-repair1.jpg",
@@ -30,9 +60,19 @@ const blogData = [
     project: ""
   },
   {
-    category: 'Shingle repair',
+    category: 'Drywall Repair',
+    title: "Moisture damaged drywall and paint repair",
+    date: "June 06, 2022",
+    author: "Brian McGee",
+    body: "Moisture damaged cieling caused by leaking plumbing has been fixed. We removed all the old board and installed new. Added some texture on one and smooth finish on the other. Next we painted the cieling to match existing. Extra care and caution at the beatiful kitchen cabinets. Problem Solved!",
+    img2: "../assets/gallery/drywall-kitchen1a.jpg",
+    img1: "../assets/gallery/drywall-kitchen1b.jpg",
+    project: "drywall"
+  },
+  {
+    category: 'Shingle Repair',
     title: "Roof edge leak solved by BRM",
-    date: "June 18, 2020",
+    date: "June 21, 2020",
     author: "Brian McGee",
     body: 'There was issues on the edge of the roof. The shingles were still in servicable condition so we were able to handle this with a simply maintenance repair and extend the life of this roof verses replacement. Our client was happy and able to set up a budget plan for roof replacment. Problem solved!',
     img1: "../assets/gallery/shingle-repair1.jpg",
@@ -69,6 +109,17 @@ const blogData = [
     img2: "../assets/gallery/paint2.jpg",
     project: ""
   },
+  {
+    category: 'Roofing',
+    title: "3-story shingle roofing repair by the handyman",
+    date: "July 16, 2022",
+    author: "Brian McGee",
+    body: "There was a pretty bad leak hear at the dead valley and wall area, we were able to help. This repair is 3-stories up so work of the ladder was necessary. We replaced the rotted wood, new shingles and underlayment. Replaced some Hardie Siding and painted to match. Problem Solved!",
+    img1: "../assets/gallery/shingle-repair3a.jpg",
+    img2: "../assets/gallery/shingle-repair3b.jpg",
+    project: ""
+  },
+  
   {
     category: 'Drywall Repair',
     title: "Bedroom blues... drywall repair and paint",
