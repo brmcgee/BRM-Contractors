@@ -202,6 +202,7 @@ let welcome = [
 
 document.addEventListener("DOMContentLoaded", () => {
   createCard(welcome[0]);
+  // createCard(myData[myData.length - 1]);
 })
 
 
@@ -270,11 +271,21 @@ function createFromArray (array) {
   createCard(array);
 }
 
-
-
+// set event listener for enter key @ search input 
+let searchValue = document.getElementById("fSearch");
+searchValue.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    searchBlog();
+  }
+});
 
 function searchBlog () {
+  let copys = [];
+  let blogs = [];
+  let searchPhrase = document.getElementById("fSearch").value;
   clearScreen();
+
+  // clear title if present 
   let title = document.getElementById("tTitle");
   if (title === null) {
     console.log('err')
@@ -282,25 +293,23 @@ function searchBlog () {
     clearTitle();
   }
 
-  let copys = [];
-  let blogs = [];
-  let searchPhrase = document.getElementById("fSearch").value;
   // create copy of myData 
   for (let x = 0; x < myData.length; x++){
     copys.push(myData[x]);
   }
 
+  //search per title and string build array
   for (let i = 0; i < copys.length; i++) {
     let copy = copys[i];
     if (copy.title.toLowerCase().indexOf(searchPhrase.toLowerCase()) > -1) {
       blogs.push(copy);
     }
   }
+  //create card per search array
   for (let j = 0; j < blogs.length; j++) {
     let blog = blogs[j];
     createFromArray(blog)
   }
-  // blogs.forEach((e) => {
-  //   createCard(e);
-  // })
+  //clear search bar
+  searchValue.value = "";
 }
