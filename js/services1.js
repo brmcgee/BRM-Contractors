@@ -76,7 +76,7 @@ const products = [
     title: "Maintenance",
     content: 'Changing seasons bringing on a whole new list of maintenance items, BRM can help. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.',
     img1: "/assets/logo/maintenance.jpg",
-}
+},
 ];
 
 
