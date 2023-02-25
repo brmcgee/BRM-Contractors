@@ -349,5 +349,16 @@ const data = [
       img1: "../assets/gallery/bathroom-in-prog-gb.jpg",
       img2: "../assets/gallery/bathroom-before-gb.jpg",
       project: "bathroom-remodel-rm"
+    },
+    {
+      category: 'Bathroom Remodel',
+      title: "Floor install with some painting and toilet too",
+      date: "Feb 24, 2023",
+      author: "Brian McGee",
+      body: "We have the walls all painted and LVT vinyl floors installed over a padding, beautiful floor. Tiolets installed and ready for use. We shall return to finish this awesome space out.",
+      img1: "../assets/gallery/floor1b.jpg",
+      img2: "../assets/gallery/floor1a.jpg",
+      project: "bathroom-remodel-rm"
     }
+
   ];
