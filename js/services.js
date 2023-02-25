@@ -67,11 +67,11 @@ let wrapper = document.getElementById("products");
 function createCard (i) {
 
     let sCard = document.createElement('div');
-    sCard.className = "products col-lg-4 col-md-6 col-sm-6";
+    sCard.className = "service col-lg-4 col-md-6 col-sm-6";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
-    card.className = "card";
+    card.className = "card mx-auto d-block";
     sCard.appendChild(card);
 
     let cTitle = document.createElement('div')
