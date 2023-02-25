@@ -854,6 +854,7 @@ input {
 
 
 /* ======== PRODUCT ======== */ 
+/* all services  */
 @media (max-width: 550px) {
     .products {
         padding-left: 5px;
@@ -1633,6 +1634,7 @@ h2#header_14.form-header {
     }
 }
 
+/* 3 by  */
 .service .card {
     height: 490px;
     margin: 7px;
@@ -1685,11 +1687,13 @@ h2#header_14.form-header {
     object-fit: fill;
     padding: 2px;
 }
-
 /* ======== SERVICES CARD END/ ======== */ 
 
+/* ======= CAROUSEL =========== */
 
-
+.carousel-item {
+    background-color: gray;
+}
 
 
 /* ====== BRM DEV ICON =========== */
@@ -1719,4 +1723,11 @@ h2#header_14.form-header {
     color: rgb(15, 36, 199);
     background-color: rgb(147, 219, 39);
     border: 2px solid #333;
+}
+
+.service-card {
+    border: none;
+}
+.service-card .card {
+    border: none;
 }
