@@ -6,12 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="BRM provides residential and commercial repair, building and maintenance. We offer drywall and painting, wood repair, roofing and siding repair and all sorts of remodeling.">
-<meta name="title" content="Bathroom Remodel @ BRM Contractors Inc">
+<meta name="title" content="BRM Contractors Inc - Blog Beta">
 <meta name="url" content="https://brm.contractors.net/" />
 <meta name="site_name" content="BRM Contractors Inc" />
 <meta name="type" content="website" />
 
-<title>Bathroom Remodel @ BRM Contractors Inc</title>
+
+<title>BRM Contractors Inc - Blog Beta</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
 <link rel="icon" href="assets/brm-red.ico" sizes="32x32" />
@@ -31,6 +32,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
@@ -44,40 +47,30 @@
 <body>
 
 <!-- ============ BANNER ============= -->
-<div class="banner p-0 m-0" id="top">
-    <!-- <div class="banner-bar bg-warning"></div> -->
-    <!-- <div class="container-fluid row bg-dark">
-      <div class="col-sm" id="bannerImg1">
-        <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="BRM Contractors Inc">
-      </div>
-      <div class="col-sm" id="bannerImg2">
-        <img class="rounded mx-auto d-block m-2" src="../assets/logo/brm.ico" style="width:190px;height:130px;" alt="Free Estimate by BRM">
-      </div>
-    </div> -->
-    <!-- ========== #MAIN ============== -->
+<div class="banner bg-icon-accent p-0 m-0" id="top">
+  <!-- ========== #MAIN ============== -->
   <div id="main">
-    <h1 class="text-russo m-0 p-0 display-6">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
-      <span>Bathroom remodel project <span><small class="h6">02.2023</small></span> <img class="float-end me-5" src="../assets/logo/brm-red.ico" style="width: 100px;" alt="BRM"></span>  
-      <p class="text-elite fs-6 text-info">Site under construction...brian</p>
-    </h1>
-    <!-- <span class="ms-5 ps-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><i class="fa fa-desktop" aria-hidden="true"></i></i></span>
-    <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span> -->
-  </div>
-  <div id="main">
-    
+    <div class="brand">
+      <h1 class="text-russo m-0 p-0 fs-4">
+          <span class="m-0" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined symbol-small">edit_square</span></i></span>
+          <span class="display-5">Blog Posts #BRM</span> 
+      </h1>
+    </div>
   </div>
   <!-- ========== #MAIN END============== -->
-  
-  
-  </div>
-  <!-- =========== BANNER END/ ========== -->
+
+</div>
+<!-- =========== BANNER END/ ========== -->
 
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open</span></span>
+      <span class="material-symbols-outlined">arrow_circle_up</span>
+
+      <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -94,7 +87,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
         </li>
-
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About Us
@@ -106,11 +99,14 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
+            Blog Posts
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Admin</a>
-            <a class="dropdown-item" href="mi-gb.html">Bathroom Remodel</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('bathroom-remodel-rm')">Bathroom Remodel</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('kitchen-remodel-ah')">Kitchen Remodel</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('custom-deck')">Deck Build</a>
+            <a class="dropdown-item" href="#" onclick="selectProject('siding-roofing')">Roofing and Siding</a>
+            <a class="dropdown-item" href="data.html">Admin</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
@@ -118,7 +114,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="../index.html#blog">BRM - Blog Posts</a>
+          <a class="nav-link" id="lastNav" href="#" onclick="createAll()">BRM - All Blog Posts</a>
         </li>
     </div>
   </nav>
@@ -131,60 +127,188 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
-
+  <div class="links">
     <div class="col">
-      <a href="#" onclick="show(22, 26)"> Bathroom Remodel</a>
+      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
     </div>
-    <div class="col">
-      <a href="#" onclick="createAll()"> Show All</a>
+    <div class="col link">
+      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
     </div>
-    <div class="col">
-        <a href="../index.html"> BRM Contractors - HOME</a>
+    <div class="col link">
+        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
     </div>
-
-
-<div class="row  mt-3">
-  <div class="col">
-    <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
+    <div class="col link">
+        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+    </div>
+    <div class="col link">
+      <a href="#" onclick="createAll()" class=""> Show All</a>
+    </div>
   </div>
-  <div class="col">
-    <a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+
+
+
+  <div class="row mt-2 btn-bar">
+  <div class="col link ms-5 me-1">
+    <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
   </div>
-</div>
-<input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+  <div class="col link me-5 ms-1">
+    <a href="#" onclick="clearTitle(), clearScreen()" class=""><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+  </div>
+  
+  <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
-
-
 <!-- ============ WRAPPER ============= -->
-<div class="wrapper mx-auto d-block" style="padding-bottom: 500px;">
+<div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
 
-<!-- content load -  show(start, end) of myData-->
-
+<!-- PROJECT LOAD  -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      createCard(welcome[0]);
         selectProject('bathroom-remodel-rm');
     });
   </script>
 
-<!-- content container display target -->
+  <!-- BLOG POST - PROJECT JS INJECTION  -->
   <div class="product-container">
-    <main class="row product container-lg " id="serviceCard">
-        <!-- js  -->
+    <main class="row product container-lg " id="serviceCard"><!-- js content injection  -->
     </main>
   </div>
-
+  <div class="block"></div>
 </div>
+
 <!-- ============ WRAPPER ============= -->
-<div class="block"></div>
+
+
+
+
+<!-- nav menu with add card feature  -->
+<!-- ============ MIDDLENAV ============= -->
+<div id="middleNav" class="sidenav bg-light">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+  <form>
+  <div class="form-group">
+    <div class="container-fluid row g-1 p-1">
+
+      <div class="col-md-6">
+        <label class="form-label" for="title"> Title</label>
+        <input class="form-control form-control-sm" type="text" name="title" id="fTitle" placeholder="title">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="category"> Category</label>
+        <input class="form-control form-control-sm" type="text" name="category" id="fCategory" placeholder="category">
+      </div>
+    
+      <div class="col-6">
+        <label class="form-label" for="price"> Date</label>
+        <input class="form-control form-control-sm" type="text" name="price" id="fPrice" placeholder="date">
+      </div>
+
+      <div class="col-6">
+        <label class="form-label" for="user"> Author</label>
+        <input class="form-control form-control-sm" type="text" name="user" id="fUser" placeholder="author">
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="authorImage"> Author Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
+      </div>
+  
+      <div class="col-md-12">
+        <label class="form-label" for="image"> Image URL</label>
+        <input class="form-control form-control-sm" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
+      </div>
+
+      <div class="col-md-12">
+        <label class="form-label" for="image2"> Image 2 URL</label>
+        <input class="form-control form-control-sm" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
+      </div>
+  
+      <!-- <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="myUrl">
+            <option selected>Choose...</option>
+            <option value="1">https://brmdev.com/assets/gallery/bg-masthead.jpg</option>
+            <option value="2">https://brmlery/bg-masthead.jpg</option>
+            <option value="3">Three</option>
+          </select>
+        </div> -->
+    
+      <div class="col-12">
+          <label class="form-label" for="body"><span> Description</label>
+          <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
+      </div>
+
+  </div>
+  </form>
+
+  <div class="row mt-2 bg-light">
+  <div class="col">
+    <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Create New </a>
+  </div>
+  <div class="col">
+    <a href="#" onclick="createAll()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Show All</a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
+    </div>
+  <div class="col">
+    <a href="#" onclick="clearTitle(), clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+  </div>
+
+  <div class="col">
+    <a href="#" onclick="selectProject('bathroom-remodel-rm'), closeNav()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Bathroom Remodel</a>
+  </div>
+
+  <input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+</div>
+<!-- ============ MIDDLENAV END/ ========== -->
+
+  <!-- ============ RIGHTNAV ============= -->
+  <nav id="rightNav" class="rightnav">
+    <div id="navMenu" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9776;</div>
+
+      <div id="boxClose" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9746;</div>
+      <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <div class="links">
+    <div class="col">
+      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
+    </div>
+    <div class="col link">
+      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+    </div>
+    <div class="col link">
+      <a href="#" onclick="createAll()" class=""> Show All</a>
+    </div>
+      </div>
+  </nav>
+  <!-- ============ RIGHTNAV END/ ========== -->
+  
 
 
 <!-- local java script  -->
 <script src="js/main.js"></script>
 <script src="../js/brmData.js"></script>
 <script src="js/card-app.js"></script>
-
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
