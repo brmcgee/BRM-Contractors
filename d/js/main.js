@@ -99,3 +99,14 @@ function closeRight() {
 
 
 
+$(document).ready(function(){
+  $("#navMenu").click(function () {
+   $("#rightNav").slideDown("slow")
+  });
+});
+
+$(document).ready(function(){
+  $("#boxClose").click(function(){
+      $("#rightNav").slideUp();
+  });
+});

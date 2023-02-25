@@ -32,6 +32,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
@@ -54,9 +56,6 @@
           <span class="display-5">Blog Posts #BRM</span> 
       </h1>
     </div>
-  </div>
-  <div id="main">
-    
   </div>
   <!-- ========== #MAIN END============== -->
 
@@ -166,8 +165,8 @@
 
 <!-- ============ WRAPPER ============= -->
 <div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
-  
-  <!-- PROJECT LOAD  -->
+
+<!-- PROJECT LOAD  -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       createCard(welcome[0]);
@@ -182,7 +181,10 @@
   </div>
   <div class="block"></div>
 </div>
+
 <!-- ============ WRAPPER ============= -->
+
+
 
 
 <!-- nav menu with add card feature  -->
@@ -272,11 +274,36 @@
 </div>
 <!-- ============ MIDDLENAV END/ ========== -->
 
-<!-- ============ RIGHTNAV ============= -->
-<div id="rightSidenav" class="sidenav rightnav">
-  <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeRight()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-</div>
-<!-- ============ RIGHTNAV END/ ========== -->
+  <!-- ============ RIGHTNAV ============= -->
+  <nav id="rightNav" class="rightnav">
+    <div id="navMenu" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9776;</div>
+
+      <div id="boxClose" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9746;</div>
+      <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <div class="links">
+    <div class="col">
+      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
+    </div>
+    <div class="col link">
+      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+    </div>
+    <div class="col link">
+      <a href="#" onclick="createAll()" class=""> Show All</a>
+    </div>
+      </div>
+  </nav>
+  <!-- ============ RIGHTNAV END/ ========== -->
+  
+
 
 <!-- local java script  -->
 <script src="js/main.js"></script>
