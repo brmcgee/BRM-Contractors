@@ -64,7 +64,7 @@ body {
   
     /* CONTAINER HEIGHT ADJUSTMENTS */
     --banner-bar-height: 33px;
-    --banner-height: 250px;
+    --banner-height: auto;
     --nav-height: 80px;
     --wrapper-height: auto;
     --footer-bar-height: 50px;
@@ -535,8 +535,6 @@ input {
 /* === NAVBAR STYLE END/ ======  */
 
 /* ======= SIDENAV ============ */
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -563,8 +561,29 @@ input {
   }
   
   .sidenav a:hover {
-    color: rgb(191, 34, 34);
+    color: rgb(0, 0, 0);
   }
+  
+.sidenav .links {
+    padding: 1px auto auto 15px;
+    margin: auto;
+    background-color: #cacaca;
+}
+.sidenav .btn-bar .link,
+.sidenav .links .link {
+    border: 1px solid black;
+    background-color: var(--bg-accent-hover);
+    border-radius: 5px;
+    text-align: center;
+    margin: 4px auto auto auto;
+    width: 320px;
+    transition: .3s;
+}
+.sidenav .btn-bar .link:hover,
+.sidenav .links .link:hover {
+    background-color: var(--bg-icon-accent);
+    box-shadow: 0px 4px 22px solid black;
+}
   
   .sidenav .closebtn {
     position: absolute;
@@ -585,20 +604,43 @@ input {
   }
   
   
-.material-icons.md-36 { 
-    font-size: 48px;
+.material-icons.md-36,
+.material-symbols-outlined  { 
+    font-size: 32px;
     padding: 0; 
     margin: 0;
     color: #000000;
     transition: .5s;
     background-color: var(--bg-primary-off);
     border-radius: 50%;
+    padding: 3px;
 }
-.material-icons.md-36:hover {
-    color: rgb(188, 188, 188);
+.material-icons.md-36:hover,
+.material-symbols-outlined:hover  {
+    color: rgb(190, 171, 31);
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.symbol-small {
+    font-size: 36px;
+}
+
+
+
 /* ======== SIDENAV END/ ==============  */
+
+/* ==============RIGHTNAV =========== */
+.rightnav .contact-frame {
+  width: 100%;
+  height: 100%;
+}
+/* ==============RIGHTNAV END =========== */
 
 /* ===== MASTHEAD ===============*/
 .masthead {

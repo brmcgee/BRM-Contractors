@@ -45,15 +45,15 @@
 <body>
 
 <!-- ============ BANNER ============= -->
-<div class="banner bg-accent-hover p-0 m-0" id="top">
+<div class="banner bg-icon-accent p-0 m-0" id="top">
   <!-- ========== #MAIN ============== -->
   <div id="main">
-    <h1 class="text-russo m-0 p-0 fs-4">  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36">menu_open</span></span>
-      <span class="display-5">Blog Posts @BRM</span>  
-      <span class="" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><i class="fa-solid fa-dragon"></i></i></span>
-      
-    </h1>
-    <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span> -->
+    <div class="brand">
+      <h1 class="text-russo m-0 p-0 fs-4">
+          <span class="m-0" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined symbol-small">edit_square</span></i></span>
+          <span class="display-5">Blog Posts #BRM</span> 
+      </h1>
+    </div>
   </div>
   <div id="main">
     
@@ -68,7 +68,10 @@
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open</span></span>
+      <span class="material-symbols-outlined">arrow_circle_up</span>
+
+      <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -85,7 +88,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
         </li>
-
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About Us
@@ -125,48 +128,68 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
-
-  <div class="col">
-    <a href="../index.html"> BRM Contractors - HOME</a>
+  <div class="links">
+    <div class="col">
+      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
+    </div>
+    <div class="col link">
+      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
+    </div>
+    <div class="col link">
+        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+    </div>
+    <div class="col link">
+      <a href="#" onclick="createAll()" class=""> Show All</a>
+    </div>
   </div>
-  <div class="col pt-3">
-    <a href="#" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
-  </div>
-  <div class="col">
-      <a href="#" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
-  </div>
-  <div class="col">
-      <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
-  </div>
-  <div class="col">
-      <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
-  </div>
-  <div class="col">
-    <a href="#" onclick="createAll()" class="pt-3"> Show All</a>
-  </div>
-
-
-<div class="row mt-2">
-  <div class="col">
-    <a href="#" onclick="searchBlog()" class="btn btn-outline-success m-2"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
-  </div>
-  <div class="col">
-    <a href="#" onclick="clearTitle(), clearScreen()" class="btn btn-outline-danger m-2"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
-  </div>
-</div>
 
 
 
-  <input class="form-control mx-auto d-block mt-1 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
-
+  <div class="row mt-2 btn-bar">
+  <div class="col link ms-5 me-1">
+    <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
   </div>
+  <div class="col link me-5 ms-1">
+    <a href="#" onclick="clearTitle(), clearScreen()" class=""><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+  </div>
+  
+  <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
+<!-- ============ WRAPPER ============= -->
+<div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
+  
+  <!-- PROJECT LOAD  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      createCard(welcome[0]);
+        selectProject('bathroom-remodel-rm');
+    });
+  </script>
+
+  <!-- BLOG POST - PROJECT JS INJECTION  -->
+  <div class="product-container">
+    <main class="row product container-lg " id="serviceCard"><!-- js content injection  -->
+    </main>
+  </div>
+  <div class="block"></div>
+</div>
+<!-- ============ WRAPPER ============= -->
+
+
+<!-- nav menu with add card feature  -->
 <!-- ============ MIDDLENAV ============= -->
 <div id="middleNav" class="sidenav bg-light">
   <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-<form>
+  <form>
   <div class="form-group">
     <div class="container-fluid row g-1 p-1">
 
@@ -222,75 +245,43 @@
       </div>
 
   </div>
-</form>
+  </form>
 
-<div class="row mt-2 bg-light">
+  <div class="row mt-2 bg-light">
   <div class="col">
     <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Create New </a>
   </div>
   <div class="col">
     <a href="#" onclick="createAll()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Show All</a>
   </div>
-</div>
-<div class="row">
-  <div class="col">
-    <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
   </div>
+  <div class="row">
+    <div class="col">
+      <a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass pe-2"></i></i></span> Search </a>
+    </div>
   <div class="col">
     <a href="#" onclick="clearTitle(), clearScreen()"><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
   </div>
-</div>
+  </div>
 
-<div class="col">
-  <a href="#" onclick="selectProject('bathroom-remodel-rm'), closeNav()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Bathroom Remodel</a>
-</div>
-
+  <div class="col">
+    <a href="#" onclick="selectProject('bathroom-remodel-rm'), closeNav()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Bathroom Remodel</a>
+  </div>
 
   <input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
-
-  </div>
-  </div>
 </div>
 <!-- ============ MIDDLENAV END/ ========== -->
 
 <!-- ============ RIGHTNAV ============= -->
-<div id="rightSidenav" class="sidenav bg-info">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeRight()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-
-<a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs"></i></span> Make Card </a>
-<a href="#" onclick="clearScreen()"><span><i class="fa-solid fa-trash"></i></i></span> Clear </a>
-<a href="#" onclick=""><span><i class="fa-solid fa-magnifying-glass"></i></i></span> Search </a>
-
-  </div>
+<div id="rightSidenav" class="sidenav rightnav">
+  <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeRight()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 </div>
 <!-- ============ RIGHTNAV END/ ========== -->
-
-
-
-
-<!-- ============ WRAPPER ============= -->
-<div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
-
-  <!-- PROJECT BUTTONS  -->
-  <!-- <button class="btn-solid mt-1" onclick="createAll()">All Posts</button>
-  <button class="btn-solid mt-1" onclick="selectProject('bathroom-remodel-rm')">Bathroom Remodel</button>
-  <button class="btn-solid mt-1" onclick="selectProject('kitchen-remodel-ah')">Kitchen Remodel</button> -->
-
-  <!-- PROJECT JS INJECTION  -->
-  <div class="product-container">
-    <main class="row product container-lg " id="serviceCard"><!-- js content injection  --></main>
-  </div>
- 
-</div>
-<!-- ============ WRAPPER ============= -->
-<div class="block"></div>
-
 
 <!-- local java script  -->
 <script src="js/main.js"></script>
 <script src="../js/brmData.js"></script>
 <script src="js/card-app.js"></script>
-
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
