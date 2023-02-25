@@ -352,7 +352,7 @@ const data = [
     },
     {
       category: 'Bathroom Remodel',
-      title: "Floor install with some painting and toilet too",
+      title: "Floor and toilet install with some painting",
       date: "Feb 24, 2023",
       author: "Brian McGee",
       body: "We have the walls all painted and LVT vinyl floors installed over a padding, beautiful floor. Tiolets installed and ready for use. We shall return to finish this awesome space out.",
