@@ -65,7 +65,7 @@ const products = [
     {
     title: "Building",
     content: 'BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. ',
-    img1: "/assets/logo/building.jpg"
+    img1: "/assets/logo/builder.jpg"
 },
 {
     title: "Repairs",
