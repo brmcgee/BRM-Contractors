@@ -73,7 +73,7 @@ body {
   
     /* CONTAINER HEIGHT ADJUSTMENTS */
     --banner-bar-height: 33px;
-    --banner-height: 250px;
+    --banner-height: auto;
     --nav-height: 80px;
     --wrapper-height: auto;
     --footer-bar-height: 50px;
@@ -296,6 +296,10 @@ input {
     #bannerImg2 {
         display: none;
     }
+}
+.banner {
+    height: auto;
+    margin: 0;
 }
 /* === BANNER END/  =========  */
 
