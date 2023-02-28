@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="BRM provides residential and commercial repair, building and maintenance. We offer drywall and painting, wood repair, roofing and siding repair and all sorts of remodeling.">
+<meta name="title" content="BRM Contractors Inc - Home">
+<meta name="url" content="https://brm.contractors.net/" />
+<meta name="site_name" content="BRM Contractors Inc" />
+<meta name="type" content="website" />
+
+<title>BRM Contractors Inc - Home</title>
+
+<link rel="canonical" href="https://brmcontractors.net/" />
+<link rel="icon" href="assets/logo/brm.ico" sizes="32x32" />
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/8ab1cf7876.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://kit.fontawesome.com/8ab1cf7876.css" crossorigin="anonymous"> 
+
+<!-- local style sheet by brm  -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+
+  <div class="nav-btn" style="position: fixed;z-index:5;bottom:0;right:50px;">
+    <button class="btn btn-solid me-3 p-1 " onclick="openNav()">Menu</button>
+  </div>
+
+<!-- ============ BANNER ============= -->
+<div class="banner" id="top">
+  
+  <!-- <div class="banner-bar"></div> -->
+  <div class="container-fluid row">
+    <div class="col-sm" id="bannerImg1">
+      <img class="rounded mx-auto d-block" src="../assets/logo/brm.jpg" style="width:290px;height:150px;" alt="BRM Contractors Inc">
+    </div>
+    <div class="col-sm" id="bannerImg2">
+      <img class="mx-auto d-block mt-2" src="../assets/logo/free-estimate.png" style="width:350px" alt="Free Estimate by BRM">
+    </div>
+  </div>
+</div>
+<!-- =========== BANNER END/ ========== -->
+
+<!-- ============ NAV-BAR ============= -->
+<div class="container-fluid bg-dark" style="position:fixed;z-index:5;top:0px;">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark w-100 p-1 fixed mx-auto d-block">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/logo/brm-red.ico" alt="" width="40" height="30" class="ms-3 d-inline-block align-text-baseline">
+      </a>
+      <div class="btn-group" role="group">
+        <a href="#top" class="btn btn-outline me-1 p-1 px-2">Top</a>
+        <button class="btn btn-solid me-3 p-1 px-2" type="button" onclick="openNav()">Menu</button>  
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- =========== NAV-BAR END/========== -->
+
+
+
+
+<!-- ============ SIDENAV ============= -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+
+  <div class="links">
+    <div class="col">
+      <a href="../index.html" class="h1 text-russo"> Home</a>
+    </div>
+    <div class="col link">
+      <a href="../about.html" class="" > About BRM</a>
+    </div>
+    <div class="col link">
+      <a href="../services.html" class=""> Services</a>
+    </div>
+    <div class="col link">
+      <a href="../contact-brm.html" class=""> Contact Us</a>
+    </div>
+    <div class="col link">
+      <a href="data.html" class=""> Blog Posts</a>
+    </div>
+    <div class="col link">
+        <a href="http://www.brmnow.com" class=""> BRM NOW</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="row mt-2 btn-bar">
+  <div class="col link ms-5 me-1">
+    <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
+  </div>
+  <div class="col link me-5 ms-1">
+    <a href="#" onclick="clearTitle(), clearScreen()" class=""><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+  </div>
+  
+  <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+</div>
+<!-- ============ SIDENAV END/ ========== -->
+
+
+<!-- ========= MASTHEAD ================ -->
+
+<div class="masthead">
+  <div class="masthead-container">
+    <h3>Quality craftsmanship</h3>
+    <h1>Excellent Service</h1>
+    <h2>Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
+    <a href="contact-brm.html" class="btn btn-outline">FREE ESTIMATE</a>
+    <div class="block-text">
+      <p>Total home repair</p>
+    </div>
+  </div>
+</div>
+<!-- ======= MASTHEAD END/ ============= -->
+
+
+
+<!-- ============ WRAPPER ============= -->
+<div class="wrapper row">
+
+  <!-- ============ MAIN ================= -->
+  <div class="main">
+
+    <!-- block area  1/top -->
+    <div class="container col-xxl-8 px-1 py-3 main">
+      <div class="row flex-lg-row align-items-center g-2">
+
+        <div class="col-lg-6 main-content">
+          <h3 class="g-3 mt-5 text-russo">Reliable and Gauranteed Service - <br> The Incredible Handyman.</h3>
+          <p class="lead mt-3">BRM Contractors is a family owned and operated business serving the Western PA area with decades of home repair expertise ready to serve your home repair needs. BRM provides outstanding customer service and quality home repair. From maintenance and repair to complete remodel and rebuild BRM has you covered. We provide residential and commercial repair, building and maintenance - no job is too big or too small.</p>
+          <!-- <div class="divider bg-black"></div> -->
+          <div class="d-grid gap-2 d-md-flex  py-3 rounded px-5">
+            <a href="#products" onclick="createHeading()" class="btn-solid text-center" >Services</a>
+            <a href="#blog"  class="btn-solid text-center">Project Posts</a>
+          </div>
+        </div>
+                <!-- blog --  js injection--> 
+        <div class="blog-card-3 col-lg-6" id="blogCardThree">
+          <div class="blog-container row g-0  rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative border-1"  style="height:270px;">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-1 text-success">The Blog Vault</strong>
+              <h3 class="mb-0 title-2 text-russo" id="title3"></h3>
+              <div class="mb-1 text-muted" id="date3"></div>
+              <p class="mb-auto content-2 text-elite" id="content3"></p>
+              <button id="btn3" class="btn-solid p-0 bg-light border-1 btn3"><a href="#blogPost" class="stretched-link">Continue reading...</a></button>
+            </div>
+            <div class="col-auto d-lg-block">
+              <img class="bd-placeholder-img img-3" id="image3" width="190" height="280" src="" role="img">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+      <!-- ========== MAIN END/=============== -->
+
+
+    <div class="block bg-black"></div>
+
+    <!-- block area - 2/bottom  -->
+    <div class="container col-xxl-10 px-1 py-3 main bg-accent-hover">
+      <div class="row flex-lg-row-reverse align-items-center g-2">
+
+        <div class="col-lg-6 main-content">
+          <h3 class="mt-3 m-3 text-russo ps-1">#1 Choice total home and business repair and remodel services.  Providing total home maintenance and repair needs.</h3>
+          <p class="lead mt-3 ps-3">BRM offers professional residential and commercial home repair services. Whether you have a small project like patching a hole in your drywall, or a long maintenance list of repairs needed we are here to get the job done right. We offer all kinds of services from piecework to complete projects - give us a call today BRM is at your service!</p>
+        </div>
+
+        <div class="col-8 col-sm-8 col-md-8 col-lg-4 mx-auto d-block img-container">
+          <img src="../assets/logo/brm-red.ico" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Contractors" style="width:240px;"loading="lazy">
+        </div>
+
+
+    </div>
+    </div>
+
+  </div>
+  <!-- ========== MAIN END/=============== -->
+
+  <div class="block bg-black"></div>
+  
+  <!-- ========== BLOG POSTS ==========  -->
+  <div class="main" id="blog">
+      <main class="container-lg">
+          <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic text-russo" >BRM Blog Posts</h1>
+              <p class="lead my-3 text-roboto">Welcome to BRM Contractors blog post of recently completed projects. Follow along as we make repairs and document the process. Who knows, you might need the same work completed.</p>
+            </div>
+          </div>
+
+          <!-- CURRENT PROJECT js injection  -->
+          <div class="row mb-2">
+            <div class="col-md-6 blog-card" id="blogCardOne">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-1 text-danger" id="group1">Current Project</strong>
+                  <h3 class="mb-0 title-1" id="title1"></h3>
+                  <div class="mb-1 text-muted" id="date1"></div>
+                  <p class="mb-auto content-1" id="content1"></p>
+                  <button  id="btn1" class="btn-solid bg-light p-0 border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" id="image1" width="200" height="280" src="" role="img">
+                </div>
+              </div>
+            </div>
+
+            <!-- FROM THE VAULT - js injection  -->
+            <div class="col-md-6 blog-card" id="blogCardTwo">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-1 text-success">From the vault</strong>
+                  <h3 class="mb-0 title-2" id="title2"></h3>
+                  <div class="mb-1 text-muted" id="date2"></div>
+                  <p class="mb-auto content-2" id="content2"></p>
+                  <button id="btn2" class="btn-solid p-0 bg-light border-0"><a href="#blogPost" class="stretched-link">Continue reading..</a></button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" id="image2" width="200" height="280" src="" role="img">                  </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="divider bg-dark"></div>
+
+          <div class="row g-5">
+            <div class="col-md-8">
+              <h3 id="blogPost" class="pb-4 mb-4 fst-italic border-bottom">From the Box</h3>
+
+              <nav class="blog-pagination" aria-label="Pagination">
+                <a href="#blogCardOne"  class="btn btn-dark bg-dark text-roboto p-1" id="refreshTwo">Refresh - Vault</a>
+                <a href="#blogPost" class="btn btn-danger  text-roboto p-1" onclick="next(0)">Previous</a>
+                <a href="#blogPost" class="btn btn-success  text-roboto p-1" onclick="next(1)">Next</a>
+              </nav>
+
+              <!-- MAIN/TARGET BLOG POST AREA - js injection -->
+              <article class="blog-post"> 
+                <h2 id="bTitle" class="blog-post-title mb-1"></h2>
+                <p id="bDate" class="blog-post-meta"></p>
+                <p> by <a href="#"><span  id="bAuthor"></span></a></p>
+                <p class="indent" id="bBody"></p>
+                <div class="img-container col-sm-12 d-block d-lg-block">
+                  <img id="bImg1" class="img-1 bd-placeholder-img"  width="230" height="300" src="" role="img">  
+                  <img id="bImg2" class="img-2 bd-placeholder-img "  width="230" height="300" src="" role="img">
+                </div>
+              </article>
+              <nav class="blog-pagination" aria-label="Pagination">
+                <a href="#top" class="btn btn-outline-dark p-1 mt-1 mb-5">Top of Page</a>
+                <a href="#blog" class="btn btn-outline-dark p-1 mt-1 mb-5">Blog Top</a>
+                
+                <!-- SEARCH BLOG -->
+                <div class="search-blog">
+                  <h5>Have a particular service in mind to have completed?</h5>
+                  <label for="searchBar"><span><i class="fa-solid fa-magnifying-glass fs-4 pb-3 color-red"></i></span> Search BRM Blogs of jobs completed.</label>
+                  <input type="text" id="searchBar" onkeyup="searchBlogs()" placeholder="Search BRM blogs">
+                  <div id="blogLists" class="lists">  
+                      <!-- js injection  -->
+                    <a href="#searchBlog" id="blogTarget" class="blog-list"></a> 
+                  </div>
+                </div>
+
+              </nav>
+            
+            </div>
+        
+            <div class="col-md-4">
+              <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                  <h4 class="fst-italic">About</h4>
+                  <p class="mb-0">Here at BRM we really enjoy our work. We will be documenting and sharing the process with you. Who knows you may have a similar project and might find some insights.</p>
+                </div>
+
+                
+                <div class="p-1">
+                  <h4 class="fst-italic">Archives</h4>
+                  <ul class=" mb-0">  
+                    <!-- js injection  -->
+                    <li><a href="#blogPost" id="aBtn" class="arch-button"></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                    <li><a href="#blogPost" id="aBtn" class="arch-button" ></a></li>
+                  </ul>
+                </div>
+        
+                <div class="p-4">
+                  <h4 class="fst-italic">Elsewhere</h4>
+                  <ol class="list-unstyled">
+                    <li><a href="https://www.facebook.com/profile.php?id=100054525456256">Facebook</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </main>
+  </div>
+  <!-- ======= BLOG POSTS END/ ========  -->
+  <!-- ============ ABOUT ================= -->
+<div class="container-fluid p-5" id="about">
+  <div class="row gx-5">
+
+      <div class="col-lg-7">
+          <div class="mb-4">
+              <h5 class="text-white ps-1 bg-red text-uppercase text-russo">About Us</h5>
+              <h1 class="display-3 text-uppercase mb-0 text-russo">Welcome to BRM </h1>
+          </div>
+          <h4 class="text-body mb-4">#1 Choice total home and business repair and remodel services. Providing total home maintenance and repair needs.</h4>
+          <p class="mb-4">We are a home remodel company with decades of experience providing solutions for our clients. We are a family owned and operated company serving the Western PA area. Licensed and fully insured. We look forward to earning your business</p>
+          <div class="rounded bg-dark p-3">
+              <ul class="nav nav-pills justify-content-between mb-3">
+                  <li class="nav-item w-50">
+                      <a class="nav-link text-uppercase text-center w-100 active color-red bg-dark" data-bs-toggle="pill" href="#pills-1">Contact</a>
+                  </li>
+                  <li class="nav-item w-50 ">
+                          <a class="nav-link text-uppercase text-center w-100 bg-dark color-red" data-bs-toggle="pill" href="#pills-2">Payments</a>
+                  </li>
+              </ul>
+              <div class="tab-content bg-light">
+                  <div class="tab-pane fade show active" id="pills-1">
+                        <!-- phone  -->
+                        <div class="contact-card">
+                          <div class="card-info text-dark text-center" style="height:80px;">
+                            <h3><span><i class="fa-solid fa-phone me-3"></i></span>Phone:</h3>
+                            <p>724-787-3758</p>
+                          </div>
+                        </div> 
+                        <!-- email  -->
+                        <div class="contact-card">
+                          <div class="card-info text-dark text-center" style="height:80px;">
+                            <h3 class="baseline"><span><i class="fa-sharp fa-solid fa-at me-3"></i></span>Email:</h3>
+                            <p>brianrmcgee@gmail.com </p>
+                          </div>
+                        </div>                       
+                    </div>
+                  <div class="tab-pane fade" id="pills-2">
+                    <!-- payments  -->
+                    <div class="contact-card  text-dark" style="height:160px;">
+                      <div class="card-info card-title mx-auto d-block pt-3 col-sm-4">
+                        <h3  class="baseline ms-3"><span><i class="fa-solid fa-money-bill-1 me-1"></i></span>Payments:</h3>
+                        <img src="../assets/logo/card-logos.JPG" alt="Visa/MasterCard/Discover/AX Logo" class="float-end me-3" style="height:60px;width:65px;">
+                        <p class="ms-5">Cash <br> Check <br> Credit</p>
+                      </div>
+                      <div class="card-img">
+                      </div> 
+                    </div>                       
+                 </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+        <div class="position-relative h-100">
+            <img class="position-absolute w-100 h-100  mt-3" src="../assets/gallery/bath-wide.png" style="object-fit: cover;">
+        </div>
+    </div> 
+  </div>
+</div>
+<!-- =========== ABOUT END/ ============= -->
+
+  <!-- ======= SERVICE-CARD =============  -->
+  <div class="block"></div>
+  <div class="container-fluid bg-light py-6 px-5">
+  <div class="text-center mx-auto mb-5" style="max-width: 100%;">
+    <h2 class="m-1 text-center text-russo bg-accent-hover rounded p-3">Full service home repair contractor, BRM is at your service!</h2>
+  </div>
+  <div class="row g-5 service-card">
+      <div class="col-lg-4 col-md-6 card p-3">
+          <div class="service-item bg-white d-flex flex-column align-items-center text-center">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/gallery/construction.jpg" alt="" style="height: 220px;width: 80%;">
+              <div class="service-icon bg-white">
+                  <i class="fa fa-3x fa-tools color-red"></i>
+              </div>
+              <div class="px-4 pb-4">
+                  <h4 class="text-uppercase mb-3 text-russo mt-1">Building</h4>
+                  <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs.</p>
+                  <a class="btn color-red" href="#products" onclick="createHeading()">Services <i class="bi bi-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 card p-3">
+          <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/logo/--bg-thumbs.png" alt="" style="height: 220px;width: 80%;">
+              <div class="service-icon bg-white">
+                  <i class="fa fa-3x fa-home color-red"></i>
+              </div>
+              <div class="px-4 pb-4">
+                  <h4 class="text-uppercase mb-3 text-russo mt-1">Repairs</h4>
+                  <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
+                  <a class="btn color-red" href="d/data.html">Project Posts <i class="bi bi-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 card p-3">
+          <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/gallery/clean-gutter.jpg" alt="" style="height: 220px;width: 80%;">
+              <div class="service-icon bg-white">
+                  <i class="fa fa-3x fa-toolbox color-red"></i>
+              </div>
+              <div class="px-4 pb-4">
+                  <h4 class="text-uppercase mb-3 text-russo mt-1">Maintenance</h4>
+                  <p>Changing seasons bringing on a whole new list of maintenance items, BRM can help. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
+                  <a class="btn color-red" href="contact-brm.html">Contact BRM<i class="bi bi-arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <!-- ===== SERVICE-CARD END/ ===========  -->
+  
+  <!-- ========= PRODUCTS  ==========  -->
+  <div class="product-container">
+    <main class="row products" id="products"><!-- js content injection  --></main>
+    
+  </div>
+  <!-- ========= PRODUCTS END/ ==========  -->      
+
+
+
+  <!-- ======= SLIDESHOW =============  -->
+  <div class="block mt-3"></div>
+  <div class="ss-container">
+      <div class="slideshow-container col-sm-12 col-md-10 col-lg-8 mx-auto d-block" style="height: 410px;">
+        <div class="slideshow-slides">
+            <h4>Facebook Review</h4>
+            <p>Such amazing work!! Brian worked so hard on our bathroom this week and it really shows!! Absolutely beautiful. I can't even believe it's the same bathroom. Any other work on our home will be done with this company. You won't find a better price or a nicer guy!!</p>
+            <p class="author"> - Jessica LaMotte</p>
+        </div>
+  
+        <div class="slideshow-slides">
+          <h4>Facebook Review</h4>
+          <p>Wonderful job BRM Contractors, can’t wait for you to start on our next project.</p>
+          <p class="author"> - Darlene Kelly</p>
+        </div>
+  
+        <div class="slideshow-slides">
+            <h4>Facebook Review</h4>
+            <p>Need a reliable, honest and trustworthy contractor well BRM Contractors is the way to go.</p>
+            <p class="author"> - Heather McGee</p>
+        </div>
+  
+        <div class="slideshow-slides">
+          <h4>Facebook Review</h4>
+          <p>A real honest an reliable man</p>
+          <p class="author"> - Jamie Vassiliou</p>
+      </div>
+  
+        <a class="prev" onclick="plusSlides(-1)">&larr;</a>
+        <a class="next" onclick="plusSlides(1)">&rarr;</a>
+        
+      </div>
+  
+      <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+  </div>
+  <!-- ======= SLIDESHOW =============  -->
+
+  
+<!-- ========== CAROUSEL ============= -->
+
+<div class="container-md p-0" >
+  <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+              <img class="w-100" src="../assets/gallery/carport.png" alt="Image">
+              <div class="carousel-caption d-flex flex-column align-items justify-content-end">
+                <div class="p-1" style="max-width: 900px;">
+                    <div class="">
+                      <div class="masthead-container">
+                        <h4 class="text-roboto text-uppercase">Excellent service</h4>
+                        <h1 class="text-roboto text-uppercase">The incredible handyman</h1>
+                        <a href="contact-brm.html" class="btn btn-solid">FREE ESTIMATE</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="w-100" src="../assets/gallery/custom-deck6.jpg" alt="Image">
+            <div class="carousel-caption d-flex flex-column align-items justify-content-end">
+              <div class="p-1" style="max-width: 900px;">
+                  <div class="">
+                    <div class="masthead-container">
+                      <h4 class="text-roboto text-uppercase">Residential home remodel and repair</h4>
+                      <h1 class="text-roboto text-uppercase">#1 home repair</h1>
+                      <a href="services.html" class="btn btn-solid">SERVICES</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <img class="w-100" src="../assets/gallery/siding-11.jpg" alt="Image">
+            <div class="carousel-caption d-flex flex-column align-items justify-content-end">
+              <div class="p-1" style="max-width: 900px;">
+                  <div class="">
+                    <div class="masthead-container">
+                      <h4 class="text-roboto text-uppercase">The incredible handyman</h4>
+                      <h1 class="text-roboto text-uppercase">At your Service!</h1>
+                      <a href="contact-brm.html" class="btn btn-solid">CONTACT</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="w-100" src="../assets/gallery/siding-roof-after.jpg" alt="Image">
+            <div class="carousel-caption d-flex flex-column align-items justify-content-end">
+              <div class="p-1" style="max-width: 900px;">
+                  <div class="">
+                    <div class="masthead-container">
+                      <h4 class="text-roboto text-uppercase">Repair and maintenance</h4>
+                      <h1 class="text-roboto text-uppercase">At your service</h1>
+                      <a href="d/data.html" class="btn btn-solid">PROJECTS</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="w-100" src="../assets/gallery/backsplash1.jpg" alt="Image">
+            <div class="carousel-caption d-flex flex-column align-items justify-content-end">
+              <div class="p-1" style="max-width: 900px;">
+                  <div class="">
+                    <div class="masthead-container">
+                      <h4 class="text-roboto text-uppercase">Total service handyman</h4>
+                      <h1 class="text-roboto text-uppercase"></h1>
+                      <a href="index.html#blog" class="btn btn-solid">BLOG POSTS</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+<div class="block ">
+<p class="text-center display-6 text-russo text-uppercase text-white p-1"></p>
+</div>
+<!-- ======= CAROUSEL END/ ============= -->
+
+
+
+
+<div class="block"></div>
+
+
+
+
+  <!-- ====== WRAPPER END/============= -->
+</div>
+
+<!-- ============ FOOTER ============== -->
+<footer id="footer" class="footer">
+  <div class="footer-content position-relative">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-info">
+            <h3>BRM Contractors</h3>
+            <p>Brian McGee, Owner<br>PO Box 66<br>Hannastown, PA 15635<br><br>
+              <span><i class="fa-solid fa-phone fs-5 me-1"></i></span><strong>Phone:</strong> 724-787-3758<br>
+              <span><i class="fa-light fa-at fs-4"></i></span><strong>Email:</strong> brianrmcgee@gmail.com<br>
+            </p>
+            <div class="social-links d-flex mt-3">
+              <a href="https://www.facebook.com/profile.php?id=100054525456256#" class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook"></i></a>
+              <a href="mailto:brianrmcgee@gmail.com" class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-envelope"></i></a>
+              <a href="http://www.brmdev.com" class="d-flex align-items-center justify-content-center"><i class="fa-solid fa-dragon"></i></img></a>
+              <a href="http://www.brmcontractors.net" class="d-flex align-items-center justify-content-center"><img src="assets/logo/brm-red.ico" alt=""></a>
+
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#blog">#BRM Blog</a></li>
+            <li><a href="#products" onclick="createHeading()">Services</a></li>
+            <li><a href="contact-brm.html">Connect with BRM</a></li>
+            <li><a href="../maintenance.html">Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="webdesign">
+          <a href="http://www.brmdev.com">webdesign by brian @brm-dev</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<!-- =========== FOOTER END/=========== -->
+
+<!-- <script src="js/services1.js"></script> -->
+<!-- local java script  -->
+<script src="../js/brmData.js"></script>
+<script src="js/main.js"></script>
+<script src="../js/blog-app.js"></script>
+<script src="../js/slideshow-app.js"></script>
+<script src="../js/services.js"></script>
+
+
+
+<!-- Latest compiled and minified JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- goodbye brian  -->
