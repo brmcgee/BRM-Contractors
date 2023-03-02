@@ -38,25 +38,88 @@
 
 <!-- local style sheet by brm  -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
-
-
-
+<link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body>
 
+  <div class="nav-btn" style="position: fixed;z-index:5;top:2%;right:2%">
+    <button class="btn btn-lg btn-outline-danger text-russo text-dark me-3 p-1 px-3 " onclick="openNav()">Menu</button>
+  </div>
+
 <!-- ============ BANNER ============= -->
 <div class="banner" id="top">
+  
   <!-- <div class="banner-bar"></div> -->
   <div class="container-fluid row">
     <div class="col-sm" id="bannerImg1">
-      <img class="rounded mx-auto d-block" src="assets/logo/brm.jpg" style="width:290px;height:150px;" alt="BRM Contractors Inc">
+      <img class="rounded mx-auto d-block" src="../assets/logo/brm.jpg" style="width:290px;height:150px;" alt="BRM Contractors Inc">
     </div>
     <div class="col-sm" id="bannerImg2">
-      <img class="mx-auto d-block mt-2" src="assets/logo/free-estimate.png" style="width:350px" alt="Free Estimate by BRM">
+      <img class="mx-auto d-block mt-2" src="../assets/logo/free-estimate.png" style="width:350px" alt="Free Estimate by BRM">
     </div>
   </div>
 </div>
 <!-- =========== BANNER END/ ========== -->
+
+<!-- ============ NAV-BAR ============= -->
+<!-- <div class="container-fluid bg-dark" style="position:fixed;z-index:5;top:0px;">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark w-100 p-1 fixed mx-auto d-block">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/logo/brm-red.ico" alt="" width="40" height="30" class="ms-3 d-inline-block align-text-baseline">
+      </a>
+      <div class="btn-group" role="group">
+        <a href="#top" class="btn btn-outline me-1 p-1 px-2">Top</a>
+        <button class="btn btn-solid me-3 p-1 px-2" type="button" onclick="openNav()">Menu</button>  
+      </div>
+    </div>
+  </nav>
+</div> -->
+<!-- =========== NAV-BAR END/========== -->
+
+
+
+
+<!-- ============ SIDENAV ============= -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close text-white" aria-hidden="true"></i></a>
+
+  <div class="links">
+    <div class="col">
+      <a href="../index.html" class="h1 text-russo"> Home</a>
+    </div>
+    <div class="col link">
+      <a href="../about.html" class="" > About BRM</a>
+    </div>
+    <div class="col link">
+      <a href="../services.html" class=""> Services</a>
+    </div>
+    <div class="col link">
+      <a href="../contact-brm.html" class=""> Contact Us</a>
+    </div>
+    <div class="col link">
+      <a href="data.html" class=""> Blog Posts</a>
+    </div>
+    <div class="col link">
+        <a href="http://www.brmnow.com" class=""> BRM NOW</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="row mt-2 btn-bar">
+  <div class="col link ms-5 me-1">
+    <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
+  </div>
+  <div class="col link me-5 ms-1">
+    <a href="#" onclick="clearTitle(), clearScreen()" class=""><span><i class="fa-solid fa-trash pe-2"></i></i></span> Clear </a>
+  </div>
+  </div>
+  
+  <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+</div>
+<!-- ============ SIDENAV END/ ========== -->
 
 
 <!-- ========= MASTHEAD ================ -->
@@ -129,7 +192,7 @@
         </div>
 
         <div class="col-8 col-sm-8 col-md-8 col-lg-4 mx-auto d-block img-container">
-          <img src="assets/logo/brm-red.ico" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Contractors" style="width:240px;"loading="lazy">
+          <img src="../assets/logo/brm-red.ico" class="d-block mx-lg-auto img-fluid  main-img m-2" alt="BRM Contractors" style="width:240px;"loading="lazy">
         </div>
 
 
@@ -268,7 +331,7 @@
 <div class="container-fluid p-5" id="about">
   <div class="row gx-5">
 
-      <div class="col-lg-7">
+      <div class="col-lg-6 ms-3">
           <div class="mb-4">
               <h5 class="text-white ps-1 bg-red text-uppercase text-russo">About Us</h5>
               <h1 class="display-3 text-uppercase mb-0 text-russo">Welcome to BRM </h1>
@@ -306,7 +369,7 @@
                     <div class="contact-card  text-dark" style="height:160px;">
                       <div class="card-info card-title mx-auto d-block pt-3 col-sm-4">
                         <h3  class="baseline ms-3"><span><i class="fa-solid fa-money-bill-1 me-1"></i></span>Payments:</h3>
-                        <img src="assets/logo/card-logos.JPG" alt="Visa/MasterCard/Discover/AX Logo" class="float-end me-3" style="height:60px;width:65px;">
+                        <img src="../assets/logo/card-logos.JPG" alt="Visa/MasterCard/Discover/AX Logo" class="float-end me-3" style="height:60px;width:65px;">
                         <p class="ms-5">Cash <br> Check <br> Credit</p>
                       </div>
                       <div class="card-img">
@@ -316,9 +379,9 @@
               </div>
           </div>
       </div>
-      <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+      <div class="col-lg-5 mb-5 mb-lg-0 ms-3" style="min-height: 400px;">
         <div class="position-relative h-100">
-            <img class="position-absolute w-100 h-100  mt-3" src="assets/gallery/bath-wide.png" style="object-fit: cover;">
+            <img class="position-absolute w-100 h-100  mt-3" src="../assets/gallery/bath-wide.png" style="object-fit: cover;">
         </div>
     </div> 
   </div>
@@ -334,7 +397,7 @@
   <div class="row g-5 service-card">
       <div class="col-lg-4 col-md-6 card p-3">
           <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-              <img class="img-fluid pb-3 rounded-3" src="assets/gallery/construction.jpg" alt="" style="height: 220px;width: 80%;">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/gallery/construction.jpg" alt="" style="height: 220px;width: 80%;">
               <div class="service-icon bg-white">
                   <i class="fa fa-3x fa-tools color-red"></i>
               </div>
@@ -347,20 +410,20 @@
       </div>
       <div class="col-lg-4 col-md-6 card p-3">
           <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-              <img class="img-fluid pb-3 rounded-3" src="assets/logo/--bg-thumbs.png" alt="" style="height: 220px;width: 80%;">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/logo/--bg-thumbs.png" alt="" style="height: 220px;width: 80%;">
               <div class="service-icon bg-white">
                   <i class="fa fa-3x fa-home color-red"></i>
               </div>
               <div class="px-4 pb-4">
                   <h4 class="text-uppercase mb-3 text-russo mt-1">Repairs</h4>
                   <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
-                  <a class="btn color-red" href="blog/index.html">Project Posts <i class="bi bi-arrow-right"></i></a>
+                  <a class="btn color-red" href="d/data.html">Project Posts <i class="bi bi-arrow-right"></i></a>
               </div>
           </div>
       </div>
       <div class="col-lg-4 col-md-6 card p-3">
           <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-              <img class="img-fluid pb-3 rounded-3" src="assets/gallery/clean-gutter.jpg" alt="" style="height: 220px;width: 80%;">
+              <img class="img-fluid pb-3 rounded-3" src="../assets/gallery/clean-gutter.jpg" alt="" style="height: 220px;width: 80%;">
               <div class="service-icon bg-white">
                   <i class="fa fa-3x fa-toolbox color-red"></i>
               </div>
@@ -428,13 +491,13 @@
 
   
 <!-- ========== CAROUSEL ============= -->
-<div class="block"></div>
-<div class="container-lg p-0 col-sm-12 col-md-12 col-lg-9 col-xl-7" >
+
+<div class="container-md p-0" >
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
 
           <div class="carousel-item active">
-              <img class="w-100" src="assets/gallery/carport.png" alt="Image">
+              <img class="w-100" src="../assets/gallery/carport.png" alt="Image">
               <div class="carousel-caption d-flex flex-column align-items justify-content-end">
                 <div class="p-1" style="max-width: 900px;">
                     <div class="">
@@ -449,7 +512,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="assets/gallery/custom-deck6.jpg" alt="Image">
+            <img class="w-100" src="../assets/gallery/custom-deck6.jpg" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items justify-content-end">
               <div class="p-1" style="max-width: 900px;">
                   <div class="">
@@ -465,7 +528,7 @@
 
           
           <div class="carousel-item">
-            <img class="w-100" src="assets/gallery/siding-11.jpg" alt="Image">
+            <img class="w-100" src="../assets/gallery/siding-11.jpg" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items justify-content-end">
               <div class="p-1" style="max-width: 900px;">
                   <div class="">
@@ -480,7 +543,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="assets/gallery/siding-roof-after.jpg" alt="Image">
+            <img class="w-100" src="../assets/gallery/siding-roof-after.jpg" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items justify-content-end">
               <div class="p-1" style="max-width: 900px;">
                   <div class="">
@@ -495,7 +558,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="assets/gallery/backsplash1.jpg" alt="Image">
+            <img class="w-100" src="../assets/gallery/backsplash1.jpg" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items justify-content-end">
               <div class="p-1" style="max-width: 900px;">
                   <div class="">
@@ -521,9 +584,18 @@
       </button>
   </div>
 </div>
+<div class="block ">
+<p class="text-center display-6 text-russo text-uppercase text-white p-1"></p>
+</div>
 <!-- ======= CAROUSEL END/ ============= -->
 
+
+
+
 <div class="block"></div>
+
+
+
 
   <!-- ====== WRAPPER END/============= -->
 </div>
@@ -559,7 +631,7 @@
             <li><a href="#blog">#BRM Blog</a></li>
             <li><a href="#products" onclick="createHeading()">Services</a></li>
             <li><a href="contact-brm.html">Connect with BRM</a></li>
-            <li><a href="maintenance.html">Maintenance</a></li>
+            <li><a href="../maintenance.html">Maintenance</a></li>
           </ul>
         </div>
         <div class="webdesign">
@@ -573,39 +645,13 @@
 </footer>
 <!-- =========== FOOTER END/=========== -->
 
-
-<!-- =======---==== MODAL ==============  -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">BRM Contractors Inc</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="ps-1 pe-1" aria-hidden="true"> <i class="fa-solid fa-xmark" style="font-size:28px;"></i> </span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="schedule-message" id="schedule">
-          <h5>Scheduling unavailable</h5>
-          <p>Please call the office at <strong>(724) 787-3758</strong> or send us a message with your information and we will be in contact.</p>
-          <a href="contact-brm.html" role="button" class="btn-solid popover-test" title="Connect with BRM Contractors Inc." data-content="Popover body content is set in this attribute.">Send BRM a Message</a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ========= MODAL END/ ==============  -->
-
 <!-- <script src="js/services1.js"></script> -->
 <!-- local java script  -->
-<script src="js/brmData.js"></script>
+<script src="../js/brmData.js"></script>
 <script src="js/main.js"></script>
-<script src="js/blog-app.js"></script>
-<script src="js/slideshow-app.js"></script>
-<script src="js/services.js"></script>
+<script src="../js/blog-app.js"></script>
+<script src="../js/slideshow-app.js"></script>
+<script src="../js/services.js"></script>
 
 
 
