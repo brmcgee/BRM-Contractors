@@ -21,16 +21,21 @@ function createImages(imgPath) {
     image.src = imgPath[0];
     image.alt = "BRM";
     image.style.borderRadius = "10px"
-    image.style.height = "82vh";
+    image.style.height = "80vh";
     image.style.width = "88vw";
     image.style.objectFit = "contain";
     heading.appendChild(image);
 
 
-    let catTitle = document.createElement("h3");
+    let catTitle = document.createElement("h5");
     catTitle.classList = "img-slider-title text-uppercase w-100"
     catTitle.innerHTML = imgPath[1];
     heading.appendChild(catTitle);
+
+    let catCategory = document.createElement("h3");
+    catCategory.classList = "img-slider-category text-uppercase w-100"
+    catCategory.innerHTML = imgPath[2];
+    heading.appendChild(catCategory);
 };
 
 
@@ -38,10 +43,11 @@ function createImages(imgPath) {
 for (let i=0; i < data.length; i++){
     let image1 = "../" + imgData[i].img1;
     let image2 = "../" + imgData[i].img2;
+    let title = imgData[i].title;
     let category = imgData[i].category;
 
-    images.push([image2, category]);
-    images.push([image1, category]);
+    images.push([image2, title, category]);
+    images.push([image1, title, category]);
 }
 
 
