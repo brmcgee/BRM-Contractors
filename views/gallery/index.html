@@ -45,6 +45,7 @@
   }
   [data-component="slideshow"] .slide {
     display: none;
+    transition: .3s;
   }
   [data-component="slideshow"] .slide.active {
     display: block;
@@ -54,7 +55,7 @@
   position: relative;
   width: 79%;
   left: 60px;
-  top: 180px;
+  top: 45px;
   background-color: transparent;
 }
 .float-title h1 {
@@ -62,30 +63,28 @@
   color: white;
   text-transform: uppercase;
 }
+.img-slider-title {
+  position: relative;
+  width: 79%;
+  left: 10px;
+  bottom: 60px;
+  background-color: transparent;
+  color: white;
+}
 </style>
 
 </head>
 <body>
-<!-- ============ BANNER ============= -->
-<div class="banner" id="top">
-  <!-- <div class="banner-bar"></div> -->
-  <div class="container-fluid row">
-    <div class="col-sm" id="bannerImg1">
-      <img class="rounded mx-auto d-block pt-2" src="../../assets/logo/brm-red.ico" style="width:160px;height:120px;" alt="BRM Contractors Inc">
-    </div>
-    <div class="col-sm" id="bannerImg2">
-      <img class="mx-auto d-block mt-1 rounded" src="../../assets/logo/free-estimate.png" style="width:310px;height:110px;" alt="Free Estimate by BRM">
-    </div>
-  </div>
-</div>
-<!-- =========== BANNER END/ ========== -->
 
 <!-- ============ IMG-SHOW ============= -->
 
   <div id="slideshow" data-component="slideshow">
 
-    <div class="block float-title">
-      <h1 class="display-5 text-russo">BRM Gallery <span><a href="../../index.html" class="btn btn-light float-end">HOME</a></span></h1>
+    <div class="block float-title" >
+      <h1 class="display-5 text-russo" >
+        <span>
+          <img src="../../assets/logo/brm-ico.png" alt="" width="50" height="52" class="p-0 m-0">
+        </span> BRM Gallery <span><a href="../../index.html" class="btn btn-light float-end">HOME</a></span></h1>
     </div>
 
     <div class="wrapper" role="list" id="pageWrap">

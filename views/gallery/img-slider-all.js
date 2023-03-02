@@ -2,6 +2,7 @@ let wrapper = document.getElementById("pageWrap");
 let images = [];
 let imgData = data;
 let count = 0;
+let time = 2000;
 
 function showAllImages () {
     console.log('hello')
@@ -17,13 +18,19 @@ function createImages(imgPath) {
     wrapper.appendChild(heading);
 
     let image = document.createElement('img');
-    image.src = imgPath;
+    image.src = imgPath[0];
     image.alt = "BRM";
     image.style.borderRadius = "10px"
     image.style.height = "82vh";
     image.style.width = "88vw";
     image.style.objectFit = "contain";
     heading.appendChild(image);
+
+
+    let catTitle = document.createElement("h3");
+    catTitle.classList = "img-slider-title text-uppercase w-100"
+    catTitle.innerHTML = imgPath[1];
+    heading.appendChild(catTitle);
 };
 
 
@@ -31,9 +38,10 @@ function createImages(imgPath) {
 for (let i=0; i < data.length; i++){
     let image1 = "../" + imgData[i].img1;
     let image2 = "../" + imgData[i].img2;
+    let category = imgData[i].category;
 
-    images.push(image2);
-    images.push(image1);
+    images.push([image2, category]);
+    images.push([image1, category]);
 }
 
 
@@ -51,7 +59,7 @@ slideshows.forEach(initSlideShow);
 function initSlideShow(slideshow){
     let slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide` )
     let index = 0;
-    let time = 1500;
+
     slides[index].classList.add('active');
 
     setInterval(() => {
