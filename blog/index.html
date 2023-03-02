@@ -128,8 +128,8 @@
   <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
 
   <div class="links">
-    <div class="col">
-      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
+    <div class="col link">
+      <a href="../index.html" class="text-russo border rounded"> BRM Contractors - HOME</a>
     </div>
     <div class="col link">
       <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
@@ -148,8 +148,6 @@
     </div>
   </div>
 
-
-
   <div class="row mt-2 btn-bar">
   <div class="col link ms-5 me-1">
     <a href="#" onclick="searchBlog()"><span><i class="fa-solid fa-magnifying-glass pe-2 "></i></i></span> Search </a>
@@ -160,6 +158,37 @@
   </div>
   
   <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
+  
+  <!-- ======== DROPDOWN ======= -->
+  <div class="container mt-3">
+    <link rel="stylesheet" href="../views/drop-down/dropdown.css">
+    <style>
+      .dropdown a:hover{
+        background-color: rgb(163,30,30);
+      }
+    </style>
+    <button class="btn" id="btn"> Menu </button>
+    <div class="dropdown" id="dropdown">
+      <a href="../index.html">
+        Home @ BRM
+      </a>
+      <a href="#" onclick="selectProject('bathroom-remodel-rm')">
+        Bathroom Remodel
+      </a>
+      <a href="#" onclick="selectProject('kitchen-remodel-ah')">
+        Kitchen Remodel
+      </a>
+      <a href="#" onclick="selectProject('custom-deck')">
+        Deck Build
+      </a>
+      <a href="#" onclick="selectProject('siding-roofing')">
+        Roofing and Siding
+      </a>
+    </div>
+  </div>
+  <script src="../views/drop-down/dropdown.js"></script>
+   <!-- ====== DROPDOWN END/ ======= -->
+
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
