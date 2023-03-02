@@ -42,10 +42,13 @@
 <style>
   * {
     background-color: rgb(163, 30, 30);
+    font-family: 'Russo One', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
   }
   [data-component="slideshow"] .slide {
     display: none;
-    transition: .3s;
+    transition: .1s;
   }
   [data-component="slideshow"] .slide.active {
     display: block;
@@ -60,16 +63,20 @@
 }
 .float-title h1 {
   background-color: transparent;
-  color: white;
-  text-transform: uppercase;
 }
 .img-slider-title {
   position: relative;
+  width: 88%;
+  left: 10px;
+  bottom: 110px;
+  background-color: transparent;
+}
+.img-slider-category {
+  position: absolute;
   width: 79%;
   left: 10px;
-  bottom: 60px;
+  top: 75%;
   background-color: transparent;
-  color: white;
 }
 </style>
 
