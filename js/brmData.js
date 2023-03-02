@@ -366,7 +366,7 @@ const data = [
       date: "Feb 28, 2023",
       author: "Brian McGee",
       body: "We stained the door ealier in the week and let it dry, now we installed the new oak door stained and all trimed out. Vanity is also installed and looks awesome. This bathroom is surely coming along. Check back as we finish this space.",
-      img1: "../assets/gallery/bath-inprog.jpg",
+      img1: "../assets/gallery/door-hung.jpg",
       img2: "../assets/gallery/door-stain.jpg",
       project: "bathroom-remodel-rm"
     }
