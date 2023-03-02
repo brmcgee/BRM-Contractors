@@ -359,6 +359,16 @@ const data = [
       img1: "../assets/gallery/floor1b.jpg",
       img2: "../assets/gallery/floor1a.jpg",
       project: "bathroom-remodel-rm"
+    },
+    {
+      category: 'Bathroom Remodel',
+      title: "Stained door install with new rustic vanity",
+      date: "Feb 24, 2023",
+      author: "Brian McGee",
+      body: "We stained the door ealier in the week and let it dry, now we installed the new oak door stained and all trimed out. Vanity is also installed and looks awesome. This bathroom is surely coming along. Check back as we finish this space.",
+      img1: "../assets/gallery/bath-inprog.jpg",
+      img2: "../assets/gallery/door-stain.jpg",
+      project: "bathroom-remodel-rm"
     }
 
   ];
