@@ -369,6 +369,16 @@ const data = [
       img1: "../assets/gallery/door-hung.jpg",
       img2: "../assets/gallery/door-stain.jpg",
       project: "bathroom-remodel-rm"
+    },
+    {
+      category: 'Bathroom Remodel',
+      title: "Awesome Bathroom Remodel all wrapped up",
+      date: "March 2, 2023",
+      author: "Brian McGee",
+      body: "We are all wrapped up out here on this bathroom remodel. Final touches and punch out today. We've installed all the accesories. Beautiful 2-tone paint which complements the rustic cabinets. We hope the homeowners enjoy this space just as much as we enjoyed this project! Job well done!",
+      img1: "../assets/gallery/bath-complete1a.jpg",
+      img2: "../assets/gallery/bath-complete1b.jpg",
+      project: "bathroom-remodel-rm"
     }
 
   ];
