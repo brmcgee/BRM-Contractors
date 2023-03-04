@@ -67,12 +67,11 @@ let wrapper = document.getElementById("products");
 function createCard (i) {
 
     let sCard = document.createElement('div');
-    sCard.className = "col-lg-4 col-md-6 p-1";
+    sCard.className = "col-lg-4 col-md-6";
     wrapper.appendChild(sCard);
 
         let card = document.createElement('div');
         card.className = "service-item position-relative";
-        card.style.userSelect = "none";
         sCard.appendChild(card);
 
             let div1 = document.createElement("div");
@@ -108,7 +107,7 @@ function createCard (i) {
 
                         let alink = document.createElement('a');
                         alink.classList = "btn btn-outline p-1";
-                        alink.href = "/contact-brm.html";
+                        alink.href = "http://www.brmcontractors.net/contact-brm.html";
                         alink.innerHTML = "Contact Us"
                         div3.appendChild(alink);
 
@@ -123,12 +122,8 @@ function createCard (i) {
     title.innerHTML = services[i].title;
     cTitle.appendChild(title);
 
-    let iSpan = document.createElement("span");
-    title.appendChild(iSpan);
 
-    let imgIcon = document.createElement("i");
-    imgIcon.classList = "fa fa-2x fa-bolt  color-red fs-1 ms-5";
-    iSpan.appendChild(imgIcon);
+    
 
 };
 
@@ -143,7 +138,7 @@ function createHeading() {
     heading.appendChild(hTitle);
 
     let hContent = document.createElement('p');
-    hContent.className = "col-md-10"
+    hContent.className = "col-md-"
     hContent.innerHTML = "BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.";
     heading.appendChild(hContent);
 

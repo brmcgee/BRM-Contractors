@@ -1453,7 +1453,7 @@ h2#header_14.form-header {
 }
 .slideshow-slides {
     display: none;
-    padding: 80px;
+    padding: 70px;
     text-align: center;
     height: 200px;
 }
@@ -1673,7 +1673,7 @@ h2#header_14.form-header {
     align-items: center;
     justify-content: center;
     background: rgba(34, 36, 41, .9);
-    transition: .5s;
+    transition: .2s ease;
     opacity: 0;
 }
 
