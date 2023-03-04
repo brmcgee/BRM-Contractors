@@ -57,7 +57,7 @@
   <!-- =========  NAVBAR ==========  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-main">
     <a class="navbar-brand" href="#">
-      <i class="fa-solid fa-house h2 pt-2 ps-2"></i>
+      <i class="fa-solid fa-home h2 pt-2 ps-2"></i>
     </a>
     <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon" onclick="iconSwap(this)">
@@ -72,6 +72,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
+
           <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
         </li>
 
@@ -82,6 +83,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="about.html">Info - About</a>
             <a class="dropdown-item" href="contact-brm.html">Contact BRM</a>
+            <a class="dropdown-item" href="blog/gallery/index.html">Gallery</a>
             <a class="dropdown-item" href="maintenance.html">Maintenance Guide</a>
           </div>
         </li>
@@ -90,15 +92,17 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="services.html">Drywall and Painting</a>
-            <a class="dropdown-item" href="services.html">Bathroom Remodel</a>
-            <a class="dropdown-item" href="services.html">Kitchen Remodel</a>
-            <a class="dropdown-item" href="services.html">Custom Decks</a>
-            <a class="dropdown-item" href="services.html">Windows and Doors</a>
-            <a class="dropdown-item" href="services.html">Roofing and Siding</a>
-            <a class="dropdown-item" href="services.html">Handyman Services</a>
-            <a class="dropdown-item" href="services.html">Clean Up and Hauling</a>
-            <a class="dropdown-item" href="services.html">Inspections</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Drywall and Painting</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Bathroom Remodel</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Kitchen Remodel</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Custom Decks</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Windows and Doors</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Roofing and Siding</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Handyman Services</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Clean Up and Hauling</a>
+            <a class="dropdown-item" href="#products" onclick="createHeading()">Inspections</a>
+            
+
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">
               <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
@@ -106,7 +110,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="index.html#blog">BRM - Blog Posts</a>
+          <a class="nav-link" id="lastNav" href="blog-posts.html">BRM - Blog Posts</a>
         </li>
     </div>
   </nav>
