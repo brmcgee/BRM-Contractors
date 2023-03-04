@@ -9,7 +9,7 @@ const services = [
 {
     title: "Bathrooms",
     content: 'We repair all things bathroom! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full bathroom remodel.',
-    img1: "assets/gallery/bathroom1.jpg",
+    img1: "assets/gallery/--bg-bath.jpg",
 },
 {
     title: "Painting",
