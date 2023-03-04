@@ -12,18 +12,21 @@ function createCard (services) {
 
     let card = document.createElement('div');
     card.className = "card mx-auto d-block blog-item m-3";
-    card.style.width = "400px";
+    card.style.width = "300px";
 
     sCard.appendChild(card);
 
     let cImg = document.createElement("div");
-    cImg.className = "position-relative overflow-hidden rounded-top";
+    cImg.className = "overflow-hidden rounded-top img-fluid";
     card.appendChild(cImg);
 
     let image = document.createElement('img');
     (services.img1 === '') ? image.src = "assets/gallery/placeholder.jpg": image.src = services.img1;
+
+    image.style.width = "300px";
+    image.style.height = "300px";
+    image.style.objectFit = "cover"
     image.classList = "img-fluid";
-    image.style.width = "400px";
     cImg.appendChild(image);
 
     // let image2 = document.createElement('img');
@@ -37,17 +40,34 @@ function createCard (services) {
 
     let price = document.createElement('p');
     (services.category === '' || services.category === null) ? price.innerHTML = "n/a" : price.innerHTML =  services.category ;
+    price.style.position = "absolute";
+    price.style.top = "1px";
+    price.style.color = "white";
+    price.classList = "p-3 h3 text-uppercase"
     cPrice.appendChild(price);
 
     let cBody = document.createElement("div");
     cBody.className = "card-body";
-    cBody.classList = "bg-dark d-flex align-items-center rounded-bottom p-4 p-1"
+    cBody.classList = "bg-dark d-flex-column align-items-center rounded-bottom p-4 p-1"
     card.appendChild(cBody);
 
     let title = document.createElement("h4");
     (services.title === '') ? title.innerHTML = "...": title.innerHTML = services.title;
-    title.className = "h5 text-uppercase text-light me-3"
+    title.className = "fs-5 text-uppercase text-light me-3 d-flex"
     cBody.appendChild(title);
+
+    let userImage = document.createElement('img');
+    (services.authorImage === "" || services.authorImage === null || services.authorImage === undefined) ? userImage.src = "assets/brm-red.ico" : userImage.src = services.authorImage;
+    services.authorImage = "assets/brm-red.ico";
+    userImage.classList = "img-fluid mx-auto d-block";
+    userImage.style.width = "70px";
+    userImage.style.height = "70px";
+    title.appendChild(userImage);
+
+    // let blogId = document.createElement('p');
+    // blogId.classList = "text-russo mt-3 text-white small text-center"
+    // blogId.innerHTML = "724.787.3758"
+    // title.appendChild(blogId)
 
     let body = document.createElement('p');
     (services.body === '') ? body.innerHTML = "content unavailable" : body.innerHTML = services.body;
@@ -58,30 +78,21 @@ function createCard (services) {
     cUser.className = "card-user";
     card.appendChild(cUser);
 
-    let userImage = document.createElement('img');
-    (services.authorImage === "" || services.authorImage === null || services.authorImage === undefined) ? userImage.src = "assets/brm-red.ico" : userImage.src = services.authorImage;
-    services.authorImage = "assets/brm-red.ico";
-    userImage.classList = "img-fluid mt-3";
-    userImage.style.width = "50px";
 
-    cUser.appendChild(userImage);
 
-    let  cUserInfo = document.createElement('div');
-    cUserInfo.className = 'user-info';
-    cUser.appendChild(cUserInfo);
+    // let  cUserInfo = document.createElement('div');
+    // cUserInfo.className = 'user-info';
+    // cUser.appendChild(cUserInfo);
 
-    let myUser = document.createElement("h5");
-    (services.user === '') ? myUser.innerHTML = "bm": myUser.innerHTML = services.author;
-    cUserInfo.appendChild(myUser);
+    // let myUser = document.createElement("h5");
+    // (services.user === '') ? myUser.innerHTML = "bm": myUser.innerHTML = services.author;
+    // cUserInfo.appendChild(myUser);
 
-    let date = document.createElement("small");
-    (services.date === '') ? date.innerHTML = "-" : date.innerHTML = services.date;
-    cUserInfo.appendChild(date);
+    // let date = document.createElement("small");
+    // (services.date === '') ? date.innerHTML = "-" : date.innerHTML = services.date;
+    // cUserInfo.appendChild(date);
 
-    let blogId = document.createElement('p');
-    blogId.classList = "text-russo mt-1 text-secondary small"
-    blogId.innerHTML = "Phone 724.787.3758"
-    cUserInfo.appendChild(blogId)
+
 
 
 };
