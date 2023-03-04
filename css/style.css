@@ -1658,15 +1658,15 @@ h2#header_14.form-header {
 
 
 /* ====== SERVICES OVERLAY ======== */
-.team-item img {
+.service-item img {
     transition: .5s;
 }
 
-.team-item:hover img {
-    transform: scale(1.1);
+.service-item:hover img {
+    transform: scale(1.2);
 }
 
-.team-item .team-overlay {
+.service-item .service-overlay {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -1680,10 +1680,18 @@ h2#header_14.form-header {
     opacity: 0;
 }
 
-.team-item:hover .team-overlay {
+.service-item:hover .service-overlay {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     opacity: 1;
 }
+.service-item  i {
+    color: var(--bg-icon);
+}
+.service-item:hover  i
+{
+    color: var(--bg-primary)
+}
+/* ====== SERVICES OVERLAY ======== */
