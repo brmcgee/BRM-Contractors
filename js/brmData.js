@@ -382,6 +382,16 @@ const data = [
       img1: "../assets/gallery/bath-complete1a.jpg",
       img2: "../assets/gallery/bath-complete1b.jpg",
       project: "bathroom-remodel-rm"
+    },
+    {
+      category: 'Custom Decks',
+      title: "Spring is almost here, time for home projects",
+      date: "March 4, 2023",
+      author: "Brian McGee",
+      body: "The beautiful weather is coming and what more to enjoy it on the beautiful new deck by BRM. Need a new bathroom, we can help. Bathroom remodel and general home repair. Call or connect today for a free estimate!",
+      img2: "../assets/gallery/--bg-bath.jpg",
+      img1: "../assets/gallery/custom-deck2.jpg",
+      project: ""
     }
 
   ];
