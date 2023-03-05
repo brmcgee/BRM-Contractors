@@ -135,8 +135,29 @@ function createBCard (array){
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    productData.forEach((item) => {
-        createBCard(item);
-    })
-})
+function blogToCard (blogPost) {
+    let blogArr = [];
+    let blogArr2 = [];
+    blogArr.title = blogPost.title;
+    blogArr2.title = blogPost.title;
+    blogArr.content = blogPost.body;
+    blogArr2.content = blogPost.body;
+    blogArr.img1 = blogPost.img1;
+    blogArr2.img1 = blogPost.img2;
+    blogArr.link = ['',''];
+    blogArr2.link = ['',''];
+    // blogArr.link = [[blogPost.img1], ["Expand"]];
+    // blogArr2.link = [[blogPost.img2], ["Expand"]];
+
+    createBCard(blogArr);
+    createBCard(blogArr2);
+}
+
+// gets global blog data 
+const allBlogs = data;
+
+
+
+
+
+

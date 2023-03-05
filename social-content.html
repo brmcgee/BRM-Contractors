@@ -129,62 +129,45 @@
 
 <!-- ============ WRAPPER ============= -->
 <div class="wrapper">
-<!-- ========= MASTEHEAD ========== -->
-<section class="class">
-    <div class="container-fluid">
-        <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-light bg-dark" style="background-image: linear-gradient(180deg, rgba(29, 20, 18, 0.78) 0%, rgba(19, 16, 34, 0.78) 100%),
-                url(https://www.brmcontractors.net/assets/gallery/--bg-home-repair.jpg); background-size: cover;">
-                    <div class="container my-5">
-                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-                                        <h2 class="display-4 text-russo">SERVICES<p></p>
-                                            <p></p>
-                                        </h2>
-                                    </div>
-                                </div>
 
-                                <div class="lc-block mb-3">
-                                    <div editable="rich">
-                                        <p class="lead">BRM provides residential and commercial repair, building and maintenance. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting. With decades of experience in the industry BRM has you covered. We are licensed and insured providing the Western PA area quality craftsmanship and affordable pricing. Call or connect with us today for a FREE estimate.
-                                        </p>
-                                    </div>
-                                </div>
 
-                                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
-                                  <a href="index.html#blog" role="button" class="btn btn-outline px-4 me-md-2">Project Posts</a>
-                                  <a href="contact-brm.html" class="btn btn-outline">FREE ESTIMATE</a>         
-                                </div>
-                            </div>
-                            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                                <div class="lc-block"><img class="rounded-start img-fluid me-2 p-5" src="assets/logo/brm-red.ico" alt="BRM" width="520"></div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="block bg-red">
-  <p class="text-russo h1 text-center text-white text-uppercase pt-1">Total home repair</p>
+<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+    <button id="btnBcard"  class="btn btn-solid px-4 me-md-2 m-3">Overlay</button>
+    <button id="btnScard"  class="btn btn-solid px-4 me-md-2 m-3">Dark</button>
 </div>
-<!-- ========= MASTEHEAD ========== -->
+
 
 <!-- ========= BCARD ============ -->
 <div id="b-products" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 m-1">
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    productData.forEach((item) => {
-        createBCard(item);
+    btnBcard.addEventListener("click", () => {
+    allBlogs.forEach((blog) => {
+        blogToCard(blog);
     });
 });
 </script>
 <!-- ========= BCARD ============ -->
+
+
+<!-- =========== SCARD =============== -->
+  <div class="product-container">
+    <main class="row product container-fluid m-0 p-0" id="serviceCard"><!-- js content injection  -->
+    </main>
+  </div>
+  <div class="block"></div>
+</div>
+
+<script>
+    btnScard.addEventListener("click", () => {
+       allBlogs.forEach((blog) => {
+        createCard(blog)
+       })
+    });
+  </script>
+<!-- =========== SCARD =============== -->
+
 
 </div>
 <!-- ============ WRAPPER ============= -->
@@ -262,14 +245,17 @@
 
 
 <!-- local java script  -->
+
+<script src="js/brmData.js"></script>
+<script src="js/main.js"></script>
+<script src="js/blog-app.js"></script>
+<script src="js/slideshow-app.js"></script>
 <script src="js/main.js"></script>
 <script src="js/b-card.js"></script>
+<script src="js/s-card.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    createHeading();
-});
-</script>
+
+
 
 
 <!-- Latest compiled and minified JS -->
