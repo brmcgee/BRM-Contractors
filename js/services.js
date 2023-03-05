@@ -154,3 +154,48 @@ function createHeading() {
 
 
 
+// .service-item img {
+//     transition: .5s;
+// }
+
+// .service-item:hover img {
+//     transform: scale(1.2);
+// }
+
+// .service-item .service-overlay {
+//     position: absolute;
+//     top: 50%;
+//     right: 50%;
+//     bottom: 50%;
+//     left: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: rgba(34, 36, 41, .9);
+//     transition: .2s ease;
+//     opacity: 0;
+// }
+
+// .service-item:hover .service-overlay {
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     opacity: 1;
+// }
+// .service-item  i {
+//     color: var(--bg-icon);
+// }
+// .service-item:hover  i
+// {
+//     color: var(--bg-primary)
+// }
+
+
+
+
+/* HTML target tag
+ <div class="product-container container-fluid">
+<main class="row products " id="products"><!-- js content injection  --></main>
+
+</div> */
