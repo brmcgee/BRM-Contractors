@@ -8,7 +8,7 @@ const productData = [
     {
     title: "Custom Decks",
     content: 'BRM builds and repairs all sorts of deck, handrail, posts and fences and more. Full service deck builds and fence installs. We repair and install anything wood.',
-    img1: "assets/gallery/custom-deck2.jpg",
+    img1: "assets/gallery/custom-deck6.jpg",
     link: [["contact-brm.html"], ["Contact Us"]]
 },
 {
@@ -38,13 +38,13 @@ const productData = [
 {
     title: "Handyman",
     content: 'Need something fixed or repaired, maybe even hung on a wall? We can help - we install your products! We also access steep and tall and repair those common home problems.',
-    img1: "assets/gallery/siding-lift.png",
+    img1: "assets/gallery/plumbing-tub.jpg",
     link: [["contact-brm.html"], ["Contact Us"]]
 },
 {
     title: "Kitchens",
     content: 'We repair all things kitchen! BRM offers installation services for fixtures, lights, plumbing flooring and more. We also offer full kitchen remodel and appliance installation.',
-    img1: "assets/gallery/kitchen.png",
+    img1: "assets/gallery/kitchen-cabinet1.jpg",
     link: [["contact-brm.html"], ["Contact Us"]]
 },
 {
@@ -113,8 +113,9 @@ function createBCard (array){
                         header.appendChild(ptag);
                     
                     let list = document.createElement("ul");
-                    list.classList = "lc-block d-flex list-unstyled mt-auto ms-auto";
+                    list.classList = "d-flex list-unstyled mt-auto ms-auto";
                     body.appendChild(list);
+
 
                         let link = document.createElement("a");
                         link.classList = "btn btn-link btn-sm text-white";
@@ -122,6 +123,15 @@ function createBCard (array){
                         link.innerHTML = array.link[1];
                         link.role = "button";
                         list.appendChild(link);
+
+                        
+                        let linkImg = document.createElement("img");
+                        linkImg.src = "assets/logo/brm-red.ico";
+                        linkImg.style.height = "50px";
+                        linkImg.classList = "float-start ms-5";
+                        list.appendChild(linkImg);
+
+
 }
 
 
