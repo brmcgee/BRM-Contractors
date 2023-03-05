@@ -132,8 +132,9 @@
 
 
 <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
-    <button id="btnBcard"  class="btn btn-solid px-4 me-md-2 m-3">Overlay</button>
-    <button id="btnScard"  class="btn btn-solid px-4 me-md-2 m-3">Dark</button>
+    <button id="btnBcard"  class="btn btn-solid px-4 me-md-2 m-3">Overlay Blogs</button>
+    <a href="#serviceCard"> <button id="btnScard" class="btn btn-solid px-4 me-md-2 m-3">Dark Blogs</button></a>
+    <a href="#serviceCard"> <button id="btnScardService" class="btn btn-solid px-4 me-md-2 m-3">Dark Services</button></a>    
 </div>
 
 
@@ -165,6 +166,18 @@
         createCard(blog)
        })
     });
+
+    btnScardService.addEventListener('click', () => {
+        services.forEach((item) => {
+            let arr = [];
+            arr.category = '<img src="/assets/logo/brm-red.ico" alt="" style="width:70px;">';
+            arr.img1 = item.img1;
+            arr.title = item.title;
+            arr.body = item.content;
+            arr.authorImage = "skip";
+            createCard(arr)
+        })
+    });
   </script>
 <!-- =========== SCARD =============== -->
 
@@ -172,6 +185,7 @@
 </div>
 <!-- ============ WRAPPER ============= -->
 <div class="block"></div>
+
 <!-- ============ FOOTER ============== -->
 <footer id="footer" class="footer">
   <div class="footer-content position-relative">
@@ -248,8 +262,6 @@
 
 <script src="js/brmData.js"></script>
 <script src="js/main.js"></script>
-<script src="js/blog-app.js"></script>
-<script src="js/slideshow-app.js"></script>
 <script src="js/main.js"></script>
 <script src="js/b-card.js"></script>
 <script src="js/s-card.js"></script>
