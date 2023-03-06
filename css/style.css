@@ -181,8 +181,8 @@ input {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1.1px;
-    padding: 10px 18px;
-    border-radius: 5px;
+    padding: 8px 16px;
+    border-radius: 3px;
     border: 3px solid var(--bg-primary);
     color: var(--bg-primary-contrast);
     text-decoration: none;
@@ -204,15 +204,13 @@ input {
 .btn-solid {
     display: inline block;
     font-family: "Roboto", Sans-serif;
-    font-weight: 500;
     font-size: 16px;
     letter-spacing: 1.1px;
-    padding: 10px 18px;
-    border-radius: 5px;
+    padding: 8px 18px;
+    border-radius: 3px;
     border: 3px solid var(--bg-primary-off);
     background-color: var(--bg-primary);
     color: var(--bg-primary-contrast);
-    font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -221,6 +219,10 @@ input {
     border: 3px solid var(--bg-primary-off);
     box-shadow: 1px 1px var(--bg-primary-dark);
     color: var(--bg-primary-contrast);
+}
+
+.btn-rounded {
+    border-radius: 50px;
 }
 
 
@@ -1692,3 +1694,10 @@ h2#header_14.form-header {
     color: var(--bg-primary)
 }
 /* ====== SERVICES OVERLAY ======== */
+
+.show {
+    display: block;
+}
+.hide {
+    display:none;
+}
