@@ -85,7 +85,7 @@ function createCard (i) {
                 
                 let image = document.createElement('img');
                 image.src = services[i].img1;
-                image.style.height = "360px";
+                image.style.height = "480px";
                 image.style.width = "100%"
                 cImg.appendChild(image);
 
@@ -108,8 +108,8 @@ function createCard (i) {
 
                         let alink = document.createElement('a');
                         alink.classList = "btn btn-outline p-1";
-                        alink.href = "/contact-brm.html";
-                        alink.innerHTML = "Contact Us"
+                        alink.href = "/about.html";
+                        alink.innerHTML = "About BRM"
                         div3.appendChild(alink);
 
 
