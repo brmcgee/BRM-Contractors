@@ -20,7 +20,6 @@ body {
     background-color: #fdfdfd;
     margin: auto;
     padding: 0px 0px 0px 0px;
-
 }
 .ad {
     background-color: rgb(230, 230, 230);
@@ -540,12 +539,92 @@ input {
 /* === NAVBAR STYLE END/ ======  */
 
 
+/* =========== MAST ================== */
+.bg-image:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+}
+.bg-image {
+    background-image: url("../assets/gallery/brian.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  
+  .bg-text {
+    box-sizing: border-box;
+    /* background-color: rgb(0,0,0);  */
+    background: linear-gradient(to bottom, rgba(115, 115, 115, 0.6) 0%, rgba(60, 50, 50, 0.4) 70%); 
+    font-family: "Roboto", Sans-serif;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 22px #333;
+    position: absolute;
+    top: 32vw;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 2;
+    width: 80%;
+    padding: 2vw;
+    text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    text-transform: uppercase;
+  }
+  .bg-text h2{
+    font-size:4vw;
+    margin: 2px;
+  }
+  .bg-text h1{
+    font-size:8vw;
+    line-height: 7vw;
+    margin: 0%;
+  }
+  .bg-text p{
+    font-size: 3vw;
+    margin: 2px;
+  }
+  /* @media (min-width: 1000px) {
+    .bg-text{
+        top: 22vw;
+    }
+    .bg-image{
+        height: 40vw;
+    }
+    .bg-text h2{
+        font-size:3vw;
+        margin: 2px;
+        line-height: 3vw;
+
+      }
+      .bg-text h1{
+        font-size:5vw;
+        line-height: 6vw;
+        margin: 0%;
+      }
+      .bg-text p{
+        font-size: 2vw;
+        margin: 2px;
+      }
+} */
+  /* =========== MAST ================== */
+
+
 
 /* ===== MASTHEAD ===============*/
 .masthead {
     color: #fff;
     height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/used-treasures-matt-salandro.png") center;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), 
+        url("../assets/gallery/--bg-home-repair.jpg") center;
     background-size: cover;
     font-size: 14px;
     padding: 20px 0 30px 0;
