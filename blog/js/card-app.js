@@ -315,3 +315,100 @@ function searchBlog () {
   //clear search bar
   searchValue.value = "";
 }
+
+
+let currentBlogWide = -1;
+let indexBlog;
+let wideBlogs;
+let nextB;
+
+// large format blog view .blog-wide 
+function blogViewer(arr, i){
+    // clear title if present 
+    let title = document.getElementById("tTitle");
+    if (title === null) {
+      
+    } else {
+      clearTitle();
+    }
+
+    //removes current blog card
+    let blogWide = document.querySelectorAll(".blog-wide");
+    if (blogWide.length !== 0 ) {
+     
+        let serviceContainer = document.getElementById("serviceCard");
+        let cards = document.querySelectorAll('.blog-wide');
+       
+        for (let i = 0; i < cards.length; i++) {
+         serviceContainer.removeChild(cards[i]);
+         blogs.shift();
+        }
+        closeNav();
+          
+    }
+
+    //add new class for styling
+    clearScreen();
+    createCard(arr[i]);
+    let cards = document.querySelectorAll(".service");
+    cards.forEach((c) => {
+      //removes standard service styling
+      let newClass = c.className.slice(7);
+      c.className = "blog-wide col-xl-7 col-md-9 col-sm-12 mx-auto d-block";
+    });
+          
+    // let cUser = document.getElementsByClassName('user-info')
+    // let buttonBar = document.createElement("div");
+    // buttonBar.style.position = "absolute";
+    // buttonBar.style.bottom = "60px";
+    // buttonBar.style.right = "5vw";
+    // buttonBar.className = "btn-bar"
+    // cUser[0].appendChild(buttonBar);
+
+    //   let prev = document.createElement("button");
+    //   prev.innerHTML = "Previous";
+    //   prev.className = "btn btn-success"
+    //   prev.id = "prevBtn";
+    //   buttonBar.appendChild(prev);
+
+    //   let next = document.createElement("button");
+    //   next.innerHTML = "Next"
+    //   next.className = "btn btn-danger"
+    //   next.id = "nextBtn";
+    //   buttonBar.appendChild(next);
+
+      if (currentBlogWide === -1) {
+        currentBlogWide = Number(i); 
+      }
+
+      wideBlogs = arr;
+      nextB = document.querySelectorAll("#nextBtn");
+}
+
+
+
+blogNext.addEventListener("click", () => {
+  currentBlogWide ++;
+  if (currentBlogWide === data.length - 1){
+    currentBlogWide = 0;
+  }  
+  blogViewer(data, currentBlogWide);
+});
+
+blogPrev.addEventListener("click", () => {
+  currentBlogWide --;
+  if (currentBlogWide === -1){
+    currentBlogWide = data.length - 1;
+  }  
+  blogViewer(data, currentBlogWide);
+});
+
+
+
+
+
+
+
+
+
+

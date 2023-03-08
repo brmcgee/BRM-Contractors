@@ -1,3 +1,5 @@
+// hover over card 
+
 const services = [ 
     {
     title: "Custom Decks",
@@ -60,6 +62,7 @@ const services = [
     img1: "assets/gallery/drywall-finish.jpg",
 }
 ];
+
 
 let wrapper = document.getElementById("products");
 function createCard (i) {
