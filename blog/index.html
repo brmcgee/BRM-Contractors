@@ -146,7 +146,13 @@
     </div>
     <div class="col link">
       <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
-  </div>
+    </div>
+
+    <div class="col link">
+      <label for="blogNum"  class="text-light ms-2">Asset ID</label>
+      <input type="number" id="blogNum">
+      <a href="#" onclick="blogViewer(data, document.getElementById('blogNum').value)"> Assets </a>
+    </div>
     <div class="col link">
       <a href="#" onclick="createAll()" class=""> Show All</a>
     </div>
@@ -166,8 +172,19 @@
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
-<!-- ============ WRAPPER ============= -->
-<div class="wrapper mx-auto d-block bg-gray p-3" style="padding-bottom:20px;">
+
+<!-- buttons for wide blog movement  -->
+<div class="row" style="position: fixed;top:60px;right:2vw;width:200px;">
+  <div class="btn-group col-sm-10 mx-auto d-block">
+    <button id = "blogPrev" class="btn btn-danger btn-sm bg-brm" 
+                onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Prev</button>
+    <button id = "blogNext" class="btn btn-dark btn-sm"
+              onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
+  </div>
+</div>
+
+
+<div class="wrapper mx-auto d-block bg-gray p-3">
 
 <!-- PROJECT LOAD  -->
   <script>
@@ -178,14 +195,13 @@
   </script>
 
   <!-- BLOG POST - PROJECT JS INJECTION  -->
-  <div class="product-container">
+  <div class="product-container" style="margin-top: 20px;">
     <main class="row product container-fluid " id="serviceCard"><!-- js content injection  -->
     </main>
   </div>
   <div class="block"></div>
 </div>
 
-<!-- ============ WRAPPER ============= -->
 
 
 
@@ -282,6 +298,8 @@
 <script src="js/main.js"></script>
 <script src="../js/brmData.js"></script>
 <script src="js/card-app.js"></script>
+<script src="../js/b-card.js"></script>
+
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

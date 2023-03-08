@@ -177,22 +177,22 @@
   // s-card.js  call to generate dark cards from js const services; 
     btnScard.addEventListener("click", () => {
        allBlogs.forEach((blog) => {
-        createCard(blog)
+        createCardS(blog)
        })
     });
 
     // blogs passed to s-card.js dark-card 
     btnScardService.addEventListener('click', () => {
-        services.forEach((item) => {
+        sCardServices.forEach((item, i) => {
             let arr = [];
             arr.category = '<img src="/assets/logo/brm-red.ico" alt="" style="width:70px;">';
             arr.img1 = item.img1;
             arr.title = item.title;
             arr.body = item.content;
             arr.authorImage = "skip";
-            arr.author = "#1 Home Repair"
+            arr.author = sCardServices[i].link[1];
             arr.date = "BRM 724.787.3758"
-            createCard(arr)
+            createCardS(arr)
         })
     });
   </script>
@@ -277,6 +277,7 @@
 
 <!-- local java script  -->
 
+<!-- <script src="js/services.js"></script> -->
 <script src="js/brmData.js"></script>
 <script src="js/main.js"></script>
 <script src="js/main.js"></script>

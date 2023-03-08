@@ -116,6 +116,9 @@ body {
 .bg-red {
     background-color: var(--bg-primary);
 }
+.bg-brm{
+    background-color: rgb(163, 30, 30);
+}
 .color-red {
     color: var(--bg-primary);
 }
@@ -843,6 +846,137 @@ input {
   }
 
 /* ======== SERVICES CARD END/ ======== */ 
+
+/* ======== BLOG WIDE CARD ======== */ 
+
+.blog-wide .card {
+    box-shadow: 0px 12px 44px 3px #121212;
+    /* cursor: pointer; */
+    user-select: none;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: "Roboto", sans-serif;
+    color: #10182f;
+  }
+
+  .blog-wide .card {
+    font-family: "Roboto", Sans-serif;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 85vw;
+    box-sizing: border-box;
+    /* height: 600px; */
+  }
+   
+  /* .service .card-img img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  } */
+
+  .blog-wide  .card-img img {
+    width: 50%;
+    height: 30vw;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    padding: 1px;
+    background-color: #c8c8c8;  
+  }
+
+  .blog-wide  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    min-height: 230px;
+    height: 220px;
+  }
+  .blog-wide  .card .card-body h4 {
+    margin: 0 0 2px;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.8vw;
+  }
+
+  .blog-wide  .card .card-body p {
+    font-size: 15px;
+    margin: 2px 0 30px;
+    text-indent: .2cm;
+    
+  }
+  @media (max-width: 700px) {
+    .blog-wide .card-img img {
+        height: 225px;
+    }
+    .blog-wide  .card .card-body h4{
+        font-size: 3.9vw;
+    }
+    .blog-wide .card {
+        width: 80vw;
+    }
+  }
+  @media (min-width: 1200px) {
+    .blog-wide  .card-img img {
+        width: 50%;
+        height: 23vw;
+    }
+    .blog-wide  .card .card-body h4{
+        font-size: 2.3vw;
+    }
+    .blog-wide  .card .card-body p{font-size: 17px;}
+    
+  }
+  
+  /* category  */
+  .blog-wide  .card-price p {
+    background: rgb(163, 30, 30);
+    border-radius: 50px;
+    font-size: 13px;
+    margin: 8px 0 0 5px;
+    color: #fff;
+    padding: 1px 12px 0 12px;
+    width:fit-content;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    
+  }
+
+  .blog-wide  .card-user {
+    display: flex;
+    margin-top: auto;
+    padding-left: 8px;
+    padding-bottom: 3px;
+  }
+  
+  .blog-wide  .card-user img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .blog-wide  .card-user .user-info h5 {
+    margin: 0;
+    font-size: 15px;
+  }
+  .blog-wide  .card-user .user-info small {
+    color: #3e55a6;
+  }
+
+/* ======== BLOG WIDE END/ ======== */ 
 
 /* ====== BRM DEV ICON =========== */
 .webdesign {
