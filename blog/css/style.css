@@ -646,203 +646,6 @@ input {
 }
 /* ==============RIGHTNAV END =========== */
 
-/* ===== MASTHEAD ===============*/
-.masthead {
-    color: #fff;
-    height: auto;
-    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/gallery/bg-masthead.jpg") center;
-    background-size: cover;
-    font-size: 14px;
-    padding: 20px 0 30px 0;
-    position: relative;
-}
-/* dimmer  */
-.masthead:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    inset: 0;
-}
-.masthead .masthead-container .block-text {
-    width: 100%;
-    height: 58px;
-    background-color: var(--bg-primary);
-    position: absolute;
-    top: 62vh;
-    left: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: baseline;
-}
-.masthead .masthead-container {
-    position: absolute;
-    z-index: 4;
-    box-sizing: border-box;
-    bottom: 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0px 12px;
-}
-.masthead .masthead-container h1 {
-    margin: 0px 0px 10px 0px;
-    font-size: 44px;
-    font-weight: bold;
-    line-height: 50px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-family: "Roboto", Sans-serif;
-}
-.masthead .masthead-container h2 {
-    margin: 0px 0px 22px 0px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-family: "Roboto", Sans-serif;
-}
-.masthead .masthead-container h3 {
-    margin: 0px 0px 22px 0px;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-family: "Roboto", Sans-serif;
-}
-.masthead .masthead-container .block-text p {
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    text-transform: uppercase;
-    padding-top: 12px;
-    font-family: 'Russo One', sans-serif;
-}
-@media (min-width: 125px) {
-    .masthead {
-        height: 57vh;
-
-    }
-    .masthead .masthead-container .block-text {
-        top: 55vh;
-    }
-    .masthead .masthead-container h1 {
-        margin: 0px 0px 10px 0px;
-        font-size: 46px;
-        font-weight: bold;
-        line-height: 52px;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-    }
-    .masthead .masthead-container h2 {
-        font-size: 18px;
-        line-height: 26px;
-        text-transform: uppercase;
-    }
-    .masthead .masthead-container h3 {
-        margin: 0px 0px 22px 0px;
-        font-size: 22px;
-        line-height: 28px;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        font-family: "Roboto", Sans-serif;
-        padding-top: 10px;
-    }
-    .masthead .masthead-container .block-text p {
-        font-size: 32px;
-    }
-}
-@media (min-width: 990px) {
-    .masthead {
-        height: 58vh;
-    }
-    .masthead .masthead-container .block-text {
-        top: 54vh;
-    }
-    .masthead .masthead-container h1 {
-        margin: 0px 0px 20px 0px;
-        font-size: 54px;
-        font-weight: bold;
-        line-height: 50px;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-    }
-    .masthead .masthead-container h2 {
-        margin: 0px 0px 22px 0px;
-        padding-left: 15vw;
-        padding-right: 15vw;
-        font-size: 26px;
-        font-weight: 500;
-        line-height: 32px;
-        letter-spacing: 1.1px;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-    } 
-    .masthead .masthead-container h3 {
-        margin: 0px 0px 22px 0px;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 32px;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        font-family: "Roboto", Sans-serif;
-    }
-    .masthead .masthead-container .block-text p {
-        font-size: 32px;
-    }
-}
-/* ===== MASTHEAD END/==============*/
-
-
-/* ======= MINI-MASTHEAD  ========== */
-.mini-masthead {
-    color: #fff;
-    height: auto;
-    background-size: cover;
-    background: linear-gradient(rgb(11, 11, 11) 0%, rgba(0, 0, 0, 0.8) 20%), top;
-    font-size: 14px;
-    padding: 20px 0 30px 0;
-    position: relative;
-}
-/* dimmer  */
-.mini-masthead:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    inset: 0;
-}
-.mini-masthead .mini-container h1 {
-    font-size: 24px;
-    margin: 2px 0 8px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(244, 239, 239);
-    background: var(--bg-primary);
-    background: linear-gradient(to right, #8F0303 0%, #979696 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.mini-masthead .mini-container h3 {
-    color: rgb(254, 254, 254);
-    font-size: 1.3em;
-}
-.mini-masthead .mini-container h2 {
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    font-style: italic;
-}
-/* ===== MINI MASTHEAD END/============*/
-
-
 
 
 /* == MENU ICON ==*/
@@ -880,114 +683,6 @@ input {
 
 
 
-  
-/* ======= FOOTER  ===== */
-.footer {
-    color: #fff;
-    height: auto;
-    /* background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), url("../assets/logo/--bg-truck.png") center; */
-    background-size: cover;
-    font-size: 14px;
-    padding: 20px 0 40px 0;
-    position: relative;
-}
-/* dimmer  */
-.footer:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    inset: 0;
-}
-
-.footer .footer-content .footer-info h3 {
-    font-size: 28px;
-    margin: 0 0 20px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--bg-primary);
-}
-  
-.footer .footer-content .footer-info p strong {
-    color: #fff;
-}
-  
-.footer .footer-content .footer-info p {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-family: var(--font-primary);
-    color: #fff;
-}
-
-.footer .footer-content .footer-info p span i {
-    color: var(--bg-icon);
-    font-weight: bold;
-    font-size: 22px;
-    padding: 2px;
-}
-  
-.footer .footer-content .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    line-height: 1;
-    margin-right: 8px;
-    border-radius: 4px;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-  
-.footer .footer-content .social-links a:hover {
-    background: var(--bg-primary);
-    text-decoration: none;
-}
-.footer .footer-content .social-links img {
-    width: 32px;
-    height: 22px
-}
-.footer .footer-content h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    position: relative;
-    padding-bottom: 12px;
-}
-  
-.footer .footer-content .footer-links {
-    margin-bottom: 10px;
-}
-  
-.footer .footer-content .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  
-.footer .footer-content .footer-links ul li {
-    padding: 1px 0;
-}
-  
-.footer .footer-content .footer-links ul li:first-child {
-    padding-top: 0;
-}
-  
-.footer .footer-content .footer-links ul a {
-    color: rgba(255, 255, 255, 0.6);
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-}
-  
-.footer .footer-content .footer-links ul a:hover {
-    color: #fff;
-}
-/* ===== FOOTER END/ ===== */
-  
- 
 
 
 
@@ -1045,9 +740,9 @@ input {
 
 /* ======== SERVICES CARD ======== */ 
 
-.service .card:hover {
-    box-shadow: 7px 2px 44px 3px var(--bg-accent-hover);
-    cursor: pointer;
+.service .card {
+    box-shadow: 0px 12px 44px 3px #121212;
+    /* cursor: pointer; */
     user-select: none;
 }
 
@@ -1069,29 +764,20 @@ input {
     border-radius: 8px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 300px;
+    width: 350px;
     box-sizing: border-box;
     /* height: 600px; */
   }
-  @media (max-width:560px) {
-    .card {
-        zoom:1.15;
-    }
-  }
-  @media (min-width:1120px) {
-    .card {
-        zoom:1.18;
-    }
-  }
-  .service .card-img img {
+   
+  /* .service .card-img img {
     width: 100%;
-    height: 200px;
+    height: 270px;
     object-fit: cover;
-  }
+  } */
 
   .service .card-img img {
     width: 50%;
-    height: 170px;
+    height: 220px;
     object-fit: cover;
     padding: 0;
     margin: 0;
@@ -1105,6 +791,7 @@ input {
     align-items: flex-start;
     padding: 12px;
     min-height: 230px;
+    height: 220px;
   }
   .service .card .card-body h4 {
     margin: 0 0 2px;
@@ -1116,6 +803,7 @@ input {
     font-size: 14px;
     margin: 2px 0 30px;
     text-indent: .2cm;
+    
   }
   
   /* category  */
@@ -1130,17 +818,9 @@ input {
     text-transform: uppercase;
     cursor: pointer;
     
+    
   }
-  .tag-red {
-    background-color: rgb(163,30,30);
-  }
-  .tag-black {
-    background-color: #333;
-  }
-  .tag-blue {
-    background-color: #2e64c0;
-  }
-  
+
   .service .card-user {
     display: flex;
     margin-top: auto;

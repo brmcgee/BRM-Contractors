@@ -1,5 +1,3 @@
-
-
 const services = [ 
     {
     title: "Custom Decks",

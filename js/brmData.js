@@ -3,7 +3,8 @@
 
 const data = [ 
     {
-      category: 'Standing Seam metal roof',
+      purpose: "",
+      category: 'Roofing',
       title: "New galvalume standing seam metal roof.",
       date: "May 03, 2020",
       author: "Brian McGee",
@@ -43,7 +44,7 @@ const data = [
       project: "drywall"
     },
     {
-      category: 'Kitchen backsplash',
+      category: 'Kitchen Backsplash',
       title: "Beautiful kitchen backsplash tile install",
       date: "May 02, 2022",
       author: "Brian McGee",
@@ -90,7 +91,7 @@ const data = [
       body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
       img1: "../assets/gallery/house-before.jpg",
       img2: "../assets/gallery/house-after.jpg",
-      project: "siding-roofing"
+      project: "ad"
     },
     {
       category: 'Wood Repair',
@@ -194,7 +195,7 @@ const data = [
       project: ""
     },
     {
-      category: 'Drywall finish',
+      category: 'Drywall Finish',
       title: "Smooth finish drywall work today",
       date: "Aug 20, 2022",
       author: "Brian McGee",
@@ -391,7 +392,7 @@ const data = [
       body: "The beautiful weather is coming and what more to enjoy it on the beautiful new deck by BRM. Need a new bathroom, we can help. Bathroom remodel and general home repair. Call or connect today for a free estimate!",
       img2: "../assets/gallery/--bg-bath.jpg",
       img1: "../assets/gallery/custom-deck2.jpg",
-      project: ""
+      project: "ad"
     }
 
   ];
