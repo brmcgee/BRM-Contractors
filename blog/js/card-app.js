@@ -6,8 +6,10 @@ let wrapper = document.getElementById("serviceCard");
 
 function createCard (services) {
 
+    wrapper.style.backgroundColor = "rgb(162, 161, 158)";
+
     let sCard = document.createElement('div');
-    sCard.className = "service col-lg-4 col-md-6 col-sm-6";
+    sCard.className = "service col-xl-4 col-md-6 col-sm-8 mx-auto d-block";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');

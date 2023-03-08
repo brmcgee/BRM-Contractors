@@ -85,12 +85,12 @@ body {
 .gradient {
 
     --card-gradient: rgb(163,30,30), orange;
-    background-color: #fff;
+    background-color: #e1b64a;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
     padding-bottom: 1rem;
     background-image: linear-gradient(
       var(--card-gradient),
-      white max(9.5rem, 27vh)
+      rgb(249, 166, 32) max(9.5rem, 27vh)
     );
     overflow: hidden;
 }

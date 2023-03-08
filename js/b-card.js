@@ -3,6 +3,7 @@
 </div> 
 */
 
+// overlay card and blog generator 
 
 const productData = [ 
     {
@@ -75,7 +76,7 @@ const productData = [
     title: "Drywall",
     content: 'BRM offers complete drywall services. Drywall installation and finishing options available. We repair those pesky stains and offer painting.',
     img1: "assets/gallery/drywall-finish.jpg",
-    link: [["contact-brm.html"], ["Contact Us"]]
+    link: [["about.html"], ["About BRM"]]
 }
 ];
 
@@ -137,17 +138,16 @@ function createBCard (array){
 
 function blogToCard (blogPost) {
     let blogArr = [];
-    let blogArr2 = [];
     blogArr.title = blogPost.title;
-    blogArr2.title = blogPost.title;
     blogArr.content = blogPost.body;
-    blogArr2.content = blogPost.body;
     blogArr.img1 = blogPost.img1;
+    blogArr.link = [[blogPost.img1], ["Expand"]];
+
+    let blogArr2 = [];
+    blogArr2.title = blogPost.title;
+    blogArr2.content = blogPost.body;
     blogArr2.img1 = blogPost.img2;
-    blogArr.link = ['',''];
-    blogArr2.link = ['',''];
-    // blogArr.link = [[blogPost.img1], ["Expand"]];
-    // blogArr2.link = [[blogPost.img2], ["Expand"]];
+    blogArr2.link = [[blogPost.img2], ["Expand"]];
 
     createBCard(blogArr);
     createBCard(blogArr2);

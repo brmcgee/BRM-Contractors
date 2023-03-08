@@ -1,5 +1,3 @@
-
-
 let wrapper = document.getElementById("serviceCard");
 function createCard (services) {
 

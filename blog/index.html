@@ -43,67 +43,12 @@
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<!-- dropdown  -->
-<style>
-
-  .btn {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  column-gap: var(--gap);
-  padding: 0.6rem;
-  cursor: pointer;
-  border-radius: var(--radius);
-  border: none;
-  box-shadow: var(--shadow);
-  position: relative;
-}
-
-.bx {
-  font-size: 1.1rem;
-}
-
-.dropdown {
-  position: absolute;
-  width: 250px;
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  margin-top: 0.3rem;
-  background: white;
-
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(0.5rem);
-  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
-}
-
-.dropdown a {
-  display: flex;
-  align-items: center;
-  column-gap: var(--gap);
-  padding: 0.8rem 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-.dropdown a:hover {
-  background-color: rgb(163,30,30);
-  color: white;
-}
-
-.show {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0rem);
-}
-</style>
 
 </head>
 <body>
 
 <!-- ============ BANNER ============= -->
-<div class="banner bg-icon-accent p-0 m-0" id="top">
+<div class="banner bg-icon-accent p-0 m-0" id="top" style="display:none;">
   <!-- ========== #MAIN ============== -->
   <div id="main">
     <div class="brand">
@@ -197,8 +142,11 @@
         <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
     </div>
     <div class="col link">
-        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+        <a href="#" onclick="selectProject('ad')"> Social Media</a>
     </div>
+    <div class="col link">
+      <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
+  </div>
     <div class="col link">
       <a href="#" onclick="createAll()" class=""> Show All</a>
     </div>
@@ -215,31 +163,6 @@
   
   <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
   
-  <!-- ======== DROPDOWN ======= -->
-  <div class="container mt-3">
-
-    <button class="btn" id="btn"> Menu </button>
-    <div class="dropdown" id="dropdown">
-      <a href="../index.html">
-        Home @ BRM
-      </a>
-      <a href="#" onclick="selectProject('bathroom-remodel-rm')">
-        Bathroom Remodel
-      </a>
-      <a href="#" onclick="selectProject('kitchen-remodel-ah')">
-        Kitchen Remodel
-      </a>
-      <a href="#" onclick="selectProject('custom-deck')">
-        Deck Build
-      </a>
-      <a href="#" onclick="selectProject('siding-roofing')">
-        Roofing and Siding
-      </a>
-    </div>
-  </div>
-
-   <!-- ====== DROPDOWN END/ ======= -->
-
 </div>
 <!-- ============ SIDENAV END/ ========== -->
 
@@ -354,67 +277,11 @@
 </div>
 <!-- ============ MIDDLENAV END/ ========== -->
 
-  <!-- ============ RIGHTNAV ============= -->
-  <nav id="rightNav" class="rightnav">
-    <div id="navMenu" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9776;</div>
-
-      <div id="boxClose" style="padding:2px;margin:1px;font-size: 48px;cursor:pointer;">&#9746;</div>
-      <a href="javascript:void(0)" class="closebtn m-0 p-0" onclick="closeNav()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-      <div class="links">
-    <div class="col">
-      <a href="../index.html" class="text-russo text-center h2"> BRM Contractors - HOME</a>
-    </div>
-    <div class="col link">
-      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
-    </div>
-    <div class="col link">
-        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
-    </div>
-    <div class="col link">
-        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
-    </div>
-    <div class="col link">
-        <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
-    </div>
-    <div class="col link">
-      <a href="#" onclick="createAll()" class=""> Show All</a>
-    </div>
-      </div>
-  </nav>
-  <!-- ============ RIGHTNAV END/ ========== -->
   
-
-
 <!-- local java script  -->
 <script src="js/main.js"></script>
 <script src="../js/brmData.js"></script>
 <script src="js/card-app.js"></script>
-
-<!-- dropdown  -->
-<script>
-  const dropdownBtn = document.getElementById("btn");
-const dropdownMenu = document.getElementById("dropdown");
-const toggleArrow = document.getElementById("arrow");
-
-// Toggle dropdown function
-const toggleDropdown = function () {
-  dropdownMenu.classList.toggle("show");
-  toggleArrow.classList.toggle("arrow");
-};
-
-// Toggle dropdown open/close when dropdown button is clicked
-dropdownBtn.addEventListener("click", function (e) {
-  e.stopPropagation();
-  toggleDropdown();
-});
-
-// Close dropdown when dom element is clicked
-document.documentElement.addEventListener("click", function () {
-  if (dropdownMenu.classList.contains("show")) {
-    toggleDropdown();
-  }
-});
-</script>
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
