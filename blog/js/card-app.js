@@ -178,6 +178,20 @@ function clearScreen() {
   blogs.shift();
  }
  closeNav();
+     //removes current blog card
+     let blogWide = document.querySelectorAll(".blog-wide");
+     if (blogWide.length !== 0 ) {
+      
+         let serviceContainer = document.getElementById("serviceCard");
+         let cards = document.querySelectorAll('.blog-wide');
+        
+         for (let i = 0; i < cards.length; i++) {
+          serviceContainer.removeChild(cards[i]);
+          blogs.shift();
+         }
+         closeNav();
+           
+     }
 }
 
 
@@ -387,6 +401,7 @@ function blogViewer(arr, i){
 
 
 
+//movement button events
 blogNext.addEventListener("click", () => {
   currentBlogWide ++;
   if (currentBlogWide === data.length - 1){
@@ -395,12 +410,34 @@ blogNext.addEventListener("click", () => {
   blogViewer(data, currentBlogWide);
 });
 
+document.addEventListener("keydown", (e) => {
+  let value = e.key;
+  if (value === "ArrowRight"){
+    currentBlogWide ++;
+    if (currentBlogWide === data.length - 1){
+      currentBlogWide = 0;
+    }  
+    blogViewer(data, currentBlogWide);
+  }
+});
+
 blogPrev.addEventListener("click", () => {
   currentBlogWide --;
   if (currentBlogWide === -1){
     currentBlogWide = data.length - 1;
   }  
   blogViewer(data, currentBlogWide);
+});
+
+document.addEventListener("keydown", (e) => {
+  let value = e.key;
+  if (value === "ArrowLeft"){
+    currentBlogWide --;
+    if (currentBlogWide === -1){
+      currentBlogWide = data.length - 1;
+    }  
+    blogViewer(data, currentBlogWide);
+  }
 });
 
 
