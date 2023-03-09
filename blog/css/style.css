@@ -116,6 +116,10 @@ body {
 .bg-red {
     background-color: var(--bg-primary);
 }
+.bg-green {
+    background-color: var(--bg-alert);
+    color: black;
+}
 .bg-brm{
     background-color: rgb(163, 30, 30);
 }
@@ -573,34 +577,51 @@ input {
 .sidenav .links {
     padding: 1px auto auto 15px;
     margin: auto;
-
 }
+
 .sidenav .btn-bar .link,
 .sidenav .links .link {
     margin: 4px auto auto auto;
     color: rgb(204, 202, 202);
     transition: .2s ease;
+    padding-left: 10px;
+    transition: .2s;
 }
 .sidenav .btn-bar .link:hover,
 .sidenav .links .link:hover {
-    background-color: var(--bg-primary-dark);
+    /* background-color: var(--bg-primary-dark); */
+    color: var(--bg-primary-contrast);
     box-shadow: 0px 4px 22px solid black;
     border-radius: 10px;
 }
 .sidenav .links .link a:hover,
 .sidenav .link a:hover {
-    color: white;
+    color: var(--bg-primary-dark);
 }
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  #main {
+}
+.sidenav .links .link .home {
+    color:var(--bg-primary-contrast);
+    font-weight: 500;
+    font-size: 19px;
+    width: 80%;
+    background-color: var(--bg-primary-dark);
+    border: 2px solid var(--bg-primary-dark);
+    margin: 1px;
+    border-radius: 50px;
+    text-align: center;
+}
+.sidenav .links .link .home:hover{
+    background-color: var(--bg-primary-contrast);
+    color: var(--bg-primary);
+}
+#main {
     transition: margin-left .5s;
     padding: 16px;
   }
@@ -616,10 +637,8 @@ input {
     font-size: 32px;
     padding: 0; 
     margin: 0;
-    color: #000000;
+    color: var(--bg-primary-off);
     transition: .5s;
-    background-color: var(--bg-primary-off);
-    border-radius: 50%;
     padding: 3px;
 }
 .material-icons.md-36:hover,
