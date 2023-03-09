@@ -446,7 +446,7 @@ function createWideLink (arr, i) {
   wideListTarget.style.height = "100vh";
   let wideLink = document.createElement("a");
   wideLink.href = "#searchBarWide";
-  wideLink.innerHTML = i + 1 + ". " + arr[i].title;
+  wideLink.innerHTML = "" + i  + "- " + arr[i].title;
   wideLink.id = "widePost";
   wideLink.classList = "p-1"
   wideLink.className = "wide-blog-list ps-2";

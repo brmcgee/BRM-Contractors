@@ -66,36 +66,34 @@
 
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
-  <!-- =========  NAVBAR ==========  -->
   <nav class="block bg-main" style="margin-top: 5px;height:43px;">
     <div class="row">
-      <div class="col-1" style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open</span></div>
-      <div class="col-1 px-5 ">
-        <a class="" href="#" >
-          <span class="material-symbols-outlined">arrow_circle_up</span>
-          <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
-        </a>
-      </div>
-
-<!-- search bar input  -->
-<div class="col-sm-9 search-bar-wide mx-auto d-block ps-3">
-  <label for="searchBarWide" class="text-light pt-2">Search</label>
-  <input type="text" id="searchBarWide" class="w-75 p-1 mb-1" onkeyup="searchWide()">
-</div>
-
-    </div>
-
-
+      <p class="col" style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open
+        <span>
+          <a class="" href="#" >
+            <span class="material-symbols-outlined">arrow_circle_up</span>
+            <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
+          </a>
+        </span>
+        <span>
+          <!-- search bar input  -->
+          <div class="col search-bar-wide  ps-3" style="position: relative;left: -130px;">
+            <label for="searchBarWide" class="text-light pt-2 ps-2"><i class="fa-solid fa-magnifying-glass pe-2 text-white ps-3 "></i></label>
+            <input type="text" id="searchBarWide" class="p-1 mb-1" onkeyup="searchWide()" style="width:65%;">
+          </div>
+        </span>
+      </span>
+    </p>
+   </div>
   </nav>
-  <!-- =========  NAVBAR/END =========  -->
 </div> 
-<!-- =========== NAV-BAR END/========== -->
+
 
 <!-- buttons for wide blog movement  -->
-<div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:1px;width:180px;">
+<div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:-30px;width:170px;">
   <div class="btn-group col-sm-10 mx-auto d-block" role="button" style="z-index: 10000;">
-    <button id = "blogPrev" class="btn btn-danger bg-brm" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)" >Prev</button>
-    <button id = "blogNext" class="btn btn-dark " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
+    <button id = "blogPrev" class="btn btn-danger bg-brm px-2" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)" >Prev</button>
+    <button id = "blogNext" class="btn btn-warning bg-green px-2 " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
   </div>
 </div>
 
@@ -105,7 +103,7 @@
 
   <div class="links">
     <div class="col link">
-      <a href="../index.html" class="text-russo border rounded"> BRM Contractors - HOME</a>
+      <a href="../index.html" class="home"> BRM Contractors - HOME</a>
     </div>
     <div class="col link">
       <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> Bathroom Remodel</a>
@@ -145,19 +143,17 @@
   <input class="form-control mx-auto d-block mt-1 " type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
   
 </div>
-<!-- ============ SIDENAV END/ ========== -->
 
 
 <div class="wrapper mx-auto d-block container-fluid bg-blog">
-
-  
+   
   <!-- search query results -->
   <div id="wideList" class="wide-blogs ps-1">
     <!-- js  -->
   </div>
 
 
-<!-- PROJECT LOAD  -->
+  <!-- PROJECT LOAD  -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       createCard(welcome[0]);
