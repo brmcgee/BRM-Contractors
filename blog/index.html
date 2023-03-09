@@ -76,7 +76,15 @@
           <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
         </a>
       </div>
+
+<!-- search bar input  -->
+<div class="col-sm-9 search-bar-wide mx-auto d-block ps-3">
+  <label for="searchBarWide" class="text-light pt-2">Search</label>
+  <input type="text" id="searchBarWide" class="w-75 p-1 mb-1" onkeyup="searchWide()">
+</div>
+
     </div>
+
 
   </nav>
   <!-- =========  NAVBAR/END =========  -->
@@ -84,7 +92,7 @@
 <!-- =========== NAV-BAR END/========== -->
 
 <!-- buttons for wide blog movement  -->
-<div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:1px;width:200px;">
+<div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:1px;width:180px;">
   <div class="btn-group col-sm-10 mx-auto d-block" role="button" style="z-index: 10000;">
     <button id = "blogPrev" class="btn btn-danger bg-brm" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)" >Prev</button>
     <button id = "blogNext" class="btn btn-dark " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
@@ -140,10 +148,14 @@
 <!-- ============ SIDENAV END/ ========== -->
 
 
-
-
-
 <div class="wrapper mx-auto d-block container-fluid bg-blog">
+
+  
+  <!-- search query results -->
+  <div id="wideList" class="wide-blogs ps-1">
+    <!-- js  -->
+  </div>
+
 
 <!-- PROJECT LOAD  -->
   <script>
