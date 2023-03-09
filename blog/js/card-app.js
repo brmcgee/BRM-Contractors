@@ -6,10 +6,10 @@ let wrapper = document.getElementById("serviceCard");
 
 function createCard (services) {
 
-    wrapper.style.backgroundColor = "rgb(162, 161, 158)";
+    wrapper.style.backgroundColor = "";
 
     let sCard = document.createElement('div');
-    sCard.className = "service col-xl-4 col-md-6 col-sm-8 mx-auto d-block";
+    sCard.className = "service col-xl-4 col-md-6 col-sm-7 mx-auto d-block";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
@@ -102,7 +102,7 @@ function createHeading() {
     heading.appendChild(hTitle);
 
     let hContent = document.createElement('p');
-    hContent.className = "col-md-10"
+    hContent.className = "col-md-12"
     hContent.innerHTML = "Check out our blogs of recently completed work. We solve those common home repair and maintenance problems as well as full service remodel projects, inspection and consulting.  Call or connect with us today for a FREE estimate.";
     heading.appendChild(hContent);
 }
@@ -110,7 +110,7 @@ function createHeading() {
 // create title heading per 1st cards category
 function createTitle(p) {
   let title = document.createElement('div');
-  title.className = "mx-auto d-block bg-accent-hover mt-1";
+  title.className = "mx-auto d-block bg-accent-hover  rounded-bottom shadow-lg border-top border-start border-end border-dark";
   title.id = "tDiv";
   wrapper.appendChild(title);
   
@@ -368,7 +368,7 @@ function blogViewer(arr, i){
     cards.forEach((c) => {
       //removes standard service styling
       let newClass = c.className.slice(7);
-      c.className = "blog-wide col-xl-7 col-md-9 col-sm-12 mx-auto d-block";
+      c.className = "blog-wide col-xl-8 col-md-10 col-sm-12 mx-auto d-block";
     });
           
     // let cUser = document.getElementsByClassName('user-info')
