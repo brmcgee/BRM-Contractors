@@ -904,8 +904,8 @@ input {
     justify-content: center;
     align-items: flex-start;
     padding: 12px;
-    min-height: 230px;
-    height: 220px;
+    min-height: 250px;
+    height: auto;
   }
   .blog-wide  .card .card-body h4 {
     margin: 0 0 2px;
@@ -927,6 +927,9 @@ input {
     .blog-wide  .card .card-body h4{
         font-size: 3.9vw;
     }
+    .blog-wide .card .card-body p {
+        font-size: 16px;
+    }
     .blog-wide .card {
         width: 80vw;
     }
@@ -934,7 +937,7 @@ input {
   @media (min-width: 900px) {
     .blog-wide  .card-img img {
         width: 50%;
-        height: 25vw;
+        height: 23vw;
     }
     .blog-wide  .card .card-body h4{
         font-size: 2.3vw;
@@ -944,25 +947,30 @@ input {
   }
   
   /* category  */
+  .blog-wide .card-price {
+    background-color: rgb(35, 35, 35);
+    padding: 12px;
+  }
   .blog-wide  .card-price p {
     background: rgb(163, 30, 30);
     border-radius: 50px;
-    font-size: 13px;
-    margin: 8px 0 0 5px;
+    font-size: 14px;
+    margin: 0px 0 0 5px;
     color: #fff;
-    padding: 1px 12px 0 12px;
+    padding: 2px 12px 2px 12px;
     width:fit-content;
     text-transform: uppercase;
     cursor: pointer;
-    
-    
+  
   }
 
   .blog-wide  .card-user {
     display: flex;
     margin-top: auto;
-    padding-left: 8px;
+    padding-left: 38px;
     padding-bottom: 3px;
+    padding-top: 10px;
+    background-color: #b5b5b5;
   }
   
   .blog-wide  .card-user img {

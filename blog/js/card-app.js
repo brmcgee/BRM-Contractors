@@ -54,7 +54,7 @@ function createCard (services) {
     card.appendChild(cUser);
 
     let userImage = document.createElement('img');
-    (services.authorImage === "" || services.authorImage === null || services.authorImage === undefined) ? userImage.src = "assets/brm-red.ico" : userImage.src = services.authorImage;
+    (services.authorImage === "" || services.authorImage === null || services.authorImage === undefined) ? userImage.src = "assets/gallery/brian.jpg" : userImage.src = services.authorImage;
     services.authorImage = "assets/brm-red.ico";
     cUser.appendChild(userImage);
 
@@ -364,6 +364,7 @@ function blogViewer(arr, i){
     //add new class for styling
     clearScreen();
     createCard(arr[i]);
+    
     let cards = document.querySelectorAll(".service");
     cards.forEach((c) => {
       //removes standard service styling
@@ -371,25 +372,17 @@ function blogViewer(arr, i){
       c.className = "blog-wide col-xl-8 col-md-10 col-sm-12 mx-auto d-block";
     });
           
-    // let cUser = document.getElementsByClassName('user-info')
-    // let buttonBar = document.createElement("div");
-    // buttonBar.style.position = "absolute";
-    // buttonBar.style.bottom = "60px";
-    // buttonBar.style.right = "5vw";
-    // buttonBar.className = "btn-bar"
-    // cUser[0].appendChild(buttonBar);
+    let cUser = document.getElementsByClassName('user-info')
+    let purposeCont = document.createElement("div");
+    cUser[0].appendChild(purposeCont);
 
-    //   let prev = document.createElement("button");
-    //   prev.innerHTML = "Previous";
-    //   prev.className = "btn btn-success"
-    //   prev.id = "prevBtn";
-    //   buttonBar.appendChild(prev);
+      let userBody = document.querySelector('.card-user');
+      let purp = document.createElement("p");
+      purp.classList = "ms-5 pt-5 small color-dark"
+      purp.innerHTML = "Blog ID " + i + "*" + arr[i].project + '/' + arr[i].purpose;
+      userBody.appendChild(purp);
 
-    //   let next = document.createElement("button");
-    //   next.innerHTML = "Next"
-    //   next.className = "btn btn-danger"
-    //   next.id = "nextBtn";
-    //   buttonBar.appendChild(next);
+
 
       if (currentBlogWide === -1) {
         currentBlogWide = Number(i); 

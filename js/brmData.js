@@ -3,7 +3,7 @@
 
 const data = [ 
     {
-      purpose: "",
+      purpose: "blog",
       category: 'Roofing',
       title: "New galvalume standing seam metal roof.",
       date: "May 03, 2020",
@@ -14,6 +14,7 @@ const data = [
       project: "siding-roofing"
     },
     {
+      purpose: "blog",
       category: 'Drywall Repair',
       title: "Large drywall textured finish in basement",
       date: "March 02, 2022",
@@ -24,6 +25,7 @@ const data = [
       project: "drywall"
     },
     {
+      purpose: "blog",
       category: 'Drywall Repair',
       title: "Drywall textured finish and painted by the handyman",
       date: "March 04, 2022",
@@ -34,6 +36,7 @@ const data = [
       project: "drywall"
     },
     {
+      purpose: "blog",
       category: 'Handyman',
       title: "Bathroom sink faucet install by the handyman",
       date: "March 06, 2022",
@@ -44,6 +47,7 @@ const data = [
       project: "drywall"
     },
     {
+      purpose: "blog",
       category: 'Kitchen Backsplash',
       title: "Beautiful kitchen backsplash tile install",
       date: "May 02, 2022",
@@ -54,6 +58,7 @@ const data = [
       project: ""
     },    
     {
+      purpose: "blog",
       category: 'Deck Repair',
       title: "Maintenance deck repair boards and posts",
       date: "June 02, 2022",
@@ -64,6 +69,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Drywall Repair',
       title: "Moisture damaged drywall and paint repair",
       date: "June 06, 2022",
@@ -74,6 +80,7 @@ const data = [
       project: "drywall"
     },
     {
+      purpose: "blog",
       category: 'Shingle Repair',
       title: "Roof edge leak solved by BRM",
       date: "June 21, 2020",
@@ -84,6 +91,7 @@ const data = [
       project: "siding-roofing"
     },
     {
+      purpose: "blog",
       category: 'Siding and Roofing',
       title: "Home renovation project exterior siding, soffit and fascia",
       date: "June 23, 2021",
@@ -94,6 +102,7 @@ const data = [
       project: "ad"
     },
     {
+      purpose: "blog",
       category: 'Wood Repair',
       title: "Painted wood siding repair - Moisture damage",
       date: "June 13, 2022",
@@ -104,6 +113,7 @@ const data = [
       project: "siding-roofing"
     },
     {
+      purpose: "blog",
       category: 'Painting',
       title: "OMG - 4 flights of Stairs Painting",
       date: "July 11, 2022",
@@ -114,6 +124,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Roofing',
       title: "3-story shingle roofing repair by the handyman",
       date: "July 16, 2022",
@@ -125,6 +136,7 @@ const data = [
     },
     
     {
+      purpose: "blog",
       category: 'Drywall Repair',
       title: "Bedroom blues... drywall repair and paint",
       date: "Oct 29, 2022",
@@ -135,6 +147,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Deck Build',
       title: "Custom Deck Build",
       date: "Nov 08, 2022",
@@ -145,6 +158,7 @@ const data = [
       project: "custom-deck"
     },
     {
+      purpose: "blog",
       category: 'Deck Build',
       title: "Wrapping up a wood deck with railing",
       date: "Nov 11, 2022",
@@ -155,6 +169,7 @@ const data = [
       project: "custom-deck"
     },
     {
+      purpose: "blog",
       category: 'Deck Build',
       title: "Pressure treated wood deck final touches",
       date: "Nov 12, 2022",
@@ -165,6 +180,7 @@ const data = [
       project: "custom-deck"
     },
     {
+      purpose: "blog",
       category: 'Drywall Framing',
       title: "Hanging drywall board ",
       date: "July 23, 2022",
@@ -175,6 +191,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Door Replacement',
       title: "Exterior door replacement ",
       date: "July 28, 2022",
@@ -185,6 +202,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Flooring',
       title: "Sub-floor replacement and flooring installation",
       date: "Aug 03, 2022",
@@ -195,6 +213,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Drywall Finish',
       title: "Smooth finish drywall work today",
       date: "Aug 20, 2022",
@@ -205,6 +224,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Kitchen Remodel',
       title: "Kitchen cabinet and flooring install",
       date: "Aug 24, 2022",
@@ -215,6 +235,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Custom Deck',
       title: "Custom covered wood deck for the RV",
       date: "Oct 6, 2022",
@@ -225,6 +246,7 @@ const data = [
       project: "custom-deck"
     },
     {
+      purpose: "blog",
       category: 'Flooring',
       title: "LVT Floor installation",
       date: "Oct 26, 2022",
@@ -235,6 +257,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Siding and Roofing',
       title: "Total transformation! BRM delivers new exteriors on this one.",
       date: "Nov 12, 2022",
@@ -245,6 +268,7 @@ const data = [
       project: "siding-roofing"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Bathroom with fresh electrical switches and lights",
       date: "Dec 14, 2022",
@@ -255,6 +279,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Bathroom Renovation fresh update",
       date: "Dec 14, 2022",
@@ -265,6 +290,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Fresh bath tub install with new plumbing",
       date: "Dec 14, 2022",
@@ -275,6 +301,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Kitchen Remodel',
       title: "Kitchen wall repairs with new drywall finish",
       date: "Dec 09, 2022",
@@ -284,7 +311,8 @@ const data = [
       img2: "../assets/gallery/kitchen-drywall1.jpg",
       project: "kitchen-remodel-ah"
     },
-    {     
+    { 
+      purpose: "blog",    
       category: 'Plumbing Repair',
       title: "Water damage and plumbing repair",
       date: "Jan 29, 2023",
@@ -295,6 +323,7 @@ const data = [
       project: ""
     },
     {
+      purpose: "blog",
       category: 'Kitchen Remodel',
       title: "Kitchen Remodel",
       date: "Feb 08, 2023",
@@ -305,6 +334,7 @@ const data = [
       project:  "kitchen-remodel-ah"
     },  
     { //22
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Demo day - Start of bathroom remodel",
       date: "Feb 14, 2023",
@@ -315,6 +345,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Bathroom all cleaned and gutted ready for install",
       date: "Feb 15, 2023",
@@ -325,6 +356,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Acrylic tub/shower combo with fresh plumbing.",
       date: "Feb 17, 2023",
@@ -335,6 +367,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Drywall finishing smooth - bathroom remodel.",
       date: "Feb 21, 2023",
@@ -345,6 +378,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Finishing the smooth finish drywall",
       date: "Feb 22, 2023",
@@ -355,6 +389,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Floor and toilet install with some painting",
       date: "Feb 24, 2023",
@@ -365,6 +400,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Stained door install with new rustic vanity",
       date: "Feb 28, 2023",
@@ -375,6 +411,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Bathroom Remodel',
       title: "Awesome Bathroom Remodel all wrapped up",
       date: "March 2, 2023",
@@ -385,6 +422,7 @@ const data = [
       project: "bathroom-remodel-rm"
     },
     {
+      purpose: "blog",
       category: 'Custom Decks',
       title: "Spring is almost here, time for home projects",
       date: "March 4, 2023",
