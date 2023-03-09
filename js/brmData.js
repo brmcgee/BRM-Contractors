@@ -44,7 +44,7 @@ const data = [
       body: "Well simply call for a bathroom faucet install for a client. We removed the old faucet and installed a new Delta Foundations in chrome finish. Clean up and on to the next. Another happy client!",
       img2: "../assets/gallery/handy-sink1a.jpg",
       img1: "../assets/gallery/handy-sink1b.jpg",
-      project: "drywall"
+      project: "repair"
     },
     {
       purpose: "blog",
@@ -55,7 +55,7 @@ const data = [
       body: "A simply elegant tile install for these homeowners in their already beautiful kitchen. We were able to add the speacial touch that they always wanted. Another satisfied homeowner!",
       img1: "../assets/gallery/backsplash1.jpg",
       img2: "../assets/gallery/backsplash2.jpg",
-      project: ""
+      project: "kitchen-remodel-ah"
     },    
     {
       purpose: "blog",
@@ -121,7 +121,7 @@ const data = [
       body: "Wow when I got wind of this one. 4-flights of stairs to be painted here. Had to be careful not to get trapped on the top floor with wet paint... Well anyways it turned out awesome and paint lines were crisp. Another job DONE right!",
       img1: "../assets/gallery/paint1.jpg",
       img2: "../assets/gallery/paint2.jpg",
-      project: ""
+      project: "painting"
     },
     {
       purpose: "blog",
@@ -132,7 +132,7 @@ const data = [
       body: "There was a pretty bad leak hear at the dead valley and wall area, we were able to help. This repair is 3-stories up so work of the ladder was necessary. We replaced the rotted wood, new shingles and underlayment. Replaced some Hardie Siding and painted to match. Problem Solved!",
       img1: "../assets/gallery/shingle-repair3a.jpg",
       img2: "../assets/gallery/shingle-repair3b.jpg",
-      project: ""
+      project: "repair"
     },
     
     {
@@ -144,7 +144,7 @@ const data = [
       body: "Well for such a happy blue bedroom the wall had water damge at the window sill area. We removed the drywall and install new with extra caution at the carpet flooring. After a return trip sanded and repainted the complete room. Another happy client!",
       img2: "../assets/gallery/drywall-repair1.jpg",
       img1: "../assets/gallery/drywall-repair2.jpg",
-      project: ""
+      project: "repair"
     },
     {
       purpose: "blog",
@@ -188,7 +188,7 @@ const data = [
       body: "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games.",
       img1: "../assets/gallery/drywall-hang1.jpg",
       img2: "../assets/gallery/drywall-hang2.jpg",
-      project: ""
+      project: "drywall"
     },
     {
       purpose: "blog",
@@ -199,7 +199,7 @@ const data = [
       body: "Our clients door was rusting and not shutting correctly. We simply replaced an exterior door for one of our clients. Another happy client. ",
       img1: "../assets/gallery/door2.jpg",
       img2: "../assets/gallery/door1.jpg",
-      project: ""
+      project: "door"
     },
     {
       purpose: "blog",
@@ -210,7 +210,7 @@ const data = [
       body: "This bathroom had a leaky toilet which rotted the subfloor and toilet flange. We removed all the old subfloor minus the tub area  and flange then installed new. Next we followed with a low maintenance LVT vinyl floor, new toilet vanity and mirror. Mini makeover for this bathroom here! Job well done!",
       img1: "../assets/gallery/flooring1a.jpg",
       img2: "../assets/gallery/flooring1b.jpg",
-      project: ""
+      project: "flooring"
     },
     {
       purpose: "blog",
@@ -221,7 +221,7 @@ const data = [
       body: "We have returned from installing the original 30 sheets and are finishing this board on with a smooth finish. We have taken extra caution in protecting the floors. We are all sanded down and ready to for clean up here. This is beautiful but we wont be painting it. The homeowner will finish the rest.",
       img1: "../assets/gallery/drywall-finish.jpg",
       img2: "../assets/gallery/drywall-finish2.jpg",
-      project: ""
+      project: "drywall"
     },
     {
       purpose: "blog",
@@ -232,7 +232,7 @@ const data = [
       body: "We are working on a kitchen today. We removed a section of flooring and installed a low maintenance LVT floor. Then we set the cabinets back in place on this one. We will return as soon as the counters are ready for the install. Job well done!",
       img1: "../assets/gallery/kitchen-1a.jpg",
       img2: "../assets/gallery/kitchen-1b.jpg",
-      project: ""
+      project: "kitchen-remodel-ah"
     },
     {
       purpose: "blog",
@@ -254,7 +254,7 @@ const data = [
       body: "Simply LVT flooring install here. We installaed a shower set and subfloor a couple months back. Now we return and finished the floors. Homeowner will be installing the trim.",
       img1: "../assets/gallery/flooring1.jpg",
       img2: "../assets/gallery/flooring2.jpg",
-      project: ""
+      project: "flooring"
     },
     {
       purpose: "blog",
@@ -276,7 +276,7 @@ const data = [
       body: "This project was great! We're completing it winter time. We are closing up this wall area after getting the electrical leads and boxes ran. We installed new exhaust vent, recessed lighting and a vanity light.",
       img2: "../assets/gallery/bathroom3.jpg",
       img1: "../assets/gallery/bathroom4.jpg",
-      project: ""
+      project: "bathroom"
     },
     {
       purpose: "blog",
@@ -287,7 +287,7 @@ const data = [
       body: "This project was great! We're completing it winter time. We removed everything down to the wood studs and installed all new insulation and fixtures. A 4-piece acrylic bathtub/shower combo kit. All new elctrical and lighting with bathroom exhaust. New smooth finished drywall surface freshly painted to our clients likings. I know its a bathroom but this will be a fun place.",
       img2: "../assets/gallery/bathroom2.jpg",
       img1: "../assets/gallery/bathroom1.jpg",
-      project: ""
+      project: "bathroom"
     },
     {
       purpose: "blog",
@@ -298,7 +298,7 @@ const data = [
       body: "This project was great! We're completing it winter time. We are installing new plumbing fixtures, valves and framing on this bathtub.",
       img2: "../assets/gallery/bathroom5.jpg",
       img1: "../assets/gallery/bathroom6.jpg",
-      project: ""
+      project: "bathroom"
     },
     {
       purpose: "blog",
@@ -320,7 +320,7 @@ const data = [
       body: "There was some mositure damaged drywall and a loose shower arm so we fixed it all on this one. Added some blocking for the shower arm and removed and replaced the damaged drywall. Oh yeah we added a clean access panel for the plumbing. Another happy client!",
       img2: "../assets/gallery/plumbing-repair1.jpg",
       img1: "../assets/gallery/plumbing-repair2.jpg",
-      project: ""
+      project: "repair"
     },
     {
       purpose: "blog",

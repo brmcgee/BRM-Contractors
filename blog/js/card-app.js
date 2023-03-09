@@ -3,6 +3,16 @@ const myData = data;
 
 let blogs = [];
 let wrapper = document.getElementById("serviceCard");
+// determines index of the title selected
+function getIndex (phrase) {
+  for (let i = 0; i < data.length; i++){
+    let title = data[i].title.toLowerCase();
+    if (title === phrase) {
+        return i;
+    }
+  }
+};
+
 
 function createCard (services) {
 
@@ -15,6 +25,12 @@ function createCard (services) {
     let card = document.createElement('div');
     card.className = "card mx-auto d-block";
     sCard.appendChild(card);
+
+    // on card click generate blog view 
+    card.addEventListener("click", () => {
+     let cardIndex = getIndex(services.title.toLowerCase());
+     blogViewer(data, cardIndex);
+    })
 
     let cImg = document.createElement("div");
     cImg.className = "card-img ing-fluid";
@@ -432,6 +448,11 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+document.getElementById("blogNum").addEventListener("keydown", (e) => {
+  if (e.key === "Enter"){
+    blogViewer(data, document.getElementById("blogNum").value);
+  }
+})
 
 
 // search declarations 
@@ -445,7 +466,7 @@ const links = document.getElementById("wideList");
 function createWideLink (arr, i) {
   wideListTarget.style.height = "100vh";
   let wideLink = document.createElement("a");
-  wideLink.href = "#searchBarWide";
+  wideLink.href = "#brmBlogs";
   wideLink.innerHTML = "" + i  + "- " + arr[i].title;
   wideLink.id = "widePost";
   wideLink.classList = "p-1"
@@ -460,15 +481,6 @@ function createWideLink (arr, i) {
   wideListTarget.style.borderRadius = "5px";
 }
 
-// determines index of the title selected
-function getIndex (phrase) {
-  for (let i = 0; i < data.length; i++){
-    let title = data[i].title.toLowerCase();
-    if (title === phrase) {
-        return i;
-    }
-  }
-};
 
 
 let searchResults;
@@ -503,7 +515,7 @@ function searchWide() {
       title = split.splice(1).join(" ");
 
       let index = getIndex(title);
-      wideListTarget.style.height = "2vh";
+      wideListTarget.style.height = "1px";
       blogViewer(data, index);
       
       for (let i = 0; i < searchResults.length; i++){
