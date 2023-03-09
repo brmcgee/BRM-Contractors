@@ -444,7 +444,6 @@ const links = document.getElementById("wideList");
 //creat link
 function createWideLink (arr, i) {
   wideListTarget.style.height = "100vh";
-  wideListTarget.style.overflowY = "auto";
   let wideLink = document.createElement("a");
   wideLink.href = "#searchBarWide";
   wideLink.innerHTML = i + 1 + ". " + arr[i].title;
