@@ -38,7 +38,7 @@ body {
     /* primary color and shades  */
     /* set for styles below - changes global  */
     --bg-primary: rgb(46, 46, 45);
-    --bg-accent-hover: rgba(163, 30, 30, 0.2);
+    --bg-accent-hover: rgb(225, 196, 196);
     --bg-primary-off: rgb(163, 30, 30);
     --bg-primary-dark: rgb(134, 24, 24);
     --bg-primary-contrast: rgb(255, 255, 255); 
@@ -849,6 +849,9 @@ input {
 
 /* ======== BLOG WIDE CARD ======== */ 
 
+.bg-blog {
+    background-color: rgb(192, 192, 192);
+}
 .blog-wide .card {
     box-shadow: 0px 12px 44px 3px #121212;
     /* cursor: pointer; */
@@ -861,7 +864,7 @@ input {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #f7f8fc;
+    box-shadow: 0 6px 29px #808080;
     font-family: "Roboto", sans-serif;
     color: #10182f;
   }
@@ -874,7 +877,7 @@ input {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 100%;
-    max-width: 85vw;
+    max-width: 95vw;
     box-sizing: border-box;
     /* height: 600px; */
   }
@@ -887,7 +890,7 @@ input {
 
   .blog-wide  .card-img img {
     width: 50%;
-    height: 30vw;
+    height: 50vw;
     object-fit: cover;
     padding: 0;
     margin: 0;
@@ -917,7 +920,7 @@ input {
     text-indent: .2cm;
     
   }
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     .blog-wide .card-img img {
         height: 225px;
     }
@@ -928,10 +931,10 @@ input {
         width: 80vw;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     .blog-wide  .card-img img {
         width: 50%;
-        height: 23vw;
+        height: 25vw;
     }
     .blog-wide  .card .card-body h4{
         font-size: 2.3vw;

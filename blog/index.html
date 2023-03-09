@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,63 +67,29 @@
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
   <!-- =========  NAVBAR ==========  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-main">
-    <a class="navbar-brand" href="#">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open</span></span>
-      <span class="material-symbols-outlined">arrow_circle_up</span>
-
-      <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
-    </a>
-    <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="menu-icon" onclick="iconSwap(this)">
-        <div class="menu-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </span>
-    </a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
-        </li>
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Us
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../about.html">Info - About</a>
-            <a class="dropdown-item" href="../contact-brm.html">Contact BRM</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Blog Posts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#" onclick="selectProject('bathroom-remodel-rm')">Bathroom Remodel</a>
-            <a class="dropdown-item" href="#" onclick="selectProject('kitchen-remodel-ah')">Kitchen Remodel</a>
-            <a class="dropdown-item" href="#" onclick="selectProject('custom-deck')">Deck Build</a>
-            <a class="dropdown-item" href="#" onclick="selectProject('siding-roofing')">Roofing and Siding</a>
-            <a class="dropdown-item" href="data.html">Admin</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
-            </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="lastNav" href="#" onclick="createAll()">BRM - All Blog Posts</a>
-        </li>
+  <nav class="block bg-main" style="margin-top: 5px;height:43px;">
+    <div class="row">
+      <div class="col-1" style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open</span></div>
+      <div class="col-1 px-5 ">
+        <a class="" href="#" >
+          <span class="material-symbols-outlined">arrow_circle_up</span>
+          <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
+        </a>
+      </div>
     </div>
+
   </nav>
   <!-- =========  NAVBAR/END =========  -->
 </div> 
 <!-- =========== NAV-BAR END/========== -->
 
+<!-- buttons for wide blog movement  -->
+<div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:1px;width:200px;">
+  <div class="btn-group col-sm-10 mx-auto d-block" role="button" style="z-index: 10000;">
+    <button id = "blogPrev" class="btn btn-danger bg-brm" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)" >Prev</button>
+    <button id = "blogNext" class="btn btn-dark " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
+  </div>
+</div>
 
 <!-- ============ SIDENAV ============= -->
 <div id="mySidenav" class="sidenav">
@@ -173,18 +140,10 @@
 <!-- ============ SIDENAV END/ ========== -->
 
 
-<!-- buttons for wide blog movement  -->
-<div class="row" style="position: fixed;top:60px;right:2vw;width:200px;">
-  <div class="btn-group col-sm-10 mx-auto d-block">
-    <button id = "blogPrev" class="btn btn-danger btn-sm bg-brm" 
-                onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Prev</button>
-    <button id = "blogNext" class="btn btn-dark btn-sm"
-              onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
-  </div>
-</div>
 
 
-<div class="wrapper mx-auto d-block bg-gray p-3">
+
+<div class="wrapper mx-auto d-block container-fluid">
 
 <!-- PROJECT LOAD  -->
   <script>
@@ -195,11 +154,10 @@
   </script>
 
   <!-- BLOG POST - PROJECT JS INJECTION  -->
-  <div class="product-container" style="margin-top: 20px;">
-    <main class="row product container-fluid " id="serviceCard"><!-- js content injection  -->
+  <div class="product-container" style="margin-top: 2px; height:100%;">
+    <main class="row product container-fluid bg-blog " id="serviceCard"><!-- js content injection  -->
     </main>
   </div>
-  <div class="block"></div>
 </div>
 
 
