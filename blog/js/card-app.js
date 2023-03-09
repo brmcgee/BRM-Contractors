@@ -70,10 +70,10 @@ function createCard (services) {
     (services.date === '') ? date.innerHTML = "-" : date.innerHTML = services.date;
     cUserInfo.appendChild(date);
 
-    let blogId = document.createElement('p');
-    blogId.classList = "text-russo mt-1 text-secondary small"
-    blogId.innerHTML = "Phone 724.787.3758"
-    cUserInfo.appendChild(blogId)
+    // let blogId = document.createElement('p');
+    // blogId.classList = "text-russo mt-1 text-secondary small"
+    // blogId.innerHTML = "Phone 724.787.3758"
+    // cUserInfo.appendChild(blogId)
 
 
 };
@@ -216,10 +216,6 @@ let welcome = [
   }
 ]
 
-document.addEventListener("DOMContentLoaded", () => {
-  createCard(welcome[0]);
-  // createCard(myData[myData.length - 1]);
-})
 
 
 
@@ -246,7 +242,7 @@ function selectProject (p) {
   // clears title if present 
   let title = document.getElementById("tTitle");
   if (title === null) {
-    console.log('ok')
+
   } else {
     clearTitle();
   }
@@ -378,10 +374,13 @@ function blogViewer(arr, i){
 
       let userBody = document.querySelector('.card-user');
       let purp = document.createElement("p");
-      purp.classList = "ms-5 pt-5 small color-dark"
-      purp.innerHTML = "Blog ID " + i + "*" + arr[i].project + '/' + arr[i].purpose;
-      userBody.appendChild(purp);
+      purp.classList = "ms-5 pt-1 small color-dark"
+      if (arr[i].project === "") {
+        arr[i].project = "brmhandy";
+      }
 
+      purp.innerHTML = i + "<br>" + arr[i].project + '<br>' + arr[i].purpose;
+      userBody.appendChild(purp);
 
 
       if (currentBlogWide === -1) {
@@ -435,10 +434,120 @@ document.addEventListener("keydown", (e) => {
 
 
 
+// search declarations 
+let phrase;
+const wideListTarget = document.getElementById("wideList");
+const wideSearchBar = document.getElementById("searchBarWide");
+const links = document.getElementById("wideList");
+
+
+//creat link
+function createWideLink (arr, i) {
+  wideListTarget.style.height = "100vh";
+  wideListTarget.style.overflowY = "auto";
+  let wideLink = document.createElement("a");
+  wideLink.href = "#searchBarWide";
+  wideLink.innerHTML = i + 1 + ". " + arr[i].title;
+  wideLink.id = "widePost";
+  wideLink.classList = "p-1"
+  wideLink.className = "wide-blog-list ps-2";
+  wideLink.style.backgroundColor = "rgb(201, 201, 201)";
+  wideLink.style.textDecoration = "none";
+  wideLink.style.maxWidth = "690px";
+  wideLink.style.color = "rgb(163,30,30)"
+  wideLink.style.display = "block";
+  wideLink.style.margin = "auto";
+  wideListTarget.appendChild(wideLink); 
+  wideListTarget.style.borderRadius = "5px";
+}
+
+// determines index of the title selected
+function getIndex (phrase) {
+  for (let i = 0; i < data.length; i++){
+    let title = data[i].title.toLowerCase();
+    if (title === phrase) {
+        return i;
+    }
+  }
+};
+
+
+let searchResults;
+// search bar
+function searchWide() {
+  phrase = document.getElementById("searchBarWide").value.toLowerCase();
+
+  for (let i = 0; i < data.length; i++) {
+    let post = data[i].title;
+    if (post.toLowerCase().indexOf(phrase) > -1) {
+      createWideLink(data, i);
+    }
+  }
+
+  searchResults = document.querySelectorAll("#widePost");
+  if (phrase === "") {
+    wideListTarget.style.height = "1px";
+    for (let i = 0; i < searchResults.length; i++){
+      wideListTarget.removeChild(searchResults[i]);
+    }
+  }
+
+
+  
+  for (let x = 0; x < searchResults.length; x++) {
+    let post = searchResults[x];
+    post.addEventListener("click", () => {
+      
+      //remove index # from begining
+      let title = post.innerHTML.toLowerCase();
+      let split = title.split(" ");
+      title = split.splice(1).join(" ");
+
+      let index = getIndex(title);
+      wideListTarget.style.height = "2vh";
+      blogViewer(data, index);
+      
+      for (let i = 0; i < searchResults.length; i++){
+        wideListTarget.removeChild(searchResults[i]);
+      };
+      document.getElementById("searchBarWide").value = "";
+
+      if (currentBlogWide != x) {
+        currentBlogWide = x + 2;
+      }
+    })
+  }
+}
+
+
+
+//search bar removes querys on keydown, keyup adds new
+wideSearchBar.addEventListener("keydown", () => {
+
+  const wideTitle = document.getElementById("tDiv");
+  if (wideTitle) {
+    clearTitle();
+  }
+  let wideList = document.querySelectorAll("#widePost");
+  if (wideList.length > 0) {
+    for(let i = 0; i < wideList.length; i ++){
+      wideListTarget.removeChild(wideList[i]);
+  }
+  }
+});
 
 
 
 
 
 
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   createCard(welcome[0]);
+//   // createCard(myData[myData.length - 1]);
+// })
 

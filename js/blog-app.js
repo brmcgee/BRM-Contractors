@@ -167,14 +167,14 @@ let count = 0;
 let links;
 
 function createLink (blog) {
-let link = document.createElement('a')
-link.href = '#blogPost';
-link.innerHTML = blog;
-link.id = "post" + count;
-link.className = "blog-lists";
-link.style.display = 'block';
-list.appendChild(link);
-count++;
+  let link = document.createElement('a')
+  link.href = '#blogPost';
+  link.innerHTML = blog;
+  link.id = "post" + count;
+  link.className = "blog-lists";
+  link.style.display = 'block';
+  list.appendChild(link);
+  count++;
 }
 
 // determines index of the title selected
