@@ -9,7 +9,7 @@ function createCard (services) {
     wrapper.style.backgroundColor = "";
 
     let sCard = document.createElement('div');
-    sCard.className = "service col-xl-4 col-md-6 col-sm-7 mx-auto d-block";
+    sCard.className = "service col-sm-12 col-xl-4 col-md-6 mx-auto d-block";
     wrapper.appendChild(sCard);
 
     let card = document.createElement('div');
