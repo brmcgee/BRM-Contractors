@@ -24,13 +24,14 @@ function createCard (services) {
 
     let card = document.createElement('div');
     card.className = "card mx-auto d-block";
+    card.id = "blogCard";
     sCard.appendChild(card);
 
     // on card click generate blog view 
     card.addEventListener("click", () => {
      let cardIndex = getIndex(services.title.toLowerCase());
      blogViewer(data, cardIndex);
-    })
+    });
 
     let cImg = document.createElement("div");
     cImg.className = "card-img ing-fluid";
@@ -165,6 +166,11 @@ function clearTitle() {
 
 
 function createSingle() {
+  if (document.getElementById("tDiv")) {
+    clearTitle();
+    clearScreen();
+  }
+
     let service = {
         title: document.getElementById("fTitle").value,
         category: document.getElementById("fCategory").value,
@@ -176,6 +182,12 @@ function createSingle() {
         author: document.getElementById("fUser").value,
     }; 
     createCard(service);
+    document.getElementById("blogCard").removeEventListener("click", () => {
+      card.addEventListener("click", () => {
+        let cardIndex = getIndex(services.title.toLowerCase());
+        blogViewer(data, cardIndex);
+       })
+    }, true);
     closeNav() || closeRight();
 };
 

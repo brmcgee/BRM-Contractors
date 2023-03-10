@@ -83,7 +83,7 @@ const data = [
       purpose: "blog",
       category: 'Shingle Repair',
       title: "Roof edge leak solved by BRM",
-      date: "June 21, 2020",
+      date: "June 18, 2020",
       author: "Brian McGee",
       body: 'There was issues on the edge of the roof. The shingles were still in servicable condition so we were able to handle this with a simply maintenance repair and extend the life of this roof verses replacement. Our client was happy and able to set up a budget plan for roof replacment. Problem solved!',
       img1: "../assets/gallery/shingle-repair1.jpg",
@@ -93,14 +93,26 @@ const data = [
     {
       purpose: "blog",
       category: 'Siding and Roofing',
-      title: "Home renovation project exterior siding, soffit and fascia",
+      title: "Remodel project siding, soffit and fascia",
       date: "June 23, 2021",
-      author: "Brian McGee, owner",
+      author: "Brian McGee",
       body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-      img1: "../assets/gallery/house-before.jpg",
+      img1: "../assets/gallery/pollin-siding3.jpg",
       img2: "../assets/gallery/house-after.jpg",
       project: "ad"
     },
+    {
+      purpose: "blog",
+      category: 'Siding',
+      title: "Home renovation project exterior siding, soffit and fascia",
+      date: "June 20, 2021",
+      author: "Brian McGee",
+      body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      img1: "../assets/gallery/house-before.jpg",
+      img2: "../assets/gallery/pollin-siding2.jpg",
+      project: "ad"
+    },
+
     {
       purpose: "blog",
       category: 'Wood Repair',

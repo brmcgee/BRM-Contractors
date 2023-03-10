@@ -13,7 +13,7 @@
 <meta name="type" content="website" />
 
 
-<title>BRM Contractors Inc - Blog Beta</title>
+<title>BRM Contractors Inc - Blog</title>
 
 <link rel="canonical" href="https://brmcontractors.net/" />
 <link rel="icon" href="assets/brm-red.ico" sizes="32x32" />
@@ -66,13 +66,12 @@
 
 <!-- ============ NAV-BAR ============= -->
 <div class="nav-bar col-12" id="navBar">
-  <nav class="block bg-main" style="margin-top: 5px;height:43px;">
+  <nav class="block bg-main" style="margin-top: 5px;height:49px;">
     <div class="row">
-      <p class="col" style="font-size:34px;font-weight:bold;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3">menu_open
+      <p class="col" style="font-size:34px;font-weight:bold;cursor:pointer" onclick="openNav()"><span class="material-icons md-36 ms-3 fs-1">menu_open
         <span>
           <a class="" href="#" >
-            <span class="material-symbols-outlined">arrow_circle_up</span>
-            <!-- <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openRight()"><span class="material-symbols-outlined">chat</span></span> -->
+            <span class="material-symbols-outlined fs-1">arrow_circle_up</span>
           </a>
         </span>
         <span>
@@ -105,6 +104,9 @@
     <div class="col link">
       <a href="../index.html" class="home"> BRM Contractors - HOME</a>
     </div>
+  
+    <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined"><i class="fa-solid fa-circle-user h2 color-red"></i></span></span>
+
     <div class="col link">
       <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> @ Recent Project</a>
     </div>
@@ -192,44 +194,44 @@
 
 <!-- nav menu with add card feature  -->
 <!-- ============ MIDDLENAV ============= -->
-<div id="middleNav" class="sidenav bg-light">
+<div id="middleNav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeMiddle()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
   <form>
   <div class="form-group">
     <div class="container-fluid row g-1 p-1">
 
       <div class="col-md-6">
-        <label class="form-label" for="title"> Title</label>
+        <label class="form-label text-light" for="title"> Title</label>
         <input class="form-control form-control-sm" type="text" name="title" id="fTitle" placeholder="title">
       </div>
 
       <div class="col-6">
-        <label class="form-label" for="category"> Category</label>
+        <label class="form-label text-light" for="category"> Category</label>
         <input class="form-control form-control-sm" type="text" name="category" id="fCategory" placeholder="category">
       </div>
     
       <div class="col-6">
-        <label class="form-label" for="price"> Date</label>
+        <label class="form-label text-light" for="price"> Date</label>
         <input class="form-control form-control-sm" type="text" name="price" id="fPrice" placeholder="date">
       </div>
 
       <div class="col-6">
-        <label class="form-label" for="user"> Author</label>
+        <label class="form-label text-light" for="user"> Author</label>
         <input class="form-control form-control-sm" type="text" name="user" id="fUser" placeholder="author">
       </div>
 
       <div class="col-md-12">
-        <label class="form-label" for="authorImage"> Author Image URL</label>
+        <label class="form-label text-light" for="authorImage"> Author Image URL</label>
         <input class="form-control form-control-sm" type="text" name="authorImage" id="fAuthorImage"  value="assets/gallery/brian.jpg">
       </div>
   
       <div class="col-md-12">
-        <label class="form-label" for="image"> Image URL</label>
+        <label class="form-label text-light" for="image"> Image URL</label>
         <input class="form-control form-control-sm" type="text" name="image" id="fImage"  value="assets/gallery/placeholder.jpg">
       </div>
 
       <div class="col-md-12">
-        <label class="form-label" for="image2"> Image 2 URL</label>
+        <label class="form-label text-light" for="image2"> Image 2 URL</label>
         <input class="form-control form-control-sm" type="text" name="image2" id="fImage2"  value="assets/brm.ico">
       </div>
   
@@ -245,7 +247,7 @@
         </div> -->
     
       <div class="col-12">
-          <label class="form-label" for="body"><span> Description</label>
+          <label class="form-label text-light" for="body"><span class="text-light"> Description</label>
           <input class="form-control" type="text" name="body" id="fBody" placeholder="description">
       </div>
 
@@ -254,10 +256,10 @@
 
   <div class="row mt-2 bg-light">
   <div class="col">
-    <a href="#" onclick="createSingle()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Create New </a>
+    <a href="#" onclick="createSingle()" class="bg-dark"><span><i class="fa-solid fa-add pe-2"></i></span> Create New </a>
   </div>
   <div class="col">
-    <a href="#" onclick="createAll()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Show All</a>
+    <a href="#" onclick="createAll()" class="bg-dark"><span><i class="fa-solid fa-star pe-2"></i></span> Show All</a>
   </div>
   </div>
   <div class="row">
