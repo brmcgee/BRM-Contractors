@@ -11,7 +11,7 @@ const data = [
       body: 'We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1.5" 16" panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ',
       img1: "../assets/gallery/sseam1.jpg",
       img2: "../assets/gallery/sseam2.jpg",
-      project: "siding-roofing"
+      project: ""
     },
     {
       purpose: "blog",
@@ -66,7 +66,7 @@ const data = [
       body: "We were able to make some maintenance repairs on this 10 year old deck. We saved the old composite deck boards and replaced the beams and posts in the troubled area. Back to enjoying the pool - Another satisfied homeowner!",
       img1: "../assets/gallery/deck-repair1.jpg",
       img2: "../assets/gallery/deck-repair2.jpg",
-      project: ""
+      project: "handyman"
     },
     {
       purpose: "blog",
@@ -88,29 +88,29 @@ const data = [
       body: 'There was issues on the edge of the roof. The shingles were still in servicable condition so we were able to handle this with a simply maintenance repair and extend the life of this roof verses replacement. Our client was happy and able to set up a budget plan for roof replacment. Problem solved!',
       img1: "../assets/gallery/shingle-repair1.jpg",
       img2: "../assets/gallery/shingle-repair2.jpg",
-      project: "siding-roofing"
+      project: "handyman"
     },
     {
       purpose: "blog",
       category: 'Siding and Roofing',
-      title: "Remodel project siding, soffit and fascia",
+      title: "Porch roof remodel project with siding and wrap",
       date: "June 23, 2021",
       author: "Brian McGee",
       body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
       img1: "../assets/gallery/pollin-siding3.jpg",
       img2: "../assets/gallery/house-after.jpg",
-      project: "ad"
+      project: "siding-roofing"
     },
     {
       purpose: "blog",
-      category: 'Siding',
+      category: 'Siding and Roofing',
       title: "Home renovation project exterior siding, soffit and fascia",
       date: "June 20, 2021",
       author: "Brian McGee",
       body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
       img1: "../assets/gallery/house-before.jpg",
       img2: "../assets/gallery/pollin-siding2.jpg",
-      project: "ad"
+      project: "siding-roofing"
     },
 
     {
