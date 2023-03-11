@@ -91,8 +91,8 @@
 <!-- buttons for wide blog movement  -->
 <div class="row mx-auto d-block" style="z-index:9999; position:fixed;top:6px;right:-30px;width:170px;">
   <div class="btn-group col-sm-10 mx-auto d-block" role="button" style="z-index: 10000;">
-    <button id = "blogPrev" class="btn btn-danger bg-brm px-2" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)" >Prev</button>
-    <button id = "blogNext" class="btn btn-warning bg-dark px-2 text-light " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value + 1)">Next</button>
+    <button id = "blogPrev" class="btn btn-danger bg-brm px-2" onclick="blogViewer(data, document.getElementById('blogNum').value)" >Prev</button>
+    <button id = "blogNext" class="btn btn-warning bg-dark px-2 text-light " role="button" onclick="blogViewer(data, document.getElementById('blogNum').value)">Next</button>
   </div>
 </div>
 
@@ -103,6 +103,9 @@
   <div class="links">
     <div class="col link">
       <a href="../index.html" class="home"> BRM Contractors - HOME</a>
+    </div>
+    <div class="col link">
+      <a href="https://www.brmdev.com/blog" class="home"> BRM DEV - Blog</a>
     </div>
   
     <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined"><i class="fa-solid fa-circle-user h2 color-red"></i></span></span>
