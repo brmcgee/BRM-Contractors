@@ -34,7 +34,7 @@ function createCard (services) {
     });
 
     let cImg = document.createElement("div");
-    cImg.className = "card-img ing-fluid";
+    cImg.className = "card-img img-fluid";
     card.appendChild(cImg);
 
     let image = document.createElement('img');

@@ -1,4 +1,41 @@
-// bathroom-remodel-rm   miller project 
+
+
+// // bathroom-remodel-rm   miller project 
+// async function getBlogs() {
+//   let url = 'https://www.brmcontractors.net/js/brmBlogs.json';
+//   try {
+//       let res = await fetch(url);
+//       return await res.json();
+//   } catch (error) {
+//       console.log(error);
+//   }
+// }
+
+// let array = [];
+// async function renderBlogs() {
+//   let blogs = await getBlogs();
+//   let html = '';
+//   blogs.forEach(blog => {
+//       let arr = [];
+//       arr.purpose = blog.purpose;
+//       arr.category = blog.category;
+//       arr.title = blog.title;
+//       arr.date = blog.date;
+//       arr.body = blog.body;
+//       arr.img1 = blog.im1;
+//       arr.img2 = blog.img2;
+//       arr.project = blog.project;
+//       array.push(arr);
+//   });
+  
+//   return array;
+// }
+
+// let data = renderBlogs();
+
+
+
+
 
 
 const data = [ 
