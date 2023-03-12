@@ -140,23 +140,26 @@ async function renderBlogs(active, option, cla) {
             if (option === 2) {
               segment = `
   
-              <div class="col-md-6 col-xl-4">
-                <div class="card mx-auto d-block blog-item m-3" style="width: 390px;">
+              <div class="col-md-8 col-xl-4 mx-auto d-block">
+                <div class="card mx-auto d-block blog-item m-3" 
+                    style="width: 390px;border-radius:10px;box-shadow: 0 6px 22px #333;border:1px solid #333">
                   <div class="rounded-top">
-                    <img class="img-fluid" src="${blog.img1}" style="width: 390px; height: 300px; object-fit: cover;"> 
+                    <img class="img-fluid" src="${blog.img1}" 
+                    style="width: 390px; height: 300px; object-fit: cover; border-top-right-radius:10px;
+                    border-top-left-radius: 10px;"> 
                   </div>
                   <div class="product-header display-4 color-red text-russo">
                     <h4 class="p-3 text-uppercase bg-red btn-rounded ms-2 mt-2 py-1 px-3" 
                     style="position: absolute; top: 1px; color: white;">${blog.category}</h4>
                   </div>
                   <div class="bg-dark d-flex-column align-items-center p-4 p-1">
-                    <h4 class="fs-5 text-uppercase text-light me-3 d-flex">${blog.title}
-                      <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" class="img-fluid mx-auto d-block ms-1" style="width: 140px; height: 70px;">
+                    <h4 class="fs-5 text-uppercase text-light me-3 d-flex bg-secondary p-2 rounded w-100">${blog.title}
+                      <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" class="img-fluid mx-auto d-block ms-1" style="width: 70px; height: 70px;">
                     </h4>
-                    <p class="text-light text-roboto lead">${blog.body}</p>
+                    <p class="text-light text-roboto">${blog.body}</p>
                   </div><div class="card-user">
-                  <div class="user-info bg-secondary">
-                    <img src="${blog.avatar}" class="p-2"style="width:60px;height:60px;border-radius:50px;>
+                  <div class="user-info bg-secondary" style="border-bottom-right-radius:8px;border-bottom-left-radius:8px;">
+                    <img src="${blog.avatar}" class="p-2"style="width:60px;height:60px;border-radius:50px;">
                     <a class="text-light text-roboto ps-5 mb-0 pb-0"><span class="text-light ms-3">${blog.author}</span></a>
                     <small class="text-roboto ps-5 small mt-0 pt-0 pb-2 text-light">${blog.date}</small>
                   </div>
@@ -168,27 +171,38 @@ async function renderBlogs(active, option, cla) {
             //flip
             if (option === 3) {
               segment = `
-              <div class="box-item1">
-              <div class="flip-box  col-sm-12 col-md-6  mx-auto d-block">
-                <div class="flip-box-front text-center" style="background-image: url('${blog.img2}');">
-                  <div class="inner color-white">
-                    <h2 class="flip-box-header text-uppercase">${blog.category}</h2>
-                    <p>${blog.title}</p>
-                    <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" style="width:50px;height:50px;" alt="" class="flip-box-img">
+
+              <div class="container-fluid col-md-12 col-xl-7 mx-auto d-block">
+              <section class="mx-auto" style="max-width: 34rem;">
+                  
+                <div class="card">
+                  <div class="bg-image-container hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="${blog.img1}" class="img-fluid" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.195);"></div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold"><a>${blog.category}</a></h5>
+                    <p class="mb-2">${blog.title}</p>
+                    <p class="card-text">${blog.body}</p>
+                    <hr class="my-4" />
+                    <p class="lead"><strong>${blog.author}</strong></p>
+                    <ul class="list-unstyled list-inline d-flex justify-content-between">
+                      <li class="list-inline-item me-0">
+                      <div class="chip me-0">${blog.date}</div>
+                        <div class="chip me-0">${blog.img2}</div>
+                        <div class="chip me-0">${blog.purpose}</div>
+                      </li>
+                    </ul>
+                    <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Button</a>
                   </div>
                 </div>
-                <div class="flip-box-back text-center" style="background-image: url('${blog.img1}');overflow:hidden">
-                  <div class="inner color-white">
-                  <h4>${blog.title}</h4>
-                  <p>${blog.body}</p>
-                  <small><span> <img src="${blog.avatar}" style="width:50px;height:50px;border-radius:50px;" alt="" class="flip-box-img"></span></small>
-                  <small>${blog.date}</small>
-      
-                    
-                    <button class="btn-main">${blog.author}</button>
-                  </div>
-                </div>
-              </div>  <br> `;   
+                
+              </section>
+            </div>
+              
+              `;   
             }
 
             
