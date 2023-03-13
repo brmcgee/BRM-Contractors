@@ -101,7 +101,7 @@ async function renderBlogs(active, option, cla) {
               <div class="card-text">
                 <p class="card-meal-type">${blog.category}</p>
                 <h2 class="card-title">${blog.title}</h2>
-                <!-- <p class="card-body">${blog.body}</p> -->
+                <p class="card-body">${blog.body}</p>
                 <p class="card-body">${blog.author}<span class="ms-3"><small class="text-secondary">${blog.date}</small></span></p>
                 <div class="card-price"><img src="${blog.avatar}"></div>
     
