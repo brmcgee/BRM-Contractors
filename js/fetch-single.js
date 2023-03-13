@@ -111,6 +111,7 @@ async function renderBlogs(active, option, cla) {
               <div class="card-avatar"><img src="${blog.img2}"></div>
               </div>    `;
             }
+
             // overlay 
             if (option === 1) {
               segment = `
@@ -135,6 +136,8 @@ async function renderBlogs(active, option, cla) {
             </div>            `; 
 
             }
+
+            
             // dark 
             if (option === 2) {
               segment = `
@@ -152,10 +155,13 @@ async function renderBlogs(active, option, cla) {
                     style="position: absolute; top: 1px; color: white;">${blog.category}</h4>
                   </div>
                   <div class="bg-dark d-flex-column align-items-center p-4 p-1">
-                    <h4 class="fs-5 text-uppercase text-light me-3 d-flex bg-secondary p-2 rounded w-100">${blog.title}
-                      <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" class="img-fluid mx-auto d-block ms-1" style="width: 70px; height: 70px;">
-                    </h4>
+
                     <p class="text-light text-roboto">${blog.body}</p>
+
+                    <h4 class="fs-5  text-light me-3 d-flex  p-2 rounded w-100">${blog.title}
+                    <img src="${blog.img2}" class="mx-auto d-block ms-1 rounded" style="width:140px;height: 130px;">
+                  </h4>
+
                   </div><div class="card-user">
                   <div class="user-info bg-secondary" style="border-bottom-right-radius:8px;border-bottom-left-radius:8px;">
                     <img src="${blog.avatar}" class="p-2"style="width:60px;height:60px;border-radius:50px;">
@@ -163,46 +169,64 @@ async function renderBlogs(active, option, cla) {
                     <small class="text-roboto ps-5 small mt-0 pt-0 pb-2 text-light">${blog.date}</small>
                   </div>
                 </div>
-              </div>
-            </div>        
-    `; 
+              </div>        `; 
             }
             
-            //flip
+            //fade
             if (option === 3) {
               segment = `
 
-              <div class="container-fluid col-md-12 col-xl-7 mx-auto d-block">
+              <!-- ========== IMG STATIC =============  -->
+
+              <div class="text-center container py-2">
+                <div class="card border-0 bg-dark text-center rounded p-4 p-lg-6" style="background:url(${blog.img1})  center / cover no-repeat;">
+                  <div class="row card-body mb-3 mb-lg-4">
+                    <div class="col-xl-11 col-xxl-9 mx-auto text-white">
+                      <div class="lc-block mb-4">
+                        <div editable="rich">
+                          <p class="fs-4">${blog.title}</p>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <h3 class="fw-bold display-5">Reliable and Gauranteed Service <br> The Incredible Handyman.</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lc-block"><a class="btn btn-solid btn-rounded" href="contact-brm.html" role="button">${blog.category}</a></div>
+                </div>
+              </div>
+              <!-- ========== IMG STATIC =============  -->
+
+      <!--     <div class="container-fluid col-md-12 col-xl-7 mx-auto d-block">
               <section class="mx-auto" style="max-width: 34rem;">
                   
-                <div class="card">
-                  <div class="bg-image-container hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="${blog.img1}" class="img-fluid" />
-                    <a href="#!">
-                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.195);"></div>
-                    </a>
+                <div class="card-brm">
+                
+                  <div class="brm-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="${blog.img1}" class="img-fluid" />   
                   </div>
+
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold"><a>${blog.category}</a></h5>
                     <p class="mb-2">${blog.title}</p>
+                    
                     <p class="card-text">${blog.body}</p>
                     <hr class="my-4" />
+
                     <p class="lead"><strong>${blog.author}</strong></p>
                     <ul class="list-unstyled list-inline d-flex justify-content-between">
                       <li class="list-inline-item me-0">
                       <div class="chip me-0">${blog.date}</div>
                         <div class="chip me-0">${blog.img2}</div>
-                        <div class="chip me-0">${blog.purpose}</div>
                       </li>
                     </ul>
                     <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Button</a>
                   </div>
+
                 </div>
                 
               </section>
-            </div>
-              
-              `;   
+            </div>  -->            `;   
             }
 
             // masthead 
@@ -210,7 +234,7 @@ async function renderBlogs(active, option, cla) {
               segment = `
 
               <!-- masthead  -->
-              <section class="class brm-hero">
+              <section class="class brm-hero" >
                 <div class="container-fluid">
                     <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
                         <div class="col">
@@ -242,6 +266,7 @@ async function renderBlogs(active, option, cla) {
               `;   
             }
 
+            //hover service
             if (option === 5) {
               segment = `
               
@@ -280,10 +305,15 @@ async function renderBlogs(active, option, cla) {
 
     singleCount = 0;
 }
-function randomBlog(selection, cla, purpose){
+function randomBlog(selection, cla){
+  console.log("hit" + selection)
+  if (selection == "hide") {
+    return true;
+  } else {
+    let random = Math.floor(Math.random() * 40);
+    renderBlogs(random, selection, cla);
+  }
 
-  let random = Math.floor(Math.random() * 40);
-  renderBlogs(random, selection, cla);
 }
 
 

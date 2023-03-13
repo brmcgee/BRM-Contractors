@@ -41,13 +41,21 @@
 <!-- fetch data @json load  -->
 
 <script>
+  //randomBlogs(number, targetID)
+  // 'hide' no make
+  // 0 standard
+  // 1 overlay
+  // 2 dark
+  // 3 
+  // 4 masthead
+  // 5 hover service/
+
   document.addEventListener("DOMContentLoaded", () => {
-    randomBlog(4, '.blog-cards3'); //masthead
-    randomBlog(0, '.blog-cards'); //intro
-    randomBlog(5, '.blog-cards2'); //after legacy blog section
-
-
+    randomBlog('hide', '.blog-cards3');
+    randomBlog(0, '.blog-cards'); 
+    randomBlog(1, '.blog-cards2'); 
 });
+
 </script>
 
 
@@ -56,6 +64,10 @@
 
 <!-- banner  -->
 <div class="banner" id="top">
+
+<!-- masthead  -->
+<!-- data fetch  -->
+<div id="blogs" class="row blog-cards3"></div>
 
 
   <div class="container-fluid row">
@@ -131,12 +143,8 @@
   <!-- =========  NAVBAR/END =========  -->
 </div> 
 
-<!-- masthead  -->
-<!-- data fetch  -->
-<!-- masthead  -->
-<div id="blogs" class="row blog-cards3"></div>
-
-<!-- <section class="class brm-hero">
+<!-- brm-hero  -->
+<section class="class brm-hero">
   <div class="container-fluid">
       <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
           <div class="col">
@@ -161,7 +169,7 @@
           </div>
       </div>
   </div>
-</section> -->
+</section>
 
 <!-- total home repair block  -->
 <div class="block bg-red">

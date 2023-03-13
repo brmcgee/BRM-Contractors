@@ -1780,3 +1780,29 @@ h2#header_14.form-header {
 .hide {
     display:none;
 }
+
+
+
+
+
+
+
+
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+    filter: blur(5px)
+}
+
+.team-item .team-overlay {
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    opacity: 1;
+}
