@@ -87,7 +87,6 @@ async function renderBlogs(active, option, cla) {
     } 
 
     else {
-      let segment = "hello"
         blogs.forEach((blog) => {
           let index = Number(active);
           if (singleCount++ === index) {
@@ -102,7 +101,7 @@ async function renderBlogs(active, option, cla) {
               <div class="card-text">
                 <p class="card-meal-type">${blog.category}</p>
                 <h2 class="card-title">${blog.title}</h2>
-                <p class="card-body">${blog.body}</p>
+                <!-- <p class="card-body">${blog.body}</p> -->
                 <p class="card-body">${blog.author}<span class="ms-3"><small class="text-secondary">${blog.date}</small></span></p>
                 <div class="card-price"><img src="${blog.avatar}"></div>
     
@@ -168,6 +167,7 @@ async function renderBlogs(active, option, cla) {
             </div>        
     `; 
             }
+            
             //flip
             if (option === 3) {
               segment = `
@@ -205,6 +205,70 @@ async function renderBlogs(active, option, cla) {
               `;   
             }
 
+            // masthead 
+            if (option === 4) {
+              segment = `
+
+              <!-- masthead  -->
+              <section class="class brm-hero">
+                <div class="container-fluid">
+                    <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
+                        <div class="col">
+                          <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
+                               style="border-radius: 0;
+                                      background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
+                                                     url(${blog.img1}); 
+                                      background-size: cover;
+        
+                                      background-position: center;">
+                            <div class="container my-5 py-1">
+                              <div class="row p-1 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded  border-light  m-1">
+                                <div class="masthead-container col-11 text-center mx-auto d-block text-uppercase">
+                                  <h3 class="h4 text-russo">Quality craftsmanship</h3>
+                                  <h1 class="display-1 fw-bold">Excellent Service</h1>
+                                  <h2 class="h5 p-2 col-lg-8 text-center text-russo mx-auto d-block">Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
+                                  <a href="services.html" class="btn btn-outline btn-rounded mb-3">${blog.category}</a>
+                                </div>
+                              </div>
+              
+                            </div>
+              
+                        </div>
+                    </div>
+                </div>
+              </section>
+                    
+              
+              `;   
+            }
+
+            if (option === 5) {
+              segment = `
+              
+              <div class="col-sm-11 col-md-10 mx-auto d-block">
+              <div class="service-item position-relative">
+                  <div class="position-relative overflow-hidden rounded">
+                      <img class="img-fluid w-100" src="${blog.img1}" alt="" style="height:480px;">
+                      <div class="service-overlay">
+                          <div class="d-flex align-items-center justify-content-start">
+                            <div class="px-4 pb-4">
+                            <p class="text-light fs-4">${blog.title}</p>
+                              <p class="text-light fs-6">${blog.body}</p>
+                              <a class="btn btn-outline btn-rounded p-1 px-3" href="#products" onclick="createHeading()" >${blog.category}</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="position-absolute start-0 bottom-0 w-100 rounded-bottom text-center p-4" style="background: rgba(34, 36, 41, .9);">
+                      <h4 class="text-uppercase text-light">
+                        <span> <i class="fa fa-3x fa-home color-red fs-1 me-3"></i></span>${blog.category}</h4>
+                  </div>
+              </div>
+          </div>
+              
+              `;
+            }
+
             
             html = segment;
             container = document.querySelector(cla);
@@ -215,10 +279,9 @@ async function renderBlogs(active, option, cla) {
     }
 
     singleCount = 0;
-    totalQuery.innerHTML = renderLength().length;
-    totalQuery.style.fontSize = "16px";
 }
-function randomBlog(selection, cla){
+function randomBlog(selection, cla, purpose){
+
   let random = Math.floor(Math.random() * 40);
   renderBlogs(random, selection, cla);
 }
