@@ -13,6 +13,54 @@ let data = [
     },
     {
       purpose: "blog",
+      category: "Siding and Roofing",
+      title: "Porch roof remodel project with siding and wrap",
+      date: "April 02, 2019",
+      author: "Brian McGee",
+      avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      img1: "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg",
+      img2: "https://www.brmcontractors.net/assets/gallery/house-after.jpg",
+      project: "siding-roofing"
+    },
+    {
+      purpose: "blog",
+      category: "Siding and Roofing",
+      title: "Low maintenance vinyl siding, gutters fasica and soffit",
+      date: "April 03, 2019",
+      author: "Heather McGee",
+      avatar: "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
+      body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      img2: "https://www.brmcontractors.net/assets/gallery/house-before.jpg",
+      img1: "https://www.brmcontractors.net/assets/gallery/pollin-siding2.jpg",
+      project: "siding-roofing"
+    },
+    {
+      purpose: "blog",
+      category: "Siding and Roofing",
+      title: "Total transformation! Install vinyl siding, fascia, trim and gutters.",
+      date: "April 03, 2019",
+      author: "Heather McGee",
+      avatar: "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
+      body: "What an awesome trasnformation on this one. We've installed new windows and wrap already and have finished all the exterior siding. This is a 2-story company house and is tall. We can handle all your home repair needs.",
+      img1: "https://www.brmcontractors.net/assets/gallery/pollin-back.jpg",
+      img2: "https://www.brmcontractors.net/assets/gallery/pollin-side2.jpg",
+      project: "siding-roofing"
+    },
+    {
+      purpose: "blog",
+      category: "Custom Deck",
+      title: "Custom wood deck build for summer fun.",
+      date: "April 03, 2019",
+      author: "Brian McGee",
+      avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      body: "The weather is awesome and this deck is going to be beautiful! We are all framed in here and are going to be installing the deck boards next. This deck is over 450sqft and is being built with pressure treated lumber. Check back soon! ",
+      img1: "https://www.brmcontractors.net/assets/gallery/pollin-deck2.jpg",
+      img2: "https://www.brmcontractors.net/assets/gallery/pollin-deck1.jpg",
+      project: "custom-deck"
+    },
+    {
+      purpose: "blog",
       category: 'Drywall Repair',
       title: "Large drywall textured finish in basement",
       date: "March 02, 2022",
@@ -88,29 +136,6 @@ let data = [
       img2: "../assets/gallery/shingle-repair2.jpg",
       project: "handyman"
     },
-    {
-      purpose: "blog",
-      category: 'Siding and Roofing',
-      title: "Porch roof remodel project with siding and wrap",
-      date: "June 23, 2021",
-      author: "Brian McGee",
-      body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-      img1: "../assets/gallery/pollin-siding3.jpg",
-      img2: "../assets/gallery/house-after.jpg",
-      project: "siding-roofing"
-    },
-    {
-      purpose: "blog",
-      category: 'Siding and Roofing',
-      title: "Home renovation project exterior siding, soffit and fascia",
-      date: "June 20, 2021",
-      author: "Brian McGee",
-      body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-      img1: "../assets/gallery/house-before.jpg",
-      img2: "../assets/gallery/pollin-siding2.jpg",
-      project: "siding-roofing"
-    },
-
     {
       purpose: "blog",
       category: 'Wood Repair',

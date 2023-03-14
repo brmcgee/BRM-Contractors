@@ -325,7 +325,7 @@ async function renderBlogs(active, option, cla) {
     singleCount = 0;
 }
 function randomBlog(selection, cla){
-  console.log("hit" + selection)
+
   if (selection == "hide") {
     return true;
   } else {
