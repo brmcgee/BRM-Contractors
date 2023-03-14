@@ -26,7 +26,7 @@ async function renderBlogs(active, option, cla) {
             let segment = `
             <div class="card-res">
             <div class="card-image">
-              <img src="${blog.img1}">
+              <img src="${blog.img1}" class="image-fluid">
             </div>
             <div class="card-text">
               <p class="card-meal-type">${blog.category}</p>
@@ -178,21 +178,40 @@ async function renderBlogs(active, option, cla) {
 
               <!-- ========== IMG STATIC =============  -->
 
-              <div class="text-center container py-2">
-                <div class="card border-0 bg-dark text-center rounded p-4 p-lg-6" style="background:url(${blog.img1})  center / cover no-repeat;">
+              <div class="text-center container-fluid py-2">
+             <p class="h1 fw-bold text-russo bg-dark shadow-lg text-uppercase text-light px-5 py-1 rounded mb-2 w-100">${blog.category}</p> 
+                <div class="card border-0 bg- text-center rounded p-4 p-lg-6" 
+                     style="background:url()  center / cover no-repeat;">
+                  <div class="img-top m-0 p-0" style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;">
+                                              
+                    <img src="${blog.img1}"  alt="BRM" style="border-radius:5px; width:100%;height:325px;object-fit:cover;" class="m-1 img-fluid">
+                  </div>
+
                   <div class="row card-body mb-3 mb-lg-4">
                     <div class="col-xl-11 col-xxl-9 mx-auto text-white">
                       <div class="lc-block mb-4">
-                        <div editable="rich">
-                          <p class="fs-4">${blog.title}</p>
+                        <div>
+                          <p class="h3 fw-bold text-roboto text-dark">${blog.title}</p>
                         </div>
                       </div>
                       <div class="title">
-                        <h3 class="fw-bold display-5">Reliable and Gauranteed Service <br> The Incredible Handyman.</h3>
+                        <p class="fs-5 text-dark">${blog.body}</p>
                       </div>
                     </div>
                   </div>
-                  <div class="lc-block"><a class="btn btn-solid btn-rounded" href="contact-brm.html" role="button">${blog.category}</a></div>
+                  <div class="info-section bg-dark rounded p-2" style="display:flex; flex-direction: row; flex-wrap: wrap; justify-self: center;">
+                    
+                      <img src="${blog.avatar}" class="ms-5" alt="BRM" style="width:70px; height:70px; object-fit:cover; border-radius:50%;">
+              
+          
+                      <div class="author ms-5">
+                        <p class="fs-6 text-light m-0 p-0 mt-2">${blog.author}</p>
+                        <p class="small text-info m-0 p-0">${blog.date}</p>
+                      </div>
+                      <div class="link mx-auto d-block w-50">
+                        <a class="btn btn-solid btn-rounded mt-2" href="services.html" role="button">${blog.category}</a>
+                      </div> 
+                  </div>
                 </div>
               </div>
               <!-- ========== IMG STATIC =============  -->
