@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
 <title>BRM Contractors Inc - Home</title>
 
 <link rel="canonical" href="https://www.brmcontractors.net/" />
-<link rel="icon" href="https://www.brmcontractors.net/assets/logo/brm-phone.jpg"/>
+<link rel="icon" href="https://www.brmcontractors.net/favicon.ico"/>
 
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -40,20 +41,28 @@
 
 <!-- fetch data @json load  -->
 
+<style>
+  p{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+</style>
 <script>
   //randomBlogs(number, targetID)
   // 'hide' no make
   // 0 standard
   // 1 overlay
   // 2 dark
-  // 3 
+  // 3 post style double
   // 4 masthead
   // 5 hover service/
 
   document.addEventListener("DOMContentLoaded", () => {
-    randomBlog('hide', '.blog-cards3');
+    randomBlog(4, '.blog-cards3');
     randomBlog(0, '.blog-cards'); 
-    randomBlog(1, '.blog-cards2'); 
+    randomBlog(3, '.blog-cards2'); 
 });
 
 </script>
@@ -64,11 +73,6 @@
 
 <!-- banner  -->
 <div class="banner" id="top">
-
-<!-- masthead  -->
-<!-- data fetch  -->
-<div id="blogs" class="row blog-cards3"></div>
-
 
   <div class="container-fluid row">
     <div class="col-sm" id="bannerImg1">
@@ -144,7 +148,11 @@
 </div> 
 
 <!-- brm-hero  -->
-<section class="class brm-hero">
+
+<!-- masthead  -->
+<!-- data fetch  -->
+<div id="blogs" class="row blog-cards3"></div>
+<!-- <section class="class brm-hero">
   <div class="container-fluid">
       <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
           <div class="col">
@@ -169,7 +177,7 @@
           </div>
       </div>
   </div>
-</section>
+</section> -->
 
 <!-- total home repair block  -->
 <div class="block bg-red">
@@ -240,7 +248,7 @@
 
         <div class="col">
           <div class="lc-block card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" lc-helper="background" style="background:linear-gradient(180deg, rgba(19, 16, 34, 0.58) 0%, rgba(19, 16, 34, 0.78) 100%),
-                  url(https://www.brmcontractors.net/assets/gallery/construction.jpg)  center / cover no-repeat;">
+                  url(https://www.brmcontractors.net/assets/gallery/--bg-home-repair.jpg)  center / cover no-repeat;">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <div class="lc-block pt-5 mt-5 mb-4">
                 <div >
@@ -471,7 +479,7 @@
   text-transform: uppercase;
   border-radius: 50px;
   padding: 4px 6px 4px 6px;
-  width:200px;
+  width:260px;
 }
 .card-res .card-title{
   font-family: "Russo One", Arial, Helvetica, sans-serif;
