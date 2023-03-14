@@ -1,5 +1,4 @@
 [
-
     {
       "purpose": "blog",
       "category": "Roofing",
@@ -11,6 +10,54 @@
       "img1": "https://www.brmcontractors.net/assets/gallery/sseam1.jpg",
       "img2": "https://www.brmcontractors.net/assets/gallery/sseam2.jpg",
       "project": "repair"
+    },
+    {
+      "purpose": "blog",
+      "category": "Siding and Roofing",
+      "title": "Porch roof remodel project with siding and wrap",
+      "date": "April 05, 2019",
+      "author": "Brian McGee",
+      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      "body": "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/house-after.jpg",
+      "project": "siding-roofing"
+    },
+    {
+      "purpose": "blog",
+      "category": "Siding and Roofing",
+      "title": "Home renovation project exterior siding, soffit and fascia",
+      "date": "June 20, 2021",
+      "author": "Heather McGee",
+      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
+      "body": "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      "img2": "https://www.brmcontractors.net/assets/gallery/house-before.jpg",
+      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-siding2.jpg",
+      "project": "siding-roofing"
+    },
+    {
+      "purpose": "blog",
+      "category": "Siding and Roofing",
+      "title": "Total transformation! BRM delivers new exteriors on this one.",
+      "date": "April 03, 2019",
+      "author": "Heather McGee",
+      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
+      "body": "What an awesome trasnformation on this one. We've installed new windows and wrap already and have finished all the exterior siding. This is a 2-story company house and is tall. We can handle all your home repair needs.",
+      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-back.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/pollin-side2.jpg",
+      "project": "siding-roofing"
+    },
+        {
+      "purpose": "blog",
+      "category": "Siding and Roofing",
+      "title": "Porch roof remodel project with siding and wrap",
+      "date": "June 23, 2021",
+      "author": "Brian McGee",
+      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      "body": "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/house-after.jpg",
+      "project": "siding-roofing"
     },
     {
       "purpose": "blog",
@@ -53,8 +100,8 @@
       "category": "Handyman",
       "title": "Bathroom sink faucet install by the handyman",
       "date": "March 06, 2022",
-      "author": "Brian McGee",
-      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      "author": "Lanie Walker",
+      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/lanie.jpg",
       "body": "Well simply call for a bathroom faucet install for a client. We removed the old faucet and installed a new Delta Foundations in chrome finish. Clean up and on to the next. Another happy client!",
       "img2": "https://www.brmcontractors.net/assets/gallery/handy-sink1a.jpg",
       "img1": "https://www.brmcontractors.net/assets/gallery/handy-sink1b.jpg",
@@ -107,30 +154,6 @@
       "img2": "https://www.brmcontractors.net/assets/gallery/shingle-repair1.jpg",
       "img1": "https://www.brmcontractors.net/assets/gallery/shingle-repair2.jpg",
       "project": "handyman"
-    },
-    {
-      "purpose": "blog",
-      "category": "Siding and Roofing",
-      "title": "Porch roof remodel project with siding and wrap",
-      "date": "June 23, 2021",
-      "author": "Brian McGee",
-      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
-      "body": "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg",
-      "img2": "https://www.brmcontractors.net/assets/gallery/house-after.jpg",
-      "project": "siding-roofing"
-    },
-    {
-      "purpose": "blog",
-      "category": "Siding and Roofing",
-      "title": "Home renovation project exterior siding, soffit and fascia",
-      "date": "June 20, 2021",
-      "author": "Heather McGee",
-      "avatar": "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
-      "body": "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
-      "img2": "https://www.brmcontractors.net/assets/gallery/house-before.jpg",
-      "img1": "https://www.brmcontractors.net/assets/gallery/pollin-siding2.jpg",
-      "project": "siding-roofing"
     },
     {
       "purpose": "blog",
