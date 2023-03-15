@@ -55,11 +55,118 @@
   document.addEventListener("DOMContentLoaded", () => {
     randomBlog(4, '.blog-cards3');
     randomBlog(0, '.blog-cards'); 
-    randomBlog(3, '.blog-cards2'); 
+    randomBlog(5, '.blog-cards2'); 
 });
 
 </script>
-
+  <!-- full width card  -->      
+  <style>
+    /* standard   */
+  
+     
+  
+  #header{
+    margin:20px;
+  }
+  #header>h1{
+    text-align:center;
+    font-size:2rem;
+  }
+  #header>p{
+    text-align:center;
+    font-size:1.5rem;
+    font-style:italic;
+  }
+  .container{
+    width:100vw;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:40px 20px;
+  }
+  .card-res{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    margin-bottom:60px;
+    margin: 3px;
+  }
+  .card-res>div{
+    box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+  }
+  .card-res .card-image{
+    width:400px;
+    height:315px;
+  }
+  .card-res .card-image>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  .card-res .card-text{
+    margin:-60px auto;
+    margin-bottom:-50px;
+    min-height:450px;
+    width:300px;
+    background-color:#292929;
+    color:#fff;
+    padding:20px;
+    border-radius: 5px;
+  }
+  .card-res .card-meal-type{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    background-color: rgb(175, 175, 175);
+    /* background-color: transparent; */
+    border: 3px solid rgb(163,30,30);
+    color: rgb(134, 6, 6);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 4px 6px 4px 6px;
+    width:260px;
+  }
+  .card-res .card-title{
+    font-family: "Russo One", Arial, Helvetica, sans-serif;
+    font-size:1.2rem;
+    margin-bottom:3px;
+    margin-top:-2px;
+  }
+  .card-res .card-body{
+    font-size:1rem;
+  }
+  .card-res .card-price{
+    width: 60px;
+      height: 60px;
+    border-radius: 50%;
+    color:#fff;
+    margin-right:auto;
+    font-size:2rem;
+    position: relative;
+    top: -30px;
+  }
+  .card-res .card-price img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+  }
+  .card-res .card-avatar {
+    width:220px;
+    height:190px;
+    color:#fff;
+    margin:0 auto auto 5vw;
+    margin-left: auto;
+    position: relative;
+    top: -90px;
+    right: -60px;
+  }
+  .card-res .card-avatar img {
+    width:220px;
+    height:190px;
+  }
+  </style>
 
 </head>
 <body>
@@ -404,114 +511,7 @@
 
 <!-- <div class="block bg-black"></div> -->
 
-  <!-- full width card  -->      
- <style>
-  /* standard   */
 
-   
-
-#header{
-  margin:20px;
-}
-#header>h1{
-  text-align:center;
-  font-size:2rem;
-}
-#header>p{
-  text-align:center;
-  font-size:1.5rem;
-  font-style:italic;
-}
-.container{
-  width:100vw;
-  display:flex;
-  justify-content:space-around;
-  flex-wrap:wrap;
-  padding:40px 20px;
-}
-.card-res{
-  display:flex;
-  flex-direction:column;
-  width:400px;
-  margin-bottom:60px;
-  margin: 3px;
-}
-.card-res>div{
-  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
-}
-.card-res .card-image{
-  width:400px;
-  height:315px;
-}
-.card-res .card-image>img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
-}
-.card-res .card-text{
-  margin:-60px auto;
-  margin-bottom:-50px;
-  min-height:450px;
-  width:300px;
-  background-color:#292929;
-  color:#fff;
-  padding:20px;
-  border-radius: 5px;
-}
-.card-res .card-meal-type{
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 26px;
-  font-weight: 800;
-  background-color: rgb(175, 175, 175);
-  /* background-color: transparent; */
-  border: 3px solid rgb(163,30,30);
-  color: rgb(134, 6, 6);
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 50px;
-  padding: 4px 6px 4px 6px;
-  width:260px;
-}
-.card-res .card-title{
-  font-family: "Russo One", Arial, Helvetica, sans-serif;
-  font-size:1.2rem;
-  margin-bottom:3px;
-  margin-top:-2px;
-}
-.card-res .card-body{
-  font-size:1rem;
-}
-.card-res .card-price{
-  width: 60px;
-    height: 60px;
-  border-radius: 50%;
-  color:#fff;
-  margin-right:auto;
-  font-size:2rem;
-  position: relative;
-  top: -30px;
-}
-.card-res .card-price img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-}
-.card-res .card-avatar {
-  width:220px;
-  height:190px;
-  color:#fff;
-  margin:0 auto auto 5vw;
-  margin-left: auto;
-  position: relative;
-  top: -90px;
-  right: -60px;
-}
-.card-res .card-avatar img {
-  width:220px;
-  height:190px;
-}
-</style>
 
   <div class="container-fluid col-xxl-10 px-1 py-5 main bg-light shadow-lg rounded mx-auto d-block mt-3">
     <div class="row flex-lg-row align-items-center g-2">

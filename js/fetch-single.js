@@ -258,7 +258,7 @@ async function renderBlogs(active, option, cla) {
                     <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
                         <div class="col">
                           <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
-                               style="border-radius: 0;   min-height:30vw; height:auto;
+                               style="border-radius: 0; height:auto;
                                       background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
                                                      url(${blog.img1}); 
                                       background-size: cover;
@@ -299,6 +299,7 @@ async function renderBlogs(active, option, cla) {
                             <p class="text-light fs-4">${blog.title}</p>
                               <p class="text-light fs-6">${blog.body}</p>
                               <a class="btn btn-outline btn-rounded p-1 px-3" href="#products" onclick="createHeading()" >${blog.category}</a>
+                              <img src="${blog.img2}" class="float-end me-3 mb-5" style="width:160px;height:160px;border-radius:50%;"
                             </div>
                           </div>
                       </div>
@@ -324,6 +325,8 @@ async function renderBlogs(active, option, cla) {
 
     singleCount = 0;
 }
+
+
 function randomBlog(selection, cla){
 
   if (selection == "hide") {
