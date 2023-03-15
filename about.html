@@ -190,7 +190,35 @@
 </div>
 <!-- =========== ABOUT END/ ============= -->
 <div class="block"></div>
-<div class="col-md-8 mx-auto d-block"><div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-l" style="background: linear-gradient(rgba(19, 16, 34, 0.58) 0%, rgba(19, 16, 34, 0.78) 100%) 0% 0% / cover, url(&quot;../assets/gallery/--bg-bath.jpg&quot;) center center no-repeat;"><div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"><div class="lc-block pt-5 mt-5 mb-4"><h2 class="display-6 lh-1 fw-bold">Spring is almost here, time for home projects</h2><p>The beautiful weather is coming and what more to enjoy it on the beautiful new deck by BRM. Need a new bathroom, we can help. Bathroom remodel and general home repair. Call or connect today for a free estimate!</p></div><ul class="d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white" href="" role="button"></a><img src="assets/logo/brm-red.ico" class="float-start ms-5" style="height: 50px;"></ul></div></div></div>
+
+<script>
+  //randomBlogs(number, targetID)
+  // 'hide' no make
+  // 0 standard
+  // 1 overlay
+  // 2 dark
+  // 3 post style double
+  // 4 masthead
+  // 5 hover service/
+
+  document.addEventListener("DOMContentLoaded", () => {
+    randomBlog(3, '.blog-cards3');
+    randomBlog(2, '.blog-cards'); 
+    // randomBlog(5, '.blog-cards2');
+});
+
+</script>
+<div class="mx-auto d-block " style="width: 90vw;margin: auto;">
+<div class="row">
+  <div id="blogs" class="col-sm-12 col-lg-7 blog-cards3"></div>
+  <div id="blogs" class="mt-5 col-sm-12 col-lg-3 blog-cards"></div>
+  <!-- <div id="blogs" class="col-sm-12 col-md-4 blog-cards2"></div> -->
+</div>
+</div>
+<!-- <div class="col-md-8 mx-auto d-block"><div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-l" style="background: linear-gradient(rgba(19, 16, 34, 0.58) 0%, rgba(19, 16, 34, 0.78) 100%) 0% 0% / cover, url(&quot;../assets/gallery/--bg-bath.jpg&quot;) center center no-repeat;"><div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"><div class="lc-block pt-5 mt-5 mb-4"><h2 class="display-6 lh-1 fw-bold">Spring is almost here, time for home projects</h2><p>The beautiful weather is coming and what more to enjoy it on the beautiful new deck by BRM. Need a new bathroom, we can help. Bathroom remodel and general home repair. Call or connect today for a free estimate!</p></div><ul class="d-flex list-unstyled mt-auto ms-auto"><a class="btn btn-link btn-sm text-white" href="" role="button"></a><img src="assets/logo/brm-red.ico" class="float-start ms-5" style="height: 50px;"></ul></div></div></div> -->
+
+
+
 <div class="block"></div>
 
 
@@ -411,6 +439,7 @@
 <script src="js/main.js"></script>
 <script src="js/blog-app.js"></script>
 <script src="js/services1.js"></script>
+<script src="js/fetch-single.js"></script>
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

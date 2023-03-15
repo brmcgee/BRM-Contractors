@@ -94,7 +94,7 @@ async function renderBlogs(active, option, cla) {
             // standard 
             if (option === 0) {
               segment = `
-              <div class="card-res">
+              <div class="card-res mx-auto d-grid">
               <div class="card-image">
                 <img src="${blog.img1}">
               </div>
@@ -117,7 +117,7 @@ async function renderBlogs(active, option, cla) {
               segment = `
           
               <div class="mx-auto d-block mt-2" style="min-width:90%;">
-              <div class="p-1 card-overlay card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-l" 
+              <div class="p-1 card-overlay card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" 
               style="background: linear-gradient(rgba(19, 16, 34, 0.48) 0%, rgba(19, 16, 34, 0.88) 100%) 0% 0% / cover, 
               url(${blog.img1}) center center no-repeat;background-size: cover;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -258,7 +258,7 @@ async function renderBlogs(active, option, cla) {
                     <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
                         <div class="col">
                           <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
-                               style="border-radius: 0;
+                               style="border-radius: 0;   min-height:30vw; height:auto;
                                       background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
                                                      url(${blog.img1}); 
                                       background-size: cover;

@@ -38,8 +38,8 @@ function createImages(imgPath) {
 function getArray(obj){
 
     for (let i=0; i < obj.length; i++){
-        let image1 = "../" + obj[i].img1;
-        let image2 = "../" + obj[i].img2;
+        let image1 = obj[i].img1;
+        let image2 = obj[i].img2;
         let title = obj[i].title;
         let category = obj[i].category;
         images.push([image2, title, category]);
