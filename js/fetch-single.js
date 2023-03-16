@@ -251,7 +251,7 @@ async function renderBlogs(active, option, cla) {
             // masthead 
             if (option === 4) {
               let heroImage = blog.img1;
-              (blog.isHero) ? heroImage = blog.img1 : heroImage = `assets/logo/bg-mast.jpg`;
+              (blog.isHero) ? heroImage = blog.img1 : heroImage = `https://www.brmcontractors.net/assets/gallery/custom-deck4.jpg`;
               console.log(blog.isHero + "   " + heroImage);
               segment = `
 
