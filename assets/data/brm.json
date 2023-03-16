@@ -11,7 +11,7 @@
       "img2": "https://www.brmcontractors.net/assets/gallery/sseam2.jpg",
       "project": "repair",
       "id": 0,
-      "isHero" : false
+      "isHero" : true
     },
     {
       "purpose": "blog",
@@ -81,7 +81,7 @@
       "img1": "https://www.brmcontractors.net/assets/gallery/drywall-repair3a.jpg",
       "project": "drywall",
       "id": 5,
-      "isHero" : false
+      "isHero" : true
     },
     {
       "purpose": "blog",
@@ -193,7 +193,7 @@
       "img2": "https://www.brmcontractors.net/assets/gallery/paint2.jpg",
       "project": "painting",
       "id": 13,
-      "isHero" : false
+      "isHero" : true
     },
     {
       "purpose": "blog",
@@ -203,8 +203,8 @@
       "author": "Brian McGee",
       "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
       "body": "There was a pretty bad leak hear at the dead valley and wall area, we were able to help. This repair is 3-stories up so work of the ladder was necessary. We replaced the rotted wood, new shingles and underlayment. Replaced some Hardie Siding and painted to match. Problem Solved!",
-      "img1": "https://www.brmcontractors.net/assets/gallery/shingle-repair3a.jpg",
-      "img2": "https://www.brmcontractors.net/assets/gallery/shingle-repair3b.jpg",
+      "img1": "https://www.brmcontractors.net/assets/gallery/shingle-repair3b.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/shingle-repair3a.jpg",
       "project": "repair",
       "id": 14,
       "isHero" : true
@@ -333,7 +333,7 @@
       "img1": "https://www.brmcontractors.net/assets/gallery/kitchen-1b.jpg",
       "project": "kitchen-remodel-bm",
       "id": 23,
-      "isHero" : true
+      "isHero" : false
     },
     {
       "purpose": "blog",
@@ -385,8 +385,8 @@
       "author": "Brian McGee",
       "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
       "body": "This project was great! We're completing it winter time. We are closing up this wall area after getting the electrical leads and boxes ran. We installed new exhaust vent, recessed lighting and a vanity light.",
-      "img2": "https://www.brmcontractors.net/assets/gallery/bathroom3.jpg",
       "img1": "https://www.brmcontractors.net/assets/gallery/bathroom4.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/bathroom3.jpg",
       "project": "bathroom",
       "id": 27,
       "isHero" : false
@@ -399,11 +399,11 @@
       "author": "Brian McGee",
       "avatar": "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
       "body": "Awesome new bathroom during and after. We're completing it winter time. We are closing up this wall area and all prepped for drywall finishing. This is going to be a great space.",
-      "img2": "https://www.brmcontractors.net/assets/gallery/bath-1b.jpg",
-      "img1": "https://www.brmcontractors.net/assets/gallery/bath-1a.jpg",
+      "img1": "https://www.brmcontractors.net/assets/gallery/bath-1b.jpg",
+      "img2": "https://www.brmcontractors.net/assets/gallery/bath-1a.jpg",
       "project": "bathroom",
       "id": 28,
-      "isHero" : false
+      "isHero" : true
     },
     {
       "purpose": "blog",
@@ -445,7 +445,7 @@
       "img2": "https://www.brmcontractors.net/assets/gallery/kitchen-drywall1.jpg",
       "project": "kitchen-remodel-ah",
       "id": 31,
-      "isHero" : true
+      "isHero" : false
     },
     {
       "purpose": "blog",
@@ -473,7 +473,7 @@
       "img2": "https://www.brmcontractors.net/assets/gallery/kitchen-cabinet2.jpg",
       "project": "kitchen-remodel-ah",
       "id": 33,
-      "isHero" : false
+      "isHero" : true
     },
     {
       "purpose": "blog",
