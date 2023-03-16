@@ -81,7 +81,7 @@
       "img1": "https://www.brmcontractors.net/assets/gallery/drywall-repair3a.jpg",
       "project": "drywall",
       "id": 5,
-      "isHero" : true
+      "isHero" : false
     },
     {
       "purpose": "blog",

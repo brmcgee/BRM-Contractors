@@ -250,6 +250,9 @@ async function renderBlogs(active, option, cla) {
 
             // masthead 
             if (option === 4) {
+              let heroImage = blog.img1;
+              (blog.isHero) ? heroImage = blog.img1 : heroImage = `https://www.brmcontractors.net/assets/gallery/bg-masthead.jpg`;
+              console.log(blog.isHero + "   " + heroImage);
               segment = `
 
               <!-- masthead  -->
@@ -260,7 +263,7 @@ async function renderBlogs(active, option, cla) {
                           <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
                                style="border-radius: 0; height:auto;
                                       background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
-                                                     url(${blog.img1}); 
+                                                     url(${heroImage}); 
                                       background-size: cover;
         
                                       background-position: center;">
