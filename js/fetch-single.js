@@ -215,37 +215,7 @@ async function renderBlogs(active, option, cla) {
                 </div>
               </div>
               <!-- ========== IMG STATIC =============  -->
-
-      <!--     <div class="container-fluid col-md-12 col-xl-7 mx-auto d-block">
-              <section class="mx-auto" style="max-width: 34rem;">
-                  
-                <div class="card-brm">
-                
-                  <div class="brm-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="${blog.img1}" class="img-fluid" />   
-                  </div>
-
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold"><a>${blog.category}</a></h5>
-                    <p class="mb-2">${blog.title}</p>
-                    
-                    <p class="card-text">${blog.body}</p>
-                    <hr class="my-4" />
-
-                    <p class="lead"><strong>${blog.author}</strong></p>
-                    <ul class="list-unstyled list-inline d-flex justify-content-between">
-                      <li class="list-inline-item me-0">
-                      <div class="chip me-0">${blog.date}</div>
-                        <div class="chip me-0">${blog.img2}</div>
-                      </li>
-                    </ul>
-                    <a href="#!" class="btn btn-link link-secondary p-md-1 mb-0">Button</a>
-                  </div>
-
-                </div>
-                
-              </section>
-            </div>  -->            `;   
+           `;   
             }
 
             // masthead 
@@ -258,34 +228,29 @@ async function renderBlogs(active, option, cla) {
               <!-- masthead  -->
               <section class="class brm-hero" >
                 <div class="container-fluid">
-                    <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
-                        <div class="col">
-                          <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
-                               style="border-radius: 0; height:auto;
-                                      background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
-                                                     url(${heroImage}); 
-                                      background-size: cover;
-        
-                                      background-position: center;">
-                            <div class="container my-5 py-1">
-                              <div class="row p-1 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded  border-light  m-1">
-                                <div class="masthead-container col-11 text-center mx-auto d-block text-uppercase">
-                                  <h3 class="h4 text-russo">Quality craftsmanship</h3>
-                                  <h1 class="display-1 fw-bold">Excellent Service</h1>
-                                  <h2 class="h5 p-2 col-lg-8 text-center text-russo mx-auto d-block">Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
-                                  <a href="services.html" class="btn btn-outline btn-rounded mb-3">${blog.category}</a>
-                                </div>
-                              </div>
-              
-                            </div>
-              
+                  <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
+                          style="border-radius: 0; min-height: 30vw;height:auto;
+                                background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
+                                      url(${heroImage}); 
+                                background-size: cover;
+                                background-position: center;">
+                        <div class="container my-5 py-1">
+                        <div class="row p-1 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded  border-light  m-1">
+                        <div class="masthead-container col-11 text-center mx-auto d-block text-uppercase">
+                          <h3 class="h4 text-russo px-5" style="font-size:calc(13px + 1.7vw);">Quality craftsmanship</h3>
+                          <h1 class="display-1 fw-bold">Excellent Service</h1>
+                          <h2 class="h5 p-2 col-lg-8 text-center text-russo mx-auto d-block">Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
+                          <a href="services.html" class="btn btn-outline btn-rounded mb-3">${blog.category}</a>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-              </section>
-                    
-              
-              `;   
+              </div>
+            </section>
+                             `;   
             }
 
             //hover service
