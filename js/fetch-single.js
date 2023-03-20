@@ -231,7 +231,7 @@ async function renderBlogs(active, option, cla) {
                   <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
                     <div class="col">
                       <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
-                          style="border-radius: 0; min-height: 30vw;height:auto;
+                          style="border-radius: 0; min-height: 25vw;height:auto;
                                 background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
                                       url(${heroImage}); 
                                 background-size: cover;
