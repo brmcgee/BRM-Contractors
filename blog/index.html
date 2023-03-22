@@ -49,12 +49,9 @@
 <body>
 
 <!-- ============ BANNER ============= -->
-<div class="banner bg-icon-accent p-0 m-0" id="top" >
-  <div class="container-tar"></div>
-  <div class="container-bm"></div>
-
+<div class="banner bg-icon-accent p-0 m-0" id="top" style="display:none;">
   <!-- ========== #MAIN ============== -->
-  <div id="main" style="display: none;">
+  <div id="main">
     <div class="brand">
       <h1 class="text-russo m-0 p-0 fs-4">
           <span class="m-0" style="font-size:12px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined symbol-small">edit_square</span></i></span>
@@ -114,34 +111,34 @@
     <span class="float-end px-5" style="font-size:30px;cursor:pointer" onclick="openMiddle()"><span class="material-symbols-outlined"><i class="fa-solid fa-circle-user h2 color-red"></i></span></span>
 
     <div class="col link">
-      <a href="#" class="" onclick="getIt(), selectProject('bathroom-remodel-rm')"> @ Recent Project</a>
+      <a href="#" class="" onclick="selectProject('bathroom-remodel-rm')"> @ Recent Project</a>
     </div>
     <div class="col link">
-      <a href="#" class="" onclick="getIt(), selectProject('bathroom')"> Bathrooms</a>
+      <a href="#" class="" onclick="selectProject('bathroom')"> Bathrooms</a>
     </div>
     <div class="col link">
-        <a href="#" class="" onclick="getIt(), selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
+        <a href="#" class="" onclick="selectProject('kitchen-remodel-ah')"> Kitchen Remodel</a>
     </div>
     <div class="col link">
-        <a href="#" onclick="getIt(), selectProject('custom-deck')"> Deck Build </a>
+        <a href="#" onclick="selectProject('custom-deck')"> Deck Build </a>
     </div>
     <div class="col link">
-        <a href="#" onclick="getIt(), selectProject('ad')"> Social Media</a>
+        <a href="#" onclick="selectProject('ad')"> Social Media</a>
     </div>
     <div class="col link">
-      <a href="#" onclick="getIt(), selectProject('siding-roofing')"> Roofing and Siding</a>
+      <a href="#" onclick="selectProject('siding-roofing')"> Roofing and Siding</a>
     </div>
     <div class="col link">
-      <a href="#" onclick="getIt(), selectProject('flooring')"> Flooring</a>
+      <a href="#" onclick="selectProject('flooring')"> Flooring</a>
     </div>
     <div class="col link">
-      <a href="#" onclick="getIt(), selectProject('painting')"> Painting</a>
+      <a href="#" onclick="selectProject('painting')"> Painting</a>
     </div>
     <div class="col link">
-      <a href="#" onclick="getIt(), selectProject('drywall')"> Drywall</a>
+      <a href="#" onclick="selectProject('drywall')"> Drywall</a>
     </div>
     <div class="col link">
-      <a href="#" onclick="getIt(), selectProject('repair')"> Handyman Repairs</a>
+      <a href="#" onclick="selectProject('repair')"> Handyman Repairs</a>
     </div>
 
     <div class="col link">
@@ -171,7 +168,7 @@
 </div>
 
 
-<div class="wrapper mx-auto d-block container-fluid bg-blog pb-2" id="brmBlogs">
+<div class="wrapper mx-auto d-block container-fluid bg-blog" id="brmBlogs">
    
   <!-- search query results -->
   <div id="wideList" class="wide-blogs ps-1">
@@ -179,12 +176,11 @@
   </div>
 
 
- <!-- PROJECT LOAD  -->
+  <!-- PROJECT LOAD  -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // createCard(welcome[0]);
-      blogViewer(welcome, 0);
-        // selectProject('bathroom-remodel-rm');
+      createCard(welcome[0]);
+        selectProject('bathroom-remodel-rm');
     });
   </script>
 
@@ -207,9 +203,6 @@
   <div class="form-group">
     <div class="container-fluid row g-1 p-1">
 
-        <!-- button fetch json file and store to array after response  -->
-<button id="loadIt" class="btn btn-danger btn-solid m-1 mx-auto d-block">Load Blogs</button>
-  
       <div class="col-md-6">
         <label class="form-label text-light" for="title"> Title</label>
         <input class="form-control form-control-sm" type="text" name="title" id="fTitle" placeholder="title">
@@ -284,6 +277,7 @@
   <div class="col">
     <a href="#" onclick="selectProject('bathroom-remodel-rm'), closeNav()"><span><i class="fa-solid fa-location-crosshairs pe-2"></i></span> Bathroom Remodel</a>
   </div>
+
   <input class="form-control mx-auto d-block pt-2 bg-accent-hover" type="text" name="search" id="fSearch" placeholder="Search" style="width:90%">
 </div>
 <!-- ============ MIDDLENAV END/ ========== -->
@@ -291,7 +285,7 @@
   
 <!-- local java script  -->
 <script src="js/main.js"></script>
-<!-- <script src="../js/brmData.js"></script> -->
+<script src="../js/brmData.js"></script>
 <script src="js/card-app.js"></script>
 <script src="../js/b-card.js"></script>
 
