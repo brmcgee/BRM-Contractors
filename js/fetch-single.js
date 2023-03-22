@@ -225,7 +225,6 @@ async function renderBlogs(active, option, cla) {
               console.log(blog.isHero + "   " + heroImage);
               segment = `
 
-              <!-- masthead  -->
               <section class="class brm-hero" >
                 <div class="container-fluid">
                   <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
