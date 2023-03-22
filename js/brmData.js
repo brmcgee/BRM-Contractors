@@ -1,4 +1,5 @@
 let data = 
+
 [
 
   {
@@ -1186,6 +1187,60 @@ let data =
   "img2" : "https://www.brmcontractors.net/assets/gallery/door-int1.jpg ",
   
   "project" : "door "
+  },
+  
+  
+  {
+  "id" : 45,
+  
+  "isHero" : false,
+  
+  "purpose" : "blog",
+  
+  "category" : "Soffit and Fascia",
+  
+  "date" : "March 22, 2023",
+  
+  "author" : "Office @ BRM",
+  
+  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  "title" : "Soffit and fascia repair with new gutter install",
+  
+  "body" : "Simply call for damaged eave edge on this house. Gutter ripped the soffit and fascia and wood sub fascia off. We were able to make repairs. Installed new wood fascia followed by aluminum wrapped fascia and soffit. Hung the new gutter and happy customer. ",
+  
+  "img1" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1a.jpg",
+  
+  "img2" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1b.jpg",
+  
+  "project" : "handyman"
+  },
+  
+  
+  {
+  "id" : 44,
+  
+  "isHero" : false,
+  
+  "purpose" : "blog",
+  
+  "category" : "Floor",
+  
+  "date" : "March 20, 2023",
+  
+  "author" : "Brian McGee",
+  
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  
+  "title" : "New bathroom floor install with linoleum tiles",
+  
+  "body" : "What a beautiful floor here. Homeowner gave us a call and had the flooring. We arrived and were able to help out. We removed and prepped the old floor. Install new linoleum, trimmed out and set the toilet back. All wrapped up and a happy client!",
+  
+  "img1" : "https://www.brmcontractors.net/assets/gallery/floor-new1a.jpg",
+  
+  "img2" : "https://www.brmcontractors.net/assets/gallery/floor-new1b.jpg",
+  
+  "project" : "flooring"
   }
   
   
