@@ -1,56 +1,55 @@
 let data = 
-
 [
 
   {
-  "id" : 0,
+  "id" : 0 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
-  "category" : "Roofing",
+  "category" : "Roofing ",
   
-  "date" : "May 03, 2020",
+  "date" : "May 03, 2020 ",
   
   "author" : "Office @ BRM",
   
-  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-ico-black.png",
+  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-ico-black.png ",
   
-  "title" : "New galvalume standing seam metal roof.",
+  "title" : "New galvalume standing seam metal roof. ",
   
   "body" : " We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1 1/2 16 panel. I just love the look and the detail here at the posts. What a beautiful pool cabana. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/sseam1.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/sseam1.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/sseam2.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/sseam2.jpg ",
   
-  "project" : "repair"
+  "project" : "repair "
   },
   
   
   {
-  "id" : 1,
+  "id" : 1 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Siding and Roofing",
   
   "date" : "April 02, 2019",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Porch roof remodel project with siding and wrap",
+  "title" : "Porch roof remodel project with siding and wrap ",
   
-  "body" : "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.",
+  "body" : "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/house-after.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/house-after.jpg ",
   
   "project" : "siding-roofing"
   },
@@ -61,7 +60,7 @@ let data =
   
   "isHero" : true ,
   
-  "purpose" : "blog ",
+  "purpose" : "blog",
   
   "category" : "Siding and Roofing",
   
@@ -79,14 +78,14 @@ let data =
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/house-before.jpg ",
   
-  "project" : "siding-roofing "
+  "project" : "siding-roofing"
   },
   
   
   {
-  "id" : 3,
+  "id" : 3 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
   "purpose" : "blog",
   
@@ -102,36 +101,36 @@ let data =
   
   "body" : " What an awesome transformation on this one. We have installed new windows and wrap already and have finished all the exterior siding. This is a 2-story company house and is tall. We can handle all your home repair needs. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-back.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-back.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/pollin-side2.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/pollin-side2.jpg ",
   
   "project" : "siding-roofing"
   },
   
   
   {
-  "id" : 4,
+  "id" : 4 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Deck Build",
   
   "date" : "April 03, 2019",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Custom wood deck build for summer fun.",
+  "title" : "Custom wood deck build for summer fun. ",
   
   "body" : " The weather is awesome and this deck is going to be beautiful! We are all finished here with the deck build and down to the fun part of staining this deck. This deck is over 450sqft and is built with pressure treated lumber. Check back soon! ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-deck2.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/pollin-deck2.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/pollin-deck1.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/pollin-deck1.jpg ",
   
   "project" : "custom-deck"
   },
@@ -516,27 +515,27 @@ let data =
   
   
   {
-  "id" : 19,
+  "id" : 19 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
-  "category" : "Drywall Framing",
+  "category" : "Framing",
   
   "date" : "July 23, 2022",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
   "title" : "Hanging drywall board ",
   
-  "body" : "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games.",
+  "body" : "We had good time here with general framing and windows as well as the electrical re-wire. We installed the drywall which we will finish later. Also added blocking for the TV. Someone will enjoy the games. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/drywall-hang1.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/drywall-hang1.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/drywall-hang2.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/drywall-hang2.jpg ",
   
   "project" : "drywall"
   },
@@ -576,7 +575,7 @@ let data =
   
   "purpose" : "blog ",
   
-  "category" : "Flooring ",
+  "category" : "Flooring",
   
   "date" : "Aug 03, 2022 ",
   
@@ -584,7 +583,7 @@ let data =
   
   "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Sub-floor replacement and LVT vinyl flooring install",
+  "title" : "Sub-floor replacement and LVT vinyl flooring install ",
   
   "body" : "This bathroom had a leaky toilet which rotted the subfloor and toilet flange. We removed all the old subfloor minus the tub area and flange then installed new. Next we followed with a low maintenance LVT vinyl floor, new toilet vanity and mirror. Mini makeover for this bathroom here! Job well done! ",
   
@@ -592,7 +591,7 @@ let data =
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/flooring1b.jpg ",
   
-  "project" : "flooring "
+  "project" : "flooring"
   },
   
   
@@ -624,27 +623,27 @@ let data =
   
   
   {
-  "id" : 23,
+  "id" : 23 ,
   
-  "isHero" : false,
+  "isHero" : false ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Kitchen Remodel",
   
-  "date" : "Aug 24, 2022",
+  "date" : "Aug 24, 2022 ",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Kitchen cabinet and flooring install",
+  "title" : "Kitchen cabinet and flooring install ",
   
-  "body" : "We are working on a kitchen today. We removed a section of flooring and installed a low maintenance LVT floor. Then we set the cabinets back in place on this one. We will return as soon as the counters are ready for the install. Job well done!",
+  "body" : "We are working on a kitchen today. We removed a section of flooring and installed a low maintenance LVT floor. Then we set the cabinets back in place on this one. We will return as soon as the counters are ready for the install. Job well done! ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/kitchen-1b.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/kitchen-1b.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/kitchen-1a.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/kitchen-1a.jpg ",
   
   "project" : "kitchen-remodel-bm"
   },
@@ -678,52 +677,52 @@ let data =
   
   
   {
-  "id" : 25,
+  "id" : 25 ,
   
-  "isHero" : false,
+  "isHero" : false ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Flooring",
   
-  "date" : "Oct 26, 2022",
+  "date" : "Oct 26, 2022 ",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "LVT Floor installation",
+  "title" : "LVT Floor installation ",
   
-  "body" : "Simply LVT flooring install here. We installaed a shower set and subfloor a couple months back. Now we return and finished the floors. Homeowner will be installing the trim.",
+  "body" : "Simply LVT flooring install here. We installaed a shower set and subfloor a couple months back. Now we return and finished the floors. Homeowner will be installing the trim. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/flooring1.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/flooring1.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/flooring2.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/flooring2.jpg ",
   
   "project" : "flooring"
   },
   
   
   {
-  "id" : 26,
+  "id" : 26 ,
   
-  "isHero" : false,
+  "isHero" : false ,
   
   "purpose" : "blog",
   
   "category" : "Siding and Roofing",
   
-  "date" : "Nov 12, 2022",
+  "date" : "Nov 12, 2022 ",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Total transformation! BRM delivers new exteriors on this one.",
+  "title" : "Total transformation! BRM delivers new exteriors on this one. ",
   
-  "body" : "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful.",
+  "body" : "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/siding-roof-after.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/siding-roof-after.jpg ",
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/siding-roof-before.jpg",
   
@@ -900,11 +899,11 @@ let data =
   
   "purpose" : "blog ",
   
-  "category" : "Kitchen Remodel ",
+  "category" : "Kitchen Remodel",
   
   "date" : "Feb 08, 2023 ",
   
-  "author" : "Brian McGee ",
+  "author" : "Brian McGee",
   
   "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
@@ -916,7 +915,7 @@ let data =
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/kitchen-cabinet2.jpg ",
   
-  "project" : "kitchen-remodel-ah "
+  "project" : "kitchen-remodel-ah"
   },
   
   
@@ -948,27 +947,27 @@ let data =
   
   
   {
-  "id" : 35,
+  "id" : 35 ,
   
-  "isHero" : false,
+  "isHero" : false ,
   
   "purpose" : "blog",
   
   "category" : "Bathroom Remodel",
   
-  "date" : "Feb 15, 2023",
+  "date" : "Feb 15, 2023 ",
   
   "author" : "Brian McGee",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Bathroom all cleaned and gutted ready for install",
+  "title" : "Bathroom all cleaned and gutted ready for install ",
   
-  "body" : "Well today was great we got this bathroom all clean out. Vaccumed all the rocks and coal dust out and picked up all the material for the installation. We are all set and ready for a fresh start in the morning.",
+  "body" : "Well today was great we got this bathroom all clean out. Vaccumed all the rocks and coal dust out and picked up all the material for the installation. We are all set and ready for a fresh start in the morning. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/bathroom-demo4.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/bathroom-demo4.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/bathroom-demo3.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/bathroom-demo3.jpg ",
   
   "project" : "bathroom-remodel-rm"
   },
@@ -981,11 +980,11 @@ let data =
   
   "purpose" : "blog ",
   
-  "category" : "Bathroom Remodel ",
+  "category" : "Bathroom Remodel",
   
   "date" : "Feb 17, 2023 ",
   
-  "author" : "Brian McGee ",
+  "author" : "Brian McGee",
   
   "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
@@ -1168,13 +1167,13 @@ let data =
   
   "isHero" : false ,
   
-  "purpose" : "blog ",
+  "purpose" : "blog",
   
-  "category" : "Interior Door ",
+  "category" : "Interior Door",
   
   "date" : "March 17, 2023",
   
-  "author" : "Office @ BRM ",
+  "author" : "Office @ BRM",
   
   "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico ",
   
@@ -1186,61 +1185,61 @@ let data =
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/door-int1.jpg ",
   
-  "project" : "door "
+  "project" : "door"
   },
   
   
   {
-  "id" : 45,
+  "id" : 44 ,
   
-  "isHero" : false,
-  
-  "purpose" : "blog",
-  
-  "category" : "Soffit and Fascia",
-  
-  "date" : "March 22, 2023",
-  
-  "author" : "Office @ BRM",
-  
-  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
-  
-  "title" : "Soffit and fascia repair with new gutter install",
-  
-  "body" : "Simply call for damaged eave edge on this house. Gutter ripped the soffit and fascia and wood sub fascia off. We were able to make repairs. Installed new wood fascia followed by aluminum wrapped fascia and soffit. Hung the new gutter and happy customer. ",
-  
-  "img1" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1a.jpg",
-  
-  "img2" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1b.jpg",
-  
-  "project" : "handyman"
-  },
-  
-  
-  {
-  "id" : 44,
-  
-  "isHero" : false,
+  "isHero" : false ,
   
   "purpose" : "blog",
   
-  "category" : "Floor",
+  "category" : "Flooring",
   
   "date" : "March 20, 2023",
   
   "author" : "Brian McGee",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "New bathroom floor install with linoleum tiles",
+  "title" : "New bathroom floor install with linoleum tiles ",
   
-  "body" : "What a beautiful floor here. Homeowner gave us a call and had the flooring. We arrived and were able to help out. We removed and prepped the old floor. Install new linoleum, trimmed out and set the toilet back. All wrapped up and a happy client!",
+  "body" : "What a beautiful floor here. Homeowner gave us a call and had the flooring. We arrived and were able to help out. We removed and prepped the old floor. Install new linoleum, trimmed out and set the toilet back. All wrapped up and a happy client! ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/floor-new1a.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/floor-new1a.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/floor-new1b.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/floor-new1b.jpg ",
   
   "project" : "flooring"
+  },
+  
+  
+  {
+  "id" : 45 ,
+  
+  "isHero" : false ,
+  
+  "purpose" : "blog ",
+  
+  "category" : "Soffit and Fascia ",
+  
+  "date" : "March 22, 2023",
+  
+  "author" : "Office @ BRM",
+  
+  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico ",
+  
+  "title" : "Soffit and fascia repair with new gutter install ",
+  
+  "body" : "Simply call for damaged eave edge on this house. Gutter ripped the soffit and fascia and wood sub fascia off. We were able to make repairs. Installed new wood fascia followed by aluminum wrapped fascia and soffit. Hung the new gutter and happy customer. ",
+  
+  "img1" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1a.jpg ",
+  
+  "img2" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1b.jpg ",
+  
+  "project" : "repair"
   }
   
   
