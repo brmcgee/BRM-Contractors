@@ -1,7 +1,7 @@
 [
 
   {
-  "id" : 0 ,
+  "id" : 0,
   
   "isHero" : true ,
   
@@ -34,11 +34,11 @@
   
   "purpose" : "blog ",
   
-  "category" : "Siding and Roofing",
+  "category" : "Siding ",
   
   "date" : "April 02, 2019",
   
-  "author" : "Brian McGee ",
+  "author" : "Brian McGee",
   
   "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
@@ -50,16 +50,16 @@
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/house-after.jpg ",
   
-  "project" : "siding-roofing"
+  "project" : "siding-roofing "
   },
   
   
   {
-  "id" : 2 ,
+  "id" : 2,
   
   "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Siding and Roofing",
   
@@ -77,12 +77,12 @@
   
   "img2" : "https://www.brmcontractors.net/assets/gallery/house-before.jpg ",
   
-  "project" : "siding-roofing"
+  "project" : "siding-roofing "
   },
   
   
   {
-  "id" : 3 ,
+  "id" : 3,
   
   "isHero" : true ,
   
@@ -109,7 +109,7 @@
   
   
   {
-  "id" : 4 ,
+  "id" : 4,
   
   "isHero" : true ,
   
@@ -217,29 +217,29 @@
   
   
   {
-  "id" : 8,
+  "id" : 8 ,
   
-  "isHero" : true,
+  "isHero" : true ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
   "category" : "Kitchen Backsplash",
   
-  "date" : "May 02, 2022",
+  "date" : "May 02, 2022 ",
   
-  "author" : "Office @ BRM",
+  "author" : "Office @ BRM ",
   
-  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico ",
   
-  "title" : "Beautiful kitchen backsplash tile install",
+  "title" : "Beautiful kitchen backsplash tile install ",
   
   "body" : " A simply elegant tile install for these homeowners in their already beautiful kitchen. We were able to add the speacial touch that they always wanted. Another satisfied homeowner! ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/backsplash1.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/backsplash1.jpg ",
   
-  "img2" : "https://www.brmcontractors.net//assets/gallery/backsplash2.jpg",
+  "img2" : "https://www.brmcontractors.net//assets/gallery/backsplash2.jpg ",
   
-  "project" : "handyman"
+  "project" : "handyman "
   },
   
   
@@ -514,7 +514,7 @@
   
   
   {
-  "id" : 19 ,
+  "id" : 19,
   
   "isHero" : true ,
   
@@ -543,32 +543,32 @@
   {
   "id" : 20,
   
-  "isHero" : false,
+  "isHero" : false ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
-  "category" : "Exterior Door",
+  "category" : "Door ",
   
-  "date" : "July 28, 2022",
+  "date" : "July 28, 2022 ",
   
   "author" : "Brian McGee",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
   "title" : "Exterior door replacement ",
   
   "body" : "Our clients door was rusting and not shutting correctly. We simply replaced an exterior door for one of our clients. Another happy client. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/door2.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/door2.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/door1.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/door1.jpg ",
   
   "project" : "door"
   },
   
   
   {
-  "id" : 21 ,
+  "id" : 21,
   
   "isHero" : false ,
   
@@ -622,7 +622,7 @@
   
   
   {
-  "id" : 23 ,
+  "id" : 23,
   
   "isHero" : false ,
   
@@ -676,7 +676,7 @@
   
   
   {
-  "id" : 25 ,
+  "id" : 25,
   
   "isHero" : false ,
   
@@ -703,7 +703,7 @@
   
   
   {
-  "id" : 26 ,
+  "id" : 26,
   
   "isHero" : false ,
   
@@ -892,21 +892,21 @@
   
   
   {
-  "id" : 33 ,
+  "id" : 33,
   
-  "isHero" : true ,
+  "isHero" : true,
   
-  "purpose" : "blog ",
+  "purpose" : "blog",
   
-  "category" : "Kitchen Remodel",
+  "category" : "Kitchen Remodel ",
   
-  "date" : "Feb 08, 2023 ",
+  "date" : "Feb 08, 2023",
   
   "author" : "Brian McGee",
   
   "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Kitchen Remodel ",
+  "title" : "Kitchen Remodel",
   
   "body" : "We have been working this on over a couple trips. First we refinished all the walls and rework the electrical for updated appliances and added some lights. We just recently went back, the homeowner had the walls painted and cabinets assembled. We installed all the cabinets on the walls and trimmed out. We will be back after the counters to finish the plumbing. ",
   
@@ -946,7 +946,7 @@
   
   
   {
-  "id" : 35 ,
+  "id" : 35,
   
   "isHero" : false ,
   
@@ -973,7 +973,7 @@
   
   
   {
-  "id" : 36 ,
+  "id" : 36,
   
   "isHero" : false ,
   
@@ -1083,25 +1083,25 @@
   {
   "id" : 40,
   
-  "isHero" : false,
+  "isHero" : false ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
-  "category" : "Bathroom Remodel",
+  "category" : "Door",
   
-  "date" : "Feb 28, 2023",
+  "date" : "Feb 28, 2023 ",
   
-  "author" : "Brian McGee",
+  "author" : "Brian McGee ",
   
-  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  "title" : "Stained door install with new rustic vanity",
+  "title" : "Stained door install with new rustic vanity ",
   
-  "body" : "We stained the door ealier in the week and let it dry, now we installed the new oak door stained and all trimed out. Vanity is also installed and looks awesome. This bathroom is surely coming along. Check back as we finish this space.",
+  "body" : "We stained the door ealier in the week and let it dry, now we installed the new oak door stained and all trimed out. Vanity is also installed and looks awesome. This bathroom is surely coming along. Check back as we finish this space. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/door-hung.jpg",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/door-hung.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/door-stain.jpg",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/door-stain.jpg ",
   
   "project" : "bathroom-remodel-rm"
   },
@@ -1162,7 +1162,7 @@
   
   
   {
-  "id" : 43 ,
+  "id" : 43,
   
   "isHero" : false ,
   
@@ -1189,13 +1189,13 @@
   
   
   {
-  "id" : 44 ,
+  "id" : 44,
   
   "isHero" : false ,
   
-  "purpose" : "blog",
+  "purpose" : "blog ",
   
-  "category" : "Flooring",
+  "category" : "Flooring ",
   
   "date" : "March 20, 2023",
   
@@ -1218,28 +1218,27 @@
   {
   "id" : 45 ,
   
-  "isHero" : false ,
+  "isHero" : true ,
   
   "purpose" : "blog ",
   
-  "category" : "Soffit and Fascia ",
+  "category" : "Drywall ",
   
-  "date" : "March 22, 2023",
+  "date" : "May 25, 2017 ",
   
-  "author" : "Office @ BRM",
+  "author" : "Heather McGee",
   
-  "avatar" : "https://www.brmcontractors.net/assets/logo/brm-red.ico ",
+  "avatar" : "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
   
-  "title" : "Soffit and fascia repair with new gutter install ",
+  "title" : "Plaster board and framing, all prepped and ready for finsihing ",
   
-  "body" : "Simply call for damaged eave edge on this house. Gutter ripped the soffit and fascia and wood sub fascia off. We were able to make repairs. Installed new wood fascia followed by aluminum wrapped fascia and soffit. Hung the new gutter and happy customer. ",
+  "body" : "Pictures from the archives here. We completed all the framing and electrical on the lower level of this company house. All the plaster board is installed, taped, and corner beads installed. We are all prepped out and ready for the plaster finish. ",
   
-  "img1" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1a.jpg ",
+  "img1" : "https://www.brmcontractors.net/assets/gallery/drywall-install1a.jpg ",
   
-  "img2" : "https://www.brmcontractors.net/assets/gallery/soffit-fascia1b.jpg ",
+  "img2" : "https://www.brmcontractors.net/assets/gallery/drywall-install1b.jpg ",
   
-  "project" : "repair "
+  "project" : "drywall "
   }
-  
-  
+    
   ]
