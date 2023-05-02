@@ -1,5 +1,6 @@
 let data = 
 
+
 [
 
 
@@ -1341,7 +1342,7 @@ let data =
   
   id : 46,
   
-  isHero : false,
+  isHero : true,
   
   purpose : "",
   
@@ -1421,7 +1422,8 @@ let data =
   
   project : "roofing"
   
-  }
+  },
   
   
   ]
+
