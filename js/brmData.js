@@ -1,6 +1,7 @@
 let data = 
 
 
+
 [
 
 
@@ -1344,7 +1345,7 @@ let data =
   
   isHero : true,
   
-  purpose : "",
+  purpose : "Blog",
   
   category : "Drywall",
   
@@ -1362,7 +1363,7 @@ let data =
   
   img2 : "uploads/0EB08366-B9A4-470F-AEE1-4FFB72001F65.jpeg",
   
-  project : ""
+  project : "ad"
   
   },
   
@@ -1394,6 +1395,35 @@ let data =
   project : "custom-deck"
   
   },
+
+  
+  {
+  
+    id : 48,
+    
+    isHero : false,
+    
+    purpose : "blog",
+    
+    category : "Flooring",
+    
+    date : "2023-05-03",
+    
+    author : "Office @ BRM",
+    
+    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+    
+    title : "New adhered commercial flooring replacement ",
+    
+    body: "",
+    
+    img1 : "uploads/39F3344A-BECC-4AE8-B5A0-23144857BF30.jpeg",
+    
+    img2 : "uploads/73668366-5E85-48AB-A8DA-F0413E07DDC4.jpeg",
+    
+    project : ""
+    
+    },
   
   
   {
@@ -1422,8 +1452,9 @@ let data =
   
   project : "roofing"
   
-  },
+  }
   
   
-  ]
-
+  
+  
+  ];
