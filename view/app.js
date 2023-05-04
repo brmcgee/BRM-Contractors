@@ -1,9 +1,3 @@
-/* <script src="https://www.brmcontractors.net/js/brmData.js" type="text/javascript"></script>  */
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   records = data;
-// });
-
 const renderRecordToDisplayCard = function (index) {
   let blog = records[index];
   let blogImage1 = blog.img1;
@@ -49,17 +43,18 @@ const getOptions = function(key, elemID) {
   let elem;
   let parent = document.getElementById(elemID);
   let valueArray = [];
+
   let el = document.createElement('option');
+    el.value = ' ';
+    el.innerHTML = ' ';
+    parent.appendChild(el);
 
   for(let x = 0; x < records.length; x++){
     let keyValue = records[x][key].trim();
-    
-      el.value = ' ';
-      el.innerHTML = ' ';
-      parent.appendChild(el);
+
 
     if (!valueArray.includes(keyValue)) {
-      let elem = document.createElement('option');
+      elem = document.createElement('option');
       elem.value = keyValue;
       elem.innerHTML = keyValue;
       parent.appendChild(elem);
