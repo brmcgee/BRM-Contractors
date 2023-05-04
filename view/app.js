@@ -1,16 +1,7 @@
 const renderRecordToDisplayCard = function (index) {
   let blog = records[index];
-  let blogImage1 = blog.img1;
-  let blogImage2 = blog.img2;
   let viewType = document.getElementById('viewStyleSelect');
   let html = smallCardView(blog);
-
-  (!blog.img1.includes("http")) ? blogImage1 = `https://www.brmcontractors.net/${blog.img1}` : blogImage1 = blog.img1;
-  (!blog.img2.includes("http")) ? blogImage2 = `https://www.brmcontractors.net/${blog.img2}` : blogImage2 = blog.img2;
-
-  
-   html = smallCardView(blog);
-   html = bigCardView(blog);
 
   switch (viewType.value) 
   {
@@ -29,7 +20,6 @@ const renderRecordToDisplayCard = function (index) {
 
    displayCard.innerHTML += html;
 };
-
 
 const getOptions = function(key, elemID) {
   let elem;
@@ -59,7 +49,6 @@ const getOptions = function(key, elemID) {
     searchSelectedKey(elemID, key);
   })
 };
-
 
 const searchSelectedKey = function (elemID, key) {
   clearDisplayCard();
@@ -100,7 +89,6 @@ const clearOptions = function () {
 
 };
 
-
 function loadAllSelectOptions(){
   getOptions('category', 'selectCategory');
   getOptions('title', 'selectTitle');
@@ -108,6 +96,7 @@ function loadAllSelectOptions(){
   getOptions('project', 'selectProject');
   
 }
+
 
 
 function smallCardView (blog) {
