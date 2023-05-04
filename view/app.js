@@ -29,8 +29,8 @@ const renderRecordToDisplayCard = function (index) {
              <p class="fs-3 badge bg-dark text-light p-2">${blog.category}</p>
            <p class="card-text">What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call.     </p>
            <p class="card-text">
-           <img src="https://www.brmcontractors.net/blog/assets/gallery/brian.jpg" class="img-fluid mx-auto d-block shadow-xl" alt="Profile Picture" style="width:80px;height:80px;border-radius:50%;">
-             </p><p class="text-center">Brian McGee<br>
+           <img src="${blog.avatar}" class="img-fluid mx-auto d-block shadow-xl" alt="Profile Picture" style="width:80px;height:80px;border-radius:50%;">
+             </p><p class="text-center">${blog.author}<br>
                <small>${blog.date}</small> <br>
                <small>${blog.purpose} / </small>
                <small>${blog.project}</small>               
