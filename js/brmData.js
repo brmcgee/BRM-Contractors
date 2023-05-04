@@ -1,7 +1,6 @@
 let data = 
 
 
-
 [
 
 
@@ -38,11 +37,11 @@ let data =
   
   id : 1 ,
   
-  isHero : true ,
+  isHero : true,
   
-  purpose : "blog ",
+  purpose : "blog",
   
-  category : "Siding ",
+  category : "Siding",
   
   date : "April 02, 2019",
   
@@ -58,7 +57,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/house-after.jpg ",
   
-  project : "siding-roofing "
+  project : "siding-roofing"
   
   },
   
@@ -79,7 +78,7 @@ let data =
   
   avatar : "https://www.brmcontractors.net/blog/assets/gallery/heather.jpg",
   
-  title : "Low maintenance vinyl siding, gutters fasica and soffit ",
+  title : "Low maintenance vinyl siding, gutters fascia and soffit",
   
   body: "This homes exterior transformation is coming along great. We have installed new vinyl siding, soffit and fascia, window wraps and more. This house will have a completely new exterior. This is a 2-story company house so its tall. We handle steep and tall - so give us a call. ",
   
@@ -87,7 +86,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/house-before.jpg ",
   
-  project : "siding-roofing "
+  project : "siding-roofing"
   
   },
   
@@ -96,7 +95,7 @@ let data =
   
   id : 3,
   
-  isHero : true ,
+  isHero : true,
   
   purpose : "blog",
   
@@ -110,7 +109,7 @@ let data =
   
   title : "Total transformation! Install vinyl siding, fascia, trim and gutters.",
   
-  body: " What an awesome transformation on this one. We have installed new windows and wrap already and have finished all the exterior siding. This is a 2-story company house and is tall. We can handle all your home repair needs. ",
+  body: "What an awesome transformation on this one. We have installed new windows and wrap already and have finished all the exterior siding. This is a 2-story company house and is tall. We can handle all your home repair needs. ",
   
   img1 : "https://www.brmcontractors.net/assets/gallery/pollin-back.jpg ",
   
@@ -197,7 +196,7 @@ let data =
   
   title : "Drywall textured finish and painted by the handyman",
   
-  body: " Well we have been working away on this drywall repair. We are finishing the textured finish on the ceiling and smooth finish on the walls. We have installed a primer and basecoat to match the surrounding...You cant even tell we were here! Another happy client. ",
+  body: " Well we have been working away on this drywall repair. We are finishing the textured finish on the ceiling and smooth finish on the walls. We have installed a primer and basecoat to match the surrounding... You cant even tell we were here! Another happy client. ",
   
   img1 : "https://www.brmcontractors.net/assets/gallery/drywall-repair4.jpg",
   
@@ -400,7 +399,7 @@ let data =
   
   title : "OMG - 4 flights of Stairs Painting",
   
-  body: " Wow when I got wind of this one. 4-flights of stairs to be painted here. Had to be careful not to get trapped on the top floor with wet paint... Well anyways it turned out awesome and paint lines were crisp. Another job DONE right! ",
+  body: "Wow when I got wind of this one. 4-flights of stairs to be painted here. Had to be careful not to get trapped on the top floor with wet paint... Well anyways it turned out awesome and paint lines were crisp. Another job DONE right!",
   
   img1 : "https://www.brmcontractors.net/assets/gallery/paint1.jpg",
   
@@ -763,7 +762,7 @@ let data =
   
   id : 26,
   
-  isHero : false ,
+  isHero : false,
   
   purpose : "blog",
   
@@ -771,15 +770,15 @@ let data =
   
   date : "Nov 12, 2022 ",
   
-  author : "Brian McGee ",
+  author : "Brian McGee",
   
-  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
+  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
   
   title : "Total transformation! BRM delivers new exteriors on this one. ",
   
   body: "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful. ",
   
-  img1 : "https://www.brmcontractors.net/assets/gallery/siding-roof-after.jpg ",
+  img1 : "https://www.brmcontractors.net/assets/gallery/siding-roof-after.jpg",
   
   img2 : "https://www.brmcontractors.net/assets/gallery/siding-roof-before.jpg",
   
@@ -1395,35 +1394,6 @@ let data =
   project : "custom-deck"
   
   },
-
-  
-  {
-  
-    id : 48,
-    
-    isHero : false,
-    
-    purpose : "blog",
-    
-    category : "Flooring",
-    
-    date : "2023-05-03",
-    
-    author : "Office @ BRM",
-    
-    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
-    
-    title : "New adhered commercial flooring replacement ",
-    
-    body: "",
-    
-    img1 : "uploads/39F3344A-BECC-4AE8-B5A0-23144857BF30.jpeg",
-    
-    img2 : "uploads/73668366-5E85-48AB-A8DA-F0413E07DDC4.jpeg",
-    
-    project : ""
-    
-    },
   
   
   {
@@ -1452,9 +1422,38 @@ let data =
   
   project : "roofing"
   
+  },
+  
+  
+  {
+  
+  id : 48,
+  
+  isHero : false,
+  
+  purpose : "blog",
+  
+  category : "Flooring",
+  
+  date : "2023-05-03",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New adhered commercial flooring replacement ",
+  
+  body: "",
+  
+  img1 : "uploads/39F3344A-BECC-4AE8-B5A0-23144857BF30.jpeg",
+  
+  img2 : "uploads/73668366-5E85-48AB-A8DA-F0413E07DDC4.jpeg",
+  
+  project : ""
+  
   }
   
   
-  
-  
   ];
+
+  let records = data;
