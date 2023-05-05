@@ -126,7 +126,7 @@ function renderRecordWithLayout (blog, index) {
   [ `
     
 
-    <section class="mx-auto my-5 col-sm-12 col-md-6 col-lg-4" style="max-width: 23rem;">
+    <section class="mx-auto col-sm-12 col-md-6 col-lg-4" style="max-width: 23rem;">
 
       <div class="card">
         <div class="card-body d-flex flex-row">
