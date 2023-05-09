@@ -17,10 +17,19 @@ async function renderBlogs(active, option, cla) {
     let html = '';
     length = blogs.length;
 
+  
+
    
     if (active === "all") {
             
         blogs.forEach(blog => {
+              
+    let blogImage1 = blog.img1;
+    let blogImage2 = blog.img2;
+  
+    (!blog.img1.includes("http")) ? blogImage1 = `https://www.brmcontractors.net/${blog.img1}` : blogImage1 = blog.img1;
+    (!blog.img2.includes("http")) ? blogImage2 = `https://www.brmcontractors.net/${blog.img2}` : blogImage2 = blog.img2;
+  
           
           if (option === 0) {
             let segment = `
@@ -279,7 +288,51 @@ async function renderBlogs(active, option, cla) {
           </div>
               
               `;
-            }
+            };
+
+             //blog service
+             if (option === 6) {
+              segment = `
+              
+
+              <section class="mx-auto col-sm-12" style="max-width: 24rem;">
+
+              <div class="card">
+                <div class="card-body d-flex flex-row">
+                  <img src="${blog.avatar}" class="rounded-circle me-3" height="50px"
+                    width="50px" alt="${blog.author}" />
+                  <div>
+                    <h5 class="card-title font-weight-bold mb-2">${blog.title}</h5>
+                    <p class="card-text"><i class="far fa-clock pe-2"></i>${blog.date}</p>
+                  </div>
+                </div>
+                <div class="rounded-0">
+                  <img class="img-fluid" src="${blog.img1}"
+                    alt="Card image cap" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.85);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    ${blog.body}
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p class="card-text bg-dark text-light rounded py-1 px-3 fs-4">${blog.category}</p>
+                    </div>
+                    <div>
+                      <i class="fas fa-share-alt text-muted p-md-1 my-1 me-2" title="Share this post"></i>
+                      <i class="fas fa-heart text-muted p-md-1 my-1 me-0" title="I like it"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </section>
+              
+              `;
+            };
 
             
             html = segment;
