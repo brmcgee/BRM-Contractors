@@ -1444,7 +1444,7 @@ let data =
   
   title : "TPO roofing installation with insulated recovery deck",
   
-  body: "",
+  body: "High winds rendered this flat deck compromised. We have installed an insulated 60mil TPO roof system here. This is energy star and carries a 15 year warranty.",
   
   img1 : "uploads/4B42CF9B-F07B-450A-9344-10A6C73917BF.jpeg",
   
@@ -1473,7 +1473,7 @@ let data =
   
   title : "New adhered commercial flooring replacement ",
   
-  body: "",
+  body: "New Armstrong fully adhered commercial flooring. ",
   
   img1 : "uploads/39F3344A-BECC-4AE8-B5A0-23144857BF30.jpeg",
   
@@ -1481,7 +1481,7 @@ let data =
   
   project : ""
   
-  },
+  }
   
   
   ];
