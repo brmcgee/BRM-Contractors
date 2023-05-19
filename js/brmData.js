@@ -1250,36 +1250,7 @@ let data =
   project : "ad"
   
   },
-  
-  
-  {
-  
-  id : 50,
-  
-  isHero : true,
-  
-  purpose : "blog",
-  
-  category : "Flooring",
-  
-  date : "2023-05-16",
-  
-  author : "Office @ BRM",
-  
-  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
-  
-  title : "LVT Low maintenance vinyl floor install",
-  
-  body: "Finished up installing low maintenance LVT flooring overtop new subfloor. We have also painted and installed new wood trim. This job turned out great. Another happy client.",
-  
-  img1 : "uploads/pollin-img18.JPEG",
-  
-  img2 : "uploads/pollin-img16.JPEG",
-  
-  project : "flooring"
-  
-  },
-  
+ 
   
   {
   
@@ -1481,7 +1452,36 @@ let data =
   
   project : ""
   
-  }
+  },
+    
+  
+  {
+  
+    id : 50,
+    
+    isHero : true,
+    
+    purpose : "blog",
+    
+    category : "Flooring",
+    
+    date : "2023-05-16",
+    
+    author : "Office @ BRM",
+    
+    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+    
+    title : "LVT Low maintenance vinyl floor install",
+    
+    body: "Finished up installing low maintenance LVT flooring overtop new subfloor. We have also painted and installed new wood trim. This job turned out great. Another happy client.",
+    
+    img1 : "uploads/pollin-img18.JPEG",
+    
+    img2 : "uploads/pollin-img16.JPEG",
+    
+    project : "flooring"
+    
+    },
   
   
   ];
