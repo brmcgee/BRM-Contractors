@@ -1,3 +1,10 @@
+const el = function (str) {
+  let e = document.querySelector(str);
+  return e;
+}
+
+
+
 let data = 
 
 
