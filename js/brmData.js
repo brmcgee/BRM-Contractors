@@ -7,8 +7,6 @@ const el = function (str) {
 
 let data = 
 
-
-
 [
 
 
@@ -28,7 +26,7 @@ let data =
   
   avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
   
-  title : "New galvalume standing seam metal roof.",
+  title : "New galvalume standing seam metal roof",
   
   body: " We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1 1/2 16 panel. I just love the look and the detail here at the posts. What a beautiful pool cabana.",
   
@@ -65,7 +63,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/house-after.jpg ",
   
-  project : "siding-roofing"
+  project : "siding-mc"
   
   },
   
@@ -94,7 +92,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/house-before.jpg ",
   
-  project : "siding-roofing"
+  project : "siding-mc"
   
   },
   
@@ -123,7 +121,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/pollin-side2.jpg ",
   
-  project : "siding-roofing"
+  project : "siding-mc"
   
   },
   
@@ -152,7 +150,7 @@ let data =
   
   img2 : "https://www.brmcontractors.net/assets/gallery/pollin-deck1.jpg ",
   
-  project : "custom-deck"
+  project : "siding-mc"
   
   },
   
@@ -1257,7 +1255,36 @@ let data =
   project : "ad"
   
   },
- 
+  
+  
+  {
+  
+  id : 50,
+  
+  isHero : true,
+  
+  purpose : "blog",
+  
+  category : "Flooring",
+  
+  date : "2023-05-16",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "LVT Low maintenance vinyl floor install",
+  
+  body: "Finished up installing low maintenance LVT flooring overtop new subfloor. We have also painted and installed new wood trim. This job turned out great. Another happy client.",
+  
+  img1 : "uploads/pollin-img18.JPEG",
+  
+  img2 : "uploads/pollin-img16.JPEG",
+  
+  project : "pollin"
+  
+  },
+  
   
   {
   
@@ -1335,13 +1362,13 @@ let data =
   
   title : "In progress custom deck build",
   
-  body: "",
+  body: "The weather is awesome and this deck is going to be beautiful! We are working on the framing here and are going to be installing the deck boards next. This deck is over 500sqft and is being built with pressure treated lumber. Check back soon!",
   
   img1 : "uploads/D9513435-947B-4E6C-99C0-DF9DDE8FBEFE.jpeg",
   
   img2 : "uploads/D0230159-8645-483D-9639-FA5B0511C88B.jpeg",
   
-  project : ""
+  project : "siding-mc"
   
   },
   
@@ -1364,7 +1391,7 @@ let data =
   
   title : "Kitchen drywall repair smooth finish",
   
-  body: "",
+  body: "Today we are refinishing our clients kitchen walls. Installing some new wall board and then skim coating the walls flat. We also added some upgraded appliance wiring and new recessed light. The homeowners is going to paint and we shall return to install cabinets.",
   
   img1 : "uploads/0D420641-B66D-4368-A7D4-8EFE22069B36.jpeg",
   
@@ -1393,7 +1420,7 @@ let data =
   
   title : "Covered custom wood deck with metal roof cover",
   
-  body: "",
+  body: "What an awesome job here building this custom wood deck with metal roof cover. Our clients got a new fifth wheel which is so cool inside. They needed a new covered deck to enjoy the fun weekends at the campground. BRM was able to deliever. We removed the old covered deck and assisted with the new RV hookup. Next we were able to deliver an awesome outdoor space just in time for Halloween.",
   
   img1 : "uploads/B18ECB61-9DAF-4D7F-9A59-3B5F931D02BA.jpeg",
   
@@ -1460,37 +1487,37 @@ let data =
   project : ""
   
   },
-    
+  
   
   {
   
-    id : 50,
-    
-    isHero : true,
-    
-    purpose : "blog",
-    
-    category : "Flooring",
-    
-    date : "2023-05-16",
-    
-    author : "Office @ BRM",
-    
-    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
-    
-    title : "LVT Low maintenance vinyl floor install",
-    
-    body: "Finished up installing low maintenance LVT flooring overtop new subfloor. We have also painted and installed new wood trim. This job turned out great. Another happy client.",
-    
-    img1 : "uploads/pollin-img18.JPEG",
-    
-    img2 : "uploads/pollin-img16.JPEG",
-    
-    project : "flooring"
-    
-    },
+  id : 51,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Garage doors",
+  
+  date : "2023-05-26",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New beautiful garage door install for pool house",
+  
+  body: "We removed the original garage door and installed an awesome new Vista aluminum extruded and glass garage door for this pool house door. ",
+  
+  img1 : "uploads/C7CAACD4-5576-4F10-A1D7-DFC085A1C2AA.jpeg",
+  
+  img2 : "uploads/72BD7668-2EBC-400E-B494-5A5A4EFDA036.jpeg",
+  
+  project : "Door"
+  
+  }
   
   
-  ];
+  ]
 
   let records = data;
