@@ -7,6 +7,9 @@ const el = function (str) {
 
 let data = 
 
+
+
+
 [
 
 
@@ -1281,7 +1284,7 @@ let data =
   
   img2 : "uploads/pollin-img16.JPEG",
   
-  project : "pollin"
+  project : "flooring"
   
   },
   
@@ -1497,13 +1500,13 @@ let data =
   
   purpose : "Blog",
   
-  category : "Garage doors",
+  category : "Garage door",
   
   date : "2023-05-26",
   
-  author : "Office @ BRM",
+  author : "Brian McGee",
   
-  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
   
   title : "New beautiful garage door install for pool house",
   
@@ -1513,11 +1516,74 @@ let data =
   
   img2 : "uploads/72BD7668-2EBC-400E-B494-5A5A4EFDA036.jpeg",
   
-  project : "Door"
+  project : "door"
+  
+  },
+  
+  
+  {
+  
+  id : 52,
+  
+  isHero : true,
+  
+  purpose : "blog",
+  
+  category : "Garage door",
+  
+  date : "June 02, 2023",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Garage door replacement with rotted door jamb repair",
+  
+  body: "We replaced the old door with an Insulated garage door in premium finish with deco hinges and handles. Also replace some rotted jamb inside and outside. This door looks awesome!",
+  
+  img1 : "uploads/AEF2DB80-037B-4FD8-9727-AC801059F40C.jpeg",
+  
+  img2 : "uploads/F1D77DDE-23C9-4EA1-81C1-16B0A0F6D936.jpeg",
+  
+  project : "door"
   
   }
   
   
-  ]
+  ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // adds URL path if not present
+  data.forEach(blog => {
+
+    let image1 = blog.img1;
+    let image2 = blog.img2;
+
+    if (!image1.includes('http')) {
+      blog.img1 = "https://www.brmcontractors.net/" + image1;
+    }
+    
+    if (!image2.includes('http')) {
+      blog.img2 = "https://www.brmcontractors.net/" + image2;
+    }
+    
+  });
 
   let records = data;
