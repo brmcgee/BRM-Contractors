@@ -9,7 +9,6 @@ let data =
 
 
 
-
 [
 
 
@@ -1547,7 +1546,36 @@ let data =
   
   project : "door"
   
-  }
+  },
+  
+  
+  {
+  
+  id : 53,
+  
+  isHero : true ,
+  
+  purpose : "blog",
+  
+  category : "Garage door",
+  
+  date : "2023-06-08",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New garage doors and opener install for the new construction project",
+  
+  body: "We have install New garage doors and opener install for the new construction project.",
+  
+  img1 : "uploads/gdoor-IMG-0057.jpg",
+  
+  img2 : "uploads/gdoor-IMG-0051.jpg",
+  
+  project : "door"
+  
+  },
   
   
   ];
