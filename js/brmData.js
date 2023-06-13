@@ -9,6 +9,7 @@ let data =
 
 
 
+
 [
 
 
@@ -1578,7 +1579,36 @@ let data =
   },
   
   
-  ];
+  {
+  
+  id : 54,
+  
+  isHero : false,
+  
+  purpose : "blog",
+  
+  category : "Kitchen",
+  
+  date : "2023-06-13",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New wood butcher block countertops with kitchen sink install ",
+  
+  body: "Simply call here for new wood butcher block countertops. We also cut and installed new kitchen sink and tied into the existing plumbing. Another job well done.",
+  
+  img1 : "uploads/604BD255-1B8A-4FEB-ABD8-973F9665E969.jpeg",
+  
+  img2 : "uploads/2E0FD8D5-D7F6-403F-A74E-F817230C705C.jpeg",
+  
+  project : "handyman"
+  
+  }
+  
+  
+  ]
 
 
 
@@ -1600,18 +1630,25 @@ let data =
 
   // adds URL path if not present
   data.forEach(blog => {
-
     let image1 = blog.img1;
     let image2 = blog.img2;
 
     if (!image1.includes('http')) {
       blog.img1 = "https://www.brmcontractors.net/" + image1;
     }
-    
     if (!image2.includes('http')) {
       blog.img2 = "https://www.brmcontractors.net/" + image2;
     }
-    
+
   });
 
-  let records = data;
+let records = data;
+
+let brmImages = [];
+  data.forEach(item => {
+    brmImages.push(item.img1);
+    brmImages.push(item.img2);
+  });
+
+ 
+  
