@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,37 +40,19 @@
 <!-- local style sheet by brm  -->
 <link rel="stylesheet" href="css/style.css" type="text/css">
 
-<!-- fetch data @json load  -->
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      randomBlog(4, '.blog-cards3');
+      randomBlog(3, '.blog-cards'); 
+      randomBlog(5, '.blog-cards2'); 
+  });
 
-<script>
-  //randomBlogs(number, targetID)
-  // 'hide' no make
-  // 0 standard
-  // 1 overlay
-  // 2 dark
-  // 3 post style double
-  // 4 masthead
-  // 5 hover service/
+  </script>
 
-  document.addEventListener("DOMContentLoaded", () => {
-    randomBlog(4, '.blog-cards3');
-    randomBlog(6, '.blog-cards'); 
-    randomBlog(5, '.blog-cards2'); 
-});
-
-</script>
-  <!-- full width card  -->      
   <style>
-    /* standard   */
-  
-    .fas.fa-heart:hover {
-    color: #f44336 !important;
-  }
-
-  .fas.fa-share-alt:hover {
-    color: #0d47a1 !important;
-  }  
+    .fas.fa-heart:hover {color: #f44336 !important;}
+    .fas.fa-share-alt:hover {color: #0d47a1 !important;}  
   </style>
 
 </head>
@@ -149,58 +132,121 @@
   <!-- =========  NAVBAR/END =========  -->
 </div> 
 
-<!-- brm-hero  -->
+<style>
+  
+.intro {margin-bottom: 36px;
+text-align: center;}
 
-<!-- masthead  -->
-<!-- data fetch  -->
-<div id="blogs" class="row blog-cards3 d-none"></div>
+.intro p {
+    max-width: 500px;
+}
+.intro h6{
+    color: var(--brand);
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-<header class="masthead" style='background: url("https://www.brmcontractors.net/uploads/gdoor-IMG-0057.jpg") no-repeat center center; background-size: cover;height:70vh;'>
-  <div class="container position-relative">
-      <div class="row justify-content-center">
-          <div class="col-xl-6">
-              <div class="text-center text-white">
-                  <!-- Page heading-->
-                  <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" alt="brm" style="opacity:.4;border-radius: 5px;width:185px; margin-top:40px;">
-                  <p class="mb-5 text-light display-3 text-uppercase fw-bold">Excellent Service</p>
-                  <h1 class="mb-5 text-light">Total service home remodel and repair contractor, BRM</h1>
-                  <div class="col-auto"><button class="btn btn-brand ms-lg-3">Submit</button></div>
-              </div>
-          </div>
-      </div>
-  </div>
+.intro h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    align-items: center;
+    display: flex;
+}
+
+.info-box img {
+    width: 90px;
+}
+
+
+.service {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.service h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+.service img {
+    width: 90px;
+    height: 90px;
+}
+
+</style>
+
+
+  <!-- Masthead-->
+  <header class="masthead" style='background: url("https://www.brmcontractors.net/uploads/gdoor-IMG-0057.jpg") no-repeat center center; background-size: cover;'>
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <img src="https://www.brmcontractors.net/assets/logo/brm-red.ico" alt="brm" style="opacity:.3;border-radius: 5px;width:135px;margin-top:110px;">
+                    <h1 class="mb-5 text-light">Total service - home remodel and repair contractor, installations and more - BRM is at your service!</h1>
+                    <button type="button"  class="btn-rounded btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Contact</button>
+                  </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 
-<!-- <section class="class brm-hero">
-  <div class="container-fluid">
-      <div class="row-cols-1 rows-col-lg-3 align-items-stretch">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-light bg-dark" 
-                 style="border-radius: 0;
-                        background-image: linear-gradient(180deg, rgba(37, 37, 37, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%),
-                                       url(https://www.brmcontractors.net/assets/gallery/used-treasures-matt-salandro.png); 
-                        background-size: cover;
-                        background-position: center;">
-              <div class="container my-5 py-1">
-                <div class="row p-1 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded  border-light  m-1">
-                  <div class="masthead-container col-11 text-center mx-auto d-block text-uppercase">
-                    <h3 class="h4 text-russo">Quality craftsmanship</h3>
-                    <h1 class="display-1 fw-bold">Excellent Service</h1>
-                    <h2 class="h5 p-2 col-lg-8 text-center text-russo mx-auto d-block">Drywall and painting, anything wood, bathrooms, roofing and siding and all sorts of remodeling.</h2>
-                    <a href="contact-brm.html" class="btn btn-outline btn-rounded mb-3">FREE ESTIMATE</a>
-                  </div>
-                </div>
+<!-- Services -->
+<section id="services" class="text-center">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          
+            <div class="intro">
+                <h5 class="mt-2">Our Services</h6>
+                <h1>What We Do?</h1>
+                <p class="mx-auto">Welcome to BRM Contractors Inc. We are a family owned and operated contracting business located in the Western Pennsylvania. We specialize in all aspects of residential and commercial construction services. Our team of experienced professionals is dedicated to delivering superior results to all of our projects. We take pride in our work and strive to exceed expectations. At BRM Contractors Inc, we understand that a construction project can be daunting and requires knowledge, skill and attention to detail. We use the latest technology, tools and resources to get the job done right the first time. We are experienced in all areas of construction, from foundation and framing to siding and roofing. We also offer services such as remodeling, additions and custom carpentry. If you need any type of residential or commercial building service, look no further than BRM Contractors Inc. We are here to help make your dreams come to life, so give us a call today to get started.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row g-4 d-flex justify-content-center py-3">
+        <div class="col-lg-4 col-md-6">
+            <div class="service">
+                <img src="https://www.brmcontractors.net/assets/logo/builder.jpg" alt="">
+                <h5>Building</h5>
+                <p>BRM can handle your building needs. We offer custom deck builds, patio roof covers, additions, and remodels BRM has the knowledge and experience to get the job done right.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service">
+                <img src="https://www.brmcontractors.net/assets/logo/repairs.jfif" alt="">
+                <h5>Repairs</h5>
+                <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs.m</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service">
+                <img src="https://www.brmcontractors.net/assets/logo/maintenance.jpg" alt="">
+                <h5>Maintenance</h5>
+                <p>Changing seasons bringing on a new list of maintenance items. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
+            </div>
+        </div>
 
-              </div>
+    </div>
+</div>
+</section>
 
-          </div>
-      </div>
-  </div>
-</section> -->
+
+
+<!-- data fetch  -->
+<div id="blogs" class="row blog-cards3 d-none ms-0"></div>
+
+
+
 
 <!-- total home repair block  -->
-<div class="block bg-red ">
+<div class="block bg-red d-none ">
   <p class="text-russo h1 text-center text-white text-uppercase pt-1">Call 724.787.3758 </p>
 </div>
 
@@ -210,19 +256,16 @@
 <div class="wrapper row">
 
   <!-- intro  -->
-  <main class="main">
+  <main class="main d-none">
     <!-- block area  1/top -->
     <div class="px-1 py-3 w-100 border shadow-lg bg-red">
       <div class="row flex-lg-row align-items-center justify-content-center g-2 bg-light">
         <div class="col-sm-8 col-md-5 col-lg-6 col-xl-5 px-3 ">
-          <h2 class="ms-3 me-3 text-russo ps-1 display-3">Reliable and Gauranteed Service - <br> The Incredible Handyman.</h2>
+          <h2 class="me-3 text-russo ps-1 display-5 shadow ">Reliable and Gauranteed Service<br> <span class="h2 fw-bold color-red p-2">Incredible Handyman.</span></h2>
           <p class="mt-3 ps-1 text-roboto">Welcome to BRM Contractors Inc. We are a family owned and operated contracting business located in the heart of Pennsylvania. We specialize in all aspects of residential and commercial construction services. Our team of experienced professionals is dedicated to delivering superior results to all of our projects. We take pride in our work and strive to exceed expectations.
             At BRM Contractors Inc, we understand that a construction project can be daunting and requires knowledge, skill and attention to detail. We use the latest technology, tools and resources to get the job done right the first time. We are experienced in all areas of construction, from foundation and framing to siding and roofing. We also offer services such as remodeling, additions and custom carpentry.  
             If you need any type of residential or commercial building service, look no further than BRM Contractors Inc. We are here to help make your dreams come to life, so give us a call today to get started.</p>
-          <div class="d-flex gap-2 d-md-flex  py-3 rounded px-5 justify-content-center">
-            <a href="#products" class="btn-solid btn-rounded text-center" onclick="createHeading()">Services</a>
-            <a href="https://www.brmcontractors.net/blog" class="btn-solid btn-rounded text-center">Project Posts</a>
-          </div>
+
           
         </div>
 
@@ -263,8 +306,57 @@
 
   </main>
  
+      <!-- ======= SERVICE-CARD =============  -->
+      <div class="container-fluid bg-light py-6 px-5 d-none">
+
+  
+        <div class="d-flex justify-content-center row g-5 service-card">
+            <div class="col-lg-4 col-md-6 card p-3">
+                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/construction.jpg" alt="" style="height: 220px;width: 80%;">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-tools color-red"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3 text-russo mt-1">Building</h4>
+                        <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs.</p>
+                        <a class="btn-rounded btn-solid" href="#products" onclick="createHeading()">Services <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 card p-3">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/--bg-home-repair.jpg" alt="" style="height: 220px;width: 80%;">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-home color-red"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3 text-russo mt-1">Repairs</h4>
+                        <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
+                        <a class="btn-rounded btn-solid" href="https://www.brmcontractors.net/blog/index.html">Project Posts <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 card p-3">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/clean-gutter.jpg" alt="" style="height: 220px;width: 80%;">
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-toolbox color-red"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3 text-russo mt-1">Maintenance</h4>
+                        <p>Changing seasons bringing on a new list of maintenance items. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
+                        <a class="btn-rounded btn-solid" href="https://www.brmcontractors.net/contact-brm.html">Contact BRM<i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+
   <!-- 3-card overlay  -->
-  <section class="py-md-6 light">
+  <section class="py-md-6 light d-none">
     <div class="container-fluid col-lg-11 col-xxl-11 mx-auto d-block mb-5 mt-5">
       <div class="row">
         <div class="col-md-12">
@@ -461,55 +553,7 @@
   </div>
 </section>
 
-    <!-- ======= SERVICE-CARD =============  -->
-    <div class="container-fluid bg-light py-6 px-5">
-      <div class="text-center mx-auto m-2 bg-light shadow-lg rounded" style="max-width: 100%;">
-        <h2 class="m-1 text-center text-russo rounded p-3">Full service home repair contractor, BRM is at your service!</h2>
-      </div>
 
-      <div class="d-flex justify-content-center row g-5 service-card">
-          <div class="col-lg-4 col-md-6 card p-3">
-              <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-                  <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/construction.jpg" alt="" style="height: 220px;width: 80%;">
-                  <div class="service-icon bg-white">
-                      <i class="fa fa-3x fa-tools color-red"></i>
-                  </div>
-                  <div class="px-4 pb-4">
-                      <h4 class="text-uppercase mb-3 text-russo mt-1">Building</h4>
-                      <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs.</p>
-                      <a class="btn-rounded btn-solid" href="#products" onclick="createHeading()">Services <i class="bi bi-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 card p-3">
-              <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                  <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/--bg-home-repair.jpg" alt="" style="height: 220px;width: 80%;">
-                  <div class="service-icon bg-white">
-                      <i class="fa fa-3x fa-home color-red"></i>
-                  </div>
-                  <div class="px-4 pb-4">
-                      <h4 class="text-uppercase mb-3 text-russo mt-1">Repairs</h4>
-                      <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs. </p>
-                      <a class="btn-rounded btn-solid" href="https://www.brmcontractors.net/blog/index.html">Project Posts <i class="bi bi-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 card p-3">
-              <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                  <img class="img-fluid pb-3 rounded-3" src="https://www.brmcontractors.net/assets/gallery/clean-gutter.jpg" alt="" style="height: 220px;width: 80%;">
-                  <div class="service-icon bg-white">
-                      <i class="fa fa-3x fa-toolbox color-red"></i>
-                  </div>
-                  <div class="px-4 pb-4">
-                      <h4 class="text-uppercase mb-3 text-russo mt-1">Maintenance</h4>
-                      <p>Changing seasons bringing on a new list of maintenance items. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
-                      <a class="btn-rounded btn-solid" href="https://www.brmcontractors.net/contact-brm.html">Contact BRM<i class="bi bi-arrow-right"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      </div>
 
   <div class="block bg-dark mt-1"></div>
 
@@ -616,11 +660,10 @@
       </div>
       <div class="modal-body">
         <div class="schedule-message" id="schedule">
-          <h5>Scheduling unavailable</h5>
+          <h5>Connect with BRM</h5>
           <p>Please call the office at <strong>(724) 787-3758</strong> or send us a message with your information and we will be in contact.</p>
           <a href="contact-brm.html" role="button" class="btn-solid popover-test" title="Connect with BRM Contractors Inc." data-content="Popover body content is set in this attribute.">Send BRM a Message</a>
                 
-          <button id="myBtn"></button>
 
 
 
