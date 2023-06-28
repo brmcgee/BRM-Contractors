@@ -10,6 +10,7 @@ let data =
 
 
 
+
 [
 
 
@@ -1487,7 +1488,7 @@ let data =
   
   img2 : "uploads/73668366-5E85-48AB-A8DA-F0413E07DDC4.jpeg",
   
-  project : ""
+  project : "flooring"
   
   },
   
@@ -1562,9 +1563,9 @@ let data =
   
   date : "2023-06-08",
   
-  author : "Office @ BRM",
+  author : "Brian McGee",
   
-  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
   
   title : "New garage doors and opener install for the new construction project",
   
@@ -1587,7 +1588,7 @@ let data =
   
   purpose : "blog",
   
-  category : "Kitchen",
+  category : "Handyman",
   
   date : "2023-06-13",
   
@@ -1604,6 +1605,35 @@ let data =
   img2 : "uploads/2E0FD8D5-D7F6-403F-A74E-F817230C705C.jpeg",
   
   project : "handyman"
+  
+  },
+  
+  
+  {
+  
+  id : 55,
+  
+  isHero : true ,
+  
+  purpose : "blog",
+  
+  category : "Siding",
+  
+  date : "2023-06-27",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Vinyl siding repair and installations by BRM",
+  
+  body: "We repair and install all sorts of siding. Here we are finishing installation on this tall home. Vinyl siding is a great low maintenance choice for your exterior.",
+  
+  img1 : "uploads/DDF8CCAA-F53A-4802-AD1F-0006216E1DBD.jpeg",
+  
+  img2 : "uploads/33975DC2-FA59-4162-917B-C09A3F84D871.jpeg",
+  
+  project : "siding-mc"
   
   }
   
