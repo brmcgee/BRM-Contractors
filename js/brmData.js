@@ -11,6 +11,7 @@ let data =
 
 
 
+
 [
 
 
@@ -1634,6 +1635,35 @@ let data =
   img2 : "uploads/33975DC2-FA59-4162-917B-C09A3F84D871.jpeg",
   
   project : "siding-mc"
+  
+  },
+  
+  
+  {
+  
+  id : 56,
+  
+  isHero : False,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2023-07-26",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Start of bathroom remodel project with plumbing",
+  
+  body: "Fresh start to a new bathroom remodel project. The bathroom walls and accessories have been removed and disposed of. Beginning to work on the plumbing for the new double vanity. ",
+  
+  img1 : "uploads/IMG-0429.jpg",
+  
+  img2 : "uploads/IMG-0427.jpg",
+  
+  project : "bathroom-wd"
   
   }
   
