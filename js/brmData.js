@@ -1643,7 +1643,7 @@ let data =
   
   id : 56,
   
-  isHero : False,
+  isHero : false,
   
   purpose : "Blog",
   
@@ -1668,7 +1668,7 @@ let data =
   }
   
   
-  ]
+  ];
 
 
 
