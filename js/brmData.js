@@ -787,7 +787,7 @@ let data =
   
   title : "Total transformation! BRM delivers new exteriors on this one. ",
   
-  body: "This outbuilding in surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful. ",
+  body: "This outbuilding is surrounded by trees and needed a low maintenance building system. We installed all new vinyl siding, soffit and fascia, gutters and a custom colored galvalume metal roof. This is beautiful. ",
   
   img1 : "https://www.brmcontractors.net/assets/gallery/siding-roof-after.jpg",
   
@@ -1665,11 +1665,39 @@ let data =
   
   project : "bathroom-wd"
   
+  },
+  
+  
+  {
+  
+  id : 57,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2023-08-01",
+  
+  author : "Brian McGee",
+  
+  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  
+  title : "Great progress on the bathtub install on the bathroom project.",
+  
+  body: "The bathroom remodel project is moving along great. The tub and surround has been installed and water tested. We are in the process of finishing the drywall and next will be working the the tile floor. Check back for updates.",
+  
+  img1 : "uploads/IMG-0475.jpg",
+  
+  img2 : "uploads/IMG-0471.jpg",
+  
+  project : "bathroom-wd"
+  
   }
   
   
   ];
-
 
 
 
