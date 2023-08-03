@@ -10,8 +10,6 @@ let data =
 
 
 
-
-
 [
 
 
@@ -1680,17 +1678,46 @@ let data =
   
   date : "2023-08-01",
   
-  author : "Brian McGee",
+  author : "Office @ BRM",
   
-  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
   
-  title : "Great progress on the bathtub install on the bathroom project.",
+  title : "Great progress new bathtub and walls install.",
   
   body: "The bathroom remodel project is moving along great. The tub and surround has been installed and water tested. We are in the process of finishing the drywall and next will be working the the tile floor. Check back for updates.",
   
   img1 : "uploads/IMG-0475.jpg",
   
   img2 : "uploads/IMG-0471.jpg",
+  
+  project : "bathroom-wd"
+  
+  },
+  
+  
+  {
+  
+  id : 58,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2023-08-03",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New ceramic tile floor install on this remodel project",
+  
+  body: "We have the tub surround and drywall finishing up. The ceramic tile floor has been installed. This bathroom is looking awesome. ",
+  
+  img1 : "uploads/IMG-0489.jpg",
+  
+  img2 : "uploads/IMG-0490.jpg",
   
   project : "bathroom-wd"
   
