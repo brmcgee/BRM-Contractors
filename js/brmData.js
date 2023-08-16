@@ -1721,6 +1721,35 @@ let data =
   
   project : "bathroom-wd"
   
+  },
+  
+  
+  {
+  
+  id : 59,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "Aug 15, 2023",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Bathroom remodel with double vanity and tile floor",
+  
+  body: "The bathroom remodel project is moving along well. The walls have been finished and painted. Today we installed the double vanity with new plumbing and finish the electrical lights and switches. Stay tuned and check back as we wrap up this bathroom project.",
+  
+  img1 : "uploads/IMG-0537.jpg",
+  
+  img2 : "uploads/IMG-0535.jpg",
+  
+  project : "bathroom-wd"
+  
   }
   
   
