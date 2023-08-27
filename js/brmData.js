@@ -10,6 +10,7 @@ let data =
 
 
 
+
 [
 
 
@@ -1749,6 +1750,35 @@ let data =
   img2 : "uploads/IMG-0535.jpg",
   
   project : "bathroom-wd"
+  
+  },
+  
+  
+  {
+  
+  id : 60,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Roofing",
+  
+  date : "",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Metal roof install for this 2 story home",
+  
+  body: "This is a fresh new Metal roof install in Old Town Gray finish. We have fabricated and install all panels, trims and finishings. This is a tall 2-story company home. We handle all your home remodel needs.",
+  
+  img1 : "uploads/IMG-0639.jpg",
+  
+  img2 : "uploads/IMG-0646.jpg",
+  
+  project : "musick"
   
   }
   
