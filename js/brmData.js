@@ -8,9 +8,6 @@ const el = function (str) {
 let data = 
 
 
-
-
-
 [
 
 
@@ -1780,7 +1777,36 @@ let data =
   
   project : "musick"
   
-  }
+  },
+  
+  
+  {
+  
+  id : 61,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Roofing",
+  
+  date : "09/26/2023",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Low slope TPO roof removal and replacement",
+  
+  body: "We were call to replace a low slope roof with 3 layers of roofing. We removed all roofing and replaced rotted wood. Finished up with installing a insulated 20-year single ply TPO membrane. ",
+  
+  img1 : "uploads/IMG-0737.jpg",
+  
+  img2 : "uploads/IMG-0746.jpg",
+  
+  project : "roofing"
+  
+  },
   
   
   ];
