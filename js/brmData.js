@@ -8,6 +8,7 @@ const el = function (str) {
 let data = 
 
 
+
 [
 
 
@@ -1809,8 +1810,65 @@ let data =
   },
   
   
+  {
+  
+  id : 62,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2023-09-29",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Bathroom update remodel project",
+  
+  body: "We are currently giving this bathroom a fresh update with new plumbing, bathtub, and vanity. We replaced the rotted and damaged subfloor in preparation for the new flooring.",
+  
+  img1 : "uploads/IMG-0786.jpg",
+  
+  img2 : "uploads/IMG-0779.jpg",
+  
+  project : "musick"
+  
+  },
+  
+  
+  {
+  
+  id : 63,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Garage door",
+  
+  date : "2023-09-30",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "New garage door installtion",
+  
+  body: "Installed new garage doors and openers on this project!",
+  
+  img1 : "uploads/IMG-0801.jpg",
+  
+  img2 : "uploads/IMG-0799.jpg",
+  
+  project : "garage-door"
+  
+  }
+  
+  
   ];
-
 
 
 
