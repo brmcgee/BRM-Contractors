@@ -1865,10 +1865,42 @@ let data =
   
   project : "garage-door"
   
-  }
+  },
+
+  {
+
+    id : 64,
+    
+    isHero : true,
+    
+    purpose : "Blog",
+    
+    category : "Bathroom Remodel",
+    
+    date : "2023-10-07",
+    
+    author : "Office @ BRM",
+    
+    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+    
+    title : "Shower and tub combo set with drywall patch on this bathroom",
+    
+    body: "We have set the shower and tub combo with all new plumbing. Repaired the drywall around the tub and are in the process of smooth finishing the bathroom walls.",
+    
+    img1 : "uploads/IMG-0841.jpg",
+    
+    img2 : "uploads/IMG-0823.jpg",
+    
+    project : "musick"
+    
+    },
   
   
-  ];
+  ]
+  
+  
+  
+  ;
 
 
 
