@@ -1894,6 +1894,63 @@ let data =
     project : "musick"
     
     },
+
+    {
+
+      id : 65,
+      
+      isHero : true,
+      
+      purpose : "Blog",
+      
+      category : "Doors",
+      
+      date : "2023-10-015",
+      
+      author : "Brian McGee",
+      
+      avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      
+      title : "Fresh primer and paint with new door installation and trim",
+      
+      body: "All finished with the drywall smooth skimcoat. Fresh primer and paint to the walls. We have installed new interior doors, baseboard and trim. All fresh primer and paint!",
+      
+      img1 : "assets/gallery/musick-door.jpg",
+      
+      img2 : "assets/gallery/musick-trim.jpg",
+      
+      project : "musick"
+      
+      },
+  
+
+    {
+
+      id : 66,
+      
+      isHero : true,
+      
+      purpose : "Blog",
+      
+      category : "Flooring",
+      
+      date : "2023-10-011",
+      
+      author : "Brian McGee",
+      
+      avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+      
+      title : "LVT vinyl flooring install after fresh wall paint",
+      
+      body: "All finished with the drywall smooth skimcoat. Fresh primer and paint to the walls. We are installing this vinyl floor planks overtop padding",
+      
+      img1 : "assets/gallery/musick-flooring1.jpg",
+      
+      img2 : "assets/gallery/musick-flooring2.jpg",
+      
+      project : "musick"
+      
+      }
   
   
   ]
