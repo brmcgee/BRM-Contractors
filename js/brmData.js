@@ -1903,7 +1903,7 @@ let data =
       
       purpose : "Blog",
       
-      category : "Doors",
+      category : "Door",
       
       date : "2023-10-015",
       
@@ -1934,7 +1934,7 @@ let data =
       
       category : "Flooring",
       
-      date : "2023-10-011",
+      date : "2023-10-11",
       
       author : "Brian McGee",
       
@@ -1950,7 +1950,35 @@ let data =
       
       project : "musick"
       
-      }
+      },
+
+      {
+
+        id : 67,
+        
+        isHero : true,
+        
+        purpose : "Blog",
+        
+        category : "Kitchen",
+        
+        date : "2023-10-12",
+        
+        author : "Brian McGee",
+        
+        avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+        
+        title : "Kitchen cabinet install with fresh trim, paint, and floors",
+        
+        body: "We have returned to install the cabinets. All finished with the drywall smooth skimcoat. New LVT vinyl floor.",
+        
+        img1 : "assets/gallery/kitchen-musick.jpg",
+        
+        img2 : "assets/gallery/trim-musick.jpg",
+        
+        project : "musick"
+        
+        }
   
   
   ]
