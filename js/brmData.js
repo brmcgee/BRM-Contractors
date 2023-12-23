@@ -1960,9 +1960,39 @@ let data =
         
         purpose : "Blog",
         
-        category : "Kitchen",
+        category : "Bathroom Remodel",
         
-        date : "2023-10-12",
+        date : "Dec 02, 2023",
+        
+        author : "Brian McGee",
+        
+        avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+        
+        title : "Flooring and fresh paint for the bathroom remodel project",
+        
+        body: "We have returned to install the flooring. All finished with the drywall and fresh paint. ",
+        
+        img1 : "assets/gallery/kitchen-musick.jpg",
+        
+        img2 : "assets/gallery/trim-musick.jpg",
+        
+        project : "musick"
+        
+        }
+
+        ,
+
+      {
+
+        id : 68,
+        
+        isHero : true,
+        
+        purpose : "Blog",
+        
+        category : "Bathroom",
+        
+        date : "12-22-2023",
         
         author : "Brian McGee",
         
@@ -1972,9 +2002,9 @@ let data =
         
         body: "We have returned to install the cabinets. All finished with the drywall smooth skimcoat. New LVT vinyl floor.",
         
-        img1 : "assets/gallery/kitchen-musick.jpg",
+        img1 : "assets/gallery/musick_bathroom2.jpg",
         
-        img2 : "assets/gallery/trim-musick.jpg",
+        img2 : "assets/gallery/musick_bathroom1.jpg",
         
         project : "musick"
         
