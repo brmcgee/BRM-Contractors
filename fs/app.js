@@ -23,7 +23,6 @@ blogData.forEach(blog => {
     `;
 
     blogComment.forEach(comment => {
-        console.log(comment.post_id + '   ' + blog.id);
         if (comment.post_id == blog.id) {
             commentHTML +=  `
             <div class="comment">
