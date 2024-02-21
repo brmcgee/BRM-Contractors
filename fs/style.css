@@ -10,18 +10,20 @@
     gap: 6px;
     max-width: 1200px;
     margin: auto;
+
 }
 
 .card {
-    max-width: 23rem;
-    border: 1px solid #aca9a9;
+    max-width: 20rem;
+    height: auto;
+    border: 0px solid #d3d3d3;
     box-shadow: 0 0 52px #727171; 
     margin-top: 20px; 
  
 }
 
 .card:hover {
-    border: 1px solid #777; 
+    border: 0px solid #777; 
     /* box-shadow: 0 0 32px #181818;  */
     transition: all .31s;
 }
@@ -31,9 +33,6 @@
 .card-img-top img {
     width: 100%;
     height: auto;
-    max-height: 380px;
-    overflow: hidden;
-
 }
 
 .card-body {
@@ -61,22 +60,24 @@
 
 
 .comment {
-    width: 18rem;
-    border: 1px solid #aca9a9;
-    box-shadow: 0 0 2px #727171; 
-    margin-top: 3px; 
+    width: 20rem;
+    border: 0px solid #aca9a9;
+    box-shadow: 0 0 2px #080808; 
+    margin-top: 5px; 
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 3px;
     padding: 2px 2px;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
+.comment-img-top {
+    align-self: center;
+}
 .comment-img-top img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-
 }
 
 .comment-body {
