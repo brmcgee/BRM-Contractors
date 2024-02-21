@@ -23,6 +23,7 @@ blogData.forEach(blog => {
     `;
 
     blogComment.forEach(comment => {
+        commentHTML = '';
         if (comment.post_id == blog.id) {
             commentHTML +=  `
             <div class="comment">
@@ -36,10 +37,10 @@ blogData.forEach(blog => {
             </div>        
             `;
         }
-
+        viewContainer.innerHTML += commentHTML;
     }) 
 
     viewContainer.innerHTML += html;
-    viewContainer.innerHTML += commentHTML;
+    
 });
 
