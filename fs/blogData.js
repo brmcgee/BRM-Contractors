@@ -1,0 +1,187 @@
+let blogData = 
+
+[
+    {
+      id: "1",
+      author: "XinGaDoo",
+      title: "F-35 Lightning stealth fighter jets",
+      body: "The Lockheed Martin F-35 Lightning II is an American family of single-seat, single-engine, all-weather stealth multirole combat aircraft that is intended to perform both air superiority and strike missions. ",
+      category: "Military ",
+      img: "https://tse1.mm.bing.net/th?id=OIP.c5jHQ0gL6y0RWGf2iJIxywHaEK&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:13:47",
+      comment_count: "2",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "2",
+      author: "XinGaDoo",
+      title: "What Are The Different Types of Grouper?",
+      body: "Grouper is a common and favorite species you will find when you’re along the Gulf of Mexico or in many places in the Caribbean.  There is more than one type of Grouper in the water, and they range in size, what they eat, and where they live.",
+      category: "Aquatic",
+      img: "https://www.americanoceans.org/wp-content/uploads/2021/07/nassau-grouper.jpg",
+      reg_date: "2024-02-19 00:53:44",
+      comment_count: "0",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "3",
+      author: "XinGaDoo",
+      title: "Ribeye Steak Tacos with Grilled Tomato ",
+      body: "There’s nothing better than a juicy ribeye steak—except when it’s crispy and piled high on a corn tortilla. It was love at first sight when we saw and tasted these amazing steak tacos, a fusion of flavors from Chef Alexis Torres. Topped with a grilled tomato salsa and tangy cabbage and cilantro garnish, you never want a plain ribeye again! ",
+      category: "Food",
+      img: "https://tse1.mm.bing.net/th?id=OIP.JW5BuaTuvJhXeP1OcfFxAwHaEK&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:13:16",
+      comment_count: "1",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "4",
+      author: "XinGaDoo",
+      title: "Space shuttle 1 2 3 lift off! ",
+      body: "Space Shuttle Challenger OV-099 was a Space Shuttle orbiter manufactured by Rockwell International and operated by NASA. Challenger was the second Space Shuttle orbiter to fly into space after Columbia, and launched on its maiden flight in April 1983",
+      category: "Space",
+      img: "https://wp-assets.futurism.com/2019/04/nasa-space-shuttle-1200x800.jpg",
+      reg_date: "2024-02-18 19:18:24",
+      comment_count: "1",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "5",
+      author: "XinGaDoo",
+      title: "The F-16 Fighting Falcon is a compact je",
+      body: "The General Dynamics F-16 Fighting Falcon is an American single-engine supersonic multirole fighter aircraft originally developed by General Dynamics for the United States Air Force (USAF). ",
+      category: "Military",
+      img: "https://tse2.mm.bing.net/th?id=OIP.XEIvlGord4hNY7aB0yGRqAHaFa&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:21:12",
+      comment_count: "1",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "6",
+      author: "XinGaDoo",
+      title: "Pizza Is Actually Good for You ",
+      body: "The history of pizza begins in antiquity, as various ancient cultures produced flatbreads with several toppings.  A precursor of pizza was probably the focaccia, a flatbread known to the Romans as panis focacius, to which toppings were then added.",
+      category: "Food",
+      img: "https://ariston.com.au/media/RLW_8518_Web.jpg",
+      reg_date: "2024-02-18 19:20:43",
+      comment_count: "2",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "7",
+      author: "XinGaDoo",
+      title: "The Boeing KC-135 Stratotanker ",
+      body: " American military aerial refueling tanker aircraft that was developed from the Boeing 367-80 prototype, alongside the Boeing 707 airliner. It has a narrower fuselage and is shorter than the 707. Boeing gave the aircraft the internal designation of Model 717.",
+      category: "Military",
+      img: "https://tse2.explicit.bing.net/th?id=OIP.YJzxraoPXzOgBcKe6MAUQQHaER&pid=Api&P=0&",
+      reg_date: "2024-02-18 19:16:05",
+      comment_count: "1",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "8",
+      author: "XinGaDoo",
+      title: "Peely and Fishsticks, the original OGs",
+      body: "Peely, one of the most fan-favorite characters in Fortnite, is now on the map as an NPC, and players can interact with him at The Daily Bugle POI. There’s plenty of Fishstick in the sea, but only one is the OG.",
+      category: "Gaming",
+      img: "https://tse2.mm.bing.net/th?id=OIP.EtZYa2ElRbB7bR7MQG-lHAHaEr&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:16:37",
+      comment_count: "2",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "9",
+      author: "XinGaDoo",
+      title: "The golden colored noodles a delight!",
+      body: "The best food was created from noodles and cheese. Especially the little  elbow ones. Then mixed with gooey sauce and the shredded kind. Macaroni and cheese has been served as long as there has been a United States of America",
+      category: "Food",
+      img: "https://tse1.mm.bing.net/th?id=OIP.Jav0q9QGBOR5YcWBa7QoAwHaE8&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 20:39:03",
+      comment_count: "2",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    },
+    {
+      id: "10",
+      author: "Michalangelo",
+      title: "Apollo program, Project Apollo",
+      body: "The Apollo spacecraft was composed of three parts designed to accomplish the American Apollo programs goal of landing astronauts on the Moon by the end of the 1960s and returning them safely to Earth. ",
+      category: "Space",
+      img: "http://www.collectspace.com/images/news-022218b-lg.jpg",
+      reg_date: "2024-02-18 19:07:53",
+      comment_count: "0",
+      author_id: "11",
+      author_avatar: "https://tse2.mm.bing.net/th?id=OIP.JbyCkngzRSFLdHwhVla7MwHaFj&pid=Api&P=0&h=220"
+    },
+    {
+      id: "11",
+      author: "Cricket",
+      title: "BUFF (Big Ugly Fat Fella)",
+      body: "The Boeing B-52 Stratofortress is an American long-range, subsonic, jet-powered strategic bomber. The B-52 was designed and built by Boeing, which has continued to provide support and upgrades.",
+      category: "Military",
+      img: "https://tse3.mm.bing.net/th?id=OIP.n5jLUts6ebGxJMTWTAN3HgHaE2&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:09:49",
+      comment_count: "0",
+      author_id: "13",
+      author_avatar: "https://tse1.mm.bing.net/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"
+    },
+    {
+      id: "12",
+      author: "Cricket",
+      title: "Paintings can be more complex than appea",
+      body: "Art is a diverse range of human activity and its resulting product that involves creative or imaginative talent generally expressive of technical proficiency, beauty, emotional power, or conceptual ideas. ",
+      category: "Art",
+      img: "https://tse4.mm.bing.net/th?id=OIP.eOD7-R3gvXR-CYGsomD_tQHaHa&pid=Api&P=0&h=220",
+      reg_date: "2024-02-18 19:15:05",
+      comment_count: "1",
+      author_id: "13",
+      author_avatar: "https://tse1.mm.bing.net/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"
+    },
+    {
+      id: "24",
+      author: "XinGaDoo",
+      title: "Roofing gone wild",
+      body: "Every other day of the week. Roofing gone wild. Every other of the week. Every other day of the week. Roofing gone wild. Every other  Roofing gone wild  day of the week.",
+      category: "Military ",
+      img: "http://www.collectspace.com/images/news-022218b-lg.jpg",
+      reg_date: "2024-02-19 20:51:52",
+      comment_count: "0",
+      author_id: "15",
+      author_avatar: "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg"
+    }
+  ];
+
+  let blogComment = 
+  [
+    {"id":"0","post_id":"1","comment":"Very nice fight jet, a true work of American might - cowabunga! ","author":"Michalangelo","date":"2024-02-18 19:08:30","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.JbyCkngzRSFLdHwhVla7MwHaFj&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"8","comment":"These two appear to be best-est of friends! ","author":"Michalangelo","date":"2024-02-18 19:08:58","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.JbyCkngzRSFLdHwhVla7MwHaFj&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"2","comment":"Big fish...funny fish...lol... Tilly come check this out. ","author":"Cricket","date":"2024-02-18 19:12:38","auth_avatar":"https:\/\/tse1.mm.bing.net\/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"3","comment":"Yum Yum ... me so hungry. Will need a clown burger. LOL ","author":"Cricket","date":"2024-02-18 19:13:16","auth_avatar":"https:\/\/tse1.mm.bing.net\/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"1","comment":"Yes awesome plane... I flew one - one time. ","author":"Cricket","date":"2024-02-18 19:13:47","auth_avatar":"https:\/\/tse1.mm.bing.net\/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"9","comment":"Golden macaroni. I am hungry. Give me some. ","author":"Cricket","date":"2024-02-18 19:14:30","auth_avatar":"https:\/\/tse1.mm.bing.net\/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"12","comment":"I am a artist too. Just ask anybody. ","author":"Cricket","date":"2024-02-18 19:15:05","auth_avatar":"https:\/\/tse1.mm.bing.net\/th?id=OIP.t3xoIOVXUJH93386CulqcQHaEq&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"2","comment":"Big grouper fish. I am going fishing. You hear me. ","author":"Mr T","date":"2024-02-18 19:15:34","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.eRKBfZ2a-_9QwPf6FG09DgHaKl&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"7","comment":"I will make to make a call when I am in the air and need fuel! ","author":"Mr T","date":"2024-02-18 19:16:05","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.eRKBfZ2a-_9QwPf6FG09DgHaKl&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"8","comment":"I play this game regularly. I even have the skin. ","author":"Mr T","date":"2024-02-18 19:16:37","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.eRKBfZ2a-_9QwPf6FG09DgHaKl&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"6","comment":"Pizza, its whats for dinner ","author":"Mr T","date":"2024-02-18 19:16:52","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.eRKBfZ2a-_9QwPf6FG09DgHaKl&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"4","comment":" One day Mr T going to space.. believe that","author":"Mr T","date":"2024-02-18 19:18:24","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.eRKBfZ2a-_9QwPf6FG09DgHaKl&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"2","comment":"That is a awesome fish. I want to see in water. ","author":"russ_mcplayz","date":"2024-02-18 19:20:21","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.8eyTdaSvgTvO-xH0YPMY7AHaJ4&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"6","comment":"Cheese only please! ","author":"russ_mcplayz","date":"2024-02-18 19:20:43","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.8eyTdaSvgTvO-xH0YPMY7AHaJ4&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"5","comment":"Nice fight jet. This is one awesome plane. ","author":"russ_mcplayz","date":"2024-02-18 19:21:12","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.8eyTdaSvgTvO-xH0YPMY7AHaJ4&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"9","comment":"I like mac n cheese with the chicken strips. ","author":"russ_mcplayz","date":"2024-02-18 20:39:03","auth_avatar":"https:\/\/tse2.mm.bing.net\/th?id=OIP.8eyTdaSvgTvO-xH0YPMY7AHaJ4&pid=Api&P=0&h=220"},
+    {"id":"0","post_id":"2","comment":"Nice fish ","author":"XinGaDoo","date":"2024-02-19 00:53:44","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an awesome picture. I cant imagine zooming back to earth in that. ","author":"XinGaDoo","date":"2024-02-19 00:59:19","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an awesome picture. I cant imagine zooming back to earth in that. ","author":"XinGaDoo","date":"2024-02-19 01:00:17","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an awesome picture. I cant imagine zooming back to earth in that. ","author":"XinGaDoo","date":"2024-02-19 01:02:25","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an amazing piece of history! ","author":"XinGaDoo","date":"2024-02-19 01:05:37","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an amazing piece of history! ","author":"XinGaDoo","date":"2024-02-19 01:06:20","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"},
+    {"id":"0","post_id":"0","comment":"What an amazing piece of history! ","author":"XinGaDoo","date":"2024-02-19 01:07:12","auth_avatar":"https:\/\/www.brmcontractors.net\/blog\/assets\/gallery\/brian.jpg"}
+    ];
