@@ -102,7 +102,7 @@
       <a href="https://www.brmnow.com" class="btn btn-dark"> BRMBlog-App</a>
     </div>
 
-    <div class="row" style="margin:3px auto;height:25%;">
+    <div class="row" style="margin:0px auto;height:25%;">
 
       <div class="col-12">
         <div class="container-fluid">
@@ -156,6 +156,7 @@
     
   </div>
 
+  <a href="http://brmnow.com/create.php">+Create new post</a>
 </div>
 
 
@@ -172,21 +173,26 @@
     <!-- js render blog post  -->
   </div>
 
+
+  
 </div>
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-      html = renderRecordWithLayout(data[42], 2);
-      let hero = document.getElementById('heroCard'); 
-      hero.innerHTML = html;
-  });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //     html = renderRecordWithLayout(data[42], 3);
+  //     let hero = document.getElementById('heroCard'); 
+  //     hero.innerHTML = html;
+  // });
 
   function removeHero () {
     document.getElementById('heroCard').remove();
   }
+  
   let closeButton = document.getElementById('menuOpenBtn');
   closeButton.addEventListener('click',removeHero);
+
+  
 
 </script>
 
