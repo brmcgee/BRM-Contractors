@@ -42,7 +42,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       randomBlog(4, '.blog-cards3');
-      randomBlog(3, '.blog-cards'); 
+      randomBlog(6, '.blog-cards'); 
       randomBlog(5, '.blog-cards2'); 
   });
 
@@ -130,116 +130,28 @@
   <!-- =========  NAVBAR/END =========  -->
 </div> 
 
-<style>
-  
-.intro {margin-bottom: 36px;
-text-align: center;}
-
-.intro p {
-    max-width: 500px;
-}
-.intro h6{
-    color: var(--brand);
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.intro h1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.info-box {
-    align-items: center;
-    display: flex;
-}
-
-.info-box img {
-    width: 90px;
-}
-
-
-.service {
-    padding: 32px;
-    background-color: #fff;
-    box-shadow: var(--shadow);
-}
-
-.service h5 {
-    margin-top: 24px;
-    margin-bottom: 14px;
-}
-
-.service img {
-    width: 90px;
-    height: 90px;
-}
-
-</style>
 
 
 
 <!-- masthead  -->
 <!-- data fetch  -->
-<div id="blogs" class="row blog-cards3"></div>
+<!-- <div id="blogs" class="row blog-cards3"></div>
 <div class="block-text color-primary text-elite fs-1 text-center text-white text-uppercase pt-1" >
   <p>Total home repair</p>
-</div>
+</div> -->
 
 <!-- ========= MASTHEAD ================ -->
-<!-- <div class="masthead">
+<div class="masthead">
   <div class="masthead-container">
     <h3>Quality craftsmanship</h3>
     <h1>Excellent Service</h1>
     <h2>Total service - home remodel and repair contractor, installations and more <br> BRM is at your service!</h2>
-    <a href="https://www.brmcontractors.net/contact-brm.html" class="btn btn-outline">FREE ESTIMATE</a>
     <div class="block-text">
       <p>Total home repair</p>
     </div>
   </div>
-</div> -->
-<!-- ======= MASTHEAD END/ ============= -->
-
-
-<!-- Services -->
-<section id="services" class="text-center">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-          
-            <div class="intro">
-                <h5 class="mt-2">Our Services</h6>
-                <h1>What We Do?</h1>
-                <p class="mx-auto">Welcome to BRM Contractors Inc. We are a family owned and operated contracting business located in the Western Pennsylvania. We specialize in all aspects of residential and commercial construction services. Our team of experienced professionals is dedicated to delivering superior results to all of our projects. We take pride in our work and strive to exceed expectations. At BRM Contractors Inc, we understand that a construction project can be daunting and requires knowledge, skill and attention to detail. We use the latest technology, tools and resources to get the job done right the first time. We are experienced in all areas of construction, from foundation and framing to siding and roofing. We also offer services such as remodeling, additions and custom carpentry. If you need any type of residential or commercial building service, look no further than BRM Contractors Inc. We are here to help make your dreams come to life, so give us a call today to get started.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row g-4 d-flex justify-content-center py-3">
-        <div class="col-lg-4 col-md-6">
-            <div class="service">
-                <img src="https://www.brmcontractors.net/assets/logo/builder.jpg" alt="">
-                <h5>Building</h5>
-                <p>BRM can handle your building needs. We offer custom deck builds, patio roof covers, additions, and remodels BRM has the knowledge and experience to get the job done right.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="service">
-                <img src="https://www.brmcontractors.net/assets/logo/repairs.jfif" alt="">
-                <h5>Repairs</h5>
-                <p>BRM offers full replacement options for most household items. We install fencing, and decks. From repairs to major renovations and home remodeling we can handle all your homes needs.m</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="service">
-                <img src="https://www.brmcontractors.net/assets/logo/maintenance.jpg" alt="">
-                <h5>Maintenance</h5>
-                <p>Changing seasons bringing on a new list of maintenance items. We handle tasks like gutter cleaning, clean up and debris removal. Often simply maintenance can extend the service life.</p>
-            </div>
-        </div>
-
-    </div>
 </div>
-</section>
+<!-- ======= MASTHEAD END/ ============= -->
 
 
 
@@ -260,7 +172,7 @@ text-align: center;}
 <div class="wrapper row">
 
   <!-- intro  -->
-  <main class="main d-none">
+  <main class="main">
     <!-- block area  1/top -->
     <div class="px-1 py-3 w-100 border shadow-lg bg-red">
       <div class="row flex-lg-row align-items-center justify-content-center g-2 bg-light">
@@ -291,7 +203,7 @@ text-align: center;}
 
 
 <!-- data fetch  -->
-    <div id="blogs" class="col-sm-12 col-md-5 col-lg-5 blog-cards" style="position: relative;left:10px;"></div>
+    <div id="blogs" class="col-sm-12 col-md-5 col-lg-5 blog-cards mt-3" style="position: relative;left:10px;"></div>
 
       </div>
 
@@ -311,7 +223,7 @@ text-align: center;}
   </main>
  
       <!-- ======= SERVICE-CARD =============  -->
-      <div class="container-fluid bg-light py-6 px-5 d-none">
+      <div class="container-fluid bg-light py-6 px-5 mt-3">
 
   
         <div class="d-flex justify-content-center row g-5 service-card">
@@ -416,11 +328,7 @@ text-align: center;}
       </div>
     </div>
   </section>  
- 
-  <!-- product/services js   call service.js -->
-  <section class="col-sm-12 col-lg-12 col-xxl-11 mx-auto d-block p-2 py-5">
-    <main class="row products " id="products"><!-- js content injection  --></main>
-  </section>
+
   
   <!-- blog posts  -->
   <div class="main" id="blog">
@@ -558,9 +466,9 @@ text-align: center;}
 </section>
 
 
-<div class="row">
+<!-- <div class="row">
   <div id="blogs" class="col-sm-12 col-md-10 col-lg-6 blog-cards2" ></div>
-</div>
+</div> -->
 
 
   <div class="block bg-dark mt-1"></div>
