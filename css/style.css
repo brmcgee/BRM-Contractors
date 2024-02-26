@@ -8,20 +8,26 @@
 
 
 
-
-
-
-
 html, body {
     /* prevent mobile scroll x  */
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
+
 
 body {
     /* prevent mobile scroll x  */
     position: relative;
-    background-color: rgb(235, 233, 233);
+    background-color: rgb(241, 239, 239);
+    /* max-width: 1400px; */
+    margin: auto;
+}
+.nav-bar {
+    /* max-width: 1400px; */
+}
+
+.main, .service-card {
+    max-width: 1400px;
+    margin: auto;
 }
 
 .main,
