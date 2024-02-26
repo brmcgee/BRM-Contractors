@@ -17,7 +17,7 @@ html, body {
 body {
     /* prevent mobile scroll x  */
     position: relative;
-    background-color: rgb(241, 239, 239);
+    background-color: rgb(255, 255, 255);
     /* max-width: 1400px; */
     margin: auto;
 }
