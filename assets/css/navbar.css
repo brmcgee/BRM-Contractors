@@ -1,0 +1,235 @@
+
+/* ======== NAVBAR ============  */
+/* boostrap resposive with styling  */
+
+/* responsive menu  */
+.navbar-nav {
+    background-color: var(--bg-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px;
+}
+/* top menu item */
+.nav-bar .active {
+    box-sizing: border-box;
+    background-color: var(--bg-primary-dark);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 0px;
+    margin-top: 9px;
+    margin-right: 8px;
+    margin-left: 9px;
+    color: var(--bg-primary-link);
+}
+.nav-bar .active:hover{
+    background-color: var(--bg-primary-off);
+}
+/* text  */
+.navbar-nav .nav-item .nav-link {
+    color:var(--bg-primary-link);
+    padding: 8px 6px;
+    padding-left: 25px;
+    margin: 0px;
+}
+@media (max-width: 800px) {
+    .navbar-nav .nav-item .nav-link{
+        cursor: default; 
+        outline: none;
+    }     
+}
+.nav-bar .navbar-collapse .navbar-nav {
+    box-sizing: border-box;
+}
+.nav-bar .navbar-collapse ul .active > .nav-link {
+    color: var(--bg-primary-contrast);
+    /* box-shadow: 1px 0px 0px 0px var(--bg-primary-dark); */
+    border: 1px solid var(--bg-primary);
+} 
+.navbar-nav .nav-item .nav-link:not(:last-child){
+    box-shadow: 1px 0px 1px var(--bg-primary-contrast);
+    color: var(--bg-primary-link);  
+}
+.navbar-nav .nav-item .nav-link:not(:last-child):hover
+ {  
+    background-color: var(--bg-primary);
+    color: var(--bg-primary-contrast);
+    width: 100%;
+    padding: 8px 6px;
+    padding-left: 25px;
+    margin-right: 25px;
+}
+.navbar-nav .nav-item .active {
+    color:  var(--bg-primary-link);
+}
+/* drop down link  - middle ones */
+.dropdown {
+    box-sizing: border-box;
+    border-radius: 0px;
+    background-color: var(--bg-primary-contrast);
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 11px;
+    /* box-shadow: 2px 0px 0px  var(--bg-primary-dark); */
+}
+.navbar-nav .nav-item .dropdown-item {
+    padding: 8px 6px;
+    padding-left: 25px;
+    margin: 0px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+    color: var(--bg-primary-link);
+    /* box-shadow: 2px 0px 0px var(--bg-primary-dark); */
+    background-color: var(--bg-primary-contrast);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-primary-link);
+}
+.dopdown-menu a:hover {
+    background-color: var(--bg-primary);
+    padding-left: 25px;
+    margin: 0px;
+}
+.dropdown-item {
+    padding: 8px 6px;
+    margin: 0px;
+}
+.dropdown-item:hover {
+    background-color: var(--bg-primary);
+    color:  var(--bg-primary-contrast);;
+    width: 100%;
+    padding: 8px 6px;
+    margin: 0px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
+    color: var(--bg-primary-contrast);  
+}
+.navbar i {
+    color: var(--bg-icon);
+    transition: .3s;
+}
+.navbar i:hover {
+    color: var(--bg-icon-hover);
+}
+/* full menu  */
+@media (min-width: 990px) {
+    .navbar-nav {
+        background-color: var(--bg-primary);
+        margin: 8px;
+        box-shadow: none;  
+    }
+    .nav-bar .active {
+        background-color: var(--bg-primary);
+        box-shadow: 0 0 0 0;
+        padding-left: 0px;
+        margin: 0px;
+    }
+    div .dropdown-menu {
+        border: 4px;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .nav-bar .navbar-brand{
+        box-sizing: border-box;
+    }
+    .navbar-nav .nav-item .nav-link:not(:last-child):hover { 
+        color:rgb(15, 15, 15);
+        letter-spacing: px;
+        font-weight: bold;
+        padding: 1px 16px;
+        padding-left: 25px;
+        margin: 0px;
+        box-shadow: none;
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+        color: rgb(0, 0, 0);
+        border-radius: 0px;
+        background-color: var(--bg-primary-contrast);
+        box-shadow: none;
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+        background-color: var(--bg-primary);
+        color: var(--bg-primary-contrast);
+    }
+    .nav-bar .navbar-collapse ul .active > .nav-link {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        box-shadow: none;
+        border: none;
+    } 
+    .navbar-nav .nav-item .nav-link {
+        color:rgb(15, 15, 15);
+        font-weight: bold;
+        padding: 1px 16px;
+        padding-left: 25px;
+        margin: 0px;
+    }
+    .nav-bar .navbar-collapse ul .active > .nav-link {
+        box-shadow: none;
+    }
+    .navbar-nav .nav-item .nav-link:hover {
+        background-color: var(--bg-primary);
+        color: white;
+        width: 100%;
+        padding: 1px 16px;
+        padding-left: 25px;
+        margin: 0px;
+    }
+    .navbar-nav .nav-item .active {
+        color: white;
+    } 
+    .navbar-nav .nav-item a {
+        padding: 8px 16px;
+        padding-left: 25px;
+        background-color: var(--bg-primary);
+    } 
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) {
+        margin: 0px;
+    }
+    .navbar-nav .nav-item .nav-link:not(:last-child){
+        box-shadow: none;
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1):hover {
+        margin: 0px;
+    }
+    .navbar-nav .nav-item .dopdown-menu {
+        padding: 12px 16px;
+        padding-left: 25px; 
+        margin: 0px;
+    }
+    .navbar-nav .nav-item .dopdown-menu a:hover {
+        background-color: var(--bg-primary-contrast);
+        padding: 12px 6px;
+        padding-left: 25px;    
+        background-color: var(--bg-primary-contrast);
+        margin: 0px;
+    }
+    .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+        padding: 12px 6px;
+        padding-left: 25px;
+        background-color: var(--bg-primary-contrast);
+        margin: 0px;
+    }
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: var(--bg-primary-contrast);   
+    }
+    .navbar-collapse .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover {
+        color: var(--bg-primary-contrast);   
+    }
+    .navbar-nav .nav-item .dropdown-item:hover {
+        background-color: var(--bg-primary);
+        color: var(--bg-primary-contrast);
+        width: 100%;
+        padding: 12px 6px;
+        padding-left: 25px;
+        margin: 0px;
+    }
+    .dropdown {
+        box-shadow: none;
+    }
+ 
+}
+/* === NAVBAR STYLE END/ ======  */

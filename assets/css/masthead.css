@@ -1,0 +1,170 @@
+/* ===== MASTHEAD ===============*/
+.masthead .masthead-container a {
+    background-color: var(--bg-primary);
+    padding: 8px 18px;
+    color: rgb(255, 255, 255);
+}
+.masthead .masthead-container a:hover {
+    background-color: rgba(148, 14, 14, 0.7);
+}
+.masthead {
+    color: #fff;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(228, 3, 3, 0.1) 0%, rgba(248, 89, 3, 0.1) 100%), 
+        url("https://www.brmcontractors.net/assets/gallery/pollin-siding2.jpg") center;
+    background-size: cover;
+    font-size: 14px;
+    padding: 20px 0 30px 0;
+    position: relative;
+}
+/* dimmer  */
+.masthead:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    inset: 0;
+}
+.masthead .masthead-container .block-text {
+    width: 100%;
+    height: 58px;
+    background-color: var(--bg-primary);
+    position: absolute;
+    top: 58vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: baseline;
+}
+.masthead .masthead-container {
+    position: absolute;
+    z-index: 4;
+    box-sizing: border-box;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 12px;
+}
+.masthead .masthead-container h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.masthead .masthead-container h2 {
+    margin: 0px 0px 22px 0px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "BakBak One", Sans-serif;
+    /* font-family: 'Protest Riot'; */
+    
+}
+.masthead .masthead-container h3 {
+    margin: 0px 0px 22px 0px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Roboto", Sans-serif;
+}
+.masthead .masthead-container .block-text p {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+@media (min-width: 125px) {
+    .masthead {
+        height: 49vh;
+
+    }
+    .masthead .masthead-container .block-text {
+        top: 44vh;
+    }
+    .masthead .masthead-container h1 {
+        margin: 0px 0px 10px 0px;
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 52px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+    .masthead .masthead-container h2 {
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+    .masthead .masthead-container h3 {
+        margin: 0px 0px 22px 0px;
+        font-size: 22px;
+        line-height: 28px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .masthead .masthead-container .block-text p {
+        font-size: 32px;
+    }
+}
+@media (min-width: 990px) {
+    .masthead {
+        height: 48vh;
+    }
+    .masthead .masthead-container .block-text {
+        top: 43vh;
+    }
+    .masthead .masthead-container h1 {
+        margin: 0px 0px 20px 0px;
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+    .masthead .masthead-container h2 {
+        margin: 0px 0px 22px 0px;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 1.1px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+
+    } 
+    .masthead .masthead-container h3 {
+        margin: 0px 0px 22px 0px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-family: "Roboto", Sans-serif;
+    }
+    .masthead .masthead-container .block-text p {
+        font-size: 32px;
+    }
+}
+/* ===== MASTHEAD END/==============*/
