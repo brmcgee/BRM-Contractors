@@ -28,7 +28,7 @@ let data =
   
   avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
   
-  title : "New galvalume standing seam metal roof",
+  title : "New galvalume standing seam metal roof in mill finish",
   
   body: " We enjoyed this one helping a good client out with there metal roof on a vacation home on the beach. Nice weather and tan was a bonus too. This is a snap lock 1 1/2 16 panel. I just love the look and the detail here at the posts. What a beautiful pool cabana.",
   
@@ -59,7 +59,7 @@ let data =
   
   title : "Porch roof remodel project with siding and wrap ",
   
-  body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call. ",
+  body: "What an awesome transformation on this house. We installed new vinyl siding, soffit and fascia, window wraps and more. This is a 2-story company house so its tall. We handle steep and tall - so give us a call today!",
   
   img1 : "https://www.brmcontractors.net/assets/gallery/pollin-siding3.jpg ",
   
@@ -144,7 +144,7 @@ let data =
   
   avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg ",
   
-  title : "Custom wood deck build for summer fun. ",
+  title : "Custom wood deck build for summer fun! ",
   
   body: " The weather is awesome and this deck is going to be beautiful! We are all finished here with the deck build and down to the fun part of staining this deck. This deck is over 450sqft and is built with pressure treated lumber. Check back soon! ",
   
@@ -169,9 +169,9 @@ let data =
   
   date : "March 02, 2022",
   
-  author : "Brian McGee",
+  author : "Lanie Walker",
   
-  avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
+  avatar : "https://www.brmcontractors.net/blog/assets/gallery/lanie.jpg",
   
   title : "Large drywall textured finish in basement",
   
@@ -1866,152 +1866,122 @@ let data =
   project : "garage-door"
   
   },
-
-  {
-
-    id : 64,
-    
-    isHero : true,
-    
-    purpose : "Blog",
-    
-    category : "Bathroom Remodel",
-    
-    date : "2023-10-07",
-    
-    author : "Office @ BRM",
-    
-    avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
-    
-    title : "Shower and tub combo set with drywall patch on this bathroom",
-    
-    body: "We have set the shower and tub combo with all new plumbing. Repaired the drywall around the tub and are in the process of smooth finishing the bathroom walls.",
-    
-    img1 : "uploads/IMG-0841.jpg",
-    
-    img2 : "uploads/IMG-0823.jpg",
-    
-    project : "musick"
-    
-    },
-
-    {
-
-      id : 65,
-      
-      isHero : true,
-      
-      purpose : "Blog",
-      
-      category : "Door",
-      
-      date : "2023-10-015",
-      
-      author : "Brian McGee",
-      
-      avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
-      
-      title : "Fresh primer and paint with new door installation and trim",
-      
-      body: "All finished with the drywall smooth skimcoat. Fresh primer and paint to the walls. We have installed new interior doors, baseboard and trim. All fresh primer and paint!",
-      
-      img1 : "assets/gallery/musick-door.jpg",
-      
-      img2 : "assets/gallery/musick-trim.jpg",
-      
-      project : "musick"
-      
-      },
   
-
-    {
-
-      id : 66,
-      
-      isHero : true,
-      
-      purpose : "Blog",
-      
-      category : "Flooring",
-      
-      date : "2023-10-11",
-      
-      author : "Brian McGee",
-      
-      avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
-      
-      title : "LVT vinyl flooring install after fresh wall paint",
-      
-      body: "All finished with the drywall smooth skimcoat. Fresh primer and paint to the walls. We are installing this vinyl floor planks overtop padding",
-      
-      img1 : "assets/gallery/musick-flooring1.jpg",
-      
-      img2 : "assets/gallery/musick-flooring2.jpg",
-      
-      project : "musick"
-      
-      },
-
-      {
-
-        id : 67,
-        
-        isHero : true,
-        
-        purpose : "Blog",
-        
-        category : "Kitchen",
-        
-        date : "Dec 02, 2023",
-        
-        author : "Brian McGee",
-        
-        avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
-
-        title : "Kitchen cabinet install with fresh trim, paint, and floors",
-        
-        body: "We have returned to install the cabinets. All finished with the drywall smooth skimcoat. New LVT vinyl floor.",      
-
-        
-        img1 : "assets/gallery/kitchen-musick.jpg",
-        
-        img2 : "assets/gallery/trim-musick.jpg",
-        
-        project : "musick"
-        
-        }
-
-        ,
-
-      {
-
-        id : 68,
-        
-        isHero : true,
-        
-        purpose : "Blog",
-        
-        category : "Bathroom Remodel",
-        
-        date : "12-22-2023",
-        
-        author : "Brian McGee",
-        
-        avatar : "https://www.brmcontractors.net/blog/assets/gallery/brian.jpg",
-       
-        title : "Flooring and fresh paint for the bathroom remodel project",
-        
-        body: "We are moving along with the remodel project, now finishing up on the bathroom. We have returned to install the flooring. All finished with the drywall and fresh paint. ",
-
-
-        
-        img1 : "assets/gallery/musick_bathroom2.jpg",
-        
-        img2 : "assets/gallery/musick_bathroom1.jpg",
-        
-        project : "musick"
-        
-        }
+  
+  {
+  
+  id : 64,
+  
+  isHero : true,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2023-10-07",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Shower and tub combo set with drywall patch on this bathroom",
+  
+  body: "We have set the shower and tub combo with all new plumbing. Repaired the drywall around the tub and are in the process of smooth finishing the bathroom walls.",
+  
+  img1 : "uploads/IMG-0841.jpg",
+  
+  img2 : "uploads/IMG-0823.jpg",
+  
+  project : "musick"
+  
+  },
+  
+  
+  {
+  
+  id : 68,
+  
+  isHero : false,
+  
+  purpose : "Blog",
+  
+  category : "Garage door",
+  
+  date : "2024-04-04",
+  
+  author : "Home | BRM",
+  
+  avatar : "uploads/home.jpg",
+  
+  title : "Garage door install for happy clients",
+  
+  body: "Check out these great new doors installed for a happy client. ",
+  
+  img1 : "uploads/20240402_160858.jpg",
+  
+  img2 : "uploads/20240228_145842.jpg",
+  
+  project : "Door"
+  
+  },
+  
+  
+  {
+  
+  id : 68,
+  
+  isHero : false,
+  
+  purpose : "Blog",
+  
+  category : "Home repair",
+  
+  date : "2024-04-04",
+  
+  author : "Services @ BR",
+  
+  avatar : "https://blog.brmnow.com/uploads/service.jpg",
+  
+  title : "From siding to kitchen remodel and repair",
+  
+  body: "We handle a variety of home repair and remodel projects. Contact us today for more information",
+  
+  img1 : "uploads/IMG_8816.jpeg",
+  
+  img2 : "uploads/IMG_20170302_132018.jpg",
+  
+  project : "repair"
+  
+  },
+  
+  
+  {
+  
+  id : 65,
+  
+  isHero : false,
+  
+  purpose : "Blog",
+  
+  category : "Bathroom Remodel",
+  
+  date : "2024-04-04",
+  
+  author : "Office @ BRM",
+  
+  avatar : "https://www.brmcontractors.net/assets/logo/brm-red.ico",
+  
+  title : "Moving along on the drywall and bathroom project",
+  
+  body: "We are patch and repair the old walls and will be finish the drywall in smooth. Moving along on the drywall and bathroom project. The bathroom is really taking shape.",
+  
+  img1 : "uploads/20240214_120756 (1).jpg",
+  
+  img2 : "uploads/20240214_121440.jpg",
+  
+  project : "musick"
+  
+  }
   
   
   ]
