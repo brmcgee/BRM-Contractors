@@ -96,16 +96,15 @@
 }
 @media (min-width: 125px) {
     .masthead {
-        height: 49vh;
+        height: 68vh;
 
     }
     .masthead .masthead-container .block-text {
-        top: 44vh;
+        top: 62vh;
     }
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;
         font-size: 46px;
-        font-weight: bold;
         line-height: 52px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
@@ -137,7 +136,6 @@
     .masthead .masthead-container h1 {
         margin: 0px 0px 20px 0px;
         font-size: 64px;
-        font-weight: bold;
         line-height: 50px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
