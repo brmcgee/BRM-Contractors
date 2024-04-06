@@ -3,6 +3,8 @@
     background-color: var(--bg-primary);
     padding: 8px 18px;
     color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-size: 18px;
 }
 .masthead .masthead-container a:hover {
     background-color: rgba(148, 14, 14, 0.7);
@@ -36,6 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: baseline;
+    font-family: 'oswald';
 }
 .masthead .masthead-container {
     position: absolute;
@@ -61,7 +64,7 @@
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 .masthead .masthead-container h2 {
@@ -100,7 +103,7 @@
 
     }
     .masthead .masthead-container .block-text {
-        top: 62vh;
+        top: 64vh;
     }
     .masthead .masthead-container h1 {
         margin: 0px 0px 10px 0px;

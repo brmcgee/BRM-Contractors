@@ -131,6 +131,7 @@
         border: 4px;
         border-radius: 0px;
         margin: 0px;
+        color: white;
     }
     .nav-bar .navbar-brand{
         box-sizing: border-box;
@@ -161,7 +162,7 @@
         border: none;
     } 
     .navbar-nav .nav-item .nav-link {
-        color:rgb(15, 15, 15);
+        color:rgb(255, 255, 255);
         font-weight: bold;
         padding: 1px 16px;
         padding-left: 25px;
@@ -178,9 +179,11 @@
         padding-left: 25px;
         margin: 0px;
     }
+
     .navbar-nav .nav-item .active {
         color: white;
     } 
+    
     .navbar-nav .nav-item a {
         padding: 8px 16px;
         padding-left: 25px;
@@ -226,10 +229,23 @@
         padding: 12px 6px;
         padding-left: 25px;
         margin: 0px;
+
     }
+
     .dropdown {
         box-shadow: none;
+
     }
+
+    
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-family: 'oswald';
+        font-size: 18px;
+
+    }
+
+
  
 }
 /* === NAVBAR STYLE END/ ======  */
