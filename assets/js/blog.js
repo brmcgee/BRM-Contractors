@@ -1,7 +1,7 @@
 
 function makeSmallBlog(blog) {
     let html= `
-        <div class="col-6"  style="height:380px;">
+        <div class="col-6">
         <div class="card border-0">
             <a href=""><img alt="" class="img-fluid rounded" src="${blog.img1}"></a>
             <div class="card-body px-2">
@@ -19,14 +19,14 @@ let htmlSegment = '';
 htmlSegment += makeSmallBlog(brm[8]);
 htmlSegment += makeSmallBlog(brm[54]);
 htmlSegment += makeSmallBlog(brm[22]);
-htmlSegment += makeSmallBlog(brm[66]);
+htmlSegment += makeSmallBlog(brm[59]);
 shortBlog.innerHTML = htmlSegment;
 
 
 function makeBigBlog(blog) {
     let html= `
     
-        <div class="card border-0" style="height:720px;">
+        <div class="card border-0">
             <a href=""><img alt="" class="img-fluid rounded" src="${blog.img1}"></a>
             <div class="card-body px-2">
             <h4 class="text-primary badge bg-main text-light" href="">${blog.category}</h4>
