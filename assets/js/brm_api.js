@@ -96,7 +96,7 @@ function getBlogFromId(postId, targetId){
             document.getElementById(targetId).innerHTML = error404();
         }
     }
-    httpRequest.open("GET", `http://brm.boxcar.site/blogs/${postId}`, true);
+    httpRequest.open("GET", `https://brm.boxcar.site/blogs/${postId}`, true);
     httpRequest.withCredentials = false;
     httpRequest.send();
 }
@@ -137,7 +137,7 @@ function getBlogFromKey (key, val, targetId) {
           document.getElementById(targetId).innerHTML = error404();
       }
   }
-  httpRequest.open("GET", `http://brm.boxcar.site/blogs/`, true);
+  httpRequest.open("GET", `https://brm.boxcar.site/blogs/`, true);
   httpRequest.withCredentials = false;
   httpRequest.send();
 }
