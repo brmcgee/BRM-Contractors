@@ -40,7 +40,7 @@ function makeBigBlog(blog) {
 };
 
 let bigBlog = document.getElementById('bigBlog');
-let bigHtmlSegment = makeBigBlog(brm[9]);
-bigBlog.innerHTML = bigHtmlSegment;
+// let bigHtmlSegment = makeBigBlog(brm[9]);
+// bigBlog.innerHTML = bigHtmlSegment;
 
 
