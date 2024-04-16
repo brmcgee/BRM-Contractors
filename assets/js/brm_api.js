@@ -1,13 +1,13 @@
 function makePostTemplate(blog) {
     let html = `
     
-    <div class="card shadow-lg px-2" style="width:100%; max-width:34rem;margin:auto;background-color:rgb(241,239,239)">
+    <div class="card shadow-lg px-2" style="width:100%; max-width:34rem;margin:auto;">
       
       <div class="card-body d-flex flex-row align-items-center">
         <img src="${blog.avatar}" class="rounded-circle me-3" height="50px" width="50px" alt="Image of ${blog.author}">
         <div>
-          <h5 class="card-title m-0 oswald"><strong>${blog.author}</strong></h5>
-          <p class="card-title m-0" style="line-height:10px;"><small>${blog.date}<small></p>
+          <h4 class="card-title m-0 oswald"><strong>${blog.author}</strong></h4>
+          <p class="card-title m-0" style="line-height:10px;">${blog.date}</p>
         </div>
       </div>
 
@@ -20,8 +20,8 @@ function makePostTemplate(blog) {
       </div>
 
       <div class="card-body">
-        <h5 class="card-title font-weight-bold mb-0 oswald"><strong>${blog.title}</strong></h5>
-          <p class="card-text fs-6">${blog.body}</p>
+        <h4 class="card-title font-weight-bold mb-0 oswald"><strong>${blog.title}</strong></h4>
+          <p class="card-text fs-5">${blog.body}</p>
           <div class="d-flex justify-content-between">
             <p class="card-text bg-dark text-light badge py-1 px-3 fs-6">${blog.category}</p>
           <div>
