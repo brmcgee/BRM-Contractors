@@ -1,7 +1,7 @@
 function makePostTemplate(blog) {
     let html = `
     
-    <div class="card shadow-lg px-2" style="width:100%; max-width:34rem;margin:auto;background-color:rgb(241,239,239)">
+    <div class="card shadow-lg px-2" style="width:100%; max-width:34rem;margin:auto;">
       
       <div class="card-body d-flex flex-row align-items-center">
         <img src="${blog.avatar}" class="rounded-circle me-3" height="50px" width="50px" alt="Image of ${blog.author}">
