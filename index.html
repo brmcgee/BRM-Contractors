@@ -34,7 +34,7 @@
   body{max-width:1400px;}
   .nav-bar{max-width:1400px;}
   </style>
-  
+
 </head>
   <body>
   <!-- banner  -->
@@ -170,6 +170,7 @@
         </div>
         <div class="row">
           <div class="col-md-6" id="bigBlog">
+            
             <!-- js  -->
           </div>
           <div class="col-md-6">
@@ -180,6 +181,14 @@
         </div>
       </div>
     </section>
+
+    <script>
+    
+      let file = `https://brm.boxcar.site/posts/${Math.floor(Math.random() * 64)}`
+      fetch (file)
+      .then(x => x.text())
+      .then(y => document.getElementById("bigBlog").innerHTML = y);
+    </script>
 
 
 
@@ -287,6 +296,11 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/blog.js"></script>
     <script src="assets/js/brm_api.js"></script>
+
+      
+  <script>
+    getBlogFromId(Math.floor(Math.random() * 64), 'bigBlog');
+  </script>
 
     <!-- Latest compiled and minified JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

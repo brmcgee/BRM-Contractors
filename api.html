@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card 2.0</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+    @media screen and (max-width: 1200px) {
+    div#targetToDisplay {
+        top:325px;
+        left: -10px !important;
+    }
+    }
+    </style>
+</head>
+<div id="box"></div>
+
+    <script>
+    
+        let file = "https://brm.boxcar.site/category/Garage door"
+        fetch (file)
+        .then(x => x.text())
+        .then(y => document.getElementById("box").innerHTML = y);
+    </script>
+
+<div class="container-fluid bg-main p-3 roudned position-fixed" style="z-index: 3;">
+    <h2 class="text-light">BRM blogapp</h2>
+</div>
+<body >
+    
+
+
+
+
+    <div class="row p-2 mx-auto pt-5 mt-5">
+      <div class="position-fixed border rounded py-3 bg-light"  style="max-width: 40rem; max-height: 350px; z-index: 2;">
+        <div class="">
+          <label for="categoryRoot" class="form-label">Category</label>
+            <select class="selects form-select" name="categoryRoot" id="categoryRoot" onchange="getBlogFromKey('category', document.getElementById('categoryRoot').value, 'targetToDisplay')">
+              <option value=""></option>
+            </select>
+        </div>
+        <div class="">
+          <label for="projectRoot" class="form-label">Project</label>
+            <select class="selects form-select" name="projectRoot" id="projectRoot" onchange="getBlogFromKey('project', document.getElementById('projectRoot').value, 'targetToDisplay')">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="">
+          <label for="projectRoot" class="form-label">Author</label>
+            <select class="selects form-select" name="authorRoot" id="authorRoot" onchange="getBlogFromKey('author', document.getElementById('authorRoot').value, 'targetToDisplay')">
+               <option value=""></option>
+            </select>
+        </div>
+        <div class="">
+          <label for="projectRoot" class="form-label">Title</label>
+            <select class="selects form-select" name="titleRoot" id="titleRoot" onchange="getBlogFromKey('title', document.getElementById('titleRoot').value, 'targetToDisplay')">
+                <option value=""></option>
+            </select>
+        </div>
+      </div>
+        
+      <div class="position-relative" style="left:22%;" id="targetToDisplay">
+        <!-- js output @brm_api.js -->
+      </div>
+
+    </div>
+    
+    <script src="assets/js/brm_api.js"></script>
+    <script>
+
+        getAllValuesToSelect('category', 'categoryRoot')
+        getAllValuesToSelect('project', 'projectRoot')
+        getAllValuesToSelect('author', 'authorRoot')
+        getAllValuesToSelect('title', 'titleRoot')
+        
+        // getBlogFromId(Math.floor(Math.random() * 64), 'blog')
+        // getBlogFromKey('category', 'Roofing', 'tar')
+    </script>
+
+    
+</body>
+</html>
