@@ -35,6 +35,15 @@
   .nav-bar{max-width:1400px;}
   </style>
 
+  <!-- Latest compiled and minified JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+  
+  
+  
+
 </head>
   <body>
   <!-- banner  -->
@@ -89,9 +98,13 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="services/index.html">Services</a>
+                <a class="dropdown-item" href="https://brm.boxcar.site/category/Roofing">Roofing</a>
+                <a class="dropdown-item" href="https://brm.boxcar.site/category/Deck Build">Deck Build</a>
+                <a class="dropdown-item" href="https://brm.boxcar.site/category/Bathroom Remodel">Bathroom Remodel</a>
+                <a class="dropdown-item" href="https://brm.boxcar.site/category/Garage Door">Garage doors</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">
-                  <button type="button"  class="btn-solid" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
+                  <button type="button"  class="btn-solid btn-main" data-toggle="modal" data-target="#exampleModalCenter">Schedule</button>
                 </a>
               </div>
             </li>
@@ -108,7 +121,7 @@
       <div class="masthead-container">
         <h1>Excellent Service</h1>
         <h2 class="">Home repair, installations and more <br> BRM is at your service!</h2>
-        <a href="https://blog.brmnow.com/view.php?q=Spring%20is%20almost%20here,%20time%20for%20home%20projects" class="btn bg-main" >Home Repair</a>
+        <a href="api.html" class="btn bg-main" >Posts</a>
         <div class="block-text">
           <p>724.787.3758</p>
         </div>
@@ -155,9 +168,6 @@
       </div>
      </div>
 
-
-
-
       <!-- blog  -->
       <section class="py-5">
       <div class="container">
@@ -169,27 +179,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6" id="bigBlog">
-            
-            <!-- js  -->
-          </div>
+          <!-- <div class="col-md-6" id="box"></div> -->
+          <div class="col-md-6" id="bigBlog"></div>
+          
           <div class="col-md-6">
             <div class="row" id="shortBlog">
             <!-- js  -->
+
             </div>
           </div>
         </div>
       </div>
     </section>
-<!-- <di id="box"></di>
-    <script>
-    
-      let file = "https://brm.boxcar.site/category/Garage door"
-      fetch (file)
-      .then(x => x.text())
-      .then(y => document.getElementById("box").innerHTML = y);
-  
-  </script> -->
+
+
+
 
 
 
@@ -298,17 +302,31 @@
     <script src="assets/js/blog.js"></script>
     <script src="assets/js/brm_api.js"></script>
 
-      
+
+    <!-- <script>
+    
+      let file = `https://brm.boxcar.site/posts/${Math.floor(Math.random() * 65)}`
+      fetch (file)
+      .then(x => x.text())
+      .then(y => document.getElementById("box").innerHTML = y);
+  
+  </script> -->
+
   <script>
-    getBlogFromId(Math.floor(Math.random() * 64), 'bigBlog');
+    let shortBlog = document.getElementById('shortBlog');
+    let htmlSegment = '';
+    htmlSegment += makeSmallBlog(brm[8]);
+    htmlSegment += makeSmallBlog(brm[66]);
+    htmlSegment += makeSmallBlog(brm[22]);
+    htmlSegment += makeSmallBlog(brm[59]);
+    shortBlog.innerHTML = htmlSegment;
   </script>
 
-    <!-- Latest compiled and minified JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+      
+  <script>
 
+    getBlogFromId(Math.floor(Math.random() * 64), 'bigBlog');
+  </script>
 
 
 
