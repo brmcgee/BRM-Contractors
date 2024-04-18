@@ -66,13 +66,17 @@ function smallPost(blog)
 {
   let html_segment = 
   `
-  <div class="card border-0">
-            <a href=""><img alt="" class="img-fluid rounded" src="${blog.img1}"></a>
+  <div class="col-6">
+  <div class="card border-0 mx-auto">
+            <a href=""><img alt="" class="img-fluid rounded" src="${blog.img1}" style="max-height:265px;"></a>
             <div class="card-body px-2">
                 <p class="text-primary badge bg-main text-light" href="">${blog.category}</p>
                 <h5 class="fw-semibold oswald" style="height:70px;"><a class="text-decoration-none text-dark" href="">${blog.title}</a></h5>
             </div>
             </div>
+        </div>
+
+
   `;
   return html_segment;
 }
@@ -121,6 +125,11 @@ function getBlogFromId(postId, targetId){
     httpRequest.withCredentials = false;
     httpRequest.send();
 }
+
+
+
+
+
 
 // returns json from to blog template api  
 // key --> category author project purpose title isHero
@@ -177,7 +186,6 @@ function getAllValuesToSelect (key, targetId) {
           const blogArr = JSON.parse(result);     
 
           blogArr.forEach(blog => {
-
             if (!array.includes(blog[`${key}`].trim())) {
               array.push(blog[`${key}`].trim())
             } 

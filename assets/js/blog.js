@@ -14,13 +14,7 @@ function makeSmallBlog(blog) {
     return html;
 }
 
-let shortBlog = document.getElementById('shortBlog');
-let htmlSegment = '';
-htmlSegment += makeSmallBlog(brm[8]);
-htmlSegment += makeSmallBlog(brm[54]);
-htmlSegment += makeSmallBlog(brm[22]);
-htmlSegment += makeSmallBlog(brm[59]);
-shortBlog.innerHTML = htmlSegment;
+
 
 
 function makeBigBlog(blog) {
