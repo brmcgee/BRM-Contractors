@@ -1,7 +1,4 @@
 
-
-
-
 function makePostTemplate(blog) {
     let html = `
     
@@ -92,6 +89,7 @@ function error404() {
 // returns json from api to blog template by id 
 // postId --> blog id to grab
 // targetId --> id of element to inject html to
+
 
 function getBlogFromId(postId, targetId){
     const httpRequest = new XMLHttpRequest;
