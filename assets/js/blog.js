@@ -35,6 +35,6 @@ function makeBigBlog(blog) {
 
 let bigBlog = document.getElementById('bigBlog');
 // let bigHtmlSegment = makeBigBlog(brm[9]);
-// bigBlog.innerHTML = bigHtmlSegment;
+bigBlog.innerHTML = 'content unavailable'
 
 
