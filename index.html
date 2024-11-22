@@ -87,9 +87,12 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item"  href="about/index.html">Info - About</a>
                 <a class="dropdown-item" href="contact-brm/index.html">Contact BRM</a>
-                <a class="dropdown-item" href="blogs/index.html">Blogs</a>
+                <a class="dropdown-item" href="https://www.boxcar.site/">flipflop</a>
                 <a class="dropdown-item" href="https://www.brmnow.com/">Boxcar - Social Media</a>
-                <a class="dropdown-item" href="https://web.brmnow.com/">McGee - Web Projects</a>
+                <a class="dropdown-item" href="https://office.boxcar.site/">backoffice</a>
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.brmcontractors.net/blogs/" class="btn bg-main text-center text-white ms-1" >backoffice</a>
+                </div>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -109,7 +112,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="lastNav" href="blogs/index.html">BRM - Blog Posts</a>
+              <!-- <a class="nav-link" id="lastNav" href="blogs/index.html">BRM - Blog Posts</a> -->
             </li>
         </div>
       </nav>
@@ -121,7 +124,7 @@
       <div class="masthead-container">
         <h1>Excellent Service</h1>
         <h2 class="">Home repair, installations and more <br> BRM is at your service!</h2>
-        <a href="api.html" class="btn bg-main" >Posts</a>
+       
         <div class="block-text">
           <p>724.787.3758</p>
         </div>
@@ -178,14 +181,23 @@
             <p class="lead">Follow along for a some of of fresh and recent projects completed here at BRM. Please reach out if you have questions or need service.</p>
           </div>
         </div>
+
+
+
+
+
         <div class="row">
+
+
           <!-- <div class="col-md-6" id="box"></div> -->
-          <div class="col-md-6" id="bigBlog"></div>
+
+          <div class="col-md-6" id="bigBlog">
+           <!-- js  -->
+          </div>
           
           <div class="col-md-6">
-            <div class="row" id="shortBlog">
+            <div class="row" id="smallBlog">
             <!-- js  -->
-
             </div>
           </div>
         </div>
@@ -303,37 +315,17 @@
     <script src="assets/js/brm_api.js"></script>
 
 
-    <!-- <script>
-    
-      let file = `https://brm.boxcar.site/posts/${Math.floor(Math.random() * 65)}`
-      fetch (file)
-      .then(x => x.text())
-      .then(y => document.getElementById("box").innerHTML = y);
-  
-  </script> -->
-
-  <script>
-    let shortBlog = document.getElementById('shortBlog');
-    let htmlSegment = '';
-    htmlSegment += makeSmallBlog(brm[8]);
-    htmlSegment += makeSmallBlog(brm[66]);
-    htmlSegment += makeSmallBlog(brm[22]);
-    htmlSegment += makeSmallBlog(brm[59]);
-    shortBlog.innerHTML = htmlSegment;
-  </script>
-
       
   <script>
 
     getBlogFromId(Math.floor(Math.random() * 64), 'bigBlog');
+
+    document.addEventListener("DOMContentLoaded", fetchPostId (33, '#bigBlog', 'big'))
+    document.addEventListener("DOMContentLoaded", fetchPostId (4, '#smallBlog', 'small'))
+    document.addEventListener("DOMContentLoaded", fetchPostId (18, '#smallBlog', 'small'))
+    document.addEventListener("DOMContentLoaded", fetchPostId (52, '#smallBlog', 'small'))
+    document.addEventListener("DOMContentLoaded", fetchPostId (24, '#smallBlog', 'small'))
   </script>
-
-
-
-
-
-
-
 
 
   </body>
