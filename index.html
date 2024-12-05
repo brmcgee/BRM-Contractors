@@ -39,8 +39,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-main"  aria-label="Offcanvas navbar large">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logos/brm-logo-wide.png" alt="BRM" width="32" height="32" class="mb-1">
+        <a class="navbar-brand text-uppercase" href="#">
+          <img src="assets/images/logos/brm-logo-wide.png" alt="BRM" width="32" height="32" class="mb-1 rounded-circle p-0">
           BRM Contractors
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#bmNavbar" aria-controls="bmNavbar" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="bmNavbar" aria-labelledby="bmNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="bmNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="bmNavbarLabel">Menu</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -64,6 +64,7 @@
                   Services
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a></li>
                   <li><a class="dropdown-item" href="https://blog.brmnow.com/?i=3">Blogs</a></li>
                   <li><a class="dropdown-item" href="#">Services</a></li>
                   <li>
@@ -82,7 +83,7 @@
       <div class="masthead-container">
         <h1>Excellent Service</h1>
         <h2 class="">Home repair, installations and more <br> BRM is at your service!</h2>
-        <button class="btn btn-danger btn-main" type="button"  data-bs-toggle="modal" data-bs-target="#contactModal">Message BRM</button>
+        <button class="btn btn-dark btn-main" type="button"  data-bs-toggle="modal" data-bs-target="#contactModal">Message BRM</button>
 
         <div class="block-text">
           <p>724.787.3758</p>
@@ -91,7 +92,8 @@
       </div>
     </div>
 
-   
+    <div id="root"></div>
+
     <div class="intro row px-2 py-5 mt-3 mx-1 roudned shadow bg-light-gray">
 
       <div class="col-12  col-lg-6 text-center">
@@ -119,7 +121,7 @@
           <li>Roofing, flashing, gutter soffit and fascia.</li>
         </ul>
 
-        <div id="root"></div>
+        
 
       </div>
 
@@ -173,46 +175,80 @@
   <div class="modal" id="contactModal" aria-hidden="true" aria-labelledby="contactModalLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-lg ">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg-main text-light">
           <h1 class="modal-title fs-5" id="contactModalLabel">Get in touch with BRM</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div id="contactModalBody" class="modal-body">
           
-          <div class="container-fluid p-3 bg-light-gray rounded shadow">
-            <form action="/contact-brm">
 
-              <div class="row">
-                <div class="form-group col-12 col-sm-6">
-                  <label for="fname">First Name</label>
-                  <input type="fname" class="form-control" id="fname" name="fname">
-                </div>
-  
-                <div class="form-group col-12 col-sm-6">
-                  <label for="lname">Last Name</label>
-                  <input type="lname" class="form-control" id="lname" name="lname">
-                </div>
+
+          <div class="container-fluid p-3 bg-light-main rounded shadow mx-auto">
+            
+
+              <div class="contact-image text-center w-100 bg-light rounded p-2">
+                <img src="assets/images/logos/brm-logo-wide.png" alt="brm" width="135" class="img-fluid rounded"/>
+                <h3 class="mt-2 text-main">Drop Us a Message</h3>
               </div>
+              
+              <form action="/contact-brm">
 
-              <div class="row">
-                <div class="form-group col-12 col-sm-6">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email">
+                <div class="row mt-3">
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="fname">First Name</label>
+                    <input type="fname" class="form-control" id="fname" name="fname">
+                  </div>
+    
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="lname">Last Name</label>
+                    <input type="lname" class="form-control" id="lname" name="lname">
+                  </div>
                 </div>
-  
-                <div class="form-group col-12 col-sm-6">
-                  <label for="phone">Phone</label>
-                  <input type="phone" class="form-control" id="phone" name="phone">
+
+                <div class="row">
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+    
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="phone">Phone</label>
+                    <input type="phone" class="form-control" id="phone" name="phone">
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
 
-            </form>
+              </form>
+ 
+
           </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark btn-main" id="brmContactBtnSubmit"
+                  onclick="submitCustomerForm()" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="aboutModal" aria-hidden="true" aria-labelledby="aboutModalLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="aboutModalLabel">About</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="aboutModalBody" class="modal-body">
+          
+        
+          <h1>under construction</h1>
 
         </div>
         <div class="modal-footer">
@@ -223,7 +259,6 @@
       </div>
     </div>
   </div>
-
  
   <footer id="footer" class="footer">
     <div class="footer-content position-relative">
