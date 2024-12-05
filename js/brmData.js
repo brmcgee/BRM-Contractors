@@ -2027,6 +2027,7 @@ let brmImages = [];
     brmImages.push(item.img1);
     brmImages.push(item.img2);
   });
+  let brm = data;
 
  
   
