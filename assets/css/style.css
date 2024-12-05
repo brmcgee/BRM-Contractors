@@ -1,6 +1,9 @@
 .bg-main {
     background-color: rgb(165, 15, 15);
 }
+.text-main {
+    color: rgb(165, 15, 15);
+}
 
 .btn-main {
     background-color: rgb(165, 15, 15);

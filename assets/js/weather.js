@@ -38,10 +38,10 @@ function loadWeather(){
             $('#root').html(htmlWeatherWidget(data))
         })
         .then(function(data){
-           console.log(data)
+        //    console.log(data)
         })
 
 }
 
-document.addEventListener("DOMContentLoaded", loadWeather)
+// document.addEventListener("DOMContentLoaded", loadWeather)
 

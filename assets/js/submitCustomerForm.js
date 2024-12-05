@@ -31,13 +31,15 @@ async function handleSubmitCustomerForm(brmFormData) {
     
     var xhr = $.post(url, brmFormData, function(){
         console.log('connecting to brm messaging');
+        document.getElementById('brmContactBtnSubmit').innerHTML = `
+        
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+            <span role="status">Loading...</span>
+        `
     })
         xhr.done(function(data){
-            // reset modal 
             contactModalBodyElem.innerHTML = htmlFormBody();
-            // send toast 
             brmToast('Your message has been sent! Someone will be with you shortly.')
-            console.log('Message sent!');
         })
         xhr.fail(function(error){
             console.log(error.statusText)
@@ -75,39 +77,51 @@ function brmToast(message){
 }
 function htmlFormBody(){
     return `
-      <div class="container-fluid p-3 bg-light-gray rounded shadow">
-            <form action="/contact-brm">
+     
+          <div class="container-fluid p-3 bg-light-main rounded shadow mx-auto">
+            
 
-              <div class="row">
-                <div class="form-group col-12 col-sm-6">
-                  <label for="fname">First Name</label>
-                  <input type="fname" class="form-control" id="fname" name="fname">
-                </div>
-  
-                <div class="form-group col-12 col-sm-6">
-                  <label for="lname">Last Name</label>
-                  <input type="lname" class="form-control" id="lname" name="lname">
-                </div>
+              <div class="contact-image text-center w-100 bg-main rounded p-2">
+                <img src="assets/images/logos/brm-logo-wide.png" alt="brm" width="135" class="img-fluid rounded"/>
+                <h3 class="mt-2 text-light">Drop Us a Message</h3>
               </div>
+              
+              <form action="/contact-brm">
 
-              <div class="row">
-                <div class="form-group col-12 col-sm-6">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="email">
+                <div class="row mt-3">
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="fname">First Name</label>
+                    <input type="fname" class="form-control" id="fname" name="fname">
+                  </div>
+    
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="lname">Last Name</label>
+                    <input type="lname" class="form-control" id="lname" name="lname">
+                  </div>
                 </div>
-  
-                <div class="form-group col-12 col-sm-6">
-                  <label for="phone">Phone</label>
-                  <input type="phone" class="form-control" id="phone" name="phone">
+
+                <div class="row">
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+    
+                  <div class="form-group col-12 col-sm-6">
+                    <label for="phone">Phone</label>
+                    <input type="phone" class="form-control" id="phone" name="phone">
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
 
-            </form>
+              </form>
+ 
+
           </div>
+
+        </div>
     `
 }
