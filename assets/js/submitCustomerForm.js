@@ -48,7 +48,7 @@ async function handleSubmitCustomerForm(brmFormData) {
 
 function brmToast(message){
     let d = new Date();
-    let date = (d.getDate() + '/' + (d.getMonth()+1) + '/' + d.getFullYear());
+    let date = ((d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear());
     let time = (d.getHours()) + ':' + (d.getMinutes()); 
     let html = `
     
@@ -111,7 +111,3 @@ function htmlFormBody(){
           </div>
     `
 }
-
-setTimeout(() => {
-    brmToast(`Welcome to BRM Contractors. Call or Message today for Winter deals 2024!<br>-BRM 724-787-3758`)
-}, 12000)
