@@ -52,23 +52,23 @@ function brmToast(message){
     let time = (d.getHours()) + ':' + (d.getMinutes()); 
     let html = `
     
-        <div class="toast-container top-50 start-50 translate-middle">
+        <div class="toast-container top-0 start-50 translate-middle-x bg-light rounded mt-1">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-            <img src="/favicon.ico" class="rounded me-2" alt="BRM" width="40">
-            <strong class="me-auto">BRM</strong>
-            <small>${date} @ ${time}</small>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                <img src="/favicon.ico" class="rounded me-2" alt="BRM" width="40">
+                <strong class="me-auto">BRM</strong>
+                <small>${date} @ ${time}</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
-            ${message}
+                ${message}
             </div>
         </div>
         </div> 
     
     `;
 
-    document.getElementById('footer').innerHTML += html;
+    document.getElementById('bottom').innerHTML += html;
     const toastLiveExample = document.getElementById('liveToast')
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
     toastBootstrap.show()
@@ -111,3 +111,7 @@ function htmlFormBody(){
           </div>
     `
 }
+
+setTimeout(() => {
+    brmToast(`Welcome to BRM Contractors. Call or Message today for Winter deals 2024!<br>-BRM 724-787-3758`)
+}, 12000)
