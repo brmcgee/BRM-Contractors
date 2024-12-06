@@ -46,15 +46,20 @@ async function handleSubmitCustomerForm(brmFormData) {
 function brmToast(message){
     let d = new Date();
     let date = ((d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear());
-    let time = (d.getHours()) + ':' + (d.getMinutes()); 
+    let hour = d.getHours();
+    let ap = 'AM'; 
+    let fHour;
+    if (hour > 12) { fHour = hour - 12; ap = 'PM'  }
+
+    let edittedTime = `${fHour}:${d.getMinutes()}${ap}`;
     let html = `
     
-        <div class="toast-container top-0 start-50 translate-middle-x bg-light rounded mt-1">
+        <div class="toast-container top-50 start-50 translate-middle bg-light rounded mt-1">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
                 <img src="/favicon.ico" class="rounded me-2" alt="BRM" width="40">
                 <strong class="me-auto">BRM</strong>
-                <small>${date} @ ${time}</small>
+                <small>${date} @ ${edittedTime}</small>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
