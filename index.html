@@ -59,6 +59,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="https://blog.brmnow.com/?i=3">Blogs</a>
               </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <select class="form-select" id="categorySelect" onchange="getSelectCategory(this.value)">
+
+
+                    </select>
+                  </li>
+                </ul>
+              </li>
+
+
+              
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
@@ -86,15 +105,16 @@
         <button class="btn btn-dark btn-main" type="button"  data-bs-toggle="modal" data-bs-target="#contactModal">Message BRM</button>
 
         <div class="block-text">
-          <p>724.787.3758</p>
+          <p id="phoneBlock">724.787.3758</p>
         </div>
 
       </div>
     </div>
 
-    <div id="root"></div>
+    <div id="notification"></div>
+    <div id="root" class="d-flex flex-row flex-wrap justify-content-center mt-4"></div>
 
-    <div class="intro row px-2 py-5 mt-3 mx-1 roudned shadow bg-light-gray">
+    <div class="intro row px-2 py-5 mt-3 mx-1 roudned shadow bg-light-gray" style="min-height: 20vh;">
 
       <div class="col-12  col-lg-6 text-center">
         <img class="img-fluid rounded shadow" src="assets/images/gallery/bath-complete1a.jpg" alt="">
@@ -304,11 +324,10 @@
   <div id="bottom"></div>
 
 
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
   <script src="assets/js/brmData.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/blogSection.js"></script>
   <script src="assets/js/submitCustomerForm.js"></script>
-  <script src="assets/js/weather.js"></script>
+
 </body>
 </html>
