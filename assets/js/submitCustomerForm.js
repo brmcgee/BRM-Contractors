@@ -19,15 +19,10 @@ function submitCustomerForm(){
     handleSubmitCustomerForm(brmFormData);
 }
 
-var host = `http://localhost:6900`;
-host = `https://iapp.boxcar.site`;
-const url = `${host}/brm-contact-form`
-
-
 let contactModalBodyElem = document.getElementById('contactModalBody');
 
 async function handleSubmitCustomerForm(brmFormData) {
-    
+    const url = `${host}/brm-contact-form`
     
     var xhr = $.post(url, brmFormData, function(){
         console.log('connecting to brm messaging');
